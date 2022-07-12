@@ -4449,9 +4449,9 @@ MSOP 12 with exposed pad.
 <rectangle x1="-1.75" y1="-1.905" x2="1.75" y2="1.905" layer="41"/>
 </package>
 <package name="0603-FUSE">
-<description>&lt;li&gt;&lt;a href = "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-c2f-series.pdf"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;</description>
-<smd name="1" x="-0.8382" y="0" dx="1.27" dy="0.9144" layer="1" rot="R90"/>
-<smd name="2" x="0.8382" y="0" dx="1.27" dy="0.9144" layer="1" rot="R90"/>
+<description>&lt;ul&gt;&lt;li&gt;&lt;a href = "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-c2f-series.pdf"&gt;C2F 0603 Fuse Footprint Datasheet&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+<smd name="1" x="-0.8382" y="0" dx="1.27" dy="0.9144" layer="1" rot="R90" thermals="no"/>
+<smd name="2" x="0.8382" y="0" dx="1.27" dy="0.9144" layer="1" rot="R90" thermals="no"/>
 <rectangle x1="-1.524" y1="-1.016" x2="1.524" y2="1.016" layer="39"/>
 <wire x1="-0.8128" y1="0.4064" x2="0.8128" y2="0.4064" width="0.127" layer="21"/>
 <wire x1="0.8128" y1="0.4064" x2="0.8128" y2="-0.4064" width="0.127" layer="21"/>
@@ -8852,6 +8852,7 @@ Leakage Inductance: 0.50 uH max
 <technology name=".75A">
 <attribute name="CURRENT" value="0.75A"/>
 <attribute name="DKPN" value="507-2159-2-ND"/>
+<attribute name="I2T" value="0.0013"/>
 <attribute name="MANUFACTURER" value="Bel Fuse"/>
 <attribute name="MOPN" value="530-0686F0750-01"/>
 <attribute name="MPN" value="0686F0750-01"/>
