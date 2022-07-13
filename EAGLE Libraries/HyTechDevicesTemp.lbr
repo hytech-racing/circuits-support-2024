@@ -230,10 +230,10 @@ See breadboard placement for pin distancing
 <wire x1="6.35" y1="-1.27" x2="6.35" y2="-2.032" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="-1.27" x2="-8.89" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.127" layer="21"/>
-<wire x1="6.35" y1="1.27" x2="-6.35" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
-<text x="0" y="-0.381" size="2.032" layer="21" font="vector" rot="R180" align="center">&gt;ESP32</text>
+<wire x1="6.35" y1="-1.27" x2="6.35" y2="2.032" width="0.127" layer="21"/>
+<wire x1="6.35" y1="2.032" x2="-6.35" y2="2.032" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="2.032" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
+<text x="0" y="0" size="2.032" layer="21" font="vector" rot="R180" align="center">&gt;ESP32</text>
 <rectangle x1="-11.684" y1="8.382" x2="-8.636" y2="39.878" layer="40"/>
 <wire x1="-11.43" y1="39.624" x2="-8.89" y2="39.624" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="39.624" x2="-8.89" y2="39.37" width="0.127" layer="21"/>
@@ -249,7 +249,7 @@ See breadboard placement for pin distancing
 <rectangle x1="-11.684" y1="8.382" x2="-8.636" y2="39.878" layer="39"/>
 <rectangle x1="8.636" y1="-1.778" x2="11.684" y2="39.878" layer="40"/>
 <pad name="3.3V" x="10.16" y="2.54" drill="1.016" rot="R180"/>
-<pad name="RST" x="10.16" y="0" drill="1.016" rot="R180"/>
+<pad name="RESET" x="10.16" y="0" drill="1.016" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -273,9 +273,9 @@ See breadboard placement for pin distancing
 <pin name="D21" x="22.86" y="-43.18" visible="pin" length="short" rot="R180"/>
 <pin name="A0" x="-2.54" y="-5.08" visible="pin" length="short"/>
 <pin name="A1" x="-2.54" y="-7.62" visible="pin" length="short"/>
-<pin name="A2(GPI)" x="-2.54" y="-10.16" visible="pin" length="short"/>
-<pin name="A3(GPI)" x="-2.54" y="-12.7" visible="pin" length="short"/>
-<pin name="A4(GPI)" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<pin name="A2(GPI)" x="-2.54" y="-10.16" visible="pin" length="short" direction="in"/>
+<pin name="A3(GPI)" x="-2.54" y="-12.7" visible="pin" length="short" direction="in"/>
+<pin name="A4(GPI)" x="-2.54" y="-15.24" visible="pin" length="short" direction="in"/>
 <pin name="A6" x="-2.54" y="-20.32" visible="pin" length="short"/>
 <pin name="A5" x="-2.54" y="-17.78" visible="pin" length="short"/>
 <pin name="A7" x="-2.54" y="-22.86" visible="pin" length="short"/>
@@ -288,7 +288,7 @@ See breadboard placement for pin distancing
 <pin name="BAT" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="(USB)VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="EN" x="22.86" y="-15.24" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="RST" x="22.86" y="-12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="RESET" x="22.86" y="-12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -332,7 +332,7 @@ Requires ordering of:
 <connect gate="G$1" pin="D23" pad="SCL"/>
 <connect gate="G$1" pin="EN" pad="EN"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="SDI" pad="CIPO"/>
 <connect gate="G$1" pin="SDO" pad="COPI"/>
