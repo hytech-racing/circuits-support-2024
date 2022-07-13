@@ -571,9 +571,9 @@
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="1528-2514-ND"/>
+<attribute name="DKPN" value="1528-2181-ND"/>
 <attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
-<attribute name="MPN" value="3591"/>
+<attribute name="MPN" value="3405"/>
 </technology>
 </technologies>
 </device>
