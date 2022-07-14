@@ -4432,9 +4432,7 @@ Note: jumper (SPC02SVJN-RC or similar) needs to be ordered separately</descripti
 <wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.127" layer="21"/>
 <pad name="1" x="-1.27" y="0" drill="1.016" first="yes"/>
 <pad name="2" x="1.27" y="0" drill="1.016"/>
-<text x="0" y="1.397" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<text x="0" y="1.524" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="-2.54" y="1.27" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-2.794" y1="-1.524" x2="2.794" y2="1.524" layer="40"/>
 <rectangle x1="-2.794" y1="-1.524" x2="2.794" y2="1.524" layer="39"/>
