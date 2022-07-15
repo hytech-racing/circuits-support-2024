@@ -571,6 +571,25 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="ESP32" prefix="O">
+<description>Adafruit Huzzah32
+&lt;br&gt;
+&lt;a href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-huzzah32-esp32-feather.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1528-2181-ND"/>
+<attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
+<attribute name="MPN" value="3405"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
