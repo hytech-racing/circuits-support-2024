@@ -233,6 +233,7 @@
 <circle x="25.4" y="7.62" radius="1.79605" width="0" layer="40"/>
 <circle x="25.4" y="-7.62" radius="1.79605" width="0" layer="40"/>
 <rectangle x1="-30.48" y1="-12.7" x2="30.48" y2="12.7" layer="39"/>
+<circle x="-25.4" y="12.192" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="4026">
 <description>Vishay Dale Sense Resistor
@@ -249,6 +250,7 @@
 <rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="39"/>
 <rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="40"/>
 <text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-5.842" y="-0.889" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="EEUFP1E*">
 <description>EEUFP1E Aluminum Electrolytic Capacitor &lt;br&gt;
