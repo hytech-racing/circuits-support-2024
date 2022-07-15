@@ -329,11 +329,6 @@
 <devices>
 <device name="">
 <technologies>
-<technology name="12_0.1&quot;">
-<attribute name="DKPN" value="S7045-ND"/>
-<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
-<attribute name="MPN" value="PPPC121LFBN-RC"/>
-</technology>
 <technology name="13_0.1&quot;">
 <attribute name="DKPN" value="S7046-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
@@ -343,11 +338,6 @@
 <attribute name="DKPN" value="S7047-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MPN" value="PPPC141LFBN-RC"/>
-</technology>
-<technology name="16_0.1&quot;">
-<attribute name="DKPN" value="S7049-ND"/>
-<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
-<attribute name="MPN" value="PPPC161LFBN-RC"/>
 </technology>
 <technology name="24_0.1&quot;">
 <attribute name="DKPN" value="S7057-ND"/>
@@ -560,10 +550,11 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESP32" prefix="O">
-<description>Adafruit Huzzah32
+<deviceset name=".1&quot;_JUMPER" prefix="O">
+<description>2 Position Jumper Shunt Connector - .1" Pitch
 &lt;br&gt;
-&lt;a href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-huzzah32-esp32-feather.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://drawings-pdf.s3.amazonaws.com/11513.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
 </gates>
@@ -571,9 +562,10 @@
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="1528-2181-ND"/>
-<attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
-<attribute name="MPN" value="3405"/>
+<attribute name="DKPN" value="S9344-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="SPC02SVJN-RC"/>
 </technology>
 </technologies>
 </device>
