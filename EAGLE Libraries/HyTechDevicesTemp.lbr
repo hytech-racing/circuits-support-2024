@@ -205,6 +205,7 @@
 <circle x="3.81" y="0" radius="1.79605" width="0" layer="40"/>
 <circle x="13.97" y="0" radius="1.79605" width="0" layer="40"/>
 <rectangle x1="-21.59" y1="-5.08" x2="21.59" y2="5.08" layer="39"/>
+<circle x="21.082" y="0" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="UWE-*">
 <description>1/8 Brick footprint as used by UWE-12/10-Q12PB-C converter
@@ -237,10 +238,10 @@
 <description>Vishay Dale Sense Resistor
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/427/VISH_S_A0011243377_1-2572030.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<smd name="1" x="-4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
-<smd name="3" x="-4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
-<smd name="4" x="4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
-<smd name="2" x="4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
+<smd name="1" x="-4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90" thermals="no"/>
+<smd name="3" x="-4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90" thermals="no"/>
+<smd name="4" x="4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90" thermals="no"/>
+<smd name="2" x="4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90" thermals="no"/>
 <wire x1="-5.08" y1="-3.302" x2="5.08" y2="-3.302" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-3.302" x2="5.08" y2="3.302" width="0.127" layer="21"/>
 <wire x1="5.08" y1="3.302" x2="-5.08" y2="3.302" width="0.127" layer="21"/>
@@ -257,7 +258,9 @@
 <circle x="0" y="0" radius="4.99871875" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="5.6796125" width="0" layer="39"/>
 <circle x="0" y="0" radius="5.6796125" width="0" layer="40"/>
-<text x="0" y="5.842" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="5.715" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="-6.223" y="0" size="0.8128" layer="21" align="center">+</text>
+<text x="6.223" y="0" size="0.8128" layer="21" align="center">-</text>
 </package>
 </packages>
 <symbols>
