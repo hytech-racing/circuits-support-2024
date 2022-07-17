@@ -1429,6 +1429,8 @@ Sensor</text>
 </devices>
 </deviceset>
 <deviceset name="CHARGER_*" prefix="A">
+<description>&lt;a href = "http://www.ovartech.com/wp-content/uploads/2017/12/Ovartech-Liquid-cooled-6.6KW-OBC1.5KW-DCDC-CAD662DF400-12152-Data-Sheet.pdf"&gt;OVARTECH Charger&lt;/a&gt;&lt;br&gt;
+&lt;a href = "https://app.box.com/s/mekevo8krrefqodui59qanzvkyfg6lnt"&gt;Cascadia Motion Charger&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="BATTERY_CHARGER" x="0" y="0"/>
 </gates>
