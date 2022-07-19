@@ -10901,34 +10901,6 @@ Note: See page 32 for application schematic.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADM823" prefix="U">
-<description>ADM823 Watchdog
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/609/ADM823_824_825-1503117.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ADM823\8316" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SC-70-5">
-<connects>
-<connect gate="G$1" pin="!MR!" pad="3"/>
-<connect gate="G$1" pin="!RESET!" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="WDI" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="505-ADM823TYKSZ-R7CT-ND"/>
-<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
-<attribute name="MOPN" value="584-ADM823TYKSZ-R7"/>
-<attribute name="MPN" value="ADM823TYKSZ-R7"/>
-<attribute name="RESET_VOLTAGE" value="3.08"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MAX74*" prefix="U">
 <description>8th-Order Maxim Filter
 &lt;br&gt;
