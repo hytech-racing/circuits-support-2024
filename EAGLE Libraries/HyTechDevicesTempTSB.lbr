@@ -188,6 +188,7 @@
 <library>
 <packages>
 <package name="B20">
+<description>Ohmite B20 Resistor</description>
 <wire x1="-25.4" y1="5.555" x2="-25.4" y2="3.81" width="0.127" layer="21"/>
 <wire x1="-25.4" y1="-3.81" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
 <wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
@@ -288,6 +289,9 @@
 <rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
 </package>
 <package name="SOD123F">
+<description>SOD123F Footprint
+&lt;br&gt;
+&lt;a href="https://www.diodes.com/assets/Package-Files/SOD123F.pdf"&gt;Footprint Dimentions&lt;/a&gt;</description>
 <smd name="A" x="-1.45" y="0" dx="1" dy="1.5" layer="1"/>
 <smd name="C" x="1.45" y="0" dx="1" dy="1.5" layer="1"/>
 <wire x1="-1.35" y1="0.9" x2="-1.35" y2="-0.9" width="0.1524" layer="21"/>
@@ -454,6 +458,7 @@
 <text x="0" y="-17.78" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="DIODE">
+<description>General diode</description>
 <wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-1.27" width="0.1524" layer="94"/>
 <pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
@@ -668,6 +673,9 @@
 </devices>
 </deviceset>
 <deviceset name="RECTIFIER_*_?" prefix="D">
+<description>Diodes Incorporated US1GWF
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/115/DIOD_S_A0003383552_1-2542294.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
