@@ -9865,17 +9865,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="51.58V"/>
 <attribute name="VOLTAGE_MAX" value="75k"/>
 </technology>
-<technology name="13K">
-<attribute name="DKPN" value="P20098TR-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERJ-PB3B1302V"/>
-<attribute name="MPN" value=" ERJ-PB3B1302V"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="13k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="36.05V"/>
-<attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
 <technology name="13">
 <attribute name="DKPN" value="P122724CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
