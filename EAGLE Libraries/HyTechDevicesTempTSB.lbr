@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -560,10 +560,10 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DKPN" value="255-1436-5-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Inustrial Devices" constant="no"/>
+<attribute name="MOPN" value="769-AQY214EHA"/>
+<attribute name="MPN" value="AQY214EHA"/>
 </technology>
 </technologies>
 </device>
@@ -576,10 +576,10 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="255-1436-5-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Inustrial Devices" constant="no"/>
-<attribute name="MOPN" value="769-AQY214EHA" constant="no"/>
-<attribute name="MPN" value="AQY214EHA" constant="no"/>
+<attribute name="DKPN" value="255-1436-5-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Inustrial Devices"/>
+<attribute name="MOPN" value="769-AQY214EHA"/>
+<attribute name="MPN" value="AQY214EHA"/>
 </technology>
 </technologies>
 </device>
