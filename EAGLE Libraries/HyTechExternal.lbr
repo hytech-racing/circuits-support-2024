@@ -567,6 +567,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/0430251200_CRIMP_HOUSINGS-145768.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
 </description>
+<devices>
+<device name="">
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="" constant="no"/>
@@ -608,6 +610,9 @@
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/0430251400_CRIMP_HOUSINGS-228590.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+<devices>
+<device name="">
+<technologies>
 <technology name="">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
