@@ -13655,6 +13655,12 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
+<technology name="12V">
+<attribute name="DKPN" value="811-3293-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKI78SR12/1W36C"/>
+<attribute name="MPN" value="OKI-78SR-12/1.0-W36-C"/>
+</technology>
 <technology name="5V">
 <attribute name="DKPN" value="811-2196-5-ND"/>
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
