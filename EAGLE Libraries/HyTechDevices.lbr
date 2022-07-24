@@ -13019,6 +13019,21 @@ ISO224B: High-Grade
 </technology>
 </technologies>
 </device>
+<device name="SOT-23-5" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="5V">
+<attribute name="DKPN" value="497-ST732M50RTR-ND"/>
+<attribute name="MANUFACTURER" value="STMicroelectronics"/>
+<attribute name="MOPN" value="511-ST732M50R"/>
+<attribute name="MPN" value="ST732M50R"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LOGICGATE_INVERTER_" prefix="U">
