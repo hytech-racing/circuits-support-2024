@@ -4936,28 +4936,6 @@ See breadboard placement for pin distancing
 <rectangle x1="-9.398" y1="-3.302" x2="9.398" y2="3.302" layer="39"/>
 <text x="0" y="3.302" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="B20">
-<description>Ohmite B20 Resistor</description>
-<wire x1="-25.4" y1="5.555" x2="-25.4" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-25.4" y1="-3.81" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
-<wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
-<wire x1="25.4" y1="-5.555" x2="25.4" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="25.4" y1="3.81" x2="25.4" y2="5.555" width="0.127" layer="21"/>
-<wire x1="25.4" y1="5.555" x2="-25.4" y2="5.555" width="0.127" layer="21"/>
-<rectangle x1="-38.1" y1="-6.35" x2="38.1" y2="6.35" layer="39"/>
-<text x="0" y="6.985" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
-<pad name="2" x="-25.4" y="0" drill="1.35"/>
-<pad name="1" x="25.4" y="0" drill="1.35" first="yes"/>
-<hole x="-32.51" y="0" drill="3.74"/>
-<hole x="32.51" y="0" drill="3.74"/>
-<wire x1="-25.4" y1="3.81" x2="-37.211" y2="3.81" width="0.1524" layer="21"/>
-<wire x1="-37.211" y1="3.81" x2="-37.211" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="-37.211" y1="-3.81" x2="-25.4" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="-25.4" y1="-3.81" x2="-25.4" y2="3.81" width="0.1524" layer="21"/>
-<wire x1="25.4" y1="3.81" x2="37.211" y2="3.81" width="0.1524" layer="21"/>
-<wire x1="37.211" y1="3.81" x2="37.211" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="37.211" y1="-3.81" x2="25.4" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="25.4" y1="-3.81" x2="25.4" y2="3.81" width="0.1524" layer="21"/>
 <package name="DCM4623">
 <description>DCM4623
 &lt;br&gt;
@@ -14769,6 +14747,7 @@ AB38S-Q
 <attribute name="MPN" value="AB38S-Q"/>
 <attribute name="VOLTAGE" value="600V"/>
 </technology>
+</technologies>
 </device>
 <device name="CMX" package="CRYDOM_CMX">
 <connects>
