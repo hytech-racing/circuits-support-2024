@@ -11137,16 +11137,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="173V"/>
 <attribute name="VOLTAGE_MAX" value="750V"/>
 </technology>
-<technology name="15K">
-<attribute name="DKPN" value="B20J15KE-ND"/>
-<attribute name="MANUFACTURER" value="Ohmite"/>
-<attribute name="MOPN" value="588-B20J15KE"/>
-<attribute name="MPN" value="B20J15KE"/>
-<attribute name="POWER" value="20W"/>
-<attribute name="RESISTANCE" value="15K"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="548V"/>
-</technology>
 <technology name="10K">
 <attribute name="DKPN" value="B20J10KE-ND"/>
 <attribute name="MANUFACTURER" value="Ohmite"/>
@@ -11156,6 +11146,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="10k"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="447V"/>
+<attribute name="VOLTAGE_MAX" value="750V"/>
+</technology>
+<technology name="15K">
+<attribute name="DKPN" value="B20J15KE-ND"/>
+<attribute name="MANUFACTURER" value="Ohmite"/>
+<attribute name="MOPN" value="588-B20J15KE"/>
+<attribute name="MPN" value="B20J15KE"/>
+<attribute name="POWER" value="20W"/>
+<attribute name="RESISTANCE" value="15K"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="548V"/>
 <attribute name="VOLTAGE_MAX" value="750V"/>
 </technology>
 <technology name="750">
@@ -13182,6 +13183,12 @@ ISO224B: High-Grade
 <attribute name="MANUFACTURER" value="Sensata-Cynergy3"/>
 <attribute name="MOPN" value="285-DAR71210"/>
 <attribute name="MPN" value="DAR71210"/>
+</technology>
+<technology name="24">
+<attribute name="DKPN" value="725-1048-ND"/>
+<attribute name="MANUFACTURER" value="Sensata-Cynergy3"/>
+<attribute name="MOPN" value="285-DAR72410"/>
+<attribute name="MPN" value="DAR72410" constant="no"/>
 </technology>
 </technologies>
 </device>
