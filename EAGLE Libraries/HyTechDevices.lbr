@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -703,20 +703,19 @@
 <package name="SOP-04">
 <description>SOP-4
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/240/CPC1002N-1546124.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-Note: Based on Page 6.</description>
-<smd name="1" x="-1.27" y="-2.80035" dx="0.6" dy="1.3" layer="1"/>
-<smd name="2" x="1.27" y="-2.80035" dx="0.6" dy="1.3" layer="1"/>
-<smd name="3" x="1.27" y="2.80035" dx="0.6" dy="1.3" layer="1"/>
-<smd name="4" x="-1.27" y="2.80035" dx="0.6" dy="1.3" layer="1"/>
+&lt;a href="https://comus-intl.com/wp-content/uploads/2016/09/AB38S-Q.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<smd name="1" x="-1.27" y="-3.25" dx="0.7" dy="1.3" layer="1" thermals="no"/>
+<smd name="2" x="1.27" y="-3.25" dx="0.7" dy="1.3" layer="1" thermals="no"/>
+<smd name="3" x="1.27" y="3.25" dx="0.7" dy="1.3" layer="1" thermals="no"/>
+<smd name="4" x="-1.27" y="3.25" dx="0.7" dy="1.3" layer="1" thermals="no"/>
 <text x="-2.54" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<wire x1="-2.0447" y1="1.905" x2="2.0447" y2="1.905" width="0.127" layer="21"/>
-<wire x1="2.0447" y1="1.905" x2="2.0447" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="2.0447" y1="-1.905" x2="-2.0447" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-2.0447" y1="-1.905" x2="-2.0447" y2="1.905" width="0.127" layer="21"/>
-<circle x="-2.54" y="-2.54" radius="0.254" width="0" layer="21"/>
-<rectangle x1="-2.286" y1="-3.81" x2="2.286" y2="3.81" layer="39"/>
+<wire x1="-2.15" y1="2.2" x2="2.15" y2="2.2" width="0.127" layer="21"/>
+<wire x1="2.15" y1="2.2" x2="2.15" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="2.15" y1="-2.2" x2="-2.15" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-2.15" y1="-2.2" x2="-2.15" y2="2.2" width="0.127" layer="21"/>
+<circle x="-2.54" y="-3.175" radius="0.254" width="0" layer="21"/>
+<rectangle x1="-2.286" y1="-4.064" x2="2.286" y2="4.064" layer="39"/>
 </package>
 <package name="G5LE-14">
 <description>G5LE-14 SPDT Relay
@@ -1189,16 +1188,16 @@ visible on the PCB.</text>
 <pad name="1" x="-2.54" y="0" drill="0.9906" first="yes"/>
 <pad name="2" x="0" y="0" drill="0.9906"/>
 <pad name="3" x="2.54" y="0" drill="0.9906"/>
-<wire x1="-5.461" y1="5.588" x2="5.461" y2="5.588" width="0.127" layer="21" style="shortdash"/>
-<wire x1="5.461" y1="5.588" x2="5.461" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="5.461" y1="-3.81" x2="-5.461" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-5.461" y1="-3.81" x2="-5.461" y2="5.588" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-5.461" y1="5.715" x2="5.461" y2="5.715" width="0.127" layer="21" style="shortdash"/>
+<wire x1="5.461" y1="5.715" x2="5.461" y2="-3.937" width="0.127" layer="21" style="shortdash"/>
+<wire x1="5.461" y1="-3.937" x2="-5.461" y2="-3.937" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-5.461" y1="-3.937" x2="-5.461" y2="5.715" width="0.127" layer="21" style="shortdash"/>
 <wire x1="-5.207" y1="1.27" x2="5.207" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-5.207" y1="2.794" x2="5.207" y2="2.794" width="0.127" layer="21"/>
 <wire x1="-5.207" y1="1.27" x2="-5.207" y2="2.794" width="0.127" layer="21"/>
 <wire x1="5.207" y1="2.794" x2="5.207" y2="1.27" width="0.127" layer="21"/>
-<text x="0" y="5.715" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-5.588" y1="-3.937" x2="5.588" y2="5.715" layer="39"/>
+<text x="0" y="5.842" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.588" y1="-4.064" x2="5.588" y2="5.842" layer="39"/>
 <rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="40"/>
 </package>
 <package name="TSSOP-20">
@@ -4922,6 +4921,20 @@ See breadboard placement for pin distancing
 <text x="-3.556" y="-0.127" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <circle x="-2.921" y="-4.064" radius="0.381" width="0" layer="21"/>
 <rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
+</package>
+<package name="485">
+<description>485 Fuse
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_485_Datasheet_pdf-1372450.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<smd name="1" x="-6.9" y="0" dx="5.6" dy="3.5" layer="1" rot="R90" thermals="no"/>
+<smd name="2" x="6.9" y="0" dx="5.6" dy="3.5" layer="1" rot="R90" thermals="no"/>
+<wire x1="-6.05" y1="2.25" x2="6.05" y2="2.25" width="0.127" layer="21"/>
+<wire x1="6.05" y1="2.25" x2="6.05" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="6.05" y1="-2.25" x2="-6.05" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-6.05" y1="-2.25" x2="-6.05" y2="2.25" width="0.127" layer="21"/>
+<rectangle x1="-9.398" y1="-3.302" x2="9.398" y2="3.302" layer="39"/>
+<text x="0" y="3.302" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="DCM4623">
 <description>DCM4623
@@ -9386,6 +9399,15 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="50V_1UF">
+<attribute name="CAPACITANCE" value="1uF"/>
+<attribute name="DKPN" value="587-2400-2-ND"/>
+<attribute name="MANUFACTURER" value="Taiyo Yuden"/>
+<attribute name="MOPN" value="963-UMK107BJ105KA-T"/>
+<attribute name="MPN" value="UMK107BJ105KA-T"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="50V" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="2220" package="2220-CAP">
@@ -9823,6 +9845,23 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
+<device name="485" package="485">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="1A">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="F5921TR-ND"/>
+<attribute name="I2T" value="0.3044"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0485001.DR"/>
+<attribute name="MPN" value="0485001.DR"/>
+<attribute name="VOLTAGE" value="600VDC"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-AVR-ISP_?" prefix="J">
@@ -9887,6 +9926,8 @@ Leakage Inductance: 0.50 uH max
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/418/4/NG_DS_1773270_M-604713.pdf"&gt;TE Connectivity/Holsworthy RN73 Series&lt;a/&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/dcrcwe3-1762152.pdf"&gt;Vishay Dale D/CRCW e3&lt;a/&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ohmite.com/assets/docs/res_200.pdf?r=false"&gt;Ohmite B20&lt;a/&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
@@ -10381,15 +10422,15 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="2K">
-<attribute name="DKPN" value="P2.0KBDCT-ND"/>
+<attribute name="DKPN" value="10-ERJ-UP3F2001VTR-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERA-3ARB202V"/>
-<attribute name="MPN" value="ERA-3ARB202V"/>
-<attribute name="POWER" value="0.1W"/>
+<attribute name="MOPN" value="667-ERJ-UP3F2001V"/>
+<attribute name="MPN" value="ERJ-UP3F2001V"/>
+<attribute name="POWER" value="0.25W"/>
 <attribute name="RESISTANCE" value="2k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="14.14V"/>
-<attribute name="VOLTAGE_MAX" value="75V"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="22.36V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="3.3">
 <attribute name="DKPN" value="P3.3AJTR-ND"/>
@@ -10414,15 +10455,15 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="3.3K">
-<attribute name="DKPN" value="311-3.30KHRCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-RC0603FR-073K3L"/>
-<attribute name="MPN" value="RC0603FR-073K3L"/>
-<attribute name="POWER" value="0.1W"/>
+<attribute name="DKPN" value="P20340TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3D3301V"/>
+<attribute name="MPN" value="ERJ-PB3D3301V"/>
+<attribute name="POWER" value="0.2W"/>
 <attribute name="RESISTANCE" value="3.3k"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="18.17V"/>
-<attribute name="VOLTAGE_MAX" value="75V"/>
+<attribute name="TOLERANCE" value="0.5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="25.69V"/>
+<attribute name="VOLTAGE_MAX" value="150"/>
 </technology>
 <technology name="3.9K">
 <attribute name="DKPN" value="311-3.90KHRCT-ND"/>
@@ -11094,6 +11135,17 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="1.5K">
+<attribute name="DKPN" value="B20J1K5E-ND"/>
+<attribute name="MANUFACTURER" value="Ohmite"/>
+<attribute name="MOPN" value="588-B20J1K5E"/>
+<attribute name="MPN" value="B20J1K5E"/>
+<attribute name="POWER" value="20W"/>
+<attribute name="RESISTANCE" value="1.5K"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="173V"/>
+<attribute name="VOLTAGE_MAX" value="750V"/>
+</technology>
 <technology name="10K">
 <attribute name="DKPN" value="B20J10KE-ND"/>
 <attribute name="MANUFACTURER" value="Ohmite"/>
@@ -11103,6 +11155,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="10k"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="447V"/>
+<attribute name="VOLTAGE_MAX" value="750V"/>
+</technology>
+<technology name="15K">
+<attribute name="DKPN" value="B20J15KE-ND"/>
+<attribute name="MANUFACTURER" value="Ohmite"/>
+<attribute name="MOPN" value="588-B20J15KE"/>
+<attribute name="MPN" value="B20J15KE"/>
+<attribute name="POWER" value="20W"/>
+<attribute name="RESISTANCE" value="15K"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="548V"/>
 <attribute name="VOLTAGE_MAX" value="750V"/>
 </technology>
 <technology name="750">
@@ -11749,6 +11812,14 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="757-CUS08F30H3F"/>
 <attribute name="MPN" value="CUS08F30"/>
 <attribute name="VOLTAGE" value="30V"/>
+</technology>
+<technology name="60V">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="3757-MBR1060HEWS_R1_00001TR-ND"/>
+<attribute name="MANUFACTURER" value="Panjit International Inc."/>
+<attribute name="MOPN" value="241-MBR1060HEWSR1000"/>
+<attribute name="MPN" value="MBR1060HEWS_R1_00001"/>
+<attribute name="VOLTAGE" value="60V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12918,6 +12989,7 @@ ISO224B: High-Grade
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/389/dm00366442-1799212.pdf"&gt;LDL1117S50R Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/308/NCP785A_D-1812704.pdf"&gt;NCP785AH120T1G&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.ti.com/lit/ds/symlink/lms8117a.pdf?HQS"&gt;LMS8117A Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/389/st732-1830546.pdf"&gt;ST732M50R Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
@@ -12962,6 +13034,21 @@ ISO224B: High-Grade
 <attribute name="MANUFACTURER" value="ON Semiconductor"/>
 <attribute name="MOPN" value="863-NCP785AH150T1G"/>
 <attribute name="MPN" value="NCP785AH150T1G"/>
+</technology>
+</technologies>
+</device>
+<device name="SOT-23-5" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="5V">
+<attribute name="DKPN" value="497-ST732M50RTR-ND"/>
+<attribute name="MANUFACTURER" value="STMicroelectronics"/>
+<attribute name="MOPN" value="511-ST732M50R"/>
+<attribute name="MPN" value="ST732M50R"/>
 </technology>
 </technologies>
 </device>
@@ -13129,6 +13216,12 @@ ISO224B: High-Grade
 <attribute name="MANUFACTURER" value="Sensata-Cynergy3"/>
 <attribute name="MOPN" value="285-DAR71210"/>
 <attribute name="MPN" value="DAR71210"/>
+</technology>
+<technology name="24">
+<attribute name="DKPN" value="725-1048-ND"/>
+<attribute name="MANUFACTURER" value="Sensata-Cynergy3"/>
+<attribute name="MOPN" value="285-DAR72410"/>
+<attribute name="MPN" value="DAR72410" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -13579,6 +13672,12 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
+<technology name="12V">
+<attribute name="DKPN" value="811-3293-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKI78SR12/1W36C"/>
+<attribute name="MPN" value="OKI-78SR-12/1.0-W36-C"/>
+</technology>
 <technology name="5V">
 <attribute name="DKPN" value="811-2196-5-ND"/>
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
@@ -14639,7 +14738,10 @@ Requires ordering of:
 &lt;br&gt;
 Crydom CMX Series Solid State Normally Open Relay
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;
+AB38S-Q
+&lt;br&gt;
+&lt;a href=https://comus-intl.com/wp-content/uploads/2016/09/AB38S-Q.pdf&gt; Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NO-1" x="0" y="0"/>
 </gates>
@@ -14673,6 +14775,23 @@ Crydom CMX Series Solid State Normally Open Relay
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MOPN" value="769-AQY214EHA"/>
 <attribute name="MPN" value="AQY214EHA"/>
+</technology>
+</technologies>
+</device>
+<device name="AB38S-Q" package="SOP-04">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1835-1216-ND"/>
+<attribute name="MANUFACTURER" value="Comus International"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="AB38S-Q"/>
+<attribute name="VOLTAGE" value="600V"/>
 </technology>
 </technologies>
 </device>
