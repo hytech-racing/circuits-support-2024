@@ -11813,6 +11813,14 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MPN" value="CUS08F30"/>
 <attribute name="VOLTAGE" value="30V"/>
 </technology>
+<technology name="60V">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="3757-MBR1060HEWS_R1_00001TR-ND"/>
+<attribute name="MANUFACTURER" value="Panjit International Inc."/>
+<attribute name="MOPN" value="241-MBR1060HEWSR1000"/>
+<attribute name="MPN" value="MBR1060HEWS_R1_00001"/>
+<attribute name="VOLTAGE" value="60V" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
