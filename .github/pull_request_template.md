@@ -1,4 +1,4 @@
-# Pull Request (PR) into Circuits-Support-2022
+# Pull Request (PR) into Circuits-Support-2023
 
 ***Delete the below block when actually making your PR!***
 
@@ -16,7 +16,7 @@ Follow HyTech's [Github Software Guidelines](https://gtvault.sharepoint.com/:w:/
 
 ## Checklist
 - [ ] Did you create any new schematics or boards?
-- - [ ] Did you *make a PR* for them in `circuits-2022`? If so, please pause until you get this PR merged.
+- - [ ] Did you *make a PR* for them in `circuits-2023`? If so, please pause until you get this PR merged.
 - [ ] Did you pull `main` into your branch?
 - - [ ] Did you *check for merge conflicts*?
 - - [ ] Did you *resolve* any that occurred? ***If you are having trouble or are confused, contact a lead!***
