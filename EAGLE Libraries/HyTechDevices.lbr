@@ -14729,7 +14729,7 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-14_?_*">
+<deviceset name="CONNECTOR-14_?_*" prefix="J">
 <description>14 pin connector
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/276/3/0430451414_PCB_HEADERS-2877114.pdf"&gt;Datasheet&lt;/a&gt;</description>
