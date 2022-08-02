@@ -11086,6 +11086,28 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="HV1M">
+<attribute name="DKPN" value="RHM1.00MAHTR-ND"/>
+<attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
+<attribute name="MOPN" value="755-KTR10EZPF1004"/>
+<attribute name="MPN" value="KTR10EZPF1004"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="1M"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="353.5V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
+</technology>
+<technology name="HV330K">
+<attribute name="DKPN" value="RHM330KAHTR-ND"/>
+<attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
+<attribute name="MOPN" value="755-KTR10EZPF3303"/>
+<attribute name="MPN" value="KTR10EZPF3303"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="330k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="203.1V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
+</technology>
 <technology name="HV365K">
 <attribute name="DKPN" value="RHM365KAHTR-ND "/>
 <attribute name="MANUFACTURER" value="Rohm"/>
@@ -11096,6 +11118,18 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="213V"/>
 <attribute name="VOLTAGE_MAX" value="350V"/>
+</technology>
+<technology name="HV75K">
+<attribute name="DKPN" value="RHM75KAHTR-ND"/>
+<attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
+<attribute name="MOPN" value="755-KTR10EZPF7502"/>
+<attribute name="MPN" value="KTR10EZPF7502
+"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="75k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="96.8V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
 </technologies>
 </device>
