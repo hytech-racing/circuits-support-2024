@@ -5010,6 +5010,20 @@ See breadboard placement for pin distancing
 <wire x1="3.048" y1="-3.048" x2="3.048" y2="3.048" width="0.0508" layer="46"/>
 <wire x1="3.048" y1="3.048" x2="-3.048" y2="3.048" width="0.0508" layer="46"/>
 </package>
+<package name="DO-214AA">
+<description>DO-214AA Doide Footprint
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/54/BOURNS_1_5SMBJ_datasheet-2530221.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.98" y="0" dx="2.1" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="1.98" y="0" dx="2.1" dy="1.27" layer="1" rot="R90"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.285" y1="1.97" x2="2.285" y2="1.97" width="0.127" layer="21"/>
+<wire x1="2.285" y1="1.97" x2="2.285" y2="-1.97" width="0.127" layer="21"/>
+<wire x1="2.285" y1="-1.97" x2="-2.285" y2="-1.97" width="0.127" layer="21"/>
+<wire x1="-2.285" y1="-1.97" x2="-2.285" y2="1.97" width="0.127" layer="21"/>
+<rectangle x1="-3.302" y1="-2.286" x2="3.302" y2="2.286" layer="39"/>
+<wire x1="0.762" y1="1.524" x2="0.762" y2="-1.524" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -11841,6 +11855,22 @@ CPF-A-0603B1K0E"/>
 <attribute name="MOPN" value="78-GSOT08-E3-08"/>
 <attribute name="MPN" value="GSOT08-E3-08"/>
 <attribute name="VOLTAGE" value="8V"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-214AA" package="DO-214AA">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="30V">
+<attribute name="DKPN" value="118-1.5SMBJ30ATR-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-1.5SMBJ30A"/>
+<attribute name="MPN" value="
+1.5SMBJ30A"/>
+<attribute name="VOLTAGE" value="30V"/>
 </technology>
 </technologies>
 </device>
