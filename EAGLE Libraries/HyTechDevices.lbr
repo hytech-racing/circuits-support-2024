@@ -10212,6 +10212,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="14K">
+<attribute name="DKPN" value="RT0603BRB0714KL-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-RT0603BRB0714KL"/>
+<attribute name="MPN" value="RT0603BRB0714KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="14k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="37.4V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="15">
 <attribute name="DKPN" value="541-15.0STR-ND"/>
 <attribute name="MANUFACTURER" value="Vishay Dale"/>
@@ -10290,15 +10301,16 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="1K">
-<attribute name="DKPN" value="311-1.00KHRCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-RC0603FR-071KL"/>
-<attribute name="MPN" value="RC0603FR-071KL"/>
-<attribute name="POWER" value="0.1W"/>
+<attribute name="DKPN" value="1712-CPF-A-0603B1K0ETR-ND"/>
+<attribute name="MANUFACTURER" value="TE Connectivity Passive Product"/>
+<attribute name="MOPN" value="279-CPF-A-0603B1K0E"/>
+<attribute name="MPN" value="
+CPF-A-0603B1K0E"/>
+<attribute name="POWER" value="0.0625W"/>
 <attribute name="RESISTANCE" value="1k"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="10.00V"/>
-<attribute name="VOLTAGE_MAX" value="75V"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="7.9V"/>
+<attribute name="VOLTAGE_MAX" value="50V"/>
 </technology>
 <technology name="1M">
 <attribute name="DKPN" value="311-1.00MHRCT-ND"/>
