@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14772,9 +14772,12 @@ Requires ordering of:
 Crydom CMX Series Solid State Normally Open Relay
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;
-AB38S-Q
 &lt;br&gt;
-&lt;a href=https://comus-intl.com/wp-content/uploads/2016/09/AB38S-Q.pdf&gt; Datasheet &lt;/a&gt;</description>
+AB38S-Q
+&lt;a href=https://comus-intl.com/wp-content/uploads/2016/09/AB38S-Q.pdf&gt; Datasheet &lt;/a&gt;
+&lt;br&gt;
+CPC1020NTR
+&lt;a href="https://www.mouser.com/datasheet/2/240/CPC1020N-1546163.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NO-1" x="0" y="0"/>
 </gates>
@@ -14841,6 +14844,23 @@ AB38S-Q
 <attribute name="MANUFACTURER" value="Crydom"/>
 <attribute name="MOPN" value="558-CMX60D20"/>
 <attribute name="MPN" value="CMX60D20"/>
+</technology>
+</technologies>
+</device>
+<device name="CPC1020NTR" package="SOP-04">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="CLA318CT-ND"/>
+<attribute name="MANUFACTURER" value="IXYS Integrated Circuits Division"/>
+<attribute name="MOPN" value="849-CPC1020NTR"/>
+<attribute name="MPN" value="CPC1020NTR"/>
+<attribute name="VOLTAGE" value="30V"/>
 </technology>
 </technologies>
 </device>
