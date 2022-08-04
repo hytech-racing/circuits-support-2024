@@ -14772,9 +14772,12 @@ Requires ordering of:
 Crydom CMX Series Solid State Normally Open Relay
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;
-AB38S-Q
 &lt;br&gt;
-&lt;a href=https://comus-intl.com/wp-content/uploads/2016/09/AB38S-Q.pdf&gt; Datasheet &lt;/a&gt;</description>
+AB38S-Q
+&lt;a href=https://comus-intl.com/wp-content/uploads/2016/09/AB38S-Q.pdf&gt; Datasheet &lt;/a&gt;
+&lt;br&gt;
+CPC1020NTR
+&lt;a href="https://www.mouser.com/datasheet/2/240/CPC1020N-1546163.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NO-1" x="0" y="0"/>
 </gates>
