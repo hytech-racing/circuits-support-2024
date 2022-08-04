@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14841,6 +14841,23 @@ AB38S-Q
 <attribute name="MANUFACTURER" value="Crydom"/>
 <attribute name="MOPN" value="558-CMX60D20"/>
 <attribute name="MPN" value="CMX60D20"/>
+</technology>
+</technologies>
+</device>
+<device name="CPC1020NTR" package="SOP-04">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="CLA318CT-ND"/>
+<attribute name="MANUFACTURER" value="IXYS Integrated Circuits Division"/>
+<attribute name="MOPN" value="849-CPC1020NTR"/>
+<attribute name="MPN" value="CPC1020NTR"/>
+<attribute name="VOLTAGE" value="30V"/>
 </technology>
 </technologies>
 </device>
