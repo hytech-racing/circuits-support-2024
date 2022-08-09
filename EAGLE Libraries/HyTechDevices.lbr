@@ -14824,7 +14824,7 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NO_*">
+<deviceset name="RELAY_SOLIDSTATE_NO_*" prefix="K">
 <description>AQY214EHA Normally Open Solid State Relay&lt;br&gt;
 &lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY214EH&gt; Datasheet &lt;/a&gt;
 &lt;br&gt;
