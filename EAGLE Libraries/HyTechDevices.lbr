@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5239,10 +5239,10 @@ See breadboard placement for pin distancing
 <pin name="!RESET" x="-2.54" y="-15.24" length="short" direction="in" function="dot"/>
 <pin name="PWM0/RSSI" x="-2.54" y="-17.78" length="short" direction="out"/>
 <pin name="PWM1" x="-2.54" y="-20.32" length="short" direction="out"/>
-<pin name="DTR/DI08" x="33.02" y="-27.94" length="short" direction="in" rot="R180"/>
+<pin name="!DTR!/DI08" x="33.02" y="-27.94" length="short" direction="in" rot="R180"/>
 <pin name="GND" x="-2.54" y="-25.4" length="short" direction="pwr"/>
 <pin name="AD4/DIO4" x="33.02" y="-17.78" length="short" rot="R180"/>
-<pin name="CTS/DIO7" x="33.02" y="-25.4" length="short" rot="R180"/>
+<pin name="!CTS!/DIO7" x="33.02" y="-25.4" length="short" rot="R180"/>
 <pin name="ON/SLEEP/DIO9" x="33.02" y="-30.48" length="short" direction="out" rot="R180"/>
 <pin name="ASC/AD5/DIO5" x="33.02" y="-20.32" length="short" rot="R180"/>
 <pin name="!RTS!/AD6/DIO6" x="33.02" y="-22.86" length="short" rot="R180"/>
@@ -9421,7 +9421,16 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <attribute name="MOPN" value="963-UMK107BJ105KA-T"/>
 <attribute name="MPN" value="UMK107BJ105KA-T"/>
 <attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="50V" constant="no"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="50V_470PF">
+<attribute name="CAPACITANCE" value="470pF"/>
+<attribute name="DKPN" value="1276-2058-1-ND"/>
+<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
+<attribute name="MOPN" value="187-CL10B471JB8NNNC"/>
+<attribute name="MPN" value="CL10B471JB8NNNC"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="50V"/>
 </technology>
 </technologies>
 </device>
@@ -15104,6 +15113,75 @@ CPC1020NTR
 <attribute name="MANUFACTURER" value="Souriau"/>
 <attribute name="MOPN" value="649-8STA21435PN"/>
 <attribute name="MPN" value="8STA21435PN"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCAN1044*V-Q1" prefix="U">
+<description>TCAN1044*V Can Tranciever
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/tcan1044aev-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1660058505207&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAN_TRANSCIEVER_TCAN1051*V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="S" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VIO" pad="5"/>
+</connects>
+<technologies>
+<technology name="AE">
+<attribute name="DKPN" value="296-TCAN1044AEVDRQ1TR-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-TCAN1044AEVDRQ1"/>
+<attribute name="MPN" value="TCAN1044AEVDRQ1"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XB3-*" prefix="A">
+<description>XB3 Bluetooth/Cellular Modem &lt;br&gt;
+&lt;a href="https://www.digi.com/resources/documentation/digidocs/pdfs/90001543.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XBEE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XBEE">
+<connects>
+<connect gate="G$1" pin="!CTS!/DIO7" pad="12"/>
+<connect gate="G$1" pin="!DTR!/DI08" pad="9"/>
+<connect gate="G$1" pin="!RESET" pad="5"/>
+<connect gate="G$1" pin="!RTS!/AD6/DIO6" pad="16"/>
+<connect gate="G$1" pin="AD0/DIO0" pad="20"/>
+<connect gate="G$1" pin="AD1/DIO1" pad="19"/>
+<connect gate="G$1" pin="AD2/DIO2" pad="18"/>
+<connect gate="G$1" pin="AD3/DIO3" pad="17"/>
+<connect gate="G$1" pin="AD4/DIO4" pad="11"/>
+<connect gate="G$1" pin="ASC/AD5/DIO5" pad="15"/>
+<connect gate="G$1" pin="DIN" pad="3"/>
+<connect gate="G$1" pin="DIO12" pad="4"/>
+<connect gate="G$1" pin="DOUT" pad="2"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="ON/SLEEP/DIO9" pad="13"/>
+<connect gate="G$1" pin="PWM0/RSSI" pad="6"/>
+<connect gate="G$1" pin="PWM1" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name="C-A2-UT-001">
+<attribute name="DKPN" value="602-2169-ND"/>
+<attribute name="MANUFACTURER" value="Digi"/>
+<attribute name="MOPN" value="888-XB3-C-A2-UT-001"/>
+<attribute name="MPN" value="XB3-C-A2-UT-001"/>
 </technology>
 </technologies>
 </device>
