@@ -15150,7 +15150,7 @@ CPC1020NTR
 </deviceset>
 <deviceset name="XB3-*" prefix="A">
 <description>XB3 Bluetooth/Cellular Modem &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/111/DGNC_S_A0005816217_1-2541762.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.digi.com/resources/documentation/digidocs/pdfs/90001543.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="XBEE" x="0" y="0"/>
 </gates>
