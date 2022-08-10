@@ -10987,6 +10987,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="200V"/>
 </technology>
+<technology name="1K">
+<attribute name="DKPN" value="P1.0KADTR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P06J102V"/>
+<attribute name="MPN" value="ERJ-P06J102V"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="1k"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="22.36V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
+</technology>
 <technology name="1M">
 <attribute name="DKPN" value="P20936TR-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
