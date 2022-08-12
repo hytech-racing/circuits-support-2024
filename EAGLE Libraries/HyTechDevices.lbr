@@ -15239,7 +15239,7 @@ CPC1020NTR
 </device>
 </devices>
 </deviceset>
-<deviceset name="EEH_AZS*">
+<deviceset name="EEH_AZS*" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
 </gates>
@@ -15255,8 +15255,7 @@ CPC1020NTR
 <attribute name="DKPN" value="10-EEH-AZS1V471BCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
 <attribute name="MOPN" value=" 667-EEH-AZS1V471B"/>
-<attribute name="MPN" value="
-EEH-AZS1V471B"/>
+<attribute name="MPN" value=" EEH-AZS1V471B"/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VOLTAGE" value="35V"/>
 </technology>
