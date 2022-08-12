@@ -15211,22 +15211,22 @@ CPC1020NTR
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGICGATE_OR">
+<deviceset name="LOGICGATE_OR" prefix="U">
 <description>OR Gate
 &lt;br&gt;
 &lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g34.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="LOGICGATE_OR" x="20.32" y="-5.08"/>
-<gate name="G$2" symbol="PWR_GND" x="0" y="0"/>
+<gate name="A" symbol="LOGICGATE_OR" x="20.32" y="-5.08"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SC-70-5">
 <connects>
-<connect gate="G$1" pin="IN1" pad="1"/>
-<connect gate="G$1" pin="IN2" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="4"/>
-<connect gate="G$2" pin="GND" pad="3"/>
-<connect gate="G$2" pin="VDD" pad="5"/>
+<connect gate="A" pin="IN1" pad="1"/>
+<connect gate="A" pin="IN2" pad="2"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
