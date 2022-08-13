@@ -11428,9 +11428,10 @@ Leakage Inductance: 0.50 uH max
 </devices>
 </deviceset>
 <deviceset name="TRANSISTOR_P_MOS_?_*" prefix="Q">
-<description>MOSFET P Channel
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/427/si2369d-1764360.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<description>P-MOSFET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/si2369d-1764360.pdf"&gt;SI2369DS Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/115/DIOD_S_A0012915142_1-2543925.pdf"&gt;DMPL3056L Datasheet&lt;/a&gt;&lt;/li&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_P-CHANNEL" x="0" y="0"/>
 </gates>
@@ -11442,6 +11443,12 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
+<technology name="DMP3056L-7">
+<attribute name="DKPN" value="DMP3056L-7DITR-ND"/>
+<attribute name="MANUFACTURER" value="Diodes Incorporated"/>
+<attribute name="MOPN" value="621-DMP3056L-7"/>
+<attribute name="MPN" value="DMP3056L-7" constant="no"/>
+</technology>
 <technology name="SI2369DS-T1-GE3">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix"/>
@@ -11677,7 +11684,8 @@ Leakage Inductance: 0.50 uH max
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/916/PMV15ENEA-1604828.pdf"&gt;PMV15ENEA Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK6P65W_datasheet_en_20151225-1916290.pdf"&gt;TK6P65W Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;</description>
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.diodes.com/assets/Datasheets/DMG3406L.pdf"&gt;DMG3406L Datasheet&lt;/a&gt;&lt;/li&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
@@ -11689,6 +11697,12 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
+<technology name="DMG3406L-7">
+<attribute name="DKPN" value="DMG3406L-7DITR-ND"/>
+<attribute name="MANUFACTURER" value="Diodes Incorporated"/>
+<attribute name="MOPN" value="621-DMG3406L-7"/>
+<attribute name="MPN" value="DMG3406L-7"/>
+</technology>
 <technology name="PMV15ENEA">
 <attribute name="DKPN" value="1727-8588-1-ND"/>
 <attribute name="MANUFACTURER" value="Nexperia USA Inc."/>
