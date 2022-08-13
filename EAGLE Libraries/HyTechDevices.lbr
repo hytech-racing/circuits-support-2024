@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4878,7 +4878,7 @@ See breadboard placement for pin distancing
 <rectangle x1="-30.48" y1="-12.7" x2="30.48" y2="12.7" layer="39"/>
 <circle x="-25.4" y="12.192" radius="0.127" width="0" layer="21"/>
 </package>
-<package name="EEUFP1E*">
+<package name="EEU-FP1E*">
 <description>EEUFP1E Aluminum Electrolytic Capacitor &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/315/RDF0000C1260-1391675.pdf"&gt;Datasheet&lt;a/&gt;</description>
 <pad name="PLUS" x="-2.49999375" y="0" drill="0.650240625" first="yes"/>
@@ -5024,16 +5024,16 @@ See breadboard placement for pin distancing
 <rectangle x1="-3.302" y1="-2.286" x2="3.302" y2="2.286" layer="39"/>
 <wire x1="3.302" y1="1.524" x2="3.302" y2="-1.524" width="0.254" layer="21"/>
 </package>
-<package name="EEH_AZS">
+<package name="EEH-AZS">
 <description>EEH-AZS Aluminum Polymer-Hybrid Electrolytic Capacitor
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/315/DMD0000COL92-1141863.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pad name="PLUS" x="-2.5" y="0" drill="1"/>
 <pad name="MINUS" x="2.5" y="0" drill="1"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="21"/>
-<text x="6" y="0" size="0.8128" layer="21" align="center">-</text>
-<text x="-6" y="0" size="0.8128" layer="21" align="center">+</text>
-<text x="0" y="6" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="6" y="0" size="1.778" layer="21" align="center">-</text>
+<text x="-6" y="0" size="1.778" layer="21" align="center">+</text>
+<text x="0" y="6" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="0" y="0" radius="3" width="6" layer="39"/>
 <circle x="-2.54" y="0" radius="0.508" width="1.016" layer="40"/>
 <circle x="2.54" y="0" radius="0.508" width="1.016" layer="40"/>
@@ -5042,14 +5042,14 @@ See breadboard placement for pin distancing
 <description>3362P Trimpot
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/54/3362-776956.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="1" x="-2.54" y="0" drill="0.6"/>
+<pad name="1" x="-2.54" y="0" drill="0.6" first="yes"/>
 <pad name="2" x="0" y="2.54" drill="0.6"/>
 <pad name="3" x="2.54" y="0" drill="0.6"/>
 <wire x1="-3.53" y1="3.53" x2="3.53" y2="3.53" width="0.127" layer="21"/>
 <wire x1="3.53" y1="3.53" x2="3.53" y2="-3.53" width="0.127" layer="21"/>
 <wire x1="3.53" y1="-3.53" x2="-3.53" y2="-3.53" width="0.127" layer="21"/>
 <wire x1="-3.53" y1="-3.53" x2="-3.53" y2="3.53" width="0.127" layer="21"/>
-<text x="0" y="3.81" size="0.8128" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="0" y="3.81" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-3.81" y1="-3.81" x2="3.81" y2="3.81" layer="39"/>
 <circle x="-2.54" y="0" radius="0.508" width="1.016" layer="40"/>
 <circle x="2.54" y="0" radius="0.508" width="1.016" layer="40"/>
@@ -14684,7 +14684,7 @@ Requires ordering of:
 <gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="EEUFP1E*">
+<device name="" package="EEU-FP1E*">
 <connects>
 <connect gate="G$1" pin="MINUS" pad="MINUS"/>
 <connect gate="G$1" pin="PLUS" pad="PLUS"/>
@@ -15257,12 +15257,14 @@ CPC1020NTR
 </device>
 </devices>
 </deviceset>
-<deviceset name="EEH_AZS*" prefix="C">
+<deviceset name="EEH-AZS*" prefix="C">
+<description>EEH_AZS Hybrid Electrolytic Capacitor &lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/DMD0000COL92-1141863.pdf"&gt;Datasheet&lt;a/&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="EEH_AZS">
+<device name="" package="EEH-AZS">
 <connects>
 <connect gate="G$1" pin="MINUS" pad="MINUS"/>
 <connect gate="G$1" pin="PLUS" pad="PLUS"/>
