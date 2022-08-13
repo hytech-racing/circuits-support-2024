@@ -15301,7 +15301,10 @@ CPC1020NTR
 <attribute name="MANUFACTURER" value="Bourns Inc."/>
 <attribute name="MOPN" value="652-3362P-1-103LF"/>
 <attribute name="MPN" value="3362P-1-103LF"/>
+<attribute name="POWER" value="0.5W"/>
 <attribute name="RESISTANCE" value="10k"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="70.711V"/>
 </technology>
 </technologies>
 </device>
