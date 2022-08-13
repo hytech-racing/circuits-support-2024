@@ -11431,7 +11431,7 @@ Leakage Inductance: 0.50 uH max
 <description>P-MOSFET
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/si2369d-1764360.pdf"&gt;SI2369DS Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/115/DIOD_S_A0012915142_1-2543925.pdf"&gt;DMPL3056L Datasheet&lt;/a&gt;&lt;/li&gt;</description>
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/115/DIOD_S_A0012915142_1-2543925.pdf"&gt;DMP3056L Datasheet&lt;/a&gt;&lt;/li&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_P-CHANNEL" x="0" y="0"/>
 </gates>
