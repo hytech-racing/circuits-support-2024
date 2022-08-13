@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4878,7 +4878,7 @@ See breadboard placement for pin distancing
 <rectangle x1="-30.48" y1="-12.7" x2="30.48" y2="12.7" layer="39"/>
 <circle x="-25.4" y="12.192" radius="0.127" width="0" layer="21"/>
 </package>
-<package name="EEUFP1E*">
+<package name="EEU-FP1E*">
 <description>EEUFP1E Aluminum Electrolytic Capacitor &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/315/RDF0000C1260-1391675.pdf"&gt;Datasheet&lt;a/&gt;</description>
 <pad name="PLUS" x="-2.49999375" y="0" drill="0.650240625" first="yes"/>
@@ -5023,6 +5023,37 @@ See breadboard placement for pin distancing
 <wire x1="-2.285" y1="-1.97" x2="-2.285" y2="1.97" width="0.127" layer="21"/>
 <rectangle x1="-3.302" y1="-2.286" x2="3.302" y2="2.286" layer="39"/>
 <wire x1="3.302" y1="1.524" x2="3.302" y2="-1.524" width="0.254" layer="21"/>
+</package>
+<package name="EEH-AZS">
+<description>EEH-AZS Aluminum Polymer-Hybrid Electrolytic Capacitor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/DMD0000COL92-1141863.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="PLUS" x="-2.5" y="0" drill="1"/>
+<pad name="MINUS" x="2.5" y="0" drill="1"/>
+<circle x="0" y="0" radius="5" width="0.127" layer="21"/>
+<text x="6" y="0" size="1.778" layer="21" align="center">-</text>
+<text x="-6" y="0" size="1.778" layer="21" align="center">+</text>
+<text x="0" y="6" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="0" y="0" radius="3" width="6" layer="39"/>
+<circle x="-2.54" y="0" radius="0.508" width="1.016" layer="40"/>
+<circle x="2.54" y="0" radius="0.508" width="1.016" layer="40"/>
+</package>
+<package name="3362P">
+<description>3362P Trimpot
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/54/3362-776956.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="-2.54" y="0" drill="0.6" first="yes"/>
+<pad name="2" x="0" y="2.54" drill="0.6"/>
+<pad name="3" x="2.54" y="0" drill="0.6"/>
+<wire x1="-3.53" y1="3.53" x2="3.53" y2="3.53" width="0.127" layer="21"/>
+<wire x1="3.53" y1="3.53" x2="3.53" y2="-3.53" width="0.127" layer="21"/>
+<wire x1="3.53" y1="-3.53" x2="-3.53" y2="-3.53" width="0.127" layer="21"/>
+<wire x1="-3.53" y1="-3.53" x2="-3.53" y2="3.53" width="0.127" layer="21"/>
+<text x="0" y="3.81" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.81" y1="-3.81" x2="3.81" y2="3.81" layer="39"/>
+<circle x="-2.54" y="0" radius="0.508" width="1.016" layer="40"/>
+<circle x="2.54" y="0" radius="0.508" width="1.016" layer="40"/>
+<circle x="0" y="2.54" radius="0.508" width="1.016" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -10987,6 +11018,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="200V"/>
 </technology>
+<technology name="1K">
+<attribute name="DKPN" value="P1.0KADTR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P06J102V"/>
+<attribute name="MPN" value="ERJ-P06J102V"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="1k"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="22.36V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
+</technology>
 <technology name="1M">
 <attribute name="DKPN" value="P20936TR-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -14642,7 +14684,7 @@ Requires ordering of:
 <gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="EEUFP1E*">
+<device name="" package="EEU-FP1E*">
 <connects>
 <connect gate="G$1" pin="MINUS" pad="MINUS"/>
 <connect gate="G$1" pin="PLUS" pad="PLUS"/>
@@ -15182,6 +15224,117 @@ CPC1020NTR
 <attribute name="MANUFACTURER" value="Digi"/>
 <attribute name="MOPN" value="888-XB3-C-A2-UT-001"/>
 <attribute name="MPN" value="XB3-C-A2-UT-001"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGICGATE_OR" prefix="U">
+<description>OR Gate
+&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g34.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="LOGICGATE_OR" x="20.32" y="-5.08"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-70-5">
+<connects>
+<connect gate="A" pin="IN1" pad="1"/>
+<connect gate="A" pin="IN2" pad="2"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="296-22348-2-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-SN74LVC32IDCKREP"/>
+<attribute name="MPN" value="SN74LVC1G32IDCKREP"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EEH-AZS*" prefix="C">
+<description>EEH_AZS Hybrid Electrolytic Capacitor &lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/DMD0000COL92-1141863.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EEH-AZS">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="MINUS"/>
+<connect gate="G$1" pin="PLUS" pad="PLUS"/>
+</connects>
+<technologies>
+<technology name="1V471B">
+<attribute name="CAPACITANCE" value="470µF"/>
+<attribute name="DKPN" value="10-EEH-AZS1V471BCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value=" 667-EEH-AZS1V471B"/>
+<attribute name="MPN" value=" EEH-AZS1V471B"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="35V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR_TRIMPOT_*_?" prefix="VR">
+<description>Variable Resistor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/54/3362-776956.pdf"&gt;Bourns 3362P Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR_TRIMPOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3362P" package="3362P">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="2"/>
+</connects>
+<technologies>
+<technology name="10K">
+<attribute name="DKPN" value="3362P-103LF-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-3362P-1-103LF"/>
+<attribute name="MPN" value="3362P-1-103LF"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="10k"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="70.711V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGICGATE_NAND" prefix="U">
+<description>NAND Gate
+&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g34.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="LOGICGATE_NAND" x="20.32" y="-5.08"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-70-5">
+<connects>
+<connect gate="A" pin="IN1" pad="1"/>
+<connect gate="A" pin="IN2" pad="2"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="296-22339-2-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-SN74LVC00MDCKREP"/>
+<attribute name="MPN" value="SN74LVC1G00MDCKREP"/>
 </technology>
 </technologies>
 </device>
