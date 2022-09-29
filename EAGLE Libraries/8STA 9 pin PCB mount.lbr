@@ -191,9 +191,9 @@
 <package name="8STA20205S-MOUNT">
 <description>8STA20609S
 &lt;br&gt;
-&lt;a href="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_high_density_datasheet.pdf" &gt;Catalog&lt;/a&gt;
+&lt;a href="http://www.souriau.co.jp/material/8sta.pdf" &gt;Catalog&lt;/a&gt;
 &lt;br&gt;
-&lt;a href ="http://www.souriau.co.jp/material/8sta.pdf" &gt;Datasheet&lt;/a&gt;</description>
+&lt;a href ="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_high_density_datasheet.pdf" &gt;Datasheet&lt;/a&gt;</description>
 <pad name="8" x="-0.85" y="2.05" drill="0.8" diameter="1.2"/>
 <pad name="7" x="-2.05" y="0.85" drill="0.8" diameter="1.2"/>
 <pad name="6" x="-2.05" y="-0.85" drill="0.8" diameter="1.2"/>
