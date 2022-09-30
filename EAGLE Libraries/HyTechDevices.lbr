@@ -15434,6 +15434,13 @@ CPC1020NTR
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-9_?_*" prefix="J">
+<description>Souriau 9 pin connector
+&lt;br&gt;
+8STA20609SN
+&lt;br&gt;
+&lt;a href="http://www.souriau.co.jp/material/8sta.pdf" &gt;Catalog&lt;/a&gt;
+&lt;br&gt;
+&lt;a href ="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_high_density_datasheet.pdf" &gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_09" x="0" y="0"/>
 </gates>
