@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -210,6 +210,9 @@
 <pin name="RG1" x="-2.54" y="2.54" visible="off" length="short"/>
 <pin name="RG2" x="-2.54" y="-2.54" visible="off" length="short"/>
 <pin name="VREF" x="6.35" y="-6.35" visible="off" length="short" direction="in" rot="R90"/>
+<text x="-10.16" y="2.54" size="1.27" layer="95">RG1</text>
+<text x="-10.16" y="-2.54" size="1.27" layer="95">RG2</text>
+<text x="5.08" y="-10.16" size="1.27" layer="95">VREF</text>
 </symbol>
 <symbol name="PWR_GND">
 <pin name="VDD" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
@@ -223,12 +226,13 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="INA823">
-<description>INA823 OP-AMP
-&lt;a href="https://www.ti.com/lit/ds/symlink/ina823.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1664732413637&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D26%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fina823&lt;/a&gt;</description>
+<deviceset name="INA823*" prefix="U">
+<description>INA823 Precision, Low-Power, Wide-Supply (2.7-V to 36-V) Instrumentation Amplifier 
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/ina823.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1664732413637&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D26%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fina823"&gt;Datasheet&lt;/A&gt;</description>
 <gates>
 <gate name="G$1" symbol="OPAMP" x="3.81" y="0"/>
-<gate name="G$2" symbol="PWR_GND" x="-16.51" y="7.62"/>
+<gate name="G$2" symbol="PWR_GND" x="-21.59" y="5.08"/>
 </gates>
 <devices>
 <device name="" package="SOIC-08(NARROW,0.15&quot;)">
@@ -243,13 +247,11 @@
 <connect gate="G$2" pin="VDD" pad="7"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DKPN" value="296-INA823DRCT-ND" constant="no"/>
+<technology name="DT">
+<attribute name="DKPN" value="296-INA823DTCT-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
-<attribute name="MOPN" value="595-INA823DR
-" constant="no"/>
-<attribute name="MPN" value="INA823DR
-" constant="no"/>
+<attribute name="MOPN" value="595-INA823DT" constant="no"/>
+<attribute name="MPN" value="INA823DT" constant="no"/>
 </technology>
 </technologies>
 </device>
