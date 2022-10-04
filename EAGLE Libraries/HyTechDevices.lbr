@@ -15637,6 +15637,7 @@ CPC1020NTR
 <connect gate="G$1" pin="39" pad="39"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="40" pad="40"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="SAM8560-ND "/>
@@ -15645,6 +15646,8 @@ CPC1020NTR
 <attribute name="MPN" value="EHT-120-01-S-D" constant="no"/>
 </technology>
 </technologies>
+</device>
+</devices>
 </deviceset>
 <deviceset name="CONNECTOR-9_?_*" prefix="J">
 <description>Souriau 9 pin connector
