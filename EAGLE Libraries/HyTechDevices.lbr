@@ -5121,6 +5121,70 @@ See breadboard placement for pin distancing
 <wire x1="0" y1="-5.5" x2="-0.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="0" y1="-5.5" x2="0.5" y2="-5" width="0.127" layer="51"/>
 </package>
+<package name="SOURIAU_02-05">
+<description>Souriau 5 pin connector
+&lt;br&gt;
+8STA20205SE
+&lt;br&gt;
+&lt;a href="http://www.souriau.co.jp/material/8sta.pdf" &gt;Catalog&lt;/a&gt;
+&lt;br&gt;
+&lt;a href ="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_high_density_datasheet.pdf" &gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="0" y="1.45" drill="0.8" diameter="1.2" first="yes"/>
+<pad name="2" x="1.38" y="0.45" drill="0.8" diameter="1.2"/>
+<pad name="3" x="0.85" y="-1.18" drill="0.8" diameter="1.2"/>
+<pad name="4" x="-0.85" y="-1.18" drill="0.8" diameter="1.2"/>
+<pad name="5" x="-1.38" y="0.45" drill="0.8" diameter="1.2"/>
+<circle x="0" y="0" radius="2" width="4" layer="40"/>
+<circle x="0" y="0" radius="3" width="6" layer="39"/>
+<text x="0" y="6.1" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="4.493259375" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">&gt;NAME</text>
+<circle x="0" y="0" radius="4" width="0.127" layer="22"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
+<hole x="5.409365625" y="5.409365625" drill="2.9"/>
+<circle x="5.409365625" y="5.409365625" radius="3" width="0" layer="39"/>
+<circle x="5.409365625" y="5.409365625" radius="3" width="0" layer="40"/>
+<circle x="5.409365625" y="5.409365625" radius="3" width="0" layer="41"/>
+<circle x="5.409365625" y="5.409365625" radius="3" width="0" layer="42"/>
+<hole x="-5.409365625" y="-5.409365625" drill="2.9"/>
+<circle x="-5.409365625" y="-5.409365625" radius="3" width="0" layer="39"/>
+<circle x="-5.409365625" y="-5.409365625" radius="3" width="0" layer="40"/>
+<circle x="-5.409365625" y="-5.409365625" radius="3" width="0" layer="41"/>
+<circle x="-5.409365625" y="-5.409365625" radius="3" width="0" layer="42"/>
+</package>
+<package name="SOURIAU_06-09">
+<description>Souriau 9 pin connector
+&lt;br&gt;
+8STA20609SN
+&lt;br&gt;
+&lt;a href="http://www.souriau.co.jp/material/8sta.pdf" &gt;Catalog&lt;/a&gt;
+&lt;br&gt;
+&lt;a href ="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_high_density_datasheet.pdf" &gt;Datasheet&lt;/a&gt;</description>
+<pad name="8" x="-0.85" y="2.05" drill="0.8" diameter="1.2"/>
+<pad name="7" x="-2.05" y="0.85" drill="0.8" diameter="1.2"/>
+<pad name="6" x="-2.05" y="-0.85" drill="0.8" diameter="1.2"/>
+<pad name="5" x="-0.85" y="-2.05" drill="0.8" diameter="1.2"/>
+<pad name="4" x="0.85" y="-2.05" drill="0.8" diameter="1.2"/>
+<pad name="3" x="2.05" y="-0.85" drill="0.8" diameter="1.2"/>
+<pad name="2" x="2.05" y="0.85" drill="0.8" diameter="1.2"/>
+<pad name="1" x="0.85" y="2.05" drill="0.8" diameter="1.2" first="yes"/>
+<pad name="9" x="0" y="0" drill="0.8" diameter="1.2"/>
+<circle x="0" y="0" radius="3" width="6" layer="40"/>
+<circle x="0" y="0" radius="4" width="8" layer="39"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="22"/>
+<circle x="0" y="0" radius="8" width="0.127" layer="21"/>
+<text x="0" y="8.2" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="6.5" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">&gt;NAME</text>
+<hole x="6.434671875" y="6.434671875" drill="2.9"/>
+<circle x="6.434671875" y="6.434671875" radius="3" width="0" layer="39"/>
+<circle x="6.434671875" y="6.434671875" radius="3" width="0" layer="40"/>
+<circle x="6.434671875" y="6.434671875" radius="3" width="0" layer="41"/>
+<circle x="6.434671875" y="6.434671875" radius="3" width="0" layer="42"/>
+<hole x="-6.434671875" y="-6.434671875" drill="2.9"/>
+<circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="39"/>
+<circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="40"/>
+<circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="41"/>
+<circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="42"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -14551,6 +14615,21 @@ Requires ordering of:
 </technology>
 </technologies>
 </device>
+<device name="" package="SOURIAU_02-05">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Souriau"/>
+<attribute name="MPN" value="8STA20205SE"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="MOUNTING_HEATSINK_*" prefix="H">
@@ -15558,6 +15637,33 @@ CPC1020NTR
 <connect gate="G$1" pin="39" pad="39"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="40" pad="40"/>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="SAM8560-ND "/>
+<attribute name="MANUFACTURER" value="Samtec" constant="no"/>
+<attribute name="MOPN" value="200-EHT12001SD"/>
+<attribute name="MPN" value="EHT-120-01-S-D" constant="no"/>
+</technology>
+</technologies>
+</deviceset>
+<deviceset name="CONNECTOR-9_?_*" prefix="J">
+<description>Souriau 9 pin connector
+&lt;br&gt;
+8STA20609SN
+&lt;br&gt;
+&lt;a href="http://www.souriau.co.jp/material/8sta.pdf" &gt;Catalog&lt;/a&gt;
+&lt;br&gt;
+&lt;a href ="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_high_density_datasheet.pdf" &gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_09" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOURIAU_06-09">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
@@ -15566,10 +15672,8 @@ CPC1020NTR
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="SAM8560-ND "/>
-<attribute name="MANUFACTURER" value="Samtec" constant="no"/>
-<attribute name="MOPN" value="200-EHT12001SD"/>
-<attribute name="MPN" value="EHT-120-01-S-D" constant="no"/>
+<attribute name="MANUFACTURER" value="Souriau"/>
+<attribute name="MPN" value="8STA20609SN"/>
 </technology>
 </technologies>
 </device>
