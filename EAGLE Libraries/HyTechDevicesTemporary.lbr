@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -182,57 +182,67 @@
 &lt;a href="http://suddendocs.samtec.com/prints/eht-d.pdf" &gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.digikey.com/en/products/detail/samtec-inc/EHT-120-01-S-D/1106698" &gt;Part&lt;/a&gt;</description>
-<pad name="1" x="-19" y="1" drill="0.9" first="yes"/>
-<pad name="2" x="-19" y="-1" drill="0.9"/>
-<pad name="3" x="-17" y="1" drill="0.9"/>
-<pad name="4" x="-17" y="-1" drill="0.9"/>
-<pad name="5" x="-15" y="1" drill="0.9"/>
-<pad name="6" x="-15" y="-1" drill="0.9"/>
-<pad name="7" x="-13" y="1" drill="0.9"/>
-<pad name="8" x="-13" y="-1" drill="0.9"/>
-<pad name="9" x="-11" y="1" drill="0.9"/>
-<pad name="10" x="-11" y="-1" drill="0.9"/>
-<pad name="11" x="-9" y="1" drill="0.9"/>
-<pad name="12" x="-9" y="-1" drill="0.9"/>
-<pad name="13" x="-7" y="1" drill="0.9"/>
-<pad name="14" x="-7" y="-1" drill="0.9"/>
-<pad name="15" x="-5" y="1" drill="0.9"/>
-<pad name="16" x="-5" y="-1" drill="0.9"/>
-<pad name="17" x="-3" y="1" drill="0.9"/>
-<pad name="18" x="-3" y="-1" drill="0.9"/>
-<pad name="19" x="-1" y="1" drill="0.9"/>
-<pad name="20" x="-1" y="-1" drill="0.9"/>
-<pad name="21" x="1" y="1" drill="0.9"/>
-<pad name="22" x="1" y="-1" drill="0.9"/>
-<pad name="23" x="3" y="1" drill="0.9"/>
-<pad name="24" x="3" y="-1" drill="0.9"/>
-<pad name="25" x="5" y="1" drill="0.9"/>
-<pad name="26" x="5" y="-1" drill="0.9"/>
-<pad name="27" x="7" y="1" drill="0.9"/>
-<pad name="28" x="7" y="-1" drill="0.9"/>
-<pad name="29" x="9" y="1" drill="0.9"/>
-<pad name="30" x="9" y="-1" drill="0.9"/>
-<pad name="31" x="11" y="1" drill="0.9"/>
-<pad name="32" x="11" y="-1" drill="0.9"/>
-<pad name="33" x="13" y="1" drill="0.9"/>
-<pad name="34" x="13" y="-1" drill="0.9"/>
-<pad name="35" x="15" y="1" drill="0.9"/>
-<pad name="36" x="15" y="-1" drill="0.9"/>
+<pad name="1" x="-19" y="-1" drill="0.9" first="yes"/>
+<pad name="2" x="-19" y="1" drill="0.9"/>
+<pad name="3" x="-17" y="-1" drill="0.9"/>
+<pad name="4" x="-17" y="1" drill="0.9"/>
+<pad name="5" x="-15" y="-1" drill="0.9"/>
+<pad name="6" x="-15" y="1" drill="0.9"/>
+<pad name="7" x="-13" y="-1" drill="0.9"/>
+<pad name="8" x="-13" y="1" drill="0.9"/>
+<pad name="9" x="-11" y="-1" drill="0.9"/>
+<pad name="10" x="-11" y="1" drill="0.9"/>
+<pad name="11" x="-9" y="-1" drill="0.9"/>
+<pad name="12" x="-9" y="1" drill="0.9"/>
+<pad name="13" x="-7" y="-1" drill="0.9"/>
+<pad name="14" x="-7" y="1" drill="0.9"/>
+<pad name="15" x="-5" y="-1" drill="0.9"/>
+<pad name="16" x="-5" y="1" drill="0.9"/>
+<pad name="17" x="-3" y="-1" drill="0.9"/>
+<pad name="18" x="-3" y="1" drill="0.9"/>
+<pad name="19" x="-1" y="-1" drill="0.9"/>
+<pad name="20" x="-1" y="1" drill="0.9"/>
+<pad name="21" x="1" y="-1" drill="0.9"/>
+<pad name="22" x="1" y="1" drill="0.9"/>
+<pad name="23" x="3" y="-1" drill="0.9"/>
+<pad name="24" x="3" y="1" drill="0.9"/>
+<pad name="25" x="5" y="-1" drill="0.9"/>
+<pad name="26" x="5" y="1" drill="0.9"/>
+<pad name="27" x="7" y="-1" drill="0.9"/>
+<pad name="28" x="7" y="1" drill="0.9"/>
+<pad name="29" x="9" y="-1" drill="0.9"/>
+<pad name="30" x="9" y="1" drill="0.9"/>
+<pad name="31" x="11" y="-1" drill="0.9"/>
+<pad name="32" x="11" y="1" drill="0.9"/>
+<pad name="33" x="13" y="-1" drill="0.9"/>
+<pad name="34" x="13" y="1" drill="0.9"/>
+<pad name="35" x="15" y="-1" drill="0.9"/>
+<pad name="36" x="15" y="1" drill="0.9"/>
 <wire x1="-24.985" y1="3.27" x2="24.985" y2="3.27" width="0.127" layer="21"/>
-<wire x1="-24.985" y1="-3.27" x2="24.985" y2="-3.27" width="0.127" layer="21"/>
+<wire x1="-24.985" y1="-3.27" x2="-1" y2="-3.27" width="0.127" layer="21"/>
+<wire x1="-1" y1="-3.27" x2="1" y2="-3.27" width="0.127" layer="21"/>
+<wire x1="1" y1="-3.27" x2="24.985" y2="-3.27" width="0.127" layer="21"/>
 <wire x1="-24.985" y1="-3.27" x2="-24.985" y2="3.27" width="0.127" layer="21"/>
 <wire x1="24.985" y1="-3.27" x2="24.985" y2="3.27" width="0.127" layer="21"/>
-<pad name="37" x="17" y="1" drill="0.9"/>
-<pad name="38" x="17" y="-1" drill="0.9"/>
-<pad name="39" x="19" y="1" drill="0.9"/>
-<pad name="40" x="19" y="-1" drill="0.9"/>
-<text x="-19" y="3.302" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<pad name="37" x="17" y="-1" drill="0.9"/>
+<pad name="38" x="17" y="1" drill="0.9"/>
+<pad name="39" x="19" y="-1" drill="0.9"/>
+<pad name="40" x="19" y="1" drill="0.9"/>
+<text x="-25.5" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-24.985" y1="-3.27" x2="24.985" y2="3.27" layer="39"/>
 <rectangle x1="-24.985" y1="-3.27" x2="24.985" y2="3.27" layer="40"/>
+<wire x1="-1" y1="-3.27" x2="-1" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-2.5" x2="1" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-2.5" x2="1" y2="-3.27" width="0.127" layer="21"/>
+<circle x="-19" y="-1" radius="1" width="0.127" layer="21"/>
+<text x="0" y="-7" size="0.8128" layer="51" font="vector" align="bottom-center">RIBBON EXITS THIS WAY</text>
+<wire x1="0" y1="-4" x2="0" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.5" x2="-0.5" y2="-5" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.5" x2="0.5" y2="-5" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
-<symbol name="RIBBON_CONNECTOR_40">
+<symbol name="CONNECTOR_40">
 <description>40 pin ribbon connector header</description>
 <wire x1="7.62" y1="-104.14" x2="0" y2="-104.14" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-50.8" x2="5.08" y2="-50.8" width="0.6096" layer="94"/>
@@ -323,7 +333,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CONNECTOR-40_?_*">
+<deviceset name="CONNECTOR-40_?_*" prefix="J">
 <description>40 pin ribbon connector header (EHT-120-01)
 &lt;br&gt;
 &lt;a href="https://suddendocs.samtec.com/catalog_english/eht.pdf" &gt;Catalog&lt;/a&gt;
@@ -332,7 +342,7 @@
 &lt;br&gt;
 &lt;a href="https://www.digikey.com/en/products/detail/samtec-inc/EHT-120-01-S-D/1106698" &gt;Part&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="RIBBON_CONNECTOR_40" x="0" y="0"/>
+<gate name="G$1" symbol="CONNECTOR_40" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="EHT-120-01">
@@ -380,8 +390,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="SAM8560-ND
-"/>
+<attribute name="DKPN" value="SAM8560-ND "/>
 <attribute name="MANUFACTURER" value="Samtec" constant="no"/>
 <attribute name="MOPN" value="200-EHT12001SD"/>
 <attribute name="MPN" value="EHT-120-01-S-D" constant="no"/>
