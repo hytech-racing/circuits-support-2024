@@ -5055,6 +5055,72 @@ See breadboard placement for pin distancing
 <circle x="2.54" y="0" radius="0.508" width="1.016" layer="40"/>
 <circle x="0" y="2.54" radius="0.508" width="1.016" layer="40"/>
 </package>
+<package name="EHT-120-01">
+<description>40 pin ribbon connector header (EHT-120-01)
+&lt;br&gt;
+&lt;a href="https://suddendocs.samtec.com/catalog_english/eht.pdf" &gt;Catalog&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="http://suddendocs.samtec.com/prints/eht-d.pdf" &gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.digikey.com/en/products/detail/samtec-inc/EHT-120-01-S-D/1106698" &gt;Part&lt;/a&gt;</description>
+<pad name="1" x="-19" y="-1" drill="0.9" first="yes"/>
+<pad name="2" x="-19" y="1" drill="0.9"/>
+<pad name="3" x="-17" y="-1" drill="0.9"/>
+<pad name="4" x="-17" y="1" drill="0.9"/>
+<pad name="5" x="-15" y="-1" drill="0.9"/>
+<pad name="6" x="-15" y="1" drill="0.9"/>
+<pad name="7" x="-13" y="-1" drill="0.9"/>
+<pad name="8" x="-13" y="1" drill="0.9"/>
+<pad name="9" x="-11" y="-1" drill="0.9"/>
+<pad name="10" x="-11" y="1" drill="0.9"/>
+<pad name="11" x="-9" y="-1" drill="0.9"/>
+<pad name="12" x="-9" y="1" drill="0.9"/>
+<pad name="13" x="-7" y="-1" drill="0.9"/>
+<pad name="14" x="-7" y="1" drill="0.9"/>
+<pad name="15" x="-5" y="-1" drill="0.9"/>
+<pad name="16" x="-5" y="1" drill="0.9"/>
+<pad name="17" x="-3" y="-1" drill="0.9"/>
+<pad name="18" x="-3" y="1" drill="0.9"/>
+<pad name="19" x="-1" y="-1" drill="0.9"/>
+<pad name="20" x="-1" y="1" drill="0.9"/>
+<pad name="21" x="1" y="-1" drill="0.9"/>
+<pad name="22" x="1" y="1" drill="0.9"/>
+<pad name="23" x="3" y="-1" drill="0.9"/>
+<pad name="24" x="3" y="1" drill="0.9"/>
+<pad name="25" x="5" y="-1" drill="0.9"/>
+<pad name="26" x="5" y="1" drill="0.9"/>
+<pad name="27" x="7" y="-1" drill="0.9"/>
+<pad name="28" x="7" y="1" drill="0.9"/>
+<pad name="29" x="9" y="-1" drill="0.9"/>
+<pad name="30" x="9" y="1" drill="0.9"/>
+<pad name="31" x="11" y="-1" drill="0.9"/>
+<pad name="32" x="11" y="1" drill="0.9"/>
+<pad name="33" x="13" y="-1" drill="0.9"/>
+<pad name="34" x="13" y="1" drill="0.9"/>
+<pad name="35" x="15" y="-1" drill="0.9"/>
+<pad name="36" x="15" y="1" drill="0.9"/>
+<wire x1="-24.985" y1="3.27" x2="24.985" y2="3.27" width="0.127" layer="21"/>
+<wire x1="-24.985" y1="-3.27" x2="-1" y2="-3.27" width="0.127" layer="21"/>
+<wire x1="-1" y1="-3.27" x2="1" y2="-3.27" width="0.127" layer="21"/>
+<wire x1="1" y1="-3.27" x2="24.985" y2="-3.27" width="0.127" layer="21"/>
+<wire x1="-24.985" y1="-3.27" x2="-24.985" y2="3.27" width="0.127" layer="21"/>
+<wire x1="24.985" y1="-3.27" x2="24.985" y2="3.27" width="0.127" layer="21"/>
+<pad name="37" x="17" y="-1" drill="0.9"/>
+<pad name="38" x="17" y="1" drill="0.9"/>
+<pad name="39" x="19" y="-1" drill="0.9"/>
+<pad name="40" x="19" y="1" drill="0.9"/>
+<text x="-25.5" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-24.985" y1="-3.27" x2="24.985" y2="3.27" layer="39"/>
+<rectangle x1="-24.985" y1="-3.27" x2="24.985" y2="3.27" layer="40"/>
+<wire x1="-1" y1="-3.27" x2="-1" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-2.5" x2="1" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-2.5" x2="1" y2="-3.27" width="0.127" layer="21"/>
+<circle x="-19" y="-1" radius="1" width="0.127" layer="21"/>
+<text x="0" y="-7" size="0.8128" layer="51" font="vector" align="bottom-center">RIBBON EXITS THIS WAY</text>
+<wire x1="0" y1="-4" x2="0" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.5" x2="-0.5" y2="-5" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.5" x2="0.5" y2="-5" width="0.127" layer="51"/>
+</package>
 <package name="SOURIAU_02-05">
 <description>Souriau 5 pin connector
 &lt;br&gt;
@@ -9160,6 +9226,113 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="15.24" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="CONNECTOR_40">
+<description>40 pin ribbon connector header</description>
+<wire x1="7.62" y1="-104.14" x2="0" y2="-104.14" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-50.8" x2="5.08" y2="-50.8" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-104.14" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-104.14" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-45.72" x2="5.08" y2="-45.72" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-48.26" x2="5.08" y2="-48.26" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-43.18" x2="5.08" y2="-43.18" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-40.64" x2="5.08" y2="-40.64" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-38.1" x2="5.08" y2="-38.1" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-35.56" x2="5.08" y2="-35.56" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-33.02" x2="5.08" y2="-33.02" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-30.48" x2="5.08" y2="-30.48" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-27.94" x2="5.08" y2="-27.94" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-25.4" x2="5.08" y2="-25.4" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-22.86" x2="5.08" y2="-22.86" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-20.32" x2="5.08" y2="-20.32" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-17.78" x2="5.08" y2="-17.78" width="0.6096" layer="94"/>
+<text x="0" y="0.127" size="1.27" layer="95">&gt;NAME</text>
+<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="10.16" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="10.16" y="-15.24" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="10.16" y="-17.78" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="8" x="10.16" y="-20.32" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="9" x="10.16" y="-22.86" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="10" x="10.16" y="-25.4" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="11" x="10.16" y="-27.94" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="12" x="10.16" y="-30.48" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="13" x="10.16" y="-33.02" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="14" x="10.16" y="-35.56" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="15" x="10.16" y="-38.1" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="16" x="10.16" y="-40.64" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-15.24" x2="5.08" y2="-15.24" width="0.6096" layer="94"/>
+<pin name="17" x="10.16" y="-43.18" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
+<pin name="18" x="10.16" y="-45.72" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
+<pin name="19" x="10.16" y="-48.26" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
+<pin name="20" x="10.16" y="-50.8" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
+<text x="0" y="-104.267" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="3.81" y1="-101.6" x2="5.08" y2="-101.6" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-96.52" x2="5.08" y2="-96.52" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-99.06" x2="5.08" y2="-99.06" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-93.98" x2="5.08" y2="-93.98" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-91.44" x2="5.08" y2="-91.44" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-88.9" x2="5.08" y2="-88.9" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-86.36" x2="5.08" y2="-86.36" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-83.82" x2="5.08" y2="-83.82" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-81.28" x2="5.08" y2="-81.28" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-78.74" x2="5.08" y2="-78.74" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-76.2" x2="5.08" y2="-76.2" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-73.66" x2="5.08" y2="-73.66" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-71.12" x2="5.08" y2="-71.12" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-68.58" x2="5.08" y2="-68.58" width="0.6096" layer="94"/>
+<pin name="21" x="10.16" y="-53.34" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="22" x="10.16" y="-55.88" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="23" x="10.16" y="-58.42" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="24" x="10.16" y="-60.96" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="25" x="10.16" y="-63.5" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="26" x="10.16" y="-66.04" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="27" x="10.16" y="-68.58" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="28" x="10.16" y="-71.12" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="29" x="10.16" y="-73.66" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="30" x="10.16" y="-76.2" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="31" x="10.16" y="-78.74" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="32" x="10.16" y="-81.28" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="33" x="10.16" y="-83.82" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="34" x="10.16" y="-86.36" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="35" x="10.16" y="-88.9" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="36" x="10.16" y="-91.44" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-66.04" x2="5.08" y2="-66.04" width="0.6096" layer="94"/>
+<pin name="37" x="10.16" y="-93.98" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-63.5" x2="5.08" y2="-63.5" width="0.6096" layer="94"/>
+<pin name="38" x="10.16" y="-96.52" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-60.96" x2="5.08" y2="-60.96" width="0.6096" layer="94"/>
+<pin name="39" x="10.16" y="-99.06" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-58.42" x2="5.08" y2="-58.42" width="0.6096" layer="94"/>
+<pin name="40" x="10.16" y="-101.6" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-55.88" x2="5.08" y2="-55.88" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-53.34" x2="5.08" y2="-53.34" width="0.6096" layer="94"/>
+</symbol>
+<symbol name="OPAMP-1">
+<text x="4.953" y="5.588" size="1.27" layer="95">&gt;NAME</text>
+<text x="8.763" y="-4.318" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="VIN-" x="-2.54" y="-5.08" visible="pad" length="short" direction="in"/>
+<pin name="VIN+" x="-2.54" y="5.08" visible="pad" length="short" direction="in"/>
+<pin name="VOUT" x="15.24" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<wire x1="0" y1="7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="0" y2="7.62" width="0.254" layer="94"/>
+<text x="1.143" y="5.08" size="1.778" layer="94" rot="R90" align="center">+</text>
+<rectangle x1="0.5842" y1="-5.1689" x2="1.80848125" y2="-4.9911" layer="94"/>
+<pin name="RG1" x="-2.54" y="2.54" visible="off" length="short"/>
+<pin name="RG2" x="-2.54" y="-2.54" visible="off" length="short"/>
+<pin name="VREF" x="6.35" y="-6.35" visible="off" length="short" direction="in" rot="R90"/>
+<text x="0.762" y="2.54" size="1.016" layer="95" align="center-left">RG1</text>
+<text x="0.762" y="-2.54" size="1.016" layer="95" align="center-left">RG2</text>
+<text x="6.35" y="-2.794" size="1.016" layer="95" rot="R90" align="center-left">VREF</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -15433,6 +15606,67 @@ CPC1020NTR
 </device>
 </devices>
 </deviceset>
+<deviceset name="CONNECTOR-40_?_*" prefix="J">
+<description>40 pin ribbon connector header (EHT-120-01)
+&lt;br&gt;
+&lt;a href="https://suddendocs.samtec.com/catalog_english/eht.pdf" &gt;Catalog&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="http://suddendocs.samtec.com/prints/eht-d.pdf" &gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.digikey.com/en/products/detail/samtec-inc/EHT-120-01-S-D/1106698" &gt;Part&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_40" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EHT-120-01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="25" pad="25"/>
+<connect gate="G$1" pin="26" pad="26"/>
+<connect gate="G$1" pin="27" pad="27"/>
+<connect gate="G$1" pin="28" pad="28"/>
+<connect gate="G$1" pin="29" pad="29"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="30" pad="30"/>
+<connect gate="G$1" pin="31" pad="31"/>
+<connect gate="G$1" pin="32" pad="32"/>
+<connect gate="G$1" pin="33" pad="33"/>
+<connect gate="G$1" pin="34" pad="34"/>
+<connect gate="G$1" pin="35" pad="35"/>
+<connect gate="G$1" pin="36" pad="36"/>
+<connect gate="G$1" pin="37" pad="37"/>
+<connect gate="G$1" pin="38" pad="38"/>
+<connect gate="G$1" pin="39" pad="39"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="40" pad="40"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="SAM8560-ND "/>
+<attribute name="MANUFACTURER" value="Samtec" constant="no"/>
+<attribute name="MOPN" value="200-EHT12001SD"/>
+<attribute name="MPN" value="EHT-120-01-S-D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="CONNECTOR-9_?_*" prefix="J">
 <description>Souriau 9 pin connector
 &lt;br&gt;
@@ -15461,6 +15695,37 @@ CPC1020NTR
 <technology name="">
 <attribute name="MANUFACTURER" value="Souriau"/>
 <attribute name="MPN" value="8STA20609SN"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INA823*" prefix="U">
+<description>INA823 Precision, Low-Power, Wide-Supply (2.7-V to 36-V) Instrumentation Amplifier 
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/ina823.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1664732413637&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D26%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fina823"&gt;Datasheet&lt;/A&gt;</description>
+<gates>
+<gate name="A" symbol="OPAMP-1" x="3.81" y="0"/>
+<gate name="P" symbol="PWR_GND" x="-21.59" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
+<connects>
+<connect gate="A" pin="RG1" pad="1"/>
+<connect gate="A" pin="RG2" pad="8"/>
+<connect gate="A" pin="VIN+" pad="3"/>
+<connect gate="A" pin="VIN-" pad="2"/>
+<connect gate="A" pin="VOUT" pad="6"/>
+<connect gate="A" pin="VREF" pad="5"/>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="P" pin="VDD" pad="7"/>
+</connects>
+<technologies>
+<technology name="DT">
+<attribute name="DKPN" value="296-INA823DTCT-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MOPN" value="595-INA823DT" constant="no"/>
+<attribute name="MPN" value="INA823DT" constant="no"/>
 </technology>
 </technologies>
 </device>
