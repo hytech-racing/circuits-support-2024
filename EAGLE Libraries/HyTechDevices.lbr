@@ -14476,7 +14476,7 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
-<deviceset name="RELAY_DPDT" prefix="K">
+<deviceset name="RELAY_DPDT_*" prefix="K">
 <description>Dual Pole, Dual Throw Relay
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/418/5/NG_DS_RT2_1014-572844.pdf"&gt;Datasheet&lt;/a&gt;
@@ -14497,11 +14497,17 @@ Requires ordering of:
 <connect gate="G$1" pin="COIL-" pad="A2"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="RT424009">
 <attribute name="DKPN" value="PB2021-ND"/>
 <attribute name="MANUFACTURER" value="TE Connectivity"/>
 <attribute name="MOPN" value="655-6-1393243-2"/>
 <attribute name="MPN" value="RT424009"/>
+</technology>
+<technology name="RT424024">
+<attribute name="DKPN" value="PB969-ND"/>
+<attribute name="MANUFACTURER" value="TE Connectivity"/>
+<attribute name="MOPN" value="655-RT424024"/>
+<attribute name="MPN" value="RT424024"/>
 </technology>
 </technologies>
 </device>
