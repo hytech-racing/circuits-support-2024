@@ -52,8 +52,8 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -5184,6 +5184,44 @@ See breadboard placement for pin distancing
 <circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="40"/>
 <circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="41"/>
 <circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="42"/>
+</package>
+<package name="CLM-107-02">
+<description>Samtec Tiger Claw CLM107-02 14 pin female header
+&lt;br&gt;
+&lt;a href="https://suddendocs.samtec.com/catalog_english/clm_sm.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<hole x="0" y="-0.5" drill="0.56"/>
+<hole x="0" y="0.5" drill="0.56"/>
+<hole x="-1" y="0.5" drill="0.56"/>
+<hole x="-1" y="-0.5" drill="0.56"/>
+<hole x="-2" y="0.5" drill="0.56"/>
+<hole x="-2" y="-0.5" drill="0.56"/>
+<hole x="1" y="0.5" drill="0.56"/>
+<hole x="1" y="-0.5" drill="0.56"/>
+<hole x="2" y="0.5" drill="0.56"/>
+<hole x="2" y="-0.5" drill="0.56"/>
+<hole x="-3" y="0.5" drill="0.56"/>
+<hole x="-3" y="-0.5" drill="0.56"/>
+<hole x="3" y="0.5" drill="0.56"/>
+<hole x="3" y="-0.5" drill="0.56"/>
+<smd name="1" x="-3" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="-3" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="-2" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="-2" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="5" x="-1" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="6" x="-1" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="7" x="0" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="8" x="0" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="9" x="1" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="10" x="1" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="11" x="2" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="12" x="2" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="13" x="3" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<smd name="14" x="3" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-3.659" y1="1.27" x2="3.659" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.659" y1="1.27" x2="3.659" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.659" y1="-1.27" x2="-3.659" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-3.659" y1="-1.27" x2="-3.659" y2="1.27" width="0.127" layer="21"/>
+<text x="-3.81" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15105,7 +15143,9 @@ Requires ordering of:
 <deviceset name="CONNECTOR-14_?_*" prefix="J">
 <description>14 pin connector
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430451414_PCB_HEADERS-2877114.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430451414_PCB_HEADERS-2877114.pdf"&gt;Molex Micro-Fit Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://suddendocs.samtec.com/catalog_english/clm_sm.pdf"&gt;Samtec Tiger Claw Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_14" x="0" y="0"/>
 </gates>
@@ -15133,6 +15173,32 @@ Requires ordering of:
 <attribute name="MANUFACTURER" value="MOLEX"/>
 <attribute name="MOPN" value="538-43045-1414 "/>
 <attribute name="MPN" value="430451414"/>
+</technology>
+</technologies>
+</device>
+<device name="TC_F_V" package="CLM-107-02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="SAM1129-07-ND"/>
+<attribute name="MANUFACTURER" value="Samtec Inc."/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="CLM-107-02"/>
 </technology>
 </technologies>
 </device>
