@@ -5215,6 +5215,32 @@ See breadboard placement for pin distancing
 <circle x="-7.56604375" y="-7.56604375" radius="3" width="0" layer="41"/>
 <circle x="-7.56604375" y="-7.56604375" radius="3" width="0" layer="42"/>
 </package>
+<package name="M12A-08PMMP">
+<description>M12A-08PMMP Amphenol Connector
+&lt;p&gt;
+&lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/M12A-08PMMP-SF8001.pdf"&gt;Datasheet 1&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/MSeries_M12%20A.B.D_Code_Product_Spec.pdf"&gt;Datasheet 2&lt;/a&gt;</description>
+<pad name="1" x="2.68990625" y="0.57175625" drill="1" first="yes"/>
+<pad name="8" x="0" y="0" drill="1"/>
+<pad name="2" x="0.57175625" y="2.68990625" drill="1"/>
+<pad name="3" x="-1.654990625" y="2.196246875" drill="1"/>
+<pad name="4" x="-2.7433" y="0.19183125" drill="1"/>
+<pad name="5" x="-1.94454375" y="-1.94454375" drill="1"/>
+<pad name="6" x="0.19183125" y="-2.7433" drill="1"/>
+<pad name="7" x="2.196246875" y="-1.654990625" drill="1"/>
+<circle x="0" y="0" radius="9" width="0.127" layer="21"/>
+<text x="0" y="10.652" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="0" y="0" radius="5.25" width="10.5" layer="39"/>
+<circle x="0" y="0" radius="2.1" width="4.2" layer="40"/>
+<circle x="0" y="0" radius="10.3" width="0.127" layer="21"/>
+<wire x1="-5" y1="9" x2="5" y2="9" width="0.127" layer="21"/>
+<wire x1="5" y1="9" x2="10.3" y2="0" width="0.127" layer="21"/>
+<wire x1="10.3" y1="0" x2="5" y2="-9" width="0.127" layer="21"/>
+<wire x1="5" y1="-9" x2="-5" y2="-9" width="0.127" layer="21"/>
+<wire x1="-5" y1="-9" x2="-10.3" y2="0" width="0.127" layer="21"/>
+<wire x1="-10.3" y1="0" x2="-5" y2="9" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -12374,6 +12400,26 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MOPN" value=""/>
 <attribute name="MPN" value="PPPC042LFBN-RC"/>
+</technology>
+</technologies>
+</device>
+<device name="AMPHENOL_M12A_08PMMP" package="M12A-08PMMP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1754-1026-ND"/>
+<attribute name="MANUFACTURER" value="Amphenol LTW"/>
+<attribute name="MOPN" value="523-M12A08PMMPSF8001"/>
+<attribute name="MPN" value="M12A-08PMMP-SF8001"/>
 </technology>
 </technologies>
 </device>
