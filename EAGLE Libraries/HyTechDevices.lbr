@@ -5185,6 +5185,21 @@ See breadboard placement for pin distancing
 <circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="41"/>
 <circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="42"/>
 </package>
+<package name="B2B-PH-K">
+<description>B2B-PH-K
+&lt;br&gt;
+&lt;a href="https://www.farnell.com/datasheets/2057211.pdf" &gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-2.95" y1="2.25" x2="-2.95" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-2.25" x2="2.95" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="2.95" y1="-2.25" x2="2.95" y2="2.25" width="0.127" layer="21"/>
+<wire x1="2.95" y1="2.25" x2="-2.95" y2="2.25" width="0.127" layer="21"/>
+<pad name="1" x="-1" y="0.55" drill="1" first="yes"/>
+<pad name="2" x="1" y="0.55" drill="1"/>
+<rectangle x1="-4.064" y1="-3.048" x2="4.064" y2="3.048" layer="39"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3" y1="-1" x2="3" y2="2" layer="40"/>
+<circle x="-3.546" y="0.519" radius="0.127" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -9415,6 +9430,26 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43650-0217"/>
 <attribute name="MPN" value="436500217"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="B2B-PH-K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="B2B-PH-K">
+<attribute name="DKPN" value="455-1704-ND"/>
+<attribute name="MANUFACTURER" value="JST Sales America Inc."/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
 </technology>
 </technologies>
 </device>
