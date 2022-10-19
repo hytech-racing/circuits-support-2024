@@ -5185,6 +5185,36 @@ See breadboard placement for pin distancing
 <circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="41"/>
 <circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="42"/>
 </package>
+<package name="SOURIAU_10-35">
+<description>Souriau 13 pin connector 
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/379/P088_P096-179693.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="0" y="3.71" drill="1" first="yes"/>
+<pad name="2" x="2.16" y="3" drill="1"/>
+<pad name="4" x="3.51" y="-1.14" drill="1"/>
+<pad name="3" x="3.51" y="1.14" drill="1"/>
+<pad name="5" x="2.16" y="-3" drill="1"/>
+<pad name="6" x="0" y="-3.71" drill="1"/>
+<pad name="7" x="-2.16" y="-3" drill="1"/>
+<pad name="8" x="-3.51" y="-1.14" drill="1"/>
+<pad name="9" x="-3.51" y="1.14" drill="1"/>
+<pad name="10" x="-2.16" y="3" drill="1"/>
+<pad name="11" x="0" y="1.42" drill="1"/>
+<pad name="12" x="1.24" y="-0.89" drill="1"/>
+<pad name="13" x="-1.24" y="-0.89" drill="1"/>
+<circle x="0" y="0" radius="7.435" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="4.875" width="9.75" layer="39"/>
+<circle x="0" y="0" radius="3.7175" width="7.435" layer="40"/>
+<text x="0" y="10.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<hole x="9.157" y="9.157" drill="3.4"/>
+<hole x="-9.157" y="-9.157" drill="3.4"/>
+<circle x="9.157" y="9.157" radius="1.5" width="3" layer="39"/>
+<circle x="-9.157" y="-9.157" radius="1.5" width="3" layer="39"/>
+<text x="0" y="7.73" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">&gt;NAME</text>
+<circle x="9.157" y="9.157" radius="1.5" width="3" layer="40"/>
+<circle x="-9.157" y="-9.157" radius="1.5" width="3" layer="40"/>
+<circle x="0" y="0" radius="9.75" width="0.127" layer="21"/>
+</package>
 <package name="SOURIAU_08-35">
 <description>Souriau 6 pin connector
 &lt;br&gt;
@@ -9389,6 +9419,40 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <text x="0.762" y="2.54" size="1.016" layer="95" align="center-left">RG1</text>
 <text x="0.762" y="-2.54" size="1.016" layer="95" align="center-left">RG2</text>
 <text x="6.35" y="-2.794" size="1.016" layer="95" rot="R90" align="center-left">VREF</text>
+</symbol>
+<symbol name="CONNECTOR_13">
+<wire x1="7.62" y1="-35.56" x2="0" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-15.24" x2="5.08" y2="-15.24" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-35.56" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
+<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="10.16" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="10.16" y="-15.24" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="10.16" y="-17.78" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="8" x="10.16" y="-20.32" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-17.78" x2="5.08" y2="-17.78" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-20.32" x2="5.08" y2="-20.32" width="0.6096" layer="94"/>
+<pin name="9" x="10.16" y="-22.86" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="10" x="10.16" y="-25.4" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-22.86" x2="5.08" y2="-22.86" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-25.4" x2="5.08" y2="-25.4" width="0.6096" layer="94"/>
+<pin name="11" x="10.16" y="-27.94" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="12" x="10.16" y="-30.48" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="-27.94" x2="5.08" y2="-27.94" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-30.48" x2="5.08" y2="-30.48" width="0.6096" layer="94"/>
+<text x="0" y="-36.195" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="3.81" y1="-33.02" x2="5.08" y2="-33.02" width="0.6096" layer="94"/>
+<pin name="13" x="10.16" y="-33.02" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -15825,6 +15889,41 @@ CPC1020NTR
 <attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
 <attribute name="MOPN" value="595-INA823DT" constant="no"/>
 <attribute name="MPN" value="INA823DT" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-13_?_*" prefix="J">
+<description>13 pin connector
+&lt;br&gt;
+&lt;a href="https://www.souriau.com/en-en/system/files/application/downloads/8sta_series_pc_tail_contacts_datasheet_0.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_13" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOURIAU" package="SOURIAU_10-35">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Souriau"/>
+<attribute name="MOPN" value="649-8STA21035PN"/>
+<attribute name="MPN" value="8STA21035PN"/>
 </technology>
 </technologies>
 </device>
