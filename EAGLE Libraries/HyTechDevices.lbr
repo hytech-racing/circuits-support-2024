@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5353,7 +5353,6 @@ Teensy 3.2/4.0 Footprint
 <wire x1="-6.35" y1="-17.78" x2="-8.89" y2="-17.78" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="-17.78" x2="-8.89" y2="17.78" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="17.78" x2="-6.35" y2="17.78" width="0.127" layer="21"/>
-<circle x="-9.398" y="17.78" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-25.654" y1="-3.048" x2="10.414" y2="3.048" layer="39" rot="R270"/>
 <smd name="D9" x="9.398" y="8.89" dx="1.905" dy="1.02" layer="1"/>
 <smd name="D8" x="5.842" y="6.35" dx="1.905" dy="1.02" layer="1"/>
@@ -5372,25 +5371,19 @@ Teensy 3.2/4.0 Footprint
 <wire x1="8.89" y1="17.78" x2="8.89" y2="-17.78" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-17.78" x2="6.35" y2="-17.78" width="0.127" layer="21"/>
 <wire x1="6.35" y1="17.78" x2="8.89" y2="17.78" width="0.127" layer="21"/>
-<circle x="5.842" y="17.78" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-10.414" y1="-3.048" x2="25.654" y2="3.048" layer="39" rot="R270"/>
-<wire x1="-8.89" y1="-18.034" x2="-8.89" y2="18.034" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="17.78" x2="6.35" y2="17.78" width="0.127" layer="21"/>
-<wire x1="8.89" y1="18.034" x2="8.89" y2="-18.034" width="0.127" layer="21"/>
 <text x="0" y="-15.621" size="2.032" layer="21" font="vector" rot="R180" align="center">&gt;TEENSY</text>
-<rectangle x1="6.096" y1="-18.288" x2="9.144" y2="18.288" layer="40"/>
-<wire x1="-8.89" y1="18.034" x2="-6.35" y2="18.034" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="18.034" x2="-6.35" y2="17.78" width="0.127" layer="21"/>
-<wire x1="8.89" y1="18.034" x2="6.35" y2="18.034" width="0.127" layer="21"/>
-<wire x1="6.35" y1="18.034" x2="6.35" y2="17.78" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="-18.034" x2="-6.35" y2="-18.034" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-18.034" x2="-6.35" y2="-17.78" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-18.034" x2="6.35" y2="-18.034" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-18.034" x2="6.35" y2="-17.78" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="-17.78" x2="-6.35" y2="17.78" width="0.127" layer="21"/>
 <wire x1="6.35" y1="17.78" x2="6.35" y2="-17.78" width="0.127" layer="21"/>
-<rectangle x1="6.096" y1="-18.288" x2="9.144" y2="18.288" layer="39"/>
-<wire x1="-6.35" y1="-17.78" x2="6.35" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-12.7" x2="-3.81" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-17.78" x2="-3.81" y2="-18.542" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-18.542" x2="3.81" y2="-18.542" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-18.542" x2="3.81" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-17.78" x2="3.81" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-12.7" x2="-3.81" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-17.78" x2="-3.81" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-17.78" x2="6.35" y2="-17.78" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -13352,14 +13345,14 @@ with up to 100mA of output current
 &lt;br&gt;
 Requires ordering of:
 &lt;ul&gt;
-&lt;li&gt;2: 14 pin, 0.1" pitch female headers
+&lt;li&gt;2: 14 pin, 0.1" pitch female headers. Recommend Samtec SSM-114-L-SV for surface mount variant.
 &lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_4.0" x="0" y="0"/>
 </gates>
 <devices>
-<device name="TEENSY_TH" package="TEENSY_SHORT">
+<device name="TH" package="TEENSY_SHORT">
 <connects>
 <connect gate="G$1" pin="(CLK)D13" pad="D13"/>
 <connect gate="G$1" pin="(CRX1)D0" pad="D0"/>
@@ -13395,7 +13388,7 @@ Requires ordering of:
 </technology>
 </technologies>
 </device>
-<device name="" package="TEENSY_SHORT_SSM">
+<device name="SM" package="TEENSY_SHORT_SSM">
 <connects>
 <connect gate="G$1" pin="(CLK)D13" pad="D13"/>
 <connect gate="G$1" pin="(CRX1)D0" pad="D0"/>
