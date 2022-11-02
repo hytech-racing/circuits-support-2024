@@ -5201,7 +5201,7 @@ See breadboard placement for pin distancing
 <circle x="-3.546" y="0.519" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="SOURIAU_10-35">
-<description>Souriau 13 pin connector 
+<description>Souriau 13 pin connector
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/379/P088_P096-179693.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pad name="1" x="0" y="3.71" drill="1" first="yes"/>
@@ -13755,6 +13755,10 @@ ISO224B: High-Grade
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/308/NCP785A_D-1812704.pdf"&gt;NCP785AH120T1G&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.ti.com/lit/ds/symlink/lms8117a.pdf?HQS"&gt;LMS8117A Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/389/st732-1830546.pdf"&gt;ST732M50R Datasheet&lt;/a&gt;&lt;/li&gt;
+
+
+&lt;li&gt;&lt;a href="https://www.ti.com/lit/ds/symlink/lm2937.pdf"&gt;LM2937IMPX-10/NOPB Datasheet&lt;/a&gt;&lt;/li&gt;
+
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
@@ -13767,6 +13771,13 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
+<technology name="10V">
+<attribute name="DKPN" value="LM2937IMPX-10/NOPBDKR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MOPN" value="926-LM2937IMP-10NOPB" constant="no"/>
+<attribute name="MPN" value="
+LM2937IMPX-10/NOPB"/>
+</technology>
 <technology name="3.3V">
 <attribute name="DKPN" value="LMS8117AMP-3.3/NOPBCT-ND"/>
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
@@ -13778,6 +13789,24 @@ ISO224B: High-Grade
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
 <attribute name="MOPN" value="511-LDL1117S50R"/>
 <attribute name="MPN" value="LDL1117S50R"/>
+</technology>
+<technology name="REGULATOR">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="SOT-223">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="VOLTAGE">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -16086,7 +16115,7 @@ CPC1020NTR
 </devices>
 </deviceset>
 <deviceset name="INA823*" prefix="U">
-<description>INA823 Precision, Low-Power, Wide-Supply (2.7-V to 36-V) Instrumentation Amplifier 
+<description>INA823 Precision, Low-Power, Wide-Supply (2.7-V to 36-V) Instrumentation Amplifier
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/ina823.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1664732413637&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D26%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fina823"&gt;Datasheet&lt;/A&gt;</description>
 <gates>
