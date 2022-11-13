@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5384,6 +5384,60 @@ Teensy 3.2/4.0 Footprint
 <wire x1="3.81" y1="-12.7" x2="-3.81" y2="-12.7" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="-17.78" x2="-3.81" y2="-17.78" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-17.78" x2="6.35" y2="-17.78" width="0.127" layer="21"/>
+</package>
+<package name="ADIS16460">
+<description>Samtec Tiger Claw CLM107-02 14 pin female header. Adapted for ADIS16460
+&lt;br&gt;
+&lt;a href="https://suddendocs.samtec.com/catalog_english/clm_sm.pdf"&gt;Connector Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADIS16460.pdf"&gt;ADIS16460 Datasheet&lt;/a&gt;</description>
+<hole x="0" y="-0.5" drill="0.56"/>
+<hole x="0" y="0.5" drill="0.56"/>
+<hole x="-1" y="0.5" drill="0.56"/>
+<hole x="-1" y="-0.5" drill="0.56"/>
+<hole x="-2" y="0.5" drill="0.56"/>
+<hole x="-2" y="-0.5" drill="0.56"/>
+<hole x="1" y="0.5" drill="0.56"/>
+<hole x="1" y="-0.5" drill="0.56"/>
+<hole x="2" y="0.5" drill="0.56"/>
+<hole x="2" y="-0.5" drill="0.56"/>
+<hole x="-3" y="0.5" drill="0.56"/>
+<hole x="-3" y="-0.5" drill="0.56"/>
+<hole x="3" y="0.5" drill="0.56"/>
+<hole x="3" y="-0.5" drill="0.56"/>
+<smd name="1" x="-3" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="2" x="-3" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="3" x="-2" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="4" x="-2" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="5" x="-1" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="6" x="-1" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="7" x="0" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="8" x="0" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="9" x="1" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="10" x="1" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="11" x="2" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="12" x="2" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="13" x="3" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<smd name="14" x="3" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
+<wire x1="-3.659" y1="-1.27" x2="3.659" y2="-1.27" width="0.127" layer="22"/>
+<wire x1="3.659" y1="-1.27" x2="3.659" y2="1.27" width="0.127" layer="22"/>
+<wire x1="3.659" y1="1.27" x2="-3.659" y2="1.27" width="0.127" layer="22"/>
+<wire x1="-3.659" y1="1.27" x2="-3.659" y2="-1.27" width="0.127" layer="22"/>
+<text x="0" y="-3.81" size="0.8128" layer="26" font="vector" align="top-center">&gt;NAME</text>
+<hole x="-7.1" y="-0.19" drill="2.4"/>
+<hole x="7.1" y="-0.19" drill="2.4"/>
+<hole x="0" y="18.06" drill="2.4"/>
+<wire x1="-11.2" y1="-3.49" x2="-11.2" y2="18.91" width="0.1524" layer="21"/>
+<wire x1="11.2" y1="18.91" x2="11.2" y2="-3.49" width="0.1524" layer="21"/>
+<wire x1="-11.2" y1="-3.49" x2="11.2" y2="-3.49" width="0.1524" layer="21"/>
+<wire x1="-2.6" y1="18.91" x2="2.6" y2="18.91" width="0.1524" layer="21" curve="-143"/>
+<wire x1="-11.2" y1="18.91" x2="-2.6" y2="18.91" width="0.1524" layer="21"/>
+<wire x1="2.6" y1="18.91" x2="11.2" y2="18.91" width="0.1524" layer="21"/>
+<rectangle x1="-11.43" y1="-3.81" x2="11.43" y2="21.082" layer="39"/>
+<circle x="-7.1" y="-0.19" radius="0.889" width="1.778" layer="40"/>
+<circle x="7.1" y="-0.19" radius="0.889" width="1.778" layer="40"/>
+<circle x="0" y="18.06" radius="0.889" width="1.778" layer="40"/>
+<rectangle x1="-3.81" y1="-1.524" x2="3.81" y2="1.524" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -13775,8 +13829,7 @@ ISO224B: High-Grade
 <attribute name="DKPN" value="LM2937IMPX-10/NOPBDKR-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
 <attribute name="MOPN" value="926-LM2937IMP-10NOPB" constant="no"/>
-<attribute name="MPN" value="
-LM2937IMPX-10/NOPB"/>
+<attribute name="MPN" value=" LM2937IMPX-10/NOPB"/>
 </technology>
 <technology name="3.3V">
 <attribute name="DKPN" value="LMS8117AMP-3.3/NOPBCT-ND"/>
@@ -16200,6 +16253,109 @@ CPC1020NTR
 <attribute name="MANUFACTURER" value="NKK Switches"/>
 <attribute name="MOPN" value="633-CS12ANW03"/>
 <attribute name="MPN" value="CS12ANW03"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADIS16460*" prefix="J">
+<description>14 pin connector specifically for ADIS16460 IMU
+&lt;br&gt;
+&lt;a href="https://suddendocs.samtec.com/catalog_english/clm_sm.pdf"&gt;Samtec Tiger Claw Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADIS16460.pdf"&gt;ADIS16460 Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_14" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ADIS16460">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="SAM1129-07-ND"/>
+<attribute name="MANUFACTURER" value="Samtec Inc."/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="CLM-107-02"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGICGATE_NOR">
+<description>NOR Gate
+&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g02.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="LOGICGATE_NOR" x="17.78" y="-5.08"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-70-5">
+<connects>
+<connect gate="A" pin="IN1" pad="1"/>
+<connect gate="A" pin="IN2" pad="2"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="296-11598-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-SN74LVC1G02DCKR"/>
+<attribute name="MPN" value="SN74LVC1G02DCKR"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_DPDT_*" prefix="K">
+<description>Dual Pole, Dual Throw Relay
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/5/NG_DS_RT2_1014-572844.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RT*2*">
+<connects>
+<connect gate="G$1" pin="2" pad="12"/>
+<connect gate="G$1" pin="3" pad="11"/>
+<connect gate="G$1" pin="4" pad="14"/>
+<connect gate="G$1" pin="5" pad="24"/>
+<connect gate="G$1" pin="6" pad="21"/>
+<connect gate="G$1" pin="7" pad="22"/>
+<connect gate="G$1" pin="COIL+" pad="A1"/>
+<connect gate="G$1" pin="COIL-" pad="A2"/>
+</connects>
+<technologies>
+<technology name="RT424009">
+<attribute name="DKPN" value="PB2021-ND"/>
+<attribute name="MANUFACTURER" value="TE Connectivity"/>
+<attribute name="MOPN" value="655-6-1393243-2"/>
+<attribute name="MPN" value="RT424009"/>
+</technology>
+<technology name="RT424024">
+<attribute name="DKPN" value="PB969-ND"/>
+<attribute name="MANUFACTURER" value="TE Connectivity"/>
+<attribute name="MOPN" value="655-RT424024"/>
+<attribute name="MPN" value="RT424024"/>
 </technology>
 </technologies>
 </device>
