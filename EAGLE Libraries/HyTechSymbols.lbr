@@ -2553,10 +2553,17 @@ Source: Schukat</description>
 <devices>
 <device name="">
 <technologies>
+<technology name="">
+<attribute name="FREQ" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="1KHZ">
 <attribute name="FREQ" value="1kHz"/>
-<attribute name="MANUFACTURER" value="Analog Devices Inc." constant="no"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MPN" value="MAX7400"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
