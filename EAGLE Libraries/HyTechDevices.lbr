@@ -5202,6 +5202,7 @@ Neopixel RGB LED
 <text x="-3" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <circle x="0" y="0" radius="1" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
+</package>
 <package name="B2B-PH-K">
 <description>B2B-PH-K
 &lt;br&gt;
@@ -9621,6 +9622,7 @@ Neopixel RGB LED
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
 <text x="0" y="0.762" size="1.27" layer="95" font="vector">&gt;NAME</text>
 <text x="0" y="-16.002" size="1.27" layer="96" font="vector" align="top-left">&gt;MPN</text>
+</symbol>
 <symbol name="CONNECTOR_13">
 <wire x1="7.62" y1="-35.56" x2="0" y2="-35.56" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
@@ -16254,6 +16256,11 @@ Neopixel RGB LED
 <attribute name="MANUFACTURER" value="SparkFun Electronics"/>
 <attribute name="MOPN" value="474-COM-16347"/>
 <attribute name="MPN" value="COM-16347"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="CONNECTOR-13_?_*" prefix="J">
 <description>13 pin connector
 &lt;br&gt;
