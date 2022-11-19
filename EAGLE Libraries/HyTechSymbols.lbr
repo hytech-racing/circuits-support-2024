@@ -2014,6 +2014,11 @@ Source: Schukat</description>
 <attribute name="MPN" value="G4-0017-01"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="HK-J-H650-12">
+<attribute name="MANUFACTURER" value="Elcon"/>
+<attribute name="MPN" value="HK-J-H650-12"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2107,6 +2112,11 @@ Source: Schukat</description>
 <technology name="ANDERSON">
 <attribute name="MANUFACTURER" value="Anderson Power Products"/>
 <attribute name="MPN" value="ASMFP30-1X2-RK"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="DY6-1ZP">
+<attribute name="MANUFACTURER" value="XINXI"/>
+<attribute name="MPN" value="DY6-1ZP"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="EVH2-N2TK-TDA">
