@@ -2124,6 +2124,11 @@ Source: Schukat</description>
 <attribute name="MPN" value="EVH2-N2TK-TDA" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="HIROSE">
+<attribute name="MANUFACTURER" value="Hirose Electric"/>
+<attribute name="MPN" value="EM30MSD"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="HPK">
 <attribute name="MANUFACTURER" value="Rosenberger"/>
 <attribute name="MPN" value="HPK"/>
