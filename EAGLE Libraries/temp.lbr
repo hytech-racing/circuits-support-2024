@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -284,6 +284,42 @@
 <text x="10.16" y="-16.764" size="1.778" layer="96" align="bottom-center">GND</text>
 <text x="0" y="-18.542" size="1.778" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="NRF9160">
+<pin name="PS_EN" x="-5.08" y="-2.54" length="middle"/>
+<pin name="TX" x="-5.08" y="-5.08" length="middle"/>
+<pin name="RX" x="-5.08" y="-7.62" length="middle"/>
+<pin name="CIPO" x="-5.08" y="-10.16" length="middle" direction="out"/>
+<pin name="COPI" x="-5.08" y="-12.7" length="middle" direction="in"/>
+<pin name="SCK" x="-5.08" y="-15.24" length="middle"/>
+<pin name="A5" x="-5.08" y="-17.78" length="middle"/>
+<pin name="A4" x="-5.08" y="-20.32" length="middle"/>
+<pin name="A3" x="-5.08" y="-22.86" length="middle"/>
+<pin name="A2" x="-5.08" y="-25.4" length="middle"/>
+<pin name="A0" x="-5.08" y="-30.48" length="middle"/>
+<pin name="A1" x="-5.08" y="-27.94" length="middle"/>
+<pin name="GND" x="-5.08" y="-33.02" length="middle" direction="pwr"/>
+<pin name="MD" x="-5.08" y="-35.56" length="middle"/>
+<pin name="3V3" x="-5.08" y="-38.1" length="middle" direction="pwr"/>
+<pin name="N_RESET" x="-5.08" y="-40.64" length="middle"/>
+<pin name="SDA/0" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCL/1" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="2" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="3" x="27.94" y="-10.16" length="middle" rot="R180"/>
+<pin name="4" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="5" x="27.94" y="-15.24" length="middle" rot="R180"/>
+<pin name="6" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="7" x="27.94" y="-20.32" length="middle" rot="R180"/>
+<pin name="8" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<pin name="VUSB" x="27.94" y="-25.4" length="middle" rot="R180"/>
+<pin name="EN" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="VBAT" x="27.94" y="-30.48" length="middle" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-43.18" width="0.1524" layer="94"/>
+<wire x1="0" y1="-43.18" x2="22.86" y2="-43.18" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="-43.18" x2="22.86" y2="0" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-43.18" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VOLTAGE_REFERENCE_?_*">
@@ -309,6 +345,50 @@
 <attribute name="MOPN" value="700-MAX6176AASA" constant="no"/>
 <attribute name="MPN" value="MAX6176AASA+" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRF9160LTE">
+<description>SparkFun Thing Plus - nRF9160 LTE module
+&lt;br&gt;&lt;a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/5/9/7/nRF9160_PS_v1.2.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="NRF9160" x="-10.16" y="20.32"/>
+</gates>
+<devices>
+<device name="" package="NRF9160LTE">
+<connects>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="CIPO" pad="CIPO"/>
+<connect gate="G$1" pin="COPI" pad="COPI"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MD" pad="MD"/>
+<connect gate="G$1" pin="N_RESET" pad="RESET"/>
+<connect gate="G$1" pin="PS_EN" pad="PS-EN"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="SCL/1" pad="SCL/1"/>
+<connect gate="G$1" pin="SDA/0" pad="SDA/0"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VUSB" pad="VUSB"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
