@@ -5186,20 +5186,20 @@ See breadboard placement for pin distancing
 <circle x="-6.434671875" y="-6.434671875" radius="3" width="0" layer="42"/>
 </package>
 <package name="NEOPIXEL">
-<description>WS2812B
+<description>IN-PI55QATPRPGPBPW-40
 &lt;br&gt;
-Neopixel RGB LED
+Neopixel RGBW LED
 &lt;br&gt;
-&lt;a href="https://www.digikey.com/en/datasheets/parallaxinc/parallax-inc-28085-ws2812b-rgb-led-datasheet"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="3" x="2.25" y="-1.65" dx="0.899159375" dy="0.899159375" layer="1" rot="R270" thermals="no"/>
-<smd name="2" x="-2.25" y="-1.65" dx="0.899159375" dy="0.899159375" layer="1" rot="R270" thermals="no"/>
-<smd name="1" x="-2.25" y="1.65" dx="0.899159375" dy="0.899159375" layer="1" rot="R270" thermals="no"/>
-<smd name="4" x="2.25" y="1.65" dx="0.899159375" dy="0.899159375" layer="1" rot="R270" thermals="no"/>
+&lt;a href="https://www.digikey.com/en/products/detail/inolux/IN-PI55QATPRPGPBPW-40/9681240"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="3" x="2.35" y="-1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
+<smd name="2" x="-2.35" y="-1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
+<smd name="1" x="-2.35" y="1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
+<smd name="4" x="2.35" y="1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
 <wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="22"/>
 <wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="22"/>
 <wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="22"/>
 <wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="22"/>
-<text x="-3" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-3.492" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <circle x="0" y="0" radius="1" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
 </package>
@@ -9607,14 +9607,14 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <text x="6.35" y="-2.794" size="1.016" layer="95" rot="R90" align="center-left">VREF</text>
 </symbol>
 <symbol name="NEOPIXEL">
-<description>WS2812B
+<description>IN-PI55QATPRPGPBPW-40
 &lt;br&gt;
-Neopixel RGB LED
+Neopixel RGBW LED
 &lt;br&gt;
-&lt;a href="https://www.digikey.com/en/datasheets/parallaxinc/parallax-inc-28085-ws2812b-rgb-led-datasheet"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="DIN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+&lt;a href="https://www.digikey.com/en/products/detail/inolux/IN-PI55QATPRPGPBPW-40/9681240"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="DIN" x="-2.54" y="-2.54" length="short" direction="in"/>
 <pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="DOUT" x="20.32" y="-12.7" length="short" direction="pwr" rot="R180"/>
+<pin name="DOUT" x="20.32" y="-12.7" length="short" direction="out" rot="R180"/>
 <pin name="GND" x="-2.54" y="-12.7" length="short" direction="pwr"/>
 <wire x1="17.78" y1="0" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
@@ -16234,11 +16234,11 @@ CPC1020NTR
 </devices>
 </deviceset>
 <deviceset name="NEOPIXEL" prefix="U">
-<description>WS2812B
+<description>IN-PI55QATPRPGPBPW-40
 &lt;br&gt;
-Neopixel RGB LED
+Neopixel RGBW LED
 &lt;br&gt;
-&lt;a href="https://www.digikey.com/en/datasheets/parallaxinc/parallax-inc-28085-ws2812b-rgb-led-datasheet"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.digikey.com/en/products/detail/inolux/IN-PI55QATPRPGPBPW-40/9681240"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="NEOPIXEL" x="0" y="0"/>
 </gates>
@@ -16252,10 +16252,11 @@ Neopixel RGB LED
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="1568-COM-16347TR-ND"/>
-<attribute name="MANUFACTURER" value="SparkFun Electronics"/>
-<attribute name="MOPN" value="474-COM-16347"/>
-<attribute name="MPN" value="COM-16347"/>
+<attribute name="DKPN" value="1830-1210-2-ND"/>
+<attribute name="MANUFACTURER" value="Inolux"/>
+<attribute name="MOPN" value="743-I55QATPRPGPBPW40
+"/>
+<attribute name="MPN" value="IN-PI55QATPRPGPBPW-40"/>
 </technology>
 </technologies>
 </device>
