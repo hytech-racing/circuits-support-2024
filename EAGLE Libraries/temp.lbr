@@ -302,7 +302,7 @@
 <wire x1="22.86" y1="-43.18" x2="22.86" y2="0" width="0.1524" layer="94"/>
 <wire x1="22.86" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-43.18" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="-43.942" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
