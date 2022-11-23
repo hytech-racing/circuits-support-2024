@@ -2259,6 +2259,16 @@ Source: Schukat</description>
 <attribute name="MPN" value=""/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="10MM2">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="10mm^2" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="6MM2">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="6mm^2" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="CT2242-2">
 <attribute name="MANUFACTURER" value="Cal Test Electronics"/>
 <attribute name="MPN" value="CT2242-2"/>
