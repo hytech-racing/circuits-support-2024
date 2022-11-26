@@ -12569,7 +12569,7 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="STL2N80K5">
 <attribute name="DKPN" value="497-14539-1-ND"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
 <attribute name="MOPN" value="511-STL2N80K5"/>
