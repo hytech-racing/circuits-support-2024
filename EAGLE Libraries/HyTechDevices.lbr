@@ -65,6 +65,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -137,6 +138,8 @@
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="156" name="HVSpacing" color="12" fill="1" visible="no" active="yes"/>
 <layer number="157" name="HIGH_VOLTAGE_WIRES" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
@@ -5438,6 +5441,23 @@ Teensy 3.2/4.0 Footprint
 <circle x="7.1" y="-0.19" radius="0.889" width="1.778" layer="40"/>
 <circle x="0" y="18.06" radius="0.889" width="1.778" layer="40"/>
 <rectangle x1="-3.81" y1="-1.524" x2="3.81" y2="1.524" layer="40"/>
+</package>
+<package name="POWERFLAT5X6">
+<description>PowerFLAT 5x6 Footprint for STL2N80K5
+
+
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/389/dm00092662-1798082.pdf"&gt; Datasheet&lt;/a&gt;</description>
+<smd name="D" x="0" y="1.69" dx="3.07" dy="5.4" layer="1" rot="R270"/>
+<smd name="S" x="-0.635" y="-2.835" dx="3.04" dy="0.73" layer="1"/>
+<smd name="G" x="1.905" y="-2.835" dx="0.5" dy="0.72" layer="1"/>
+<wire x1="-2.7" y1="3.175" x2="2.7" y2="3.175" width="0.127" layer="21"/>
+<wire x1="2.7" y1="3.175" x2="2.7" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-3.175" x2="-2.7" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="-3.175" x2="-2.7" y2="3.175" width="0.127" layer="21"/>
+<text x="0" y="3.556" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.048" y1="-3.556" x2="3.048" y2="3.556" layer="39"/>
+<circle x="0" y="3.4036" radius="0.0254" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -11448,6 +11468,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="93.1K">
+<attribute name="DKPN" value="P20197CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B9312V"/>
+<attribute name="MPN" value="ERJ-PB3B9312V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="93.1k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="136V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="DNP">
 <attribute name="DKPN" value=""/>
 <attribute name="MANUFACTURER" value=""/>
@@ -12282,7 +12313,9 @@ Leakage Inductance: 0.50 uH max
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/916/PMV15ENEA-1604828.pdf"&gt;PMV15ENEA Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK6P65W_datasheet_en_20151225-1916290.pdf"&gt;TK6P65W Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.diodes.com/assets/Datasheets/DMG3406L.pdf"&gt;DMG3406L Datasheet&lt;/a&gt;&lt;/li&gt;</description>
+&lt;li&gt;&lt;a href="https://www.diodes.com/assets/Datasheets/DMG3406L.pdf"&gt;DMG3406L Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/389/dm00092662-1798082.pdf"&gt; STL2N80K5&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
@@ -12341,6 +12374,21 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Vishay Siliconix"/>
 <attribute name="MOPN" value="Vishay Siliconix"/>
 <attribute name="MPN" value="SIR638ADP-T1-RE3"/>
+</technology>
+</technologies>
+</device>
+<device name="POWERFLAT5X6" package="POWERFLAT5X6">
+<connects>
+<connect gate="G$1" pin="D" pad="D"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="497-14539-1-ND"/>
+<attribute name="MANUFACTURER" value="STMicroelectronics"/>
+<attribute name="MOPN" value="511-STL2N80K5"/>
+<attribute name="MPN" value="STL2N80K5"/>
 </technology>
 </technologies>
 </device>
@@ -16356,6 +16404,29 @@ CPC1020NTR
 <attribute name="MANUFACTURER" value="TE Connectivity"/>
 <attribute name="MOPN" value="655-RT424024"/>
 <attribute name="MPN" value="RT424024"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ZENER_?_*" prefix="D">
+<gates>
+<gate name="G$1" symbol="DIODE_ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DO-214AA" package="DO-214AA">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="0.03A"/>
+<attribute name="DKPN" value="1SMB5949B-13DICT-ND"/>
+<attribute name="MANUFACTURER" value="Diodes Incorporated"/>
+<attribute name="MOPN" value="621-1SMB5949B-13"/>
+<attribute name="MPN" value="1SMB5949B-13"/>
+<attribute name="ZENER_VOLTAGE" value="100V"/>
 </technology>
 </technologies>
 </device>
