@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -80,11 +80,11 @@
 <smd name="2" x="2.9972" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
 <rectangle x1="6.9596" y1="1.8034" x2="9.398" y2="3.4036" layer="43"/>
 <rectangle x1="-9.398" y1="1.8034" x2="-6.9596" y2="3.4036" layer="43"/>
-<wire x1="2.9972" y1="-4.4323" x2="-2.9972" y2="-4.4323" width="0.127" layer="21"/>
-<wire x1="-8.636" y1="-2.6035" x2="-8.636" y2="5.4737" width="0.127" layer="21"/>
-<wire x1="-2.9972" y1="-4.4323" x2="-8.636" y2="-2.6035" width="0.127" layer="21"/>
-<wire x1="2.9972" y1="-4.4323" x2="8.636" y2="-2.6035" width="0.127" layer="21"/>
-<wire x1="8.636" y1="-2.6035" x2="8.636" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="7.9" y1="-4.4263" x2="-7.9" y2="-4.4263" width="0.127" layer="21"/>
+<wire x1="-9.3" y1="-2.7263" x2="-9.3" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="-4.4263" x2="-9.3" y2="-2.7263" width="0.127" layer="21"/>
+<wire x1="7.9" y1="-4.4263" x2="9.3" y2="-2.7263" width="0.127" layer="21"/>
+<wire x1="9.3" y1="-2.7263" x2="9.3" y2="5.4737" width="0.127" layer="21"/>
 <rectangle x1="-10.16" y1="-5.08" x2="10.16" y2="7.62" layer="39"/>
 <wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="51"/>
 <wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="51" style="shortdash"/>
@@ -104,7 +104,7 @@
 <rectangle x1="-5.08" y1="-26.162" x2="5.08" y2="-5.08" layer="39"/>
 <rectangle x1="-5.08" y1="-26.162" x2="5.08" y2="-9.525" layer="40"/>
 <smd name="3" x="0" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
-<wire x1="-8.636" y1="5.4737" x2="8.636" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="-9.3" y1="5.4737" x2="9.3" y2="5.4737" width="0.127" layer="21"/>
 <smd name="4" x="-2.9972" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
 <smd name="5" x="-5.9944" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
 </package>
