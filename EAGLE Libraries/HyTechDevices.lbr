@@ -16513,8 +16513,10 @@ CPC1020NTR
 </device>
 </devices>
 </deviceset>
-
 <deviceset name="ZENER_?_*" prefix="D">
+<description>Zener Diode
+ &lt;br&gt;
+&lt;a href="https://www.diodes.com/assets/Datasheets/ds32125.pdf"&gt;1SMB5949B-13&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_ZENER" x="0" y="0"/>
 </gates>
@@ -16537,7 +16539,6 @@ CPC1020NTR
 </device>
 </devices>
 </deviceset>
-</devicesets>
 <deviceset name="NRF9160LTE" prefix="A">
 <description>SparkFun Thing Plus - nRF9160 LTE module
 &lt;br&gt;&lt;a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/5/9/7/nRF9160_PS_v1.2.pdf"&gt;Datasheet&lt;/a&gt;
