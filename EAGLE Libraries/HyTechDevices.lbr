@@ -16614,7 +16614,7 @@ CPC1020NTR
 <attribute name="MANUFACTURER" value="Diodes Incorporated"/>
 <attribute name="MOPN" value="621-1SMB5949B-13"/>
 <attribute name="MPN" value="1SMB5949B-13"/>
-<attribute name="ZENER_VOLTAGE" value="100V"/>
+<attribute name="VOLTAGE" value="100V"/>
 </technology>
 </technologies>
 </device>
