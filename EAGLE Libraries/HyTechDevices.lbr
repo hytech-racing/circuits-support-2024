@@ -10146,6 +10146,16 @@ Isolated Flyback Controller
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
+<technology name="25V_4.7UF">
+<attribute name="CAPACITANCE" value="4.7uF"/>
+<attribute name="DKPN" value="445-9050-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C1608X5R1E475K"/>
+<attribute name="MPN" value="
+C1608X5R1E475K080AC"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
 <technology name="25V_47NF">
 <attribute name="CAPACITANCE" value="47nF"/>
 <attribute name="DKPN" value="478-6340-1-ND"/>
@@ -10215,6 +10225,15 @@ Isolated Flyback Controller
 <attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
 <attribute name="MOPN" value="187-CL10B471JB8NNNC"/>
 <attribute name="MPN" value="CL10B471JB8NNNC"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="50V_47PF">
+<attribute name="CAPACITANCE" value="47pF"/>
+<attribute name="DKPN" value="445-12417-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="CGA3E2NP01H470J080AA"/>
+<attribute name="MPN" value="CGA3E2NP01H470J080AA"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
@@ -10805,6 +10824,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="0.02">
+<attribute name="DKPN" value="P17461CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-3BWFR020V"/>
+<attribute name="MPN" value="ERJ-3BWFR020V"/>
+<attribute name="POWER" value="0.33W"/>
+<attribute name="RESISTANCE" value="0.02"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.081V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="0.5">
 <attribute name="DKPN" value="311-.5QTR-ND"/>
@@ -12798,6 +12828,22 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="241-MBR1060HEWSR1000"/>
 <attribute name="MPN" value="MBR1060HEWS_R1_00001"/>
 <attribute name="VOLTAGE" value="60V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-214AA" package="DO-214AA">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="150V">
+<attribute name="CURRENT" value="3A"/>
+<attribute name="DKPN" value="641-1720-1-ND"/>
+<attribute name="MANUFACTURER" value="Comchip Technology"/>
+<attribute name="MOPN" value="750-CDBB3150-HF"/>
+<attribute name="MPN" value="CDBB3150-HF"/>
+<attribute name="VOLTAGE" value="150V"/>
 </technology>
 </technologies>
 </device>
