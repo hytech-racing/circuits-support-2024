@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5543,6 +5543,17 @@ Teensy 3.2/4.0 Footprint
 <text x="0" y="2.286" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-3.556" y1="-2.286" x2="3.556" y2="2.286" layer="39"/>
 </package>
+<package name="SMA">
+<smd name="C" x="2" y="0" dx="2.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="A" x="-2" y="0" dx="2.5" dy="1.7" layer="1" rot="R180"/>
+<wire x1="2.3" y1="-1.45" x2="2.3" y2="1.45" width="0.1524" layer="21"/>
+<wire x1="2.3" y1="1.45" x2="-2.3" y2="1.45" width="0.1524" layer="21"/>
+<wire x1="-2.3" y1="1.45" x2="-2.3" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="-2.3" y1="-1.45" x2="2.3" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.3716" x2="1.27" y2="1.3716" width="0.3048" layer="21"/>
+<text x="0" y="1.778" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.556" y1="-1.778" x2="3.556" y2="1.778" layer="39" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -9834,6 +9845,7 @@ Isolated Flyback Controller
 <text x="0" y="-36.322" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <pin name="VIN" x="-2.54" y="-2.54" length="short" direction="in"/>
 <pin name="BIAS" x="27.94" y="-2.54" length="short" rot="R180"/>
+<pin name="P$1" x="17.78" y="-38.1" visible="off" length="short" direction="out" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10150,8 +10162,7 @@ Isolated Flyback Controller
 <attribute name="DKPN" value="445-9050-1-ND"/>
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
 <attribute name="MOPN" value="810-C1608X5R1E475K"/>
-<attribute name="MPN" value="
-C1608X5R1E475K080AC"/>
+<attribute name="MPN" value=" C1608X5R1E475K080AC"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
@@ -16041,7 +16052,11 @@ CPC1020NTR
 <deviceset name="RECTIFIER_*_?" prefix="D">
 <description>Diodes Incorporated US1GWF
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/115/DIOD_S_A0003383552_1-2542294.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/115/DIOD_S_A0003383552_1-2542294.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Diodes Incorporated US1M
+&lt;br&gt;
+&lt;a href="https://www.diodes.com/assets/Datasheets/ds16008.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE-1" x="0" y="0"/>
 </gates>
@@ -16059,6 +16074,22 @@ CPC1020NTR
 <attribute name="MOPN" value="621-US1GWF-7"/>
 <attribute name="MPN" value="US1GWF-7"/>
 <attribute name="VOLTAGE" value="400V"/>
+</technology>
+</technologies>
+</device>
+<device name="SMA" package="SMA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="1000V">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="US1M-FDITR-ND"/>
+<attribute name="MANUFACTURER" value="Diodes Incorporated"/>
+<attribute name="MOPN" value="621-US1M-F"/>
+<attribute name="MPN" value="US1M-13-F"/>
+<attribute name="VOLTAGE" value="1000V"/>
 </technology>
 </technologies>
 </device>
@@ -16762,6 +16793,7 @@ Isolated Flyback Controller
 <connect gate="G$1" pin="GND" pad="15 20"/>
 <connect gate="G$1" pin="INTVCC" pad="8"/>
 <connect gate="G$1" pin="IREG" pad="14"/>
+<connect gate="G$1" pin="P$1" pad="THERMAL"/>
 <connect gate="G$1" pin="SENSE" pad="18"/>
 <connect gate="G$1" pin="SMODE" pad="16"/>
 <connect gate="G$1" pin="TC" pad="11"/>
