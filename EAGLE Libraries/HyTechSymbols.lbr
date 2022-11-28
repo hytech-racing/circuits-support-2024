@@ -1422,8 +1422,8 @@ Filter</text>
 <pin name="C2" x="45.72" y="-2.54" length="short" direction="out" rot="R180"/>
 <pin name="B2" x="45.72" y="-7.62" length="short" direction="out" rot="R180"/>
 <pin name="A2" x="45.72" y="-12.7" length="short" direction="out" rot="R180"/>
-<pin name="DC34+" x="20.32" y="-43.18" length="short" direction="in" rot="R90"/>
-<pin name="DC34-" x="22.86" y="-43.18" length="short" direction="in" rot="R90"/>
+<pin name="DC3/4+" x="20.32" y="-43.18" length="short" direction="in" rot="R90"/>
+<pin name="DC3/4-" x="22.86" y="-43.18" length="short" direction="in" rot="R90"/>
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
@@ -1456,8 +1456,8 @@ Filter</text>
 <text x="7.62" y="-20.32" size="2.54" layer="97" align="center-left">AMKmotion
 KW26-S5-FSE-4Q </text>
 <wire x1="0" y1="-20.32" x2="43.18" y2="-20.32" width="0.1524" layer="97" style="shortdash"/>
-<pin name="DC12+" x="20.32" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="DC12-" x="22.86" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="DC1/2+" x="20.32" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="DC1/2-" x="22.86" y="2.54" length="short" direction="in" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2551,8 +2551,8 @@ Source: Schukat</description>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="10MM2">
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="10mm^2" constant="no"/>
+<attribute name="MANUFACTURER" value="Panduit Corp"/>
+<attribute name="MPN" value="S2/0-14R-C"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="19054-0042">
@@ -2561,8 +2561,8 @@ Source: Schukat</description>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="6MM2">
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="6mm^2"/>
+<attribute name="MANUFACTURER" value="Panduit Corp"/>
+<attribute name="MPN" value="LCMA10-6-C"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
