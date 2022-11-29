@@ -5307,6 +5307,52 @@ See breadboard placement for pin distancing
 <wire x1="27.051" y1="-3.81" x2="25.4" y2="-3.81" width="0.1524" layer="21"/>
 <wire x1="25.4" y1="-3.81" x2="25.4" y2="3.81" width="0.1524" layer="21"/>
 </package>
+<package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_05_SINGLE">
+<description>5 Pin Micro-Fit Right Angle Header, SMD, Single Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500513"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/436500513_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/436450510_sd.pdf"&gt;Plug Size&lt;/a&gt;
+&lt;br&gt;
+Solid line must not be visible on PCB if no cutout is desired.
+&lt;br&gt;
+Dashed line is edge of mated connector.</description>
+<smd name="PAD1" x="9.8794" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="PAD2" x="-9.8794" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="1" x="5.9944" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<smd name="2" x="2.9972" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<rectangle x1="7.6" y1="1.8" x2="10.05" y2="3.4" layer="43"/>
+<rectangle x1="-10.05" y1="1.8" x2="-7.6" y2="3.4" layer="43"/>
+<wire x1="7.9" y1="-4.4263" x2="-7.9" y2="-4.4263" width="0.127" layer="21"/>
+<wire x1="-9.3" y1="-2.7263" x2="-9.3" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="-4.4263" x2="-9.3" y2="-2.7263" width="0.127" layer="21"/>
+<wire x1="7.9" y1="-4.4263" x2="9.3" y2="-2.7263" width="0.127" layer="21"/>
+<wire x1="9.3" y1="-2.7263" x2="9.3" y2="5.4737" width="0.127" layer="21"/>
+<rectangle x1="-12.319" y1="-5.08" x2="12.319" y2="7.62" layer="39"/>
+<wire x1="-9.144" y1="-10.033" x2="9.144" y2="-10.033" width="0.127" layer="51"/>
+<wire x1="-9.144" y1="-12.3698" x2="9.144" y2="-12.3698" width="0.127" layer="51" style="shortdash"/>
+<text x="0.2286" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-10.05" y1="1.8" x2="-7.6" y2="3.4" layer="41"/>
+<rectangle x1="7.6" y1="1.8" x2="10.05" y2="3.4" layer="41"/>
+<wire x1="-4.4704" y1="-10.033" x2="4.4704" y2="-10.033" width="0" layer="46"/>
+<wire x1="4.4704" y1="-10.033" x2="4.4704" y2="-25.527" width="0" layer="46"/>
+<wire x1="4.4704" y1="-25.527" x2="-4.4704" y2="-25.527" width="0" layer="46"/>
+<wire x1="-4.4704" y1="-25.527" x2="-4.4704" y2="-10.033" width="0" layer="46"/>
+<polygon width="0" layer="20">
+<vertex x="8.128" y="-24.384"/>
+<vertex x="-8.128" y="-24.384"/>
+<vertex x="-8.128" y="-10.033"/>
+<vertex x="8.128" y="-10.033"/>
+</polygon>
+<rectangle x1="-8.636" y1="-24.892" x2="8.636" y2="-5.08" layer="39"/>
+<rectangle x1="-8.636" y1="-24.892" x2="8.636" y2="-9.525" layer="40"/>
+<smd name="3" x="0" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<wire x1="-9.3" y1="5.4737" x2="9.3" y2="5.4737" width="0.127" layer="21"/>
+<smd name="4" x="-2.9972" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<smd name="5" x="-5.9944" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -14897,6 +14943,18 @@ Requires ordering of:
 <attribute name="MANUFACTURER" value="Souriau"/>
 <attribute name="MPN" value="8STA20205PE"/>
 </technology>
+</technologies>
+</device>
+<device name="" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_05_SINGLE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
