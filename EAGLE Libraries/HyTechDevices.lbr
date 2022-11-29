@@ -14945,7 +14945,7 @@ Requires ordering of:
 </technology>
 </technologies>
 </device>
-<device name="" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_05_SINGLE">
+<device name="MICRO_R5S" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_05_SINGLE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
