@@ -5507,6 +5507,23 @@ Teensy 3.2/4.0 Footprint
 <circle x="-6.604" y="-4.628" radius="0.254" width="0.127" layer="21"/>
 <text x="-7.366" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="PDME1-S">
+<description>PDME-1S Series isolated DC-DC converter
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/670/pdme1_s-1595987.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="0" y="0" drill="0.6"/>
+<pad name="2" x="2.54" y="0" drill="0.6"/>
+<pad name="3" x="7.62" y="0" drill="0.6"/>
+<pad name="4" x="10.16" y="0" drill="0.6"/>
+<pad name="5" x="12.7" y="0" drill="0.6"/>
+<wire x1="-2.21" y1="0.9" x2="17.44" y2="0.9" width="0.127" layer="21"/>
+<wire x1="17.44" y1="0.9" x2="17.44" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="17.44" y1="-5.1" x2="-2.21" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="-2.21" y1="-5.1" x2="-2.21" y2="0.9" width="0.127" layer="21"/>
+<rectangle x1="-2.54" y1="-5.334" x2="17.78" y2="1.27" layer="39"/>
+<rectangle x1="-1.27" y1="-1.27" x2="13.97" y2="1.27" layer="40"/>
+<text x="-1.27" y="1.27" size="0.8128" layer="21" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -16583,7 +16600,9 @@ CPC1020NTR
 <deviceset name="VOLTAGE_REGULATOR_ISO_?_*" prefix="U">
 <description>Isolated voltage regulator
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/281/1/kdc_mee3-2940988.pdf"&gt;MEE3XXXXSC Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/281/1/kdc_mee3-2940988.pdf"&gt;MEE3XXXXSC Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/670/pdme1_s-1595987.pdf"&gt;PDME1-S Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR_ISO" x="0" y="0"/>
 </gates>
@@ -16601,6 +16620,22 @@ CPC1020NTR
 <attribute name="MANUFACTURER" value="Murata Power Solutions"/>
 <attribute name="MOPN" value="580-MEE3S0505SC"/>
 <attribute name="MPN" value="MEE3S0505SC"/>
+</technology>
+</technologies>
+</device>
+<device name="PDME1-S" package="PDME1-S">
+<connects>
+<connect gate="G$1" pin="IN+" pad="1"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OUT+" pad="5"/>
+<connect gate="G$1" pin="OUT-" pad="3"/>
+</connects>
+<technologies>
+<technology name="S24-S12">
+<attribute name="DKPN" value="102-PDME1-S24-S12-S-ND"/>
+<attribute name="MANUFACTURER" value="CUI Inc."/>
+<attribute name="MOPN" value="490-PDME1-S24-S12-S"/>
+<attribute name="MPN" value="PDME1-S24-S12-S"/>
 </technology>
 </technologies>
 </device>
