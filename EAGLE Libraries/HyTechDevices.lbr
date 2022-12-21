@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5489,6 +5489,28 @@ Teensy 3.2/4.0 Footprint
 <rectangle x1="8.89" y1="12.7" x2="11.43" y2="53.34" layer="40"/>
 <rectangle x1="-11.43" y1="22.86" x2="-8.89" y2="53.34" layer="39"/>
 <rectangle x1="8.89" y1="12.7" x2="11.43" y2="53.34" layer="39"/>
+</package>
+<package name="M12A-04PMMP">
+<description>M12A-04PMMP Amphenol Connector
+&lt;p&gt;
+&lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/M12A-08PMMP-SF8001.pdf"&gt;Datasheet 1&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/MSeries_M12%20A.B.D_Code_Product_Spec.pdf"&gt;Datasheet 2&lt;/a&gt;</description>
+<pad name="1" x="2.5" y="0" drill="1" first="yes"/>
+<pad name="2" x="0" y="2.5" drill="1"/>
+<pad name="3" x="-2.5" y="0" drill="1"/>
+<pad name="4" x="0" y="-2.5" drill="1"/>
+<circle x="0" y="0" radius="9" width="0.127" layer="21"/>
+<text x="0" y="10.652" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="0" y="0" radius="5.25" width="10.5" layer="39"/>
+<circle x="0" y="0" radius="2.1" width="4.2" layer="40"/>
+<circle x="0" y="0" radius="10.3" width="0.127" layer="21"/>
+<wire x1="-5" y1="9" x2="5" y2="9" width="0.127" layer="21"/>
+<wire x1="5" y1="9" x2="10.3" y2="0" width="0.127" layer="21"/>
+<wire x1="10.3" y1="0" x2="5" y2="-9" width="0.127" layer="21"/>
+<wire x1="5" y1="-9" x2="-5" y2="-9" width="0.127" layer="21"/>
+<wire x1="-5" y1="-9" x2="-10.3" y2="0" width="0.127" layer="21"/>
+<wire x1="-10.3" y1="0" x2="-5" y2="9" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -13347,6 +13369,22 @@ Recommended clock capacitor for the MAX7400/MAX7404:
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43045-0414"/>
 <attribute name="MPN" value="430450414"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="M12A-04PMMP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1754-1007-ND
+" constant="no"/>
+<attribute name="MANUFACTURER" value="Amphenol" constant="no"/>
+<attribute name="MPN" value="M12A-04PMMP-SF8001" constant="no"/>
 </technology>
 </technologies>
 </device>
