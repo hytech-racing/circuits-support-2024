@@ -13372,7 +13372,7 @@ Recommended clock capacitor for the MAX7400/MAX7404:
 </technology>
 </technologies>
 </device>
-<device name="" package="M12A-04PMMP">
+<device name="AMPHENOL_M12A_04PMMP" package="M12A-04PMMP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -13385,6 +13385,11 @@ Recommended clock capacitor for the MAX7400/MAX7404:
 " constant="no"/>
 <attribute name="MANUFACTURER" value="Amphenol" constant="no"/>
 <attribute name="MPN" value="M12A-04PMMP-SF8001" constant="no"/>
+</technology>
+<technology name="M12-4P">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
