@@ -5502,10 +5502,10 @@ Teensy 3.2/4.0 Footprint
 <smd name="6" x="1.6" y="3" dx="2" dy="0.7" layer="1" rot="R90"/>
 <smd name="7" x="-0.6" y="3" dx="2" dy="0.7" layer="1" rot="R90"/>
 <smd name="8" x="-3.8" y="3" dx="2" dy="0.7" layer="1" rot="R90"/>
-<wire x1="-5" y1="-3" x2="5" y2="-3" width="0.127" layer="22"/>
-<wire x1="5" y1="-3" x2="5" y2="3" width="0.127" layer="22"/>
-<wire x1="5" y1="3" x2="-5" y2="3" width="0.127" layer="22"/>
-<wire x1="-5" y1="3" x2="-5" y2="-3" width="0.127" layer="22"/>
+<wire x1="-5" y1="-3" x2="5" y2="-3" width="0.127" layer="21"/>
+<wire x1="5" y1="-3" x2="5" y2="3" width="0.127" layer="21"/>
+<wire x1="5" y1="3" x2="-5" y2="3" width="0.127" layer="21"/>
+<wire x1="-5" y1="3" x2="-5" y2="-3" width="0.127" layer="21"/>
 <text x="-5.3" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-5.334" y1="-3.302" x2="5.334" y2="3.302" layer="39"/>
 </package>
