@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5198,10 +5198,10 @@ Neopixel RGBW LED
 <smd name="2" x="-2.35" y="-1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
 <smd name="1" x="-2.35" y="1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
 <smd name="4" x="2.35" y="1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
-<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="22"/>
-<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="22"/>
-<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="22"/>
-<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="22"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
 <text x="-3.492" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <circle x="0" y="0" radius="1" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
@@ -16361,8 +16361,7 @@ Neopixel RGBW LED
 <technology name="">
 <attribute name="DKPN" value="1830-1210-2-ND"/>
 <attribute name="MANUFACTURER" value="Inolux"/>
-<attribute name="MOPN" value="743-I55QATPRPGPBPW40
-"/>
+<attribute name="MOPN" value="743-I55QATPRPGPBPW40 "/>
 <attribute name="MPN" value="IN-PI55QATPRPGPBPW-40"/>
 </technology>
 </technologies>
