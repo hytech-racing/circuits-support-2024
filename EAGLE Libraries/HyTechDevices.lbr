@@ -5572,15 +5572,14 @@ Teensy 3.2/4.0 Footprint
 <rectangle x1="-2.286" y1="-4.064" x2="2.286" y2="4.064" layer="39"/>
 <rectangle x1="-2.286" y1="-2.286" x2="2.286" y2="2.286" layer="20"/>
 </package>
-<package name="122FUSEHOLDER">
-<description>Fuse Holder and Fuse&lt;li&gt;
-Littelfuse 122
+<package name="122">
+<description>Littelfuse 122 Fuse Holder and Fuse&lt;li&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_508_datasheet.pdf.pdf&gt;Fuse&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.littelfuse.com/~/media/electronics/datasheets/fuse_clips/littelfuse_fuse_clip_102_122_datasheet.pdf.pdf"&gt;Fuse Holder&lt;/a&gt;&lt;/li&gt;
 
 &lt;/ul&gt;</description>
-<pad name="1" x="-17.0942" y="0" drill="1.9812" first="yes"/>
+<pad name="1" x="-17.1069" y="0" drill="1.9812" first="yes"/>
 <pad name="2" x="-9.4742" y="0" drill="1.9812"/>
 <wire x1="-17.0942" y1="3.937" x2="-17.0942" y2="-3.937" width="0.127" layer="21"/>
 <wire x1="-17.0942" y1="3.937" x2="-9.4742" y2="3.937" width="0.127" layer="21"/>
@@ -5588,7 +5587,7 @@ Littelfuse 122
 <wire x1="-9.4742" y1="3.175" x2="-9.4742" y2="-3.937" width="0.127" layer="21"/>
 <wire x1="-17.0942" y1="-3.937" x2="-9.4742" y2="-3.937" width="0.127" layer="21"/>
 <pad name="3" x="9.4996" y="0" drill="1.9812" first="yes"/>
-<pad name="4" x="17.1196" y="0" drill="1.9812"/>
+<pad name="4" x="17.1069" y="0" drill="1.9812"/>
 <wire x1="9.4996" y1="3.937" x2="9.4996" y2="3.175" width="0.127" layer="21" style="shortdash"/>
 <wire x1="9.4996" y1="3.175" x2="9.4996" y2="-3.937" width="0.127" layer="21"/>
 <wire x1="9.4996" y1="3.937" x2="17.1196" y2="3.937" width="0.127" layer="21"/>
@@ -5597,7 +5596,7 @@ Littelfuse 122
 <wire x1="-9.4742" y1="3.175" x2="9.4996" y2="3.175" width="0.127" layer="21" style="shortdash"/>
 <wire x1="-9.398" y1="-3.175" x2="9.398" y2="-3.175" width="0.127" layer="21" style="shortdash"/>
 <rectangle x1="-19.304" y1="-4.826" x2="19.304" y2="4.318" layer="39"/>
-<text x="-0.508" y="5.334" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="0" y="4.572" size="1.016" layer="21" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15198,6 +15197,13 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/215/3568-742601.pdf"&gt;Mini-Blade PTH&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/215/588-744913.pdf"&gt;Mini-Blade SMD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+Littelfuse 122 Fuse Holder and Fuse&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_508_datasheet.pdf.pdf&gt;Fuse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.littelfuse.com/~/media/electronics/datasheets/fuse_clips/littelfuse_fuse_clip_102_122_datasheet.pdf.pdf"&gt;Fuse Holder&lt;/a&gt;&lt;/li&gt;
+
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE_HOLDER" x="-17.78" y="0"/>
@@ -15233,17 +15239,18 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 </technology>
 </technologies>
 </device>
-<device name="122" package="122FUSEHOLDER">
+<device name="122" package="122">
 <connects>
 <connect gate="G$1" pin="1" pad="1 2"/>
 <connect gate="G$1" pin="2" pad="3 4"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="F3783-ND" constant="no"/>
-<attribute name="FUSE_TYPE" value="1 1/4&quot;" constant="no"/>
-<attribute name="MOPN" value="576-01220088Z" constant="no"/>
-<attribute name="MPN" value="01220088Z" constant="no"/>
+<attribute name="DKPN" value="F3783-ND"/>
+<attribute name="FUSE_TYPE" value="1 1/4&quot; Cartridge"/>
+<attribute name="MANUFACTURER" value="Littelfuse"/>
+<attribute name="MOPN" value="576-01220088Z"/>
+<attribute name="MPN" value="01220088Z"/>
 </technology>
 </technologies>
 </device>
@@ -16883,31 +16890,6 @@ Isolated Flyback Controller
 <attribute name="MOPN" value="584-LT8316EFE#PBF"/>
 <attribute name="MPN" value="LT8316EFE#PBF"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="508FUSE">
-<gates>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="122FUSE">
-<gates>
-<gate name="G$1" symbol="FUSE" x="-25.4" y="2.54"/>
-<gate name="G$2" symbol="FUSE_HOLDER" x="-38.1" y="5.08"/>
-<gate name="G$3" symbol="FUSE_HOLDER" x="-15.24" y="5.08"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
