@@ -299,17 +299,17 @@
 <devices>
 <device name="">
 <technologies>
-<technology name="MINI_BLADE_10">
-<attribute name="DKPN" value="F991-ND"/>
-<attribute name="MANUFACTURER" value="Littelfuse"/>
-<attribute name="MOPN" value="576-0297010.WXNV"/>
-<attribute name="MPN" value="0297010.WXNV"/>
-</technology>
 <technology name="MINI_BLADE_1">
 <attribute name="DKPN" value="2298-ANM58-1A-ND"/>
 <attribute name="MANUFACTURER" value="OptiFuse"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="ANM58-1A"/>
+</technology>
+<technology name="MINI_BLADE_10">
+<attribute name="DKPN" value="F991-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse"/>
+<attribute name="MOPN" value="576-0297010.WXNV"/>
+<attribute name="MPN" value="0297010.WXNV"/>
 </technology>
 <technology name="MINI_BLADE_2">
 <attribute name="CURRENT" value="2A"/>
@@ -567,6 +567,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/0430251200_CRIMP_HOUSINGS-145768.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
 </description>
+<gates>
+</gates>
 <devices>
 <device name="">
 <technologies>
@@ -610,6 +612,8 @@
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/0430251400_CRIMP_HOUSINGS-228590.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+<gates>
+</gates>
 <devices>
 <device name="">
 <technologies>
@@ -688,6 +692,60 @@
 <attribute name="DKPN" value="1528-2181-ND"/>
 <attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
 <attribute name="MPN" value="3405"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-16_*" prefix="O">
+<description>Receptacle, 16 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/0430251600_CRIMP_HOUSINGS-142756.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM2490-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-1600"/>
+<attribute name="MPN" value="0430251600"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-18_*" prefix="O">
+<description>Receptacle, 18 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/0430251800_CRIMP_HOUSINGS-228591.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM2491-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-1800"/>
+<attribute name="MPN" value="0430251800"/>
 </technology>
 </technologies>
 </device>

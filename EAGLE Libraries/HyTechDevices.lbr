@@ -5490,31 +5490,75 @@ Teensy 3.2/4.0 Footprint
 <rectangle x1="-11.43" y1="22.86" x2="-8.89" y2="53.34" layer="39"/>
 <rectangle x1="8.89" y1="12.7" x2="11.43" y2="53.34" layer="39"/>
 </package>
-<package name="MOLEX_MICROFIT+_PTH_VERTICAL_18_DUAL">
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_16_DUAL">
+<description>16 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451614"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430451614_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<pad name="2" x="7.5" y="-3" drill="1.0668"/>
+<pad name="1" x="10.5" y="-3" drill="1.0668" first="yes"/>
+<hole x="13.5" y="0.94" drill="1.0668"/>
+<hole x="-13.5" y="0.94" drill="1.0668"/>
+<wire x1="-13.819" y1="-5.461" x2="13.819" y2="-5.461" width="0.127" layer="21"/>
+<wire x1="13.819" y1="-5.461" x2="13.819" y2="1.905" width="0.127" layer="21"/>
+<wire x1="13.819" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-13.819" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-13.819" y1="1.905" x2="-13.819" y2="-5.461" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<text x="0" y="-6.477" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<pad name="3" x="4.5" y="-3" drill="1.0668"/>
+<pad name="4" x="1.5" y="-3" drill="1.0668"/>
+<pad name="5" x="-1.5" y="-3" drill="1.0668"/>
+<pad name="6" x="-4.5" y="-3" drill="1.0668"/>
+<pad name="7" x="-7.5" y="-3" drill="1.0668"/>
+<pad name="8" x="-10.5" y="-3" drill="1.0668"/>
+<pad name="9" x="10.5" y="0" drill="1.0668"/>
+<pad name="10" x="7.5" y="0" drill="1.0668"/>
+<pad name="11" x="4.5" y="0" drill="1.0668"/>
+<pad name="12" x="1.5" y="0" drill="1.0668"/>
+<pad name="13" x="-1.5" y="0" drill="1.0668"/>
+<pad name="14" x="-4.5" y="0" drill="1.0668"/>
+<pad name="15" x="-7.5" y="0" drill="1.0668"/>
+<pad name="16" x="-10.5" y="0" drill="1.0668"/>
+<rectangle x1="-14.478" y1="-5.842" x2="14.478" y2="2.286" layer="39"/>
+<rectangle x1="-14.478" y1="-5.842" x2="14.478" y2="2.286" layer="40"/>
+</package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_18_DUAL">
 <description>18 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/2068321802"&gt;Part&lt;/a&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451814"&gt;Part&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/2068321802_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430451814_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/2064611800_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+&lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
 <pad name="2" x="9" y="-3" drill="1.0668"/>
 <pad name="1" x="12" y="-3" drill="1.0668" first="yes"/>
-<hole x="-13.28" y="0.98" drill="1.02"/>
-<wire x1="-13.925" y1="-4.93" x2="13.925" y2="-4.93" width="0.127" layer="21"/>
-<wire x1="13.925" y1="-4.93" x2="13.925" y2="1.93" width="0.127" layer="21"/>
-<wire x1="13.925" y1="1.93" x2="1.9304" y2="1.93" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="1.93" x2="-1.9304" y2="1.93" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.93" x2="-13.925" y2="1.93" width="0.127" layer="21"/>
-<wire x1="-13.925" y1="1.93" x2="-13.925" y2="-4.93" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.93" x2="-1.9304" y2="3.33" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.33" x2="1.9304" y2="3.33" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="3.33" x2="1.9304" y2="1.93" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.33" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<hole x="15" y="0.94" drill="1.0668"/>
+<hole x="-15" y="0.94" drill="1.0668"/>
+<wire x1="-15.319" y1="-5.461" x2="15.319" y2="-5.461" width="0.127" layer="21"/>
+<wire x1="15.319" y1="-5.461" x2="15.319" y2="1.905" width="0.127" layer="21"/>
+<wire x1="15.319" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-15.319" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-15.319" y1="1.905" x2="-15.319" y2="-5.461" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
 <wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.33" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
 <rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
-<text x="0" y="-5.715" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-6.477" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 <pad name="3" x="6" y="-3" drill="1.0668"/>
 <pad name="4" x="3" y="-3" drill="1.0668"/>
 <pad name="5" x="0" y="-3" drill="1.0668"/>
@@ -5531,50 +5575,8 @@ Teensy 3.2/4.0 Footprint
 <pad name="16" x="-6" y="0" drill="1.0668"/>
 <pad name="17" x="-9" y="0" drill="1.0668"/>
 <pad name="18" x="-12" y="0" drill="1.0668"/>
-<rectangle x1="-14.224" y1="-5.334" x2="14.224" y2="2.286" layer="39"/>
-<rectangle x1="-13.208" y1="-4.318" x2="13.208" y2="1.27" layer="40"/>
-</package>
-<package name="MOLEX_MICROFIT+_PTH_VERTICAL_16_DUAL">
-<description>16 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/2068321602"&gt;Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/2068321602_sd.pdf"&gt;Footprint&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/2064611800_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<pad name="2" x="7.5" y="-3" drill="1.0668"/>
-<pad name="1" x="10.5" y="-3" drill="1.0668" first="yes"/>
-<hole x="-11.78" y="0.98" drill="1.02"/>
-<wire x1="-12.425" y1="-4.93" x2="12.425" y2="-4.93" width="0.127" layer="21"/>
-<wire x1="12.425" y1="-4.93" x2="12.425" y2="1.93" width="0.127" layer="21"/>
-<wire x1="12.425" y1="1.93" x2="1.9304" y2="1.93" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="1.93" x2="-1.9304" y2="1.93" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.93" x2="-12.425" y2="1.93" width="0.127" layer="21"/>
-<wire x1="-12.425" y1="1.93" x2="-12.425" y2="-4.93" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.93" x2="-1.9304" y2="3.33" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.33" x2="1.9304" y2="3.33" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="3.33" x2="1.9304" y2="1.93" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.33" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.33" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
-<text x="0" y="-5.715" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<pad name="3" x="4.5" y="-3" drill="1.0668"/>
-<pad name="4" x="1.5" y="-3" drill="1.0668"/>
-<pad name="5" x="-1.5" y="-3" drill="1.0668"/>
-<pad name="6" x="-4.5" y="-3" drill="1.0668"/>
-<pad name="7" x="-7.5" y="-3" drill="1.0668"/>
-<pad name="8" x="-10.5" y="-3" drill="1.0668"/>
-<pad name="9" x="10.5" y="0" drill="1.0668"/>
-<pad name="10" x="7.5" y="0" drill="1.0668"/>
-<pad name="11" x="4.5" y="0" drill="1.0668"/>
-<pad name="12" x="1.5" y="0" drill="1.0668"/>
-<pad name="13" x="-1.5" y="0" drill="1.0668"/>
-<pad name="14" x="-4.5" y="0" drill="1.0668"/>
-<pad name="15" x="-7.5" y="0" drill="1.0668"/>
-<pad name="16" x="-10.5" y="0" drill="1.0668"/>
-<rectangle x1="-11.938" y1="-4.318" x2="11.938" y2="1.27" layer="40"/>
-<rectangle x1="-12.7" y1="-5.334" x2="12.7" y2="2.286" layer="39"/>
+<rectangle x1="-16.002" y1="-5.842" x2="16.002" y2="2.286" layer="39"/>
+<rectangle x1="-16.002" y1="-5.842" x2="16.002" y2="2.286" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -16723,7 +16725,7 @@ CPC1020NTR
 <gate name="G$1" symbol="CONNECTOR_18" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MF_T_V" package="MOLEX_MICROFIT+_PTH_VERTICAL_18_DUAL">
+<device name="MF_T_V" package="MOLEX_MICROFIT_PTH_VERTICAL_18_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -16746,10 +16748,10 @@ CPC1020NTR
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="900-2068321802-ND"/>
+<attribute name="DKPN" value="WM4719-ND"/>
 <attribute name="MANUFACTURER" value="MOLEX"/>
-<attribute name="MOPN" value="538-206832-1802"/>
-<attribute name="MPN" value="2068321802"/>
+<attribute name="MOPN" value="538-43045-1814"/>
+<attribute name="MPN" value="0430451814"/>
 </technology>
 </technologies>
 </device>
@@ -16763,7 +16765,7 @@ CPC1020NTR
 <gate name="G$1" symbol="CONNECTOR_16" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MF_T_V" package="MOLEX_MICROFIT+_PTH_VERTICAL_16_DUAL">
+<device name="MF_T_V" package="MOLEX_MICROFIT_PTH_VERTICAL_16_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -16784,10 +16786,10 @@ CPC1020NTR
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="900-2068321602-ND"/>
+<attribute name="DKPN" value="WM4718-ND"/>
 <attribute name="MANUFACTURER" value="MOLEX"/>
-<attribute name="MOPN" value="538-206832-1602"/>
-<attribute name="MPN" value="2068321602"/>
+<attribute name="MOPN" value="538-43045-1614"/>
+<attribute name="MPN" value="0430451614"/>
 </technology>
 </technologies>
 </device>
