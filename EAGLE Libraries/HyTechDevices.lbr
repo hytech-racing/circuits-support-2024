@@ -12875,7 +12875,7 @@ Leakage Inductance: 0.50 uH max
 </device>
 </devices>
 </deviceset>
-<deviceset name="TVS_*" prefix="D">
+<deviceset name="TVS_?_*" prefix="D">
 <description>TVS Diode
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/427/gsot03-1767593.pdf"&gt;GSOT Datasheet&lt;/a&gt;</description>
