@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16779,7 +16779,7 @@ CPC1020NTR
 </connects>
 <technologies>
 <technology name="07D">
-<attribute name="DKPN" value="PB2077TR-ND"/>
+<attribute name="DKPN" value="PB2077CT-ND"/>
 <attribute name="MANUFACTURER" value="TE Connectivity"/>
 <attribute name="MOPN" value="655-3-1462039-7"/>
 <attribute name="MPN" value="3-1462039-7"/>
