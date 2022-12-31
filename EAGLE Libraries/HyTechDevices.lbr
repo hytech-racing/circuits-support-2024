@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5193,7 +5193,7 @@ See breadboard placement for pin distancing
 &lt;br&gt;
 Neopixel RGBW LED
 &lt;br&gt;
-&lt;a href="https://www.digikey.com/en/products/detail/inolux/IN-PI55QATPRPGPBPW-40/9681240"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/180/IN-PI55QATPRPGPBPW-XX_v1.3-1667471.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="3" x="2.35" y="-1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
 <smd name="2" x="-2.35" y="-1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
 <smd name="1" x="-2.35" y="1.6" dx="1.2" dy="1.5" layer="1" rot="R270" thermals="no"/>
@@ -5205,6 +5205,7 @@ Neopixel RGBW LED
 <text x="-3.492" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <circle x="0" y="0" radius="1" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
+<circle x="2.921" y="-3.175" radius="0.0762" width="0.2032" layer="21"/>
 </package>
 <package name="B2B-PH-K">
 <description>B2B-PH-K
@@ -5342,52 +5343,6 @@ Neopixel RGBW LED
 <wire x1="27.051" y1="3.81" x2="27.051" y2="-3.81" width="0.1524" layer="21"/>
 <wire x1="27.051" y1="-3.81" x2="25.4" y2="-3.81" width="0.1524" layer="21"/>
 <wire x1="25.4" y1="-3.81" x2="25.4" y2="3.81" width="0.1524" layer="21"/>
-</package>
-<package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_05_SINGLE">
-<description>5 Pin Micro-Fit Right Angle Header, SMD, Single Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500513"&gt;Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/436500513_sd.pdf"&gt;Footprint&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/436450510_sd.pdf"&gt;Plug Size&lt;/a&gt;
-&lt;br&gt;
-Solid line must not be visible on PCB if no cutout is desired.
-&lt;br&gt;
-Dashed line is edge of mated connector.</description>
-<smd name="PAD1" x="9.8794" y="0" dx="3.429" dy="1.651" layer="1"/>
-<smd name="PAD2" x="-9.8794" y="0" dx="3.429" dy="1.651" layer="1"/>
-<smd name="1" x="5.9944" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
-<smd name="2" x="2.9972" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
-<rectangle x1="7.6" y1="1.8" x2="10.05" y2="3.4" layer="43"/>
-<rectangle x1="-10.05" y1="1.8" x2="-7.6" y2="3.4" layer="43"/>
-<wire x1="7.9" y1="-4.4263" x2="-7.9" y2="-4.4263" width="0.127" layer="21"/>
-<wire x1="-9.3" y1="-2.7263" x2="-9.3" y2="5.4737" width="0.127" layer="21"/>
-<wire x1="-7.9" y1="-4.4263" x2="-9.3" y2="-2.7263" width="0.127" layer="21"/>
-<wire x1="7.9" y1="-4.4263" x2="9.3" y2="-2.7263" width="0.127" layer="21"/>
-<wire x1="9.3" y1="-2.7263" x2="9.3" y2="5.4737" width="0.127" layer="21"/>
-<rectangle x1="-12.319" y1="-5.08" x2="12.319" y2="7.62" layer="39"/>
-<wire x1="-9.144" y1="-10.033" x2="9.144" y2="-10.033" width="0.127" layer="51"/>
-<wire x1="-9.144" y1="-12.3698" x2="9.144" y2="-12.3698" width="0.127" layer="51" style="shortdash"/>
-<text x="0.2286" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-10.05" y1="1.8" x2="-7.6" y2="3.4" layer="41"/>
-<rectangle x1="7.6" y1="1.8" x2="10.05" y2="3.4" layer="41"/>
-<wire x1="-4.4704" y1="-10.033" x2="4.4704" y2="-10.033" width="0" layer="46"/>
-<wire x1="4.4704" y1="-10.033" x2="4.4704" y2="-25.527" width="0" layer="46"/>
-<wire x1="4.4704" y1="-25.527" x2="-4.4704" y2="-25.527" width="0" layer="46"/>
-<wire x1="-4.4704" y1="-25.527" x2="-4.4704" y2="-10.033" width="0" layer="46"/>
-<polygon width="0" layer="20">
-<vertex x="8.128" y="-24.384"/>
-<vertex x="-8.128" y="-24.384"/>
-<vertex x="-8.128" y="-10.033"/>
-<vertex x="8.128" y="-10.033"/>
-</polygon>
-<rectangle x1="-8.636" y1="-24.892" x2="8.636" y2="-5.08" layer="39"/>
-<rectangle x1="-8.636" y1="-24.892" x2="8.636" y2="-9.525" layer="40"/>
-<smd name="3" x="0" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
-<wire x1="-9.3" y1="5.4737" x2="9.3" y2="5.4737" width="0.127" layer="21"/>
-<smd name="4" x="-2.9972" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
-<smd name="5" x="-5.9944" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
 </package>
 <package name="TEENSY_SHORT_SSM">
 <description>two
@@ -9704,11 +9659,7 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <text x="6.35" y="-2.794" size="1.016" layer="95" rot="R90" align="center-left">VREF</text>
 </symbol>
 <symbol name="NEOPIXEL">
-<description>IN-PI55QATPRPGPBPW-40
-&lt;br&gt;
-Neopixel RGBW LED
-&lt;br&gt;
-&lt;a href="https://www.digikey.com/en/products/detail/inolux/IN-PI55QATPRPGPBPW-40/9681240"&gt;Datasheet&lt;/a&gt;</description>
+<description>Neopixel RGBW LED</description>
 <pin name="DIN" x="-2.54" y="-2.54" length="short" direction="in"/>
 <pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="DOUT" x="20.32" y="-12.7" length="short" direction="out" rot="R180"/>
@@ -9717,8 +9668,8 @@ Neopixel RGBW LED
 <wire x1="17.78" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="-16.002" size="1.27" layer="96" font="vector" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-16.002" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="CONNECTOR_13">
 <wire x1="7.62" y1="-35.56" x2="0" y2="-35.56" width="0.254" layer="94"/>
@@ -15298,21 +15249,6 @@ Requires ordering of:
 </technology>
 </technologies>
 </device>
-<device name="MICRO_R5S" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_05_SINGLE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="436500513"/>
-</technology>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="MOUNTING_HEATSINK_*" prefix="H">
@@ -16401,17 +16337,17 @@ CPC1020NTR
 </device>
 </devices>
 </deviceset>
-<deviceset name="NEOPIXEL" prefix="U">
+<deviceset name="NEOPIXEL_*" prefix="U">
 <description>IN-PI55QATPRPGPBPW-40
 &lt;br&gt;
 Neopixel RGBW LED
 &lt;br&gt;
-&lt;a href="https://www.digikey.com/en/products/detail/inolux/IN-PI55QATPRPGPBPW-40/9681240"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/180/IN-PI55QATPRPGPBPW-XX_v1.3-1667471.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="NEOPIXEL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="NEOPIXEL">
+<device name="IN-PI55QATPRPGPBPW-40" package="NEOPIXEL">
 <connects>
 <connect gate="G$1" pin="DIN" pad="4"/>
 <connect gate="G$1" pin="DOUT" pad="2"/>
