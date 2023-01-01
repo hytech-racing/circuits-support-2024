@@ -10920,13 +10920,13 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="10K">
-<attribute name="DKPN" value="311-10.0KHRCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-RC0603FR-0710KL"/>
-<attribute name="MPN" value="RC0603FR-0710KL"/>
+<attribute name="DKPN" value="P10KBDCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3ARB103V"/>
+<attribute name="MPN" value="ERA-3ARB103V"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="10k"/>
-<attribute name="TOLERANCE" value="1%"/>
+<attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="31.62V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
@@ -11533,6 +11533,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="5.9k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="24.29V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="50">
+<attribute name="DKPN" value="13-RT0603BRE0750RLCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRE0750RL"/>
+<attribute name="MPN" value="RT0603BRE0750RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="50"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="2.24V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="510K">
