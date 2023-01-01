@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5647,6 +5647,19 @@ Teensy 3.2/4.0 Footprint
 <wire x1="-9.398" y1="-3.175" x2="9.398" y2="-3.175" width="0.127" layer="21" style="shortdash"/>
 <rectangle x1="-19.304" y1="-4.826" x2="19.304" y2="4.318" layer="39"/>
 <text x="0" y="4.572" size="1.016" layer="21" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="A759KR">
+<description>A759KR Series Aluminium Hybrid Electrolytic Capacitor &lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/DMD0000COL92-1141863.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="PLUS" x="-1.75" y="0" drill="0.65"/>
+<pad name="MINUS" x="1.75" y="0" drill="0.65"/>
+<circle x="0" y="0" radius="4" width="0.127" layer="21"/>
+<text x="4.88" y="0" size="1.778" layer="21" align="center">-</text>
+<text x="-4.87" y="0" size="1.778" layer="21" align="center">+</text>
+<text x="0" y="4.27" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="0" y="0" radius="2" width="4" layer="39"/>
+<circle x="-1.75" y="0" radius="0.5" width="1" layer="40"/>
+<circle x="1.75" y="0" radius="0.5" width="1" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -15825,33 +15838,6 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
-<deviceset name="EEU-FP1E*" prefix="C">
-<description>EEU-FP1E Aluminum Electrolytic Capacitor &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/315/RDF0000C1260-1391675.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="EEU-FP1E*">
-<connects>
-<connect gate="G$1" pin="MINUS" pad="MINUS"/>
-<connect gate="G$1" pin="PLUS" pad="PLUS"/>
-</connects>
-<technologies>
-<technology name="681">
-<attribute name="CAPACITANCE" value="680uF"/>
-<attribute name="DKPN" value="P123947-ND"/>
-<attribute name="ESR" value="0.068 Ohms"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-EEU-FP1E681"/>
-<attribute name="MPN" value="EEU-FP1E681"/>
-<attribute name="TOLERANCE" value="20%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LTC6820" prefix="U">
 <description>LTC6820 isoSPI Isolated Communications Interface &lt;br&gt;
 &lt;a href="mouser.com/datasheet/2/609/LTC6820-1601976.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -16442,32 +16428,6 @@ Diodes Incorporated US1M
 </device>
 </devices>
 </deviceset>
-<deviceset name="EEH-AZS*" prefix="C">
-<description>EEH_AZS Hybrid Electrolytic Capacitor &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/315/DMD0000COL92-1141863.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="EEH-AZS">
-<connects>
-<connect gate="G$1" pin="MINUS" pad="MINUS"/>
-<connect gate="G$1" pin="PLUS" pad="PLUS"/>
-</connects>
-<technologies>
-<technology name="1V471B">
-<attribute name="CAPACITANCE" value="470µF"/>
-<attribute name="DKPN" value="10-EEH-AZS1V471BCT-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value=" 667-EEH-AZS1V471B"/>
-<attribute name="MPN" value=" EEH-AZS1V471B"/>
-<attribute name="TOLERANCE" value="20%"/>
-<attribute name="VOLTAGE" value="35V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RESISTOR_TRIMPOT_*_?" prefix="VR">
 <description>Variable Resistor
 &lt;br&gt;
@@ -16954,6 +16914,75 @@ Isolated Flyback Controller
 <attribute name="MANUFACTURER" value="Analog Devices"/>
 <attribute name="MOPN" value="584-LT8316EFE#PBF"/>
 <attribute name="MPN" value="LT8316EFE#PBF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAPACITOR_ELECTROLYTIC_?_*" prefix="C">
+<description>A759 Series Aluminium Hybrid Electrolytic Capacitor &lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_A4072_A759-1104329.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+EEH_AZS Hybrid Electrolytic Capacitor &lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/DMD0000COL92-1141863.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+EEU-FP1E Aluminum Electrolytic Capacitor &lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/RDF0000C1260-1391675.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="A759KR" package="A759KR">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="MINUS"/>
+<connect gate="G$1" pin="PLUS" pad="PLUS"/>
+</connects>
+<technologies>
+<technology name="180UF">
+<attribute name="CAPACITANCE" value="180uF"/>
+<attribute name="DKPN" value="399-A759KR187M1VAAE024-ND"/>
+<attribute name="ESR" value="24mOhms"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="MOPN" value="80-A759KR187M1VAAE24"/>
+<attribute name="MPN" value="A759KR187M1VAAE024"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="35V"/>
+</technology>
+</technologies>
+</device>
+<device name="EEH_AZS" package="EEH-AZS">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="MINUS"/>
+<connect gate="G$1" pin="PLUS" pad="PLUS"/>
+</connects>
+<technologies>
+<technology name="470UF">
+<attribute name="CAPACITANCE" value="470uF"/>
+<attribute name="DKPN" value="10-EEH-AZS1V471BCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-EEH-AZS1V471B"/>
+<attribute name="MPN" value="EEH-AZS1V471B"/>
+<attribute name="TOLERANCE" value="20&amp;"/>
+<attribute name="VOLTAGE" value="35V"/>
+</technology>
+</technologies>
+</device>
+<device name="EEU-FP1E" package="EEU-FP1E*">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="MINUS"/>
+<connect gate="G$1" pin="PLUS" pad="PLUS"/>
+</connects>
+<technologies>
+<technology name="680UF">
+<attribute name="CAPACITANCE" value="680uF"/>
+<attribute name="DPKN" value="P123947-ND"/>
+<attribute name="ESR" value="0.068 Ohms"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-EEU-FP1E681"/>
+<attribute name="MPN" value="EEU-FP1E681"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="25V"/>
 </technology>
 </technologies>
 </device>
