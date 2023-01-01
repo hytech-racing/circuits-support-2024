@@ -17304,6 +17304,10 @@ Diodes Incorporated US1M
 <attribute name="MANUFACTURER" value="Samtec"/>
 <attribute name="MOPN" value="200-EHT11701LD"/>
 <attribute name="MPN" value="EHT-117-01-L-D"/>
+</technology>
+</technologies>
+</device>
+</devices>
 </deviceset>
 <deviceset name="LT8316" prefix="U">
 <description>LT8316 560VIN Micropower No-Opto
@@ -17407,6 +17411,10 @@ Requires ordering of:
 <technologies>
 <technology name="">
 <attribute name="TEENSY" value="4.1"/>
+</technology>
+</technologies>
+</device>
+</devices>
 </deviceset>
 <deviceset name="CAPACITOR_ELECTROLYTIC_?_*" prefix="C">
 <description>A759 Series Aluminium Hybrid Electrolytic Capacitor &lt;br&gt;
