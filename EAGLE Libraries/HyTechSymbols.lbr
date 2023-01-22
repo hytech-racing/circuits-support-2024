@@ -1270,8 +1270,7 @@ LOGIC</text>
 <pin name="OUTNA" x="-2.54" y="-7.62" length="short" direction="in"/>
 <pin name="OUTPB" x="-2.54" y="-12.7" length="short" direction="in"/>
 <pin name="OUTNB" x="-2.54" y="-17.78" length="short" direction="in"/>
-<pin name="PRECHARGE_OK" x="33.02" y="-10.16" length="short" direction="out" rot="R180"/>
-<pin name="60V_INDICATOR" x="33.02" y="-17.78" length="short" direction="out" rot="R180"/>
+<pin name="PRECHARGE_OK" x="33.02" y="-15.24" length="short" direction="out" rot="R180"/>
 </symbol>
 <symbol name="RESISTOR_VALUE">
 <pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
@@ -1458,6 +1457,18 @@ KW26-S5-FSE-4Q </text>
 <wire x1="0" y1="-20.32" x2="43.18" y2="-20.32" width="0.1524" layer="97" style="shortdash"/>
 <pin name="DC1/2+" x="20.32" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="DC1/2-" x="22.86" y="2.54" length="short" direction="in" rot="R270"/>
+</symbol>
+<symbol name="FLYBACK_CONVERTER">
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="27.94" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-15.24" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="TS+" x="-2.54" y="-2.54" length="short" direction="in"/>
+<pin name="TS-" x="-2.54" y="-12.7" length="short" direction="in"/>
+<text x="2.54" y="-10.16" size="2.032" layer="95" rot="R180" align="top-right">Flyback Converter</text>
+<wire x1="10.16" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94" style="shortdash"/>
+<pin name="TS+12V" x="30.48" y="-2.54" length="short" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2755,6 +2766,20 @@ Source: Schukat</description>
 <description>AMK AMKSYN  KW26-S5-FSE-4Q Inverter</description>
 <gates>
 <gate name="G$1" symbol="AMK_AMKASYN_SIMPLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLYBACK_CONVERTER">
+<gates>
+<gate name="G$1" symbol="FLYBACK_CONVERTER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
