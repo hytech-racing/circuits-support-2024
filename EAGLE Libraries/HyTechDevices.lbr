@@ -5301,7 +5301,6 @@ Neopixel RGBW LED
 <text x="0" y="10.652" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="0" y="0" radius="5.25" width="10.5" layer="39"/>
 <circle x="0" y="0" radius="2.1" width="4.2" layer="40"/>
-<circle x="0" y="0" radius="10.3" width="0.127" layer="21"/>
 <wire x1="0" y1="10.3" x2="8.89" y2="5.15" width="0.127" layer="21"/>
 <wire x1="8.89" y1="5.15" x2="8.89" y2="-5.15" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-5.15" x2="0" y2="-10.3" width="0.127" layer="21"/>
@@ -5819,7 +5818,6 @@ Teensy 3.2/4.0 Footprint
 <text x="0" y="10.652" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="0" y="0" radius="5.25" width="10.5" layer="39"/>
 <circle x="0" y="0" radius="2.1" width="4.2" layer="40"/>
-<circle x="0" y="0" radius="10.3" width="0.127" layer="21"/>
 <wire x1="0" y1="10.3" x2="8.89" y2="5.15" width="0.127" layer="21"/>
 <wire x1="8.89" y1="5.15" x2="8.89" y2="-5.15" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-5.15" x2="0" y2="-10.3" width="0.127" layer="21"/>
