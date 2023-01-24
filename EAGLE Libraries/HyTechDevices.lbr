@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5447,11 +5447,11 @@ Teensy 3.2/4.0 Footprint
 <smd name="12" x="2" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
 <smd name="13" x="3" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
 <smd name="14" x="3" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
-<wire x1="-3.659" y1="-1.27" x2="3.659" y2="-1.27" width="0.127" layer="22"/>
-<wire x1="3.659" y1="-1.27" x2="3.659" y2="1.27" width="0.127" layer="22"/>
-<wire x1="3.659" y1="1.27" x2="-3.659" y2="1.27" width="0.127" layer="22"/>
-<wire x1="-3.659" y1="1.27" x2="-3.659" y2="-1.27" width="0.127" layer="22"/>
-<text x="0" y="-3.81" size="0.8128" layer="26" font="vector" align="top-center">&gt;NAME</text>
+<wire x1="-3.659" y1="-1.27" x2="3.659" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.659" y1="-1.27" x2="3.659" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.659" y1="1.27" x2="-3.659" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-3.659" y1="1.27" x2="-3.659" y2="-1.27" width="0.127" layer="21"/>
+<text x="0" y="-3.81" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
 <hole x="-7.1" y="-0.19" drill="2.4"/>
 <hole x="7.1" y="-0.19" drill="2.4"/>
 <hole x="0" y="18.06" drill="2.4"/>
@@ -5461,11 +5461,12 @@ Teensy 3.2/4.0 Footprint
 <wire x1="-2.6" y1="18.91" x2="2.6" y2="18.91" width="0.1524" layer="21" curve="-143"/>
 <wire x1="-11.2" y1="18.91" x2="-2.6" y2="18.91" width="0.1524" layer="21"/>
 <wire x1="2.6" y1="18.91" x2="11.2" y2="18.91" width="0.1524" layer="21"/>
-<rectangle x1="-11.43" y1="-3.81" x2="11.43" y2="21.082" layer="39"/>
 <circle x="-7.1" y="-0.19" radius="0.889" width="1.778" layer="40"/>
 <circle x="7.1" y="-0.19" radius="0.889" width="1.778" layer="40"/>
 <circle x="0" y="18.06" radius="0.889" width="1.778" layer="40"/>
 <rectangle x1="-3.81" y1="-1.524" x2="3.81" y2="1.524" layer="40"/>
+<rectangle x1="-11.43" y1="-3.81" x2="11.43" y2="19.304" layer="39"/>
+<rectangle x1="-2.794" y1="19.304" x2="2.794" y2="21.082" layer="39"/>
 </package>
 <package name="POWERFLAT5X6">
 <description>PowerFLAT 5x6 Footprint for STL2N80K5
