@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14620,6 +14620,8 @@ ISO224B: High-Grade
 
 &lt;li&gt;&lt;a href="https://www.ti.com/lit/ds/symlink/lm2937.pdf"&gt;LM2937IMPX-10/NOPB Datasheet&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/389/l78l-1849295.pdf"&gt;L78L15ACUTR Datasheet&lt;/a&gt;&lt;/li&gt;
+
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
@@ -14706,14 +14708,14 @@ ISO224B: High-Grade
 </technology>
 </technologies>
 </device>
-<device name="SOT-89REVERSE" package="SOT-89">
+<device name="SOT-89-REVERSE" package="SOT-89">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="1"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="15V">
 <attribute name="DKPN" value="497-7279-2-ND"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
 <attribute name="MOPN" value="511-L78L15ACU-TR"/>
