@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17781,7 +17781,7 @@ EEU-FP1E Aluminum Electrolytic Capacitor &lt;br&gt;
 <deviceset name="CONNECTOR-16_?_*" prefix="J">
 <description>16 pin connector
 &lt;br&gt;
-&lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/2068321602_PCB_HEADERS.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/0430451614_PCB_HEADERS.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_16" x="0" y="0"/>
 </gates>
@@ -17819,7 +17819,7 @@ EEU-FP1E Aluminum Electrolytic Capacitor &lt;br&gt;
 <deviceset name="CONNECTOR-18_?_*" prefix="J">
 <description>18 pin connector
 &lt;br&gt;
-&lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/2068321802_PCB_HEADERS.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/0430451814_PCB_HEADERS.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_18" x="0" y="0"/>
 </gates>
