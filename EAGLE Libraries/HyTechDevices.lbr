@@ -5412,20 +5412,6 @@ Teensy 3.2/4.0 Footprint
 &lt;a href="https://suddendocs.samtec.com/catalog_english/clm_sm.pdf"&gt;Connector Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADIS16460.pdf"&gt;ADIS16460 Datasheet&lt;/a&gt;</description>
-<hole x="0" y="-0.5" drill="0.56"/>
-<hole x="0" y="0.5" drill="0.56"/>
-<hole x="-1" y="0.5" drill="0.56"/>
-<hole x="-1" y="-0.5" drill="0.56"/>
-<hole x="-2" y="0.5" drill="0.56"/>
-<hole x="-2" y="-0.5" drill="0.56"/>
-<hole x="1" y="0.5" drill="0.56"/>
-<hole x="1" y="-0.5" drill="0.56"/>
-<hole x="2" y="0.5" drill="0.56"/>
-<hole x="2" y="-0.5" drill="0.56"/>
-<hole x="-3" y="0.5" drill="0.56"/>
-<hole x="-3" y="-0.5" drill="0.56"/>
-<hole x="3" y="0.5" drill="0.56"/>
-<hole x="3" y="-0.5" drill="0.56"/>
 <smd name="1" x="-3" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
 <smd name="2" x="-3" y="-1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
 <smd name="3" x="-2" y="1.6" dx="1.37" dy="0.5" layer="1" rot="R270"/>
