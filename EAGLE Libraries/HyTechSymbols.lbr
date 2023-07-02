@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -203,7 +203,7 @@
 <text x="-12.7" y="-25.4" size="1.778" layer="94">A</text>
 <text x="-2.54" y="-25.4" size="1.778" layer="94">B</text>
 <text x="7.62" y="-25.4" size="1.778" layer="94" align="bottom-right">C</text>
-<pin name="RESOLVER" x="-17.78" y="-12.7" length="point"/>
+<pin name="DATA" x="-17.78" y="-12.7" length="point"/>
 <wire x1="-17.78" y1="-12.7" x2="-15.875" y2="-12.7" width="0.1524" layer="94"/>
 <wire x1="-10.16" y1="-22.86" x2="-5.08" y2="-19.812" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="5.08" y2="-19.812" width="0.1524" layer="94"/>
@@ -1270,8 +1270,7 @@ LOGIC</text>
 <pin name="OUTNA" x="-2.54" y="-7.62" length="short" direction="in"/>
 <pin name="OUTPB" x="-2.54" y="-12.7" length="short" direction="in"/>
 <pin name="OUTNB" x="-2.54" y="-17.78" length="short" direction="in"/>
-<pin name="PRECHARGE_OK" x="33.02" y="-10.16" length="short" direction="out" rot="R180"/>
-<pin name="60V_INDICATOR" x="33.02" y="-17.78" length="short" direction="out" rot="R180"/>
+<pin name="PRECHARGE_OK" x="33.02" y="-15.24" length="short" direction="out" rot="R180"/>
 </symbol>
 <symbol name="RESISTOR_VALUE">
 <pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
@@ -1359,6 +1358,118 @@ LOGIC</text>
 <pin name="GND" x="2.54" y="2.54" length="short" direction="pwr" rot="R270"/>
 <pin name="G1-GND" x="63.5" y="2.54" length="short" direction="pwr" rot="R270"/>
 </symbol>
+<symbol name="CURRENT_SENSOR_WITH_REF">
+<description>Block representation of the current sensor.</description>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="0" y1="-17.78" x2="20.32" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="20.32" y2="0" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="CURRENT" x="22.86" y="-7.62" length="short" direction="out" rot="R180"/>
+<text x="2.54" y="-1.27" size="1.778" layer="95" align="top-left">Current
+Sensor</text>
+<pin name="VDD" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
+<text x="0" y="0.762" size="1.27" layer="96">&gt;MANUFACTURER</text>
+<text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="REFERENCE" x="22.86" y="-10.16" length="short" direction="out" rot="R180"/>
+</symbol>
+<symbol name="FILTER_ACTIVE">
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VDD" x="22.86" y="-2.54" length="short" rot="R180"/>
+<pin name="GND" x="-2.54" y="-17.78" length="short"/>
+<pin name="IN" x="-2.54" y="-12.7" length="short"/>
+<pin name="OUT" x="22.86" y="-12.7" length="short" rot="R180"/>
+<text x="0" y="1.27" size="1.778" layer="97">&gt;MANUFACTURER</text>
+<text x="0" y="-22.86" size="1.778" layer="97">&gt;MPN</text>
+<text x="0" y="-25.4" size="1.778" layer="97">&gt;FREQ</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96" align="top-left">Active
+Low-Pass
+Filter</text>
+</symbol>
+<symbol name="LOGICGATE_AND">
+<pin name="IN1" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN2" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<text x="0" y="4.445" size="1.27" layer="95">AND</text>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="7.62" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="7.62" y1="0" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+</symbol>
+<symbol name="LOGICGATE_NOR">
+<pin name="IN1" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN2" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" function="dot" rot="R180"/>
+<text x="0" y="4.445" size="1.27" layer="95">NOR</text>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="-2.54" x2="0.889" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0.889" y2="2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="AMK_AMKASYN_SIMPLE">
+<description>Block representation of theAMKSYN KW26-S5-FSE-4Q Inverters used on HT07</description>
+<wire x1="43.18" y1="-15.24" x2="25.4" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="43.18" y2="0" width="0.254" layer="94"/>
+<wire x1="43.18" y1="-15.24" x2="43.18" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-15.24" x2="25.4" y2="0" width="0.254" layer="94"/>
+<pin name="C2" x="45.72" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="B2" x="45.72" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="A2" x="45.72" y="-12.7" length="short" direction="out" rot="R180"/>
+<pin name="DC3/4+" x="20.32" y="-43.18" length="short" direction="in" rot="R90"/>
+<pin name="DC3/4-" x="22.86" y="-43.18" length="short" direction="in" rot="R90"/>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
+<pin name="A1" x="-2.54" y="-12.7" length="short" direction="out"/>
+<pin name="B1" x="-2.54" y="-7.62" length="short" direction="out"/>
+<pin name="C1" x="-2.54" y="-2.54" length="short" direction="out"/>
+<wire x1="0" y1="-25.4" x2="17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-40.64" x2="0" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="0" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-25.4" x2="17.78" y2="-40.64" width="0.254" layer="94"/>
+<pin name="A3" x="-2.54" y="-38.1" length="short" direction="out"/>
+<pin name="B3" x="-2.54" y="-33.02" length="short" direction="out"/>
+<pin name="C3" x="-2.54" y="-27.94" length="short" direction="out"/>
+<wire x1="43.18" y1="-40.64" x2="25.4" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-25.4" x2="43.18" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="43.18" y1="-40.64" x2="43.18" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-40.64" x2="25.4" y2="-25.4" width="0.254" layer="94"/>
+<pin name="C4" x="45.72" y="-27.94" length="short" direction="out" rot="R180"/>
+<pin name="B4" x="45.72" y="-33.02" length="short" direction="out" rot="R180"/>
+<pin name="A4" x="45.72" y="-38.1" length="short" direction="out" rot="R180"/>
+<text x="7.62" y="-10.16" size="5.08" layer="97">I1</text>
+<text x="30.48" y="-10.16" size="5.08" layer="97">I2</text>
+<text x="7.62" y="-35.56" size="5.08" layer="97">I3</text>
+<text x="30.48" y="-35.56" size="5.08" layer="97">I4</text>
+<wire x1="0" y1="0" x2="43.18" y2="0" width="0.1524" layer="94"/>
+<wire x1="43.18" y1="0" x2="43.18" y2="-40.64" width="0.1524" layer="94"/>
+<wire x1="43.18" y1="-40.64" x2="0" y2="-40.64" width="0.1524" layer="94"/>
+<wire x1="0" y1="-40.64" x2="0" y2="0" width="0.1524" layer="94"/>
+<text x="7.62" y="-20.32" size="2.54" layer="97" align="center-left">AMKmotion
+KW26-S5-FSE-4Q </text>
+<wire x1="0" y1="-20.32" x2="43.18" y2="-20.32" width="0.1524" layer="97" style="shortdash"/>
+<pin name="DC1/2+" x="20.32" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="DC1/2-" x="22.86" y="2.54" length="short" direction="in" rot="R270"/>
+</symbol>
+<symbol name="FLYBACK_CONVERTER">
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="27.94" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-15.24" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="TS+" x="-2.54" y="-2.54" length="short" direction="in"/>
+<pin name="TS-" x="-2.54" y="-12.7" length="short" direction="in"/>
+<text x="2.54" y="-10.16" size="2.032" layer="95" rot="R180" align="top-right">Flyback Converter</text>
+<wire x1="10.16" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94" style="shortdash"/>
+<pin name="TS+12V" x="30.48" y="-2.54" length="short" direction="pwr" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MOTOR_AC_*">
@@ -1372,6 +1483,11 @@ LOGIC</text>
 <technology name="">
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="AMK">
+<attribute name="MANUFACTURER" value="AMK"/>
+<attribute name="MPN" value="DD5-14-10-POW-18600-B5"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="EMRAX_208">
@@ -1627,6 +1743,16 @@ Source: Schukat</description>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="1-2371113-2">
+<attribute name="MANUFACTURER" value="TE"/>
+<attribute name="MPN" value="1-2371113-2"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="2371035-2">
+<attribute name="MANUFACTURER" value="TE"/>
+<attribute name="MPN" value="2371035-2"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="HV02-M3S(40A)">
 <attribute name="MANUFACTURER" value="Jonhon"/>
 <attribute name="MPN" value="HV02-M3S(40A)-M00A-1"/>
@@ -1660,6 +1786,11 @@ Source: Schukat</description>
 <technology name="">
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="9360">
+<attribute name="MANUFACTURER" value="Sensata"/>
+<attribute name="MPN" value="9360 Series"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="M3031-000005-2K5PG">
@@ -1799,6 +1930,11 @@ Source: Schukat</description>
 <attribute name="MPN" value="3350-4275-126"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="DBR72410">
+<attribute name="MANUFACTURER" value="Sensata"/>
+<attribute name="MPN" value="DBR72410"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1892,6 +2028,11 @@ Source: Schukat</description>
 <attribute name="MPN" value="G4-0017-01"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="HK-J-H650-12">
+<attribute name="MANUFACTURER" value="Elcon"/>
+<attribute name="MPN" value="HK-J-H650-12"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1977,9 +2118,24 @@ Source: Schukat</description>
 <devices>
 <device name="">
 <technologies>
+<technology name="0436500214">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="0436500214"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="ANDERSON">
+<attribute name="MANUFACTURER" value="Anderson Power Products"/>
+<attribute name="MPN" value="ASMFP30-1X2-RK"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="EVH2-N2TK-TDA">
 <attribute name="MANUFACTURER" value="Jonhon"/>
 <attribute name="MPN" value="EVH2-N2TK-TDA" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="HIROSE">
+<attribute name="MANUFACTURER" value="Hirose Electric"/>
+<attribute name="MPN" value="EM30MSD"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="HPK">
@@ -1990,6 +2146,11 @@ Source: Schukat</description>
 <technology name="HVP800">
 <attribute name="MANUFACTURER" value="TE"/>
 <attribute name="MPN" value="HVP800"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="XXC104-EV-P1ZA">
+<attribute name="MANUFACTURER" value="XINXI"/>
+<attribute name="MPN" value="XXC104-EV-P1ZA"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -2035,6 +2196,11 @@ Source: Schukat</description>
 <technology name="">
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="436500513">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="436500513"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="MICROFIT">
@@ -2110,6 +2276,16 @@ Source: Schukat</description>
 <technology name="">
 <attribute name="MANUFACTURER" value=""/>
 <attribute name="MPN" value=""/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="10MM2">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="10mm^2" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="6MM2">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="6mm^2" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="CT2242-2">
@@ -2291,6 +2467,11 @@ Source: Schukat</description>
 <attribute name="MPN" value="RT424009"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="RT424024">
+<attribute name="MANUFACTURER" value="TE Connectivity Potter &amp; Brumfield Relays"/>
+<attribute name="MPN" value="RT424024"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2336,6 +2517,11 @@ Source: Schukat</description>
 <attribute name="MPN" value="3350-1275-126"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="DAR72410">
+<attribute name="MANUFACTURER" value="Sensata"/>
+<attribute name="MPN" value="DAR72410" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="GX23BA">
 <attribute name="MANUFACTURER" value="Gigavac"/>
 <attribute name="MPN" value="GX23BA"/>
@@ -2375,9 +2561,19 @@ Source: Schukat</description>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="10MM2">
+<attribute name="MANUFACTURER" value="Panduit Corp"/>
+<attribute name="MPN" value="S2/0-14R-C"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="19054-0042">
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MPN" value="19054-0042" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="6MM2">
+<attribute name="MANUFACTURER" value="Panduit Corp"/>
+<attribute name="MPN" value="LCMA10-6-C"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -2474,6 +2670,116 @@ Source: Schukat</description>
 &lt;a href="https://www.cascadiamotion.com/images/catalog/DataSheets/CM200.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CASCADIA_CM200DZ" x="-20.32" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CURRENT_SENSOR_WITH_REF" prefix="A">
+<description>Current sensor
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://drive.google.com/file/d/1TFe_k71_-CaaeTxBeJvnXcb4MXyxoknx/view"&gt;ISB-100-A-802&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="CURRENT_SENSOR_WITH_REF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="ISB-100-A-802">
+<attribute name="MANUFACTURER" value="ICE Components"/>
+<attribute name="MPN" value="ISB-100-A-802"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="ISB-300-A-802">
+<attribute name="MANUFACTURER" value="ICE Components"/>
+<attribute name="MPN" value="ISB-300-A-802"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FILTER_ACTIVE">
+<gates>
+<gate name="G$1" symbol="FILTER_ACTIVE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="FREQ" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="1KHZ">
+<attribute name="FREQ" value="1kHz"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MPN" value="MAX7400"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGICGATE_AND" prefix="U">
+<gates>
+<gate name="G$1" symbol="LOGICGATE_AND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGICGATE_NOR" prefix="U">
+<gates>
+<gate name="G$1" symbol="LOGICGATE_NOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AMK_AMKASYN_SIMPLE">
+<description>AMK AMKSYN  KW26-S5-FSE-4Q Inverter</description>
+<gates>
+<gate name="G$1" symbol="AMK_AMKASYN_SIMPLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLYBACK_CONVERTER">
+<gates>
+<gate name="G$1" symbol="FLYBACK_CONVERTER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
