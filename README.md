@@ -1,8 +1,8 @@
 ![HyTech Logo](https://hytechracing.gatech.edu/images/hytech_logo.png)
 
-# 2023 Circuits Support
+# 2024 Circuits Support
 
-Repository for all of the EAGLE support files for the 2023 car.
+Repository for all of the EAGLE support files for the 2024 car.
 
 ## Getting Started with this Git Repository
 1. Create a GitHub account if you don't already have one.
@@ -15,8 +15,8 @@ Repository for all of the EAGLE support files for the 2023 car.
     * You may want to keep a copy of [GitHub's Git Cheat Sheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf) as a reference.
 4. Talk to your subteam lead to be added to the team within the GitHub organization.
 5. Clone this repository to your computer using the URLs:
-    * SSH: `git@github.com:hytech-racing/circuits-support-2023.git`
-    * HTTPS: `https://github.com/hytech-racing/circuits-support-2023.git`
+    * SSH: `git@github.com:hytech-racing/circuits-support-2024.git`
+    * HTTPS: `https://github.com/hytech-racing/circuits-support-2024.git`
 
 ## Getting Started with EAGLE
 1. Follow HyTech's [Software Guide](https://github.com/hytech-racing/training/tree/master/Resources).
