@@ -428,7 +428,7 @@ Pulse Transformers 1CT:1 200 UH
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADM4854ARZ">
+<deviceset name="ADM4854ARZ" prefix="U">
 <description>ADM4854ARZ
 &lt;BR&gt;
 RS422 Transreceiver
@@ -451,8 +451,7 @@ RS422 Transreceiver
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="	
-505-ADM4854ARZ-ND"/>
+<attribute name="DKPN" value="  505-ADM4854ARZ-ND"/>
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-ADM4854ARZ"/>
 <attribute name="MPN" value="ADM4854ARZ"/>
