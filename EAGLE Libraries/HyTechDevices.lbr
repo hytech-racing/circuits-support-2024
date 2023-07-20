@@ -16106,7 +16106,7 @@ Requires ordering of:
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="2165713006"/>
+<attribute name="MPN" value="43650-0617"/>
 </technology>
 </technologies>
 </device>
@@ -16121,7 +16121,7 @@ Requires ordering of:
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="2165713007"/>
+<attribute name="MPN" value="43650-0717"/>
 </technology>
 </technologies>
 </device>
