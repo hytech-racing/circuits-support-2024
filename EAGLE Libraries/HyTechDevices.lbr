@@ -18043,6 +18043,32 @@ RS422 Transreceiver
 </device>
 </devices>
 </deviceset>
+<deviceset name="SM712">
+<description>SM712 Bidirectional TVS Diode
+&lt;BR&gt;
+-7V to 12V RSV
+&lt;BR&gt;
+Used for RS485 transreceiver chips
+&lt;BR&gt;
+(Works for RS422 since ADM4854ARZ runs both)
+&lt;BR&gt;
+&lt;a href=https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/440000001MKW/f6pBKheIN2CeR0DxWdS3THuJ7nh4aKYltSzghsLP5iw"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_TVS_BIDIRECTIONAL_DUAL" x="-2.54" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="SOT-23">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="SM712CT-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Semtech Corporation" constant="no"/>
+<attribute name="MOPN" value="947-SM712.TCT"/>
+<attribute name="MPN" value="SM712.TCT"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
