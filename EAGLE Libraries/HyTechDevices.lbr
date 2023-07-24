@@ -13629,7 +13629,17 @@ Leakage Inductance: 0.50 uH max
 <deviceset name="TVS_BIDIRECTIONAL_DUAL" prefix="D">
 <description>Bdirectional TVS for CAN ESD
 &lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/tpd2e007.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1615155679700&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.ti.com/lit/ds/symlink/tpd2e007.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1615155679700&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F"&gt;Datasheet&lt;/a&gt;
+&lt;BR&gt;
+&lt;BR&gt;SM712 Bidirectional TVS Diode
+&lt;BR&gt;
+-7V to 12V RSV
+&lt;BR&gt;
+Used for RS485 transreceiver chips
+&lt;BR&gt;
+(Works for RS422 since ADM4854ARZ runs both)
+&lt;BR&gt;
+&lt;a href=https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/440000001MKW/f6pBKheIN2CeR0DxWdS3THuJ7nh4aKYltSzghsLP5iw"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_TVS_BIDIRECTIONAL_DUAL" x="0" y="0"/>
 </gates>
@@ -13646,6 +13656,21 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
 <attribute name="MOPN" value="595-TPD2E007DCKR"/>
 <attribute name="MPN" value="TPD2E007DCKR"/>
+</technology>
+</technologies>
+</device>
+<device name="RS422" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="C1" pad="1"/>
+<connect gate="G$1" pin="C2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="SM712CT-ND"/>
+<attribute name="MANUFACTURER" value="Semtech Corporation"/>
+<attribute name="MOPN" value="947-SM712.TCT" constant="no"/>
+<attribute name="MPN" value="SM712.TCT"/>
 </technology>
 </technologies>
 </device>
@@ -18038,37 +18063,6 @@ RS422 Transreceiver
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-ADM4854ARZ"/>
 <attribute name="MPN" value="ADM4854ARZ"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SM712">
-<description>SM712 Bidirectional TVS Diode
-&lt;BR&gt;
--7V to 12V RSV
-&lt;BR&gt;
-Used for RS485 transreceiver chips
-&lt;BR&gt;
-(Works for RS422 since ADM4854ARZ runs both)
-&lt;BR&gt;
-&lt;a href=https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/440000001MKW/f6pBKheIN2CeR0DxWdS3THuJ7nh4aKYltSzghsLP5iw"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_TVS_BIDIRECTIONAL_DUAL" x="-2.54" y="10.16"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="C1" pad="1"/>
-<connect gate="G$1" pin="C2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="SM712CT-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Semtech Corporation" constant="no"/>
-<attribute name="MOPN" value="947-SM712.TCT"/>
-<attribute name="MPN" value="SM712.TCT"/>
 </technology>
 </technologies>
 </device>
