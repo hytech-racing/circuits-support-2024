@@ -18058,6 +18058,11 @@ Used for RS485 transreceiver chips
 </gates>
 <devices>
 <device name="" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="C1" pad="1"/>
+<connect gate="G$1" pin="C2" pad="2"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="SM712CT-ND" constant="no"/>
