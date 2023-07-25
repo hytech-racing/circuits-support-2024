@@ -18030,8 +18030,8 @@ Pulse Transformers 1CT:1 200 UH
 <device name="" package="78613/3C">
 <connects>
 <connect gate="G$1" pin="PRI_1" pad="1"/>
-<connect gate="G$1" pin="PRI_2" pad="2"/>
-<connect gate="G$1" pin="PRI_CENTER_TAP" pad="3"/>
+<connect gate="G$1" pin="PRI_2" pad="3"/>
+<connect gate="G$1" pin="PRI_CENTER_TAP" pad="2"/>
 <connect gate="G$1" pin="SEC_1" pad="4"/>
 <connect gate="G$1" pin="SEC_2" pad="6"/>
 </connects>
