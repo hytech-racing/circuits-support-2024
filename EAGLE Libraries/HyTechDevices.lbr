@@ -6001,6 +6001,31 @@ Pulse Transformers 1CT:1 200 UH
 <text x="-2.286" y="5.969" size="0.8128" layer="25" align="center">&gt;NAME</text>
 <circle x="-5.207" y="5.969" radius="0.254" width="0" layer="21"/>
 </package>
+<package name="SRR0745A-102M">
+<description>SRR0745A-102M
+&lt;br&gt;
+&lt;a href = "https://www.bourns.com/docs/Product-Datasheets/SRR0745A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-3.15" y="0" dx="1.5" dy="2.4" layer="1" thermals="no"/>
+<smd name="2" x="3.15" y="0" dx="1.5" dy="2.4" layer="1" thermals="no"/>
+<wire x1="-3.65" y1="1" x2="-3.65" y2="-1" width="0.127" layer="21"/>
+<wire x1="3.65" y1="1" x2="3.65" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="3.65" x2="1" y2="3.65" width="0.127" layer="21"/>
+<wire x1="-1" y1="-3.65" x2="1" y2="-3.65" width="0.127" layer="21"/>
+<wire x1="-3.65" y1="1" x2="-1" y2="3.65" width="0.127" layer="21"/>
+<wire x1="-3.65" y1="-1" x2="-1" y2="-3.65" width="0.127" layer="21"/>
+<wire x1="1" y1="3.65" x2="3.65" y2="1" width="0.127" layer="21"/>
+<wire x1="3.65" y1="-1" x2="1" y2="-3.65" width="0.127" layer="21"/>
+<rectangle x1="-4.25" y1="-4.25" x2="4.25" y2="4.25" layer="39"/>
+<text x="0" y="4.25" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-3.65" y1="1" x2="-3.65" y2="3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.65" y1="3.65" x2="-1" y2="3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1" y1="-3.65" x2="3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1" y1="3.65" x2="3.65" y2="3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.65" y1="-3.65" x2="-1" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="3.65" y1="3.65" x2="3.65" y2="1" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.65" y1="-1" x2="-3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="3.65" y1="-1" x2="3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -15584,6 +15609,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/336/plei_s_a0002827602_1-2281222.pdf"&gt;PA4334 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/445/74437349560-1721693.pdf"&gt;WE-LMHI Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.bourns.com/docs/Product-Datasheets/SRR0745A.pdf"&gt;SRR0745A Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -15694,6 +15720,25 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <attribute name="MANUFACTURER" value="Pulse Electonics Company"/>
 <attribute name="MOPN" value="673-PA4334362NLT"/>
 <attribute name="MPN" value="PA4334.362NLT"/>
+</technology>
+</technologies>
+</device>
+<device name="SRR0745A" package="SRR0745A-102M">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="1MH">
+<attribute name="CURRENT_RATED" value="200mA"/>
+<attribute name="CURRENT_SATURATION" value="240mA"/>
+<attribute name="DCR" value="4.1Ω"/>
+<attribute name="DKPN" value="SRR0745A-102MCT-ND"/>
+<attribute name="INDUCTANCE" value="1mH"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-SRR0745A-102M"/>
+<attribute name="MPN" value="SRR0745A-102M"/>
+<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>
@@ -18139,7 +18184,7 @@ RS422 Transreceiver
 </device>
 </devices>
 </deviceset>
-<deviceset name="LT8315">
+<deviceset name="LT8315" prefix="U">
 <description>LT8315 560VIN Micropower No-Opto
 Isolated Flyback Converter with 630V/300mA Switch
 
