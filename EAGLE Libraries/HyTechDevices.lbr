@@ -4153,10 +4153,10 @@ Header: 0.1" Pitch Pin Header
 <smd name="A" x="-1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
 <smd name="C" x="1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
 <text x="0" y="1" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-0.85" y1="0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="0.85" y1="-0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
-<wire x1="0.85" y1="0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="0.65" x2="-0.85" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.65" x2="0.85" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.65" x2="0.85" y2="0.65" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.65" x2="-0.85" y2="0.65" width="0.127" layer="21"/>
 <rectangle x1="-1.778" y1="-0.762" x2="1.778" y2="0.762" layer="39"/>
 <rectangle x1="1.261" y1="0.5" x2="1.661" y2="0.75" layer="21"/>
 <rectangle x1="1.261" y1="-0.75" x2="1.661" y2="-0.5" layer="21"/>
@@ -13668,9 +13668,10 @@ Leakage Inductance: 0.50 uH max
 </devices>
 </deviceset>
 <deviceset name="SCHOTTKY_?_*" prefix="D">
-<description>CUS08F30 Shottky Diode
+<description>&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;CUS08F30 Shottky Diode Datasheet&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/68/cmdsh2-3-39086.pdf"&gt;CMDSH2-3 Shottky Diode Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
 </gates>
@@ -13687,6 +13688,14 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
 <attribute name="MOPN" value="757-CUS08F30H3F"/>
 <attribute name="MPN" value="CUS08F30"/>
+<attribute name="VOLTAGE" value="30V"/>
+</technology>
+<technology name="30VV">
+<attribute name="CURRENT" value="0.2A"/>
+<attribute name="DKPN" value="1514-CMDSH2-3TRPBFREECT-ND"/>
+<attribute name="MANUFACTURER" value="Central Semiconductor Corp"/>
+<attribute name="MOPN" value="610-CMDSH2-3"/>
+<attribute name="MPN" value="CMDSH2-3 TR PBFREE"/>
 <attribute name="VOLTAGE" value="30V"/>
 </technology>
 <technology name="60V">
