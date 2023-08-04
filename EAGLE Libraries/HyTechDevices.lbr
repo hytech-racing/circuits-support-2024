@@ -6026,6 +6026,20 @@ Pulse Transformers 1CT:1 200 UH
 <wire x1="-3.65" y1="-1" x2="-3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
 <wire x1="3.65" y1="-1" x2="3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
 </package>
+<package name="SOD-123FA">
+<description>SOD123FA Footprint (From US1KFA Datasheet)
+&lt;br&gt;
+&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Footprint Dimentions&lt;/a&gt;</description>
+<smd name="A" x="-1.55" y="0" dx="1.2" dy="1.4" layer="1"/>
+<smd name="C" x="1.55" y="0" dx="1.2" dy="1.4" layer="1"/>
+<wire x1="-1.4" y1="0.9" x2="-1.4" y2="-0.9" width="0.1524" layer="21"/>
+<wire x1="-1.4" y1="-0.9" x2="1.4" y2="-0.9" width="0.1524" layer="21"/>
+<wire x1="1.4" y1="-0.9" x2="1.4" y2="0.9" width="0.1524" layer="21"/>
+<wire x1="1.4" y1="0.9" x2="-1.4" y2="0.9" width="0.1524" layer="21"/>
+<rectangle x1="1.524" y1="-1.016" x2="1.905" y2="1.016" layer="21"/>
+<rectangle x1="-2.286" y1="-1.27" x2="2.286" y2="1.27" layer="39"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -17033,7 +17047,11 @@ CPC1020NTR
 &lt;br&gt;
 Diodes Incorporated US1M
 &lt;br&gt;
-&lt;a href="https://www.diodes.com/assets/Datasheets/ds16008.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.diodes.com/assets/Datasheets/ds16008.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+onsemi US1KFA
+&lt;br&gt;
+&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE-1" x="0" y="0"/>
 </gates>
@@ -17067,6 +17085,22 @@ Diodes Incorporated US1M
 <attribute name="MOPN" value="621-US1M-F"/>
 <attribute name="MPN" value="US1M-13-F"/>
 <attribute name="VOLTAGE" value="1000V"/>
+</technology>
+</technologies>
+</device>
+<device name="SOD-123FA" package="SOD-123FA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="800V">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="US1KFACT-ND"/>
+<attribute name="MANUFACTURER" value="onsemi"/>
+<attribute name="MOPN" value="512-US1KFA"/>
+<attribute name="MPN" value="US1KFA"/>
+<attribute name="VOLTAGE" value="800V"/>
 </technology>
 </technologies>
 </device>
