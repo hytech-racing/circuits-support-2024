@@ -377,7 +377,7 @@
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
+&lt;a href="https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
 <text x="0" y="0.635" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
@@ -2997,7 +2997,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
+&lt;a href="https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
 <smd name="2" x="1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
 <text x="0" y="0.85" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
@@ -4153,10 +4153,10 @@ Header: 0.1" Pitch Pin Header
 <smd name="A" x="-1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
 <smd name="C" x="1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
 <text x="0" y="1" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-0.85" y1="0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="0.85" y1="-0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
-<wire x1="0.85" y1="0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="0.65" x2="-0.85" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.65" x2="0.85" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.65" x2="0.85" y2="0.65" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.65" x2="-0.85" y2="0.65" width="0.127" layer="21"/>
 <rectangle x1="-1.778" y1="-0.762" x2="1.778" y2="0.762" layer="39"/>
 <rectangle x1="1.261" y1="0.5" x2="1.661" y2="0.75" layer="21"/>
 <rectangle x1="1.261" y1="-0.75" x2="1.661" y2="-0.5" layer="21"/>
@@ -5005,7 +5005,7 @@ See breadboard placement for pin distancing
 <wire x1="3.048" y1="-3.048" x2="3.048" y2="3.048" width="0.0508" layer="46"/>
 <wire x1="3.048" y1="3.048" x2="-3.048" y2="3.048" width="0.0508" layer="46"/>
 </package>
-<package name="DO-214AA">
+<package name="1.5SMBJ">
 <description>DO-214AA Doide Footprint
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/54/BOURNS_1_5SMBJ_datasheet-2530221.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -5964,6 +5964,21 @@ Teensy 3.5/4.1 Footprint Extended
 <rectangle x1="-3.81" y1="-2.921" x2="3.81" y2="2.032" layer="39"/>
 <text x="-3.048" y="2.032" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="1206-RES">
+<description>1206 Resistor Footprint
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-1.6" y="0" dx="1" dy="1.5" layer="1"/>
+<smd name="2" x="1.6" y="0" dx="1" dy="1.5" layer="1"/>
+<text x="0" y="1.016" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-1.55" y1="0.8" x2="1.55" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.55" y1="0.8" x2="1.55" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.55" y1="-0.8" x2="-1.55" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="-0.8" x2="-1.55" y2="0.8" width="0.127" layer="21"/>
+<rectangle x1="-2.286" y1="-1.016" x2="2.286" y2="1.016" layer="39"/>
+</package>
 <package name="78613/3C">
 <description>78613/3C 
 &lt;BR&gt;
@@ -6047,6 +6062,59 @@ Pulse Transformers 1CT:1 200 UH
 <vertex x="-5.715" y="4"/>
 <vertex x="5.715" y="4"/>
 </polygon>
+</package>
+<package name="SRR0745A-102M">
+<description>SRR0745A-102M
+&lt;br&gt;
+&lt;a href = "https://www.bourns.com/docs/Product-Datasheets/SRR0745A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-3.15" y="0" dx="1.5" dy="2.4" layer="1" thermals="no"/>
+<smd name="2" x="3.15" y="0" dx="1.5" dy="2.4" layer="1" thermals="no"/>
+<wire x1="-3.65" y1="1" x2="-3.65" y2="-1" width="0.127" layer="21"/>
+<wire x1="3.65" y1="1" x2="3.65" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="3.65" x2="1" y2="3.65" width="0.127" layer="21"/>
+<wire x1="-1" y1="-3.65" x2="1" y2="-3.65" width="0.127" layer="21"/>
+<wire x1="-3.65" y1="1" x2="-1" y2="3.65" width="0.127" layer="21"/>
+<wire x1="-3.65" y1="-1" x2="-1" y2="-3.65" width="0.127" layer="21"/>
+<wire x1="1" y1="3.65" x2="3.65" y2="1" width="0.127" layer="21"/>
+<wire x1="3.65" y1="-1" x2="1" y2="-3.65" width="0.127" layer="21"/>
+<rectangle x1="-4.25" y1="-4.25" x2="4.25" y2="4.25" layer="39"/>
+<text x="0" y="4.25" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-3.65" y1="1" x2="-3.65" y2="3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.65" y1="3.65" x2="-1" y2="3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1" y1="-3.65" x2="3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1" y1="3.65" x2="3.65" y2="3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.65" y1="-3.65" x2="-1" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="3.65" y1="3.65" x2="3.65" y2="1" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.65" y1="-1" x2="-3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="3.65" y1="-1" x2="3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
+</package>
+<package name="SOD-123FA">
+<description>SOD123FA Footprint (From US1KFA Datasheet)
+&lt;br&gt;
+&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Footprint Dimentions&lt;/a&gt;</description>
+<smd name="A" x="-1.55" y="0" dx="1.2" dy="1.4" layer="1"/>
+<smd name="C" x="1.55" y="0" dx="1.2" dy="1.4" layer="1"/>
+<wire x1="-1.4" y1="0.9" x2="-1.4" y2="-0.9" width="0.1524" layer="21"/>
+<wire x1="-1.4" y1="-0.9" x2="1.4" y2="-0.9" width="0.1524" layer="21"/>
+<wire x1="1.4" y1="-0.9" x2="1.4" y2="0.9" width="0.1524" layer="21"/>
+<wire x1="1.4" y1="0.9" x2="-1.4" y2="0.9" width="0.1524" layer="21"/>
+<rectangle x1="1.524" y1="-1.016" x2="1.905" y2="1.016" layer="21"/>
+<rectangle x1="-2.286" y1="-1.27" x2="2.286" y2="1.27" layer="39"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="SMB(DO-214AA)">
+<description>SMBJ5338B THRU SMBJ5388B DO-214AA Doide Footprint
+&lt;br&gt;
+&lt;a href="https://www.mccsemi.com/pdf/Products/SMBJ5338B-SMBJ5388B(SMB).pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A" x="-2.15" y="0" dx="2.3" dy="2.5" layer="1" rot="R90"/>
+<smd name="C" x="2.15" y="0" dx="2.3" dy="2.5" layer="1" rot="R90"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.425" y1="1.97" x2="2.425" y2="1.97" width="0.127" layer="21"/>
+<wire x1="2.425" y1="1.97" x2="2.425" y2="-1.97" width="0.127" layer="21"/>
+<wire x1="2.425" y1="-1.97" x2="-2.425" y2="-1.97" width="0.127" layer="21"/>
+<wire x1="-2.425" y1="-1.97" x2="-2.425" y2="1.97" width="0.127" layer="21"/>
+<rectangle x1="-3.75" y1="-2.25" x2="3.75" y2="2.25" layer="39"/>
+<wire x1="3.75" y1="1.524" x2="3.75" y2="-1.524" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -10719,6 +10787,33 @@ With Integrated DC/DC Converter
 <wire x1="20.0403" y1="-1.778" x2="21.336" y2="-3.0476" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
 <wire x1="20.066" y1="-1.778" x2="21.336" y2="-0.5334" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
 </symbol>
+<symbol name="LT8315">
+<description>LT8315 560VIN Micropower No-Opto
+Isolated Flyback Converter with 630V/300mA Switch
+
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/8315fa.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="EN/UVLO" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="INTVCC" x="-2.54" y="-15.24" length="short" direction="pas"/>
+<pin name="SMODE" x="-2.54" y="-20.32" length="short" direction="in"/>
+<pin name="VC" x="-2.54" y="-25.4" length="short" direction="pas"/>
+<pin name="IREG/SS" x="7.62" y="-38.1" length="short" direction="pas" rot="R90"/>
+<pin name="SOURCE" x="27.94" y="-25.4" length="short" direction="out" rot="R180"/>
+<pin name="DRAIN" x="27.94" y="-20.32" length="short" direction="oc" rot="R180"/>
+<pin name="TC" x="27.94" y="-15.24" length="short" direction="pas" rot="R180"/>
+<pin name="FB" x="27.94" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="DCM" x="12.7" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="GND" x="12.7" y="-38.1" length="short" direction="pwr" rot="R90"/>
+<wire x1="0" y1="0" x2="25.4" y2="0" width="0.1524" layer="94"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="-35.56" width="0.1524" layer="94"/>
+<wire x1="25.4" y1="-35.56" x2="0" y2="-35.56" width="0.1524" layer="94"/>
+<wire x1="0" y1="-35.56" x2="0" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-36.322" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="BIAS" x="7.62" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="EP" x="17.78" y="-38.1" length="short" direction="pwr" rot="R90"/>
+<pin name="NC" x="17.78" y="2.54" length="short" direction="nc" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -13036,6 +13131,25 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
+<device name="1206" package="1206-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="HV46.4K">
+<attribute name="DKPN" value="RHM46.4KAICT-ND"/>
+<attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
+<attribute name="MOPN" value="755-KTR18EZPF4642"/>
+<attribute name="MPN" value="KTR18EZPF4642"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="46.4k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="107.7V"/>
+<attribute name="VOLTAGE_MAX" value="500V"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="ADC128S022" prefix="U">
@@ -13675,7 +13789,7 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
-<device name="DO-214AA" package="DO-214AA">
+<device name="DO-214AA" package="1.5SMBJ">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
@@ -13700,9 +13814,10 @@ Leakage Inductance: 0.50 uH max
 </devices>
 </deviceset>
 <deviceset name="SCHOTTKY_?_*" prefix="D">
-<description>CUS08F30 Shottky Diode
+<description>&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;CUS08F30 Shottky Diode Datasheet&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/68/cmdsh2-3-39086.pdf"&gt;CMDSH2-3 Shottky Diode Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
 </gates>
@@ -13721,6 +13836,14 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MPN" value="CUS08F30"/>
 <attribute name="VOLTAGE" value="30V"/>
 </technology>
+<technology name="30VV">
+<attribute name="CURRENT" value="0.2A"/>
+<attribute name="DKPN" value="1514-CMDSH2-3TRPBFREECT-ND"/>
+<attribute name="MANUFACTURER" value="Central Semiconductor Corp"/>
+<attribute name="MOPN" value="610-CMDSH2-3"/>
+<attribute name="MPN" value="CMDSH2-3 TR PBFREE"/>
+<attribute name="VOLTAGE" value="30V"/>
+</technology>
 <technology name="60V">
 <attribute name="CURRENT" value="1A"/>
 <attribute name="DKPN" value="3757-MBR1060HEWS_R1_00001TR-ND"/>
@@ -13731,7 +13854,7 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
-<device name="DO-214AA" package="DO-214AA">
+<device name="DO-214AA" package="1.5SMBJ">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
@@ -15641,6 +15764,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/336/plei_s_a0002827602_1-2281222.pdf"&gt;PA4334 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/445/74437349560-1721693.pdf"&gt;WE-LMHI Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.bourns.com/docs/Product-Datasheets/SRR0745A.pdf"&gt;SRR0745A Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -15751,6 +15875,25 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <attribute name="MANUFACTURER" value="Pulse Electonics Company"/>
 <attribute name="MOPN" value="673-PA4334362NLT"/>
 <attribute name="MPN" value="PA4334.362NLT"/>
+</technology>
+</technologies>
+</device>
+<device name="SRR0745A" package="SRR0745A-102M">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="1MH">
+<attribute name="CURRENT_RATED" value="200mA"/>
+<attribute name="CURRENT_SATURATION" value="240mA"/>
+<attribute name="DCR" value="4.1Ω"/>
+<attribute name="DKPN" value="SRR0745A-102MCT-ND"/>
+<attribute name="INDUCTANCE" value="1mH"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-SRR0745A-102M"/>
+<attribute name="MPN" value="SRR0745A-102M"/>
+<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>
@@ -17036,7 +17179,11 @@ CPC1020NTR
 &lt;br&gt;
 Diodes Incorporated US1M
 &lt;br&gt;
-&lt;a href="https://www.diodes.com/assets/Datasheets/ds16008.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.diodes.com/assets/Datasheets/ds16008.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+onsemi US1KFA
+&lt;br&gt;
+&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE-1" x="0" y="0"/>
 </gates>
@@ -17070,6 +17217,22 @@ Diodes Incorporated US1M
 <attribute name="MOPN" value="621-US1M-F"/>
 <attribute name="MPN" value="US1M-13-F"/>
 <attribute name="VOLTAGE" value="1000V"/>
+</technology>
+</technologies>
+</device>
+<device name="SOD-123FA" package="SOD-123FA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="800V">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="US1KFACT-ND"/>
+<attribute name="MANUFACTURER" value="onsemi"/>
+<attribute name="MOPN" value="512-US1KFA"/>
+<attribute name="MPN" value="US1KFA"/>
+<attribute name="VOLTAGE" value="800V"/>
 </technology>
 </technologies>
 </device>
@@ -17675,12 +17838,14 @@ Neopixel RGBW LED
 <deviceset name="ZENER_?_*" prefix="D">
 <description>Zener Diode
  &lt;br&gt;
-&lt;a href="https://www.diodes.com/assets/Datasheets/ds32125.pdf"&gt;1SMB5949B-13&lt;/a&gt;</description>
+&lt;a href="https://www.diodes.com/assets/Datasheets/ds32125.pdf"&gt;1SMB5949B-13&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mccsemi.com/pdf/Products/SMBJ5338B-SMBJ5388B(SMB).pdf"&gt;SMBJ5350B-TP&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_ZENER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="DO-214AA" package="DO-214AA">
+<device name="1.5SMBJ" package="1.5SMBJ">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
@@ -17693,6 +17858,22 @@ Neopixel RGBW LED
 <attribute name="MOPN" value="621-1SMB5949B-13"/>
 <attribute name="MPN" value="1SMB5949B-13"/>
 <attribute name="VOLTAGE" value="100V"/>
+</technology>
+</technologies>
+</device>
+<device name="SMB(DO-214AA)" package="SMB(DO-214AA)">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="13V">
+<attribute name="CURRENT" value="0.385A"/>
+<attribute name="DKPN" value="SMBJ5350B-TPMSCT-ND"/>
+<attribute name="MANUFACTURER" value="Micro Commercial Co"/>
+<attribute name="MOPN" value="833-SMBJ5350B-TP"/>
+<attribute name="MPN" value="SMBJ5350B-TP"/>
+<attribute name="VOLTAGE" value="13V"/>
 </technology>
 </technologies>
 </device>
@@ -18259,6 +18440,44 @@ RS422 Transreceiver
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
 <attribute name="MOPN" value="595-AMC3330QDWERQ1"/>
 <attribute name="MPN" value="AMC3330QDWERQ1"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LT8315" prefix="U">
+<description>LT8315 560VIN Micropower No-Opto
+Isolated Flyback Converter with 630V/300mA Switch
+
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/8315fa.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LT8315" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-20(16)">
+<connects>
+<connect gate="G$1" pin="BIAS" pad="9"/>
+<connect gate="G$1" pin="DCM" pad="10"/>
+<connect gate="G$1" pin="DRAIN" pad="1 2 3"/>
+<connect gate="G$1" pin="EN/UVLO" pad="17"/>
+<connect gate="G$1" pin="EP" pad="THERMAL"/>
+<connect gate="G$1" pin="FB" pad="12"/>
+<connect gate="G$1" pin="GND" pad="15 20"/>
+<connect gate="G$1" pin="INTVCC" pad="8"/>
+<connect gate="G$1" pin="IREG/SS" pad="14"/>
+<connect gate="G$1" pin="NC" pad="19"/>
+<connect gate="G$1" pin="SMODE" pad="16"/>
+<connect gate="G$1" pin="SOURCE" pad="18"/>
+<connect gate="G$1" pin="TC" pad="11"/>
+<connect gate="G$1" pin="VC" pad="13"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="505-LT8315HFE#PBF-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-LT8315HFEPBF"/>
+<attribute name="MPN" value="LT8315HFE#PBF"/>
 </technology>
 </technologies>
 </device>
