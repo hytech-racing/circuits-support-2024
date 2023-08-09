@@ -191,7 +191,7 @@
 </layers>
 <library>
 <packages>
-<package name="SMBJ/DO-214AA">
+<package name="SMB(DO-214AA)">
 <description>SMBJ5338B THRU SMBJ5388B DO-214AA Doide Footprint
 &lt;br&gt;
 &lt;a href="https://www.mccsemi.com/pdf/Products/SMBJ5338B-SMBJ5388B(SMB).pdf"&gt;Datasheet&lt;/a&gt;</description>
