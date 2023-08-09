@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18178,7 +18178,7 @@ RS422 Transreceiver
 </device>
 </devices>
 </deviceset>
-<deviceset name="AMC3330">
+<deviceset name="AMC3330*" prefix="U">
 <description>AMC3330
 &lt;br&gt;
 ±1-V input, precision voltage sensing reinforced isolated amplifier with integrated DC/DC
@@ -18211,7 +18211,35 @@ RS422 Transreceiver
 <technology name="">
 <attribute name="DKPN" value="296-AMC3330QDWERQ1TR-ND"/>
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
-<attribute name="MOPN" value="595-AMC3330QDWERQ1 "/>
+<attribute name="MOPN" value="595-AMC3330QDWERQ1"/>
+<attribute name="MPN" value="AMC3330QDWERQ1"/>
+</technology>
+</technologies>
+</device>
+<device name="_AIRGAP" package="SOIC-16W-AIRGAP">
+<connects>
+<connect gate="G$1" pin="DCDC_GND" pad="15"/>
+<connect gate="G$1" pin="DCDC_HGND" pad="2"/>
+<connect gate="G$1" pin="DCDC_IN" pad="16"/>
+<connect gate="G$1" pin="DCDC_OUT" pad="1"/>
+<connect gate="G$1" pin="DIAG" pad="14"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="HGND" pad="8"/>
+<connect gate="G$1" pin="HLDO_IN" pad="3"/>
+<connect gate="G$1" pin="HLDO_OUT" pad="5"/>
+<connect gate="G$1" pin="INN" pad="7"/>
+<connect gate="G$1" pin="INP" pad="6"/>
+<connect gate="G$1" pin="LDO_OUT" pad="13"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="OUTN" pad="10"/>
+<connect gate="G$1" pin="OUTP" pad="11"/>
+<connect gate="G$1" pin="VDD" pad="12"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="296-AMC3330QDWERQ1TR-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-AMC3330QDWERQ1"/>
 <attribute name="MPN" value="AMC3330QDWERQ1"/>
 </technology>
 </technologies>
