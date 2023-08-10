@@ -191,6 +191,40 @@
 </layers>
 <library>
 <packages>
+<package name="SOIC-16W-AIRGAP">
+<description>SOIC-16W-AIRGAP
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/so_16_05-08-1620.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-4.445" y="-4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="2" x="-3.175" y="-4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="3" x="-1.905" y="-4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="4" x="-0.635" y="-4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="5" x="0.635" y="-4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="6" x="1.905" y="-4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="7" x="3.175" y="-4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="8" x="4.445" y="-4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="9" x="4.445" y="4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="10" x="3.175" y="4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="11" x="1.905" y="4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="12" x="0.635" y="4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="13" x="-0.635" y="4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="14" x="-1.905" y="4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="15" x="-3.175" y="4.875" dx="0.6" dy="1.65" layer="1"/>
+<smd name="16" x="-4.445" y="4.875" dx="0.6" dy="1.65" layer="1"/>
+<wire x1="-5.2451" y1="3.7973" x2="5.2451" y2="3.7973" width="0.127" layer="21"/>
+<wire x1="5.2451" y1="3.7973" x2="5.2451" y2="-3.7973" width="0.127" layer="21"/>
+<wire x1="5.2451" y1="-3.7973" x2="-5.2451" y2="-3.7973" width="0.127" layer="21"/>
+<wire x1="-5.2451" y1="-3.7973" x2="-5.2451" y2="3.7973" width="0.127" layer="21"/>
+<text x="-5.842" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-5.715" y="-4.445" radius="0.254" width="0" layer="21"/>
+<rectangle x1="-5.715" y1="-6.35" x2="5.715" y2="6.35" layer="39"/>
+<polygon width="0" layer="20">
+<vertex x="5.715" y="-3.81"/>
+<vertex x="-5.715" y="-3.81"/>
+<vertex x="-5.715" y="3.81"/>
+<vertex x="5.715" y="3.81"/>
+</polygon>
+</package>
 <package name="SMB(DO-214AA)">
 <description>SMBJ5338B THRU SMBJ5388B DO-214AA Doide Footprint
 &lt;br&gt;
