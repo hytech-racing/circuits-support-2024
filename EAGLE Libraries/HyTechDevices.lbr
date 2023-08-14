@@ -10933,6 +10933,7 @@ Isolated Flyback Converter with 630V/300mA Switch
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf"&gt;Kyocera AVX&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM21BR61H106KE43_01A-1986884.pdf"&gt;GRM21BR61H&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1034_X7R_HV_ARC_SMD-1101730.pdf"&gt;C1812W104KDRACTU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"&gt;CGA series - MLCC Automotive grade&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
@@ -11239,6 +11240,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="MPN" value="C5750X7R2E105K230KA"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="250V"/>
+</technology>
+<technology name="25V_47UF">
+<attribute name="CAPACITANCE" value="47µF"/>
+<attribute name="DKPN" value="445-174773-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-A9N3X7476M23KB"/>
+<attribute name="MPN" value="CGA9N3X7R1E476M230KB"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="25V"/>
 </technology>
 <technology name="630V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1μF"/>
