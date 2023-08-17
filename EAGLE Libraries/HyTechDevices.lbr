@@ -6116,6 +6116,21 @@ Pulse Transformers 1CT:1 200 UH
 <rectangle x1="-3.75" y1="-2.25" x2="3.75" y2="2.25" layer="39"/>
 <wire x1="3.75" y1="1.524" x2="3.75" y2="-1.524" width="0.254" layer="21"/>
 </package>
+<package name="2512-RES">
+<description>2512 Resistor Footprint
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-3.1" y="0" dx="1.8" dy="4" layer="1"/>
+<smd name="2" x="3.1" y="0" dx="1.8" dy="4" layer="1"/>
+<text x="0" y="2.25" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-3.175" y1="1.55" x2="3.175" y2="1.55" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.55" x2="3.175" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.55" x2="-3.175" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-1.55" x2="-3.175" y2="1.55" width="0.127" layer="21"/>
+<rectangle x1="-4.25" y1="-2.25" x2="4.25" y2="2.25" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -13248,6 +13263,25 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="107.7V"/>
 <attribute name="VOLTAGE_MAX" value="500V"/>
+</technology>
+</technologies>
+</device>
+<device name="2512" package="2512-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="HV3K">
+<attribute name="DKPN" value="RMCF2512JT3K00CT-ND"/>
+<attribute name="MANUFACTURER" value="Stackpole Electronics Inc"/>
+<attribute name="MOPN" value="708-RMCF2512JT3K00"/>
+<attribute name="MPN" value="RMCF2512JT3K00"/>
+<attribute name="POWER" value="1W"/>
+<attribute name="RESISTANCE" value="3k"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="54.77V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
 </technologies>
 </device>
