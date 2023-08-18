@@ -11399,6 +11399,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="630V_10NF">
+<attribute name="CAPACITANCE" value="10nF"/>
+<attribute name="DKPN" value="445-9083-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-CGA5L4C0G2J103J"/>
+<attribute name="MPN" value="CGA5L4C0G2J103J160AA"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="630V"/>
+</technology>
 <technology name="630V_47PF">
 <attribute name="CAPACITANCE" value="47pF"/>
 <attribute name="DKPN" value="490-5041-1-ND"/>
