@@ -191,21 +191,6 @@
 </layers>
 <library>
 <packages>
-<package name="2512-RES">
-<description>2512 Resistor Footprint
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-3.1" y="0" dx="1.8" dy="4" layer="1"/>
-<smd name="2" x="3.1" y="0" dx="1.8" dy="4" layer="1"/>
-<text x="0" y="2.25" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-3.175" y1="1.55" x2="3.175" y2="1.55" width="0.127" layer="21"/>
-<wire x1="3.175" y1="1.55" x2="3.175" y2="-1.55" width="0.127" layer="21"/>
-<wire x1="3.175" y1="-1.55" x2="-3.175" y2="-1.55" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="-1.55" x2="-3.175" y2="1.55" width="0.127" layer="21"/>
-<rectangle x1="-4.25" y1="-2.25" x2="4.25" y2="2.25" layer="39"/>
-</package>
 </packages>
 <symbols>
 </symbols>
