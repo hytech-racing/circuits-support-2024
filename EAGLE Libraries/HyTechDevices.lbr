@@ -18726,6 +18726,8 @@ Isolated Flyback Converter with 630V/300mA Switch
 </device>
 </devices>
 </deviceset>
+
+
 <deviceset name="LM555">
 <description>TI LM555 Timer
 &lt;a href="https://www.ti.com/lit/ds/symlink/lm555.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -18745,8 +18747,13 @@ Isolated Flyback Converter with 630V/300mA Switch
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+</technology>
+</technologies>
+</device>
+</devices>
 </deviceset>
+
 <deviceset name="USB4110" prefix="J">
 <description>USB4110 USB-C Conenctor
 &lt;br&gt;
