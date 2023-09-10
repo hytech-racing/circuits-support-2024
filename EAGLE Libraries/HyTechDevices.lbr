@@ -6147,6 +6147,31 @@ Pulse Transformers 1CT:1 200 UH
 <text x="-2.032" y="2.667" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.032" y="-2.667" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
 </package>
+<package name="USB4110">
+<description>USB4110
+
+&lt;br&gt;
+&lt;b&gt;&lt;a href="https://gct.co/Files/Drawings/USB4110.pdf?v=9c3521e1-ea1e-4753-bd59-adae5023b7f4"&gt;Datasheet&lt;/a&gt;&lt;/b&gt;</description>
+<smd name="S$1" x="-5.11" y="0" dx="2.18" dy="2" layer="1"/>
+<smd name="S$3" x="-5.11" y="-3.93" dx="2.18" dy="2" layer="1"/>
+<smd name="S$2" x="5.11" y="0" dx="2.18" dy="2" layer="1"/>
+<smd name="S$4" x="5.11" y="-3.93" dx="2.18" dy="2" layer="1"/>
+<smd name="P$1" x="-3.2" y="0.6" dx="0.6" dy="1.15" layer="1"/>
+<smd name="P$2" x="-2.4" y="0.6" dx="0.6" dy="1.15" layer="1"/>
+<smd name="P$3" x="-1.75" y="0.6" dx="0.3" dy="1.15" layer="1"/>
+<smd name="P$4" x="-1.25" y="0.6" dx="0.3" dy="1.15" layer="1"/>
+<smd name="P$5" x="-0.75" y="0.6" dx="0.3" dy="1.15" layer="1"/>
+<smd name="P$6" x="-0.25" y="0.6" dx="0.3" dy="1.15" layer="1"/>
+<smd name="P$7" x="0.25" y="0.6" dx="0.3" dy="1.15" layer="1"/>
+<smd name="P$8" x="0.75" y="0.6" dx="0.3" dy="1.15" layer="1"/>
+<smd name="P$9" x="1.25" y="0.6" dx="0.3" dy="1.15" layer="1"/>
+<smd name="P$10" x="1.75" y="0.6" dx="0.3" dy="1.15" layer="1"/>
+<smd name="P$11" x="2.4" y="0.6" dx="0.6" dy="1.15" layer="1"/>
+<smd name="P$12" x="3.2" y="0.6" dx="0.6" dy="1.15" layer="1"/>
+<hole x="-2.89" y="-0.5" drill="0.65"/>
+<hole x="2.89" y="-0.5" drill="0.65"/>
+<rectangle x1="-6.5" y1="-6.78" x2="6.5" y2="1.5" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -10860,6 +10885,28 @@ Isolated Flyback Converter with 630V/300mA Switch
 <wire x1="0" y1="-20.32" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="0" y="0" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-20.32" size="1.778" layer="95" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="USB4110">
+<description>USB4110
+
+&lt;br&gt;
+
+&lt;b&gt;&lt;a href="https://gct.co/files/drawings/usb4110.pdf?v=9c3521e1-ea1e-4753-bd59-adae5023b7f4"&gt;Datasheet&lt;/a&gt;&lt;/b&gt;</description>
+<pin name="GND" x="22.86" y="-25.4" length="middle" direction="pwr" rot="R180"/>
+<pin name="VBUS" x="22.86" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="CC1" x="-5.08" y="-2.54" length="middle" direction="pas"/>
+<pin name="DP1" x="-5.08" y="-10.16" length="middle"/>
+<pin name="DN1" x="-5.08" y="-12.7" length="middle" function="dot"/>
+<pin name="SBU1" x="-5.08" y="-22.86" length="middle"/>
+<pin name="SBU2" x="-5.08" y="-25.4" length="middle"/>
+<pin name="DN2" x="-5.08" y="-17.78" length="middle" function="dot"/>
+<pin name="DP2" x="-5.08" y="-15.24" length="middle"/>
+<pin name="CC2" x="-5.08" y="-5.08" length="middle" direction="pas"/>
+<pin name="SHELL" x="22.86" y="-22.86" length="middle" direction="pwr" rot="R180"/>
+<wire x1="0" y1="-27.94" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="17.78" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-27.94" x2="0" y2="-27.94" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -18699,6 +18746,40 @@ Isolated Flyback Converter with 630V/300mA Switch
 </connects>
 <technologies>
 <technology name=""/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB4110" prefix="J">
+<description>USB4110 USB-C Conenctor
+&lt;br&gt;
+&lt;b&gt;&lt;a href="https://gct.co/Files/Drawings/USB4110.pdf?v=9c3521e1-ea1e-4753-bd59-adae5023b7f4"&gt;Datasheet&lt;/a&gt;&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="USB4110" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB4110">
+<connects>
+<connect gate="G$1" pin="CC1" pad="P$4"/>
+<connect gate="G$1" pin="CC2" pad="P$10"/>
+<connect gate="G$1" pin="DN1" pad="P$7"/>
+<connect gate="G$1" pin="DN2" pad="P$5"/>
+<connect gate="G$1" pin="DP1" pad="P$6"/>
+<connect gate="G$1" pin="DP2" pad="P$8"/>
+<connect gate="G$1" pin="GND" pad="P$1 P$12" route="any"/>
+<connect gate="G$1" pin="SBU1" pad="P$9"/>
+<connect gate="G$1" pin="SBU2" pad="P$3"/>
+<connect gate="G$1" pin="SHELL" pad="S$1 S$2 S$3 S$4"/>
+<connect gate="G$1" pin="VBUS" pad="P$2 P$11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="2073-USB4110-GF-A-1-ND"/>
+<attribute name="MANUFACTURER" value="GCT"/>
+<attribute name="MOPN" value="640-USB4110-GF-A"/>
+<attribute name="MPN" value="USB4110 "/>
+</technology>
 </technologies>
 </device>
 </devices>
