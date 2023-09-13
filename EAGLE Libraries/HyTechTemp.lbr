@@ -415,6 +415,22 @@
 <hole x="2.89" y="-0.5" drill="0.65"/>
 <rectangle x1="-6.5" y1="-6.78" x2="6.5" y2="1.5" layer="39"/>
 </package>
+<package name="SOIC-8">
+<smd name="1" x="-3.81" y="2.54" dx="1.27" dy="0.635" layer="1" rot="R180"/>
+<smd name="2" x="-3.81" y="1.27" dx="1.27" dy="0.635" layer="1"/>
+<smd name="3" x="-3.81" y="0" dx="1.27" dy="0.635" layer="1"/>
+<smd name="4" x="-3.81" y="-1.27" dx="1.27" dy="0.635" layer="1"/>
+<smd name="7" x="3.81" y="1.27" dx="1.27" dy="0.635" layer="1"/>
+<smd name="8" x="3.81" y="2.54" dx="1.27" dy="0.635" layer="1"/>
+<smd name="6" x="3.81" y="0" dx="1.27" dy="0.635" layer="1"/>
+<smd name="5" x="3.81" y="-1.27" dx="1.27" dy="0.635" layer="1"/>
+<wire x1="-3.81" y1="3.81" x2="-3.81" y2="-2.54" width="0.254" layer="1"/>
+<wire x1="-3.81" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="1"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="3.81" width="0.254" layer="1"/>
+<wire x1="3.81" y1="3.81" x2="-3.81" y2="3.81" width="0.254" layer="1"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.81" y="-2.54" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB4500-03-0-A">
@@ -462,6 +478,23 @@
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="0" x2="17.78" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-27.94" x2="0" y2="-27.94" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LM555">
+<pin name="VCC" x="-20.32" y="20.32" length="middle"/>
+<pin name="TRIGGER" x="-20.32" y="15.24" length="middle"/>
+<pin name="RESET" x="-20.32" y="10.16" length="middle"/>
+<pin name="CONTROL" x="-20.32" y="-7.62" length="middle"/>
+<pin name="THRESHOLD" x="-20.32" y="-12.7" length="middle"/>
+<pin name="DISCHARGE" x="-20.32" y="-17.78" length="middle"/>
+<pin name="OUTPUT" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="22.86" x2="-15.24" y2="22.86" width="0.254" layer="94"/>
+<text x="-12.7" y="22.86" size="1.778" layer="94">&gt;NAME</text>
+<text x="-15.24" y="-20.32" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -529,6 +562,29 @@
 <attribute name="MOPN" value="640-USB4110-GF-A"/>
 <attribute name="MPN" value="USB4110 "/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM555">
+<description>TI LM555 Timer</description>
+<gates>
+<gate name="G$1" symbol="LM555" x="15.24" y="-22.86"/>
+</gates>
+<devices>
+<device name="" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="CONTROL" pad="5"/>
+<connect gate="G$1" pin="DISCHARGE" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+<connect gate="G$1" pin="RESET" pad="4"/>
+<connect gate="G$1" pin="THRESHOLD" pad="6"/>
+<connect gate="G$1" pin="TRIGGER" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
