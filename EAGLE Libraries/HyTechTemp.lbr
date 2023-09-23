@@ -46,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
@@ -191,10 +191,107 @@
 </layers>
 <library>
 <packages>
+<package name="D-SUB_9">
+<description>TE D-Sub Standard Connector 9 pin &lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/6/ENG_CD_2301843_H-2045617.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="-5.54" y="1.27" drill="0.9"/>
+<pad name="2" x="-2.77" y="1.27" drill="0.9"/>
+<pad name="3" x="0" y="1.27" drill="0.9"/>
+<pad name="4" x="2.77" y="1.27" drill="0.9"/>
+<pad name="5" x="5.54" y="1.27" drill="0.9"/>
+<pad name="6" x="-4.15" y="-1.27" drill="0.9"/>
+<pad name="7" x="-1.38" y="-1.27" drill="0.9"/>
+<pad name="8" x="1.38" y="-1.27" drill="0.9"/>
+<pad name="9" x="4.15" y="-1.27" drill="0.9"/>
+<hole x="-12.495" y="0" drill="3.2"/>
+<hole x="12.495" y="0" drill="3.2"/>
+<wire x1="-15.405" y1="-11.7" x2="-9.1" y2="-11.7" width="0.127" layer="21"/>
+<wire x1="-9.1" y1="-11.7" x2="9.1" y2="-11.7" width="0.127" layer="21"/>
+<wire x1="9.1" y1="-11.7" x2="15.405" y2="-11.7" width="0.127" layer="21"/>
+<wire x1="15.405" y1="-11.7" x2="15.405" y2="2.95" width="0.127" layer="21"/>
+<wire x1="15.405" y1="2.95" x2="-15.405" y2="2.95" width="0.127" layer="21"/>
+<wire x1="-15.405" y1="2.95" x2="-15.405" y2="-11.7" width="0.127" layer="21"/>
+<wire x1="-7" y1="-17.7" x2="7" y2="-17.7" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-8.45" y1="-12.5" x2="-9.1" y2="-11.7" width="0.127" layer="21" style="shortdash" curve="90"/>
+<wire x1="-8.45" y1="-12.5" x2="-8.45" y2="-15.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-8.45" y1="-15.5" x2="-7" y2="-17.7" width="0.127" layer="21" style="shortdash" curve="90"/>
+<wire x1="8.45" y1="-12.5" x2="8.45" y2="-15.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="8.45" y1="-12.5" x2="9.1" y2="-11.7" width="0.127" layer="21" style="shortdash" curve="-90"/>
+<wire x1="8.45" y1="-15.5" x2="7" y2="-17.7" width="0.127" layer="21" style="shortdash" curve="-88.671858"/>
+<text x="0" y="3.881" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-16.002" y1="-12.192" x2="16.002" y2="3.302" layer="39"/>
+<rectangle x1="-8.89" y1="-18.288" x2="8.89" y2="-12.192" layer="39"/>
+<rectangle x1="-6.858" y1="-2.54" x2="6.858" y2="2.54" layer="40"/>
+</package>
 </packages>
 <symbols>
+<symbol name="D-SUB_9">
+<description>Standard D-Sub 9 pin connector</description>
+<wire x1="-1.651" y1="3.429" x2="-1.651" y2="1.651" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="1.524" y1="1.651" x2="1.524" y2="3.429" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="-1.651" y1="5.969" x2="-1.651" y2="4.191" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="1.524" y1="-3.429" x2="1.524" y2="-1.651" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="-1.651" y1="0.889" x2="-1.651" y2="-0.889" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="1.524" y1="-0.889" x2="1.524" y2="0.889" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="-1.651" y1="-1.651" x2="-1.651" y2="-3.429" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="1.524" y1="-5.969" x2="1.524" y2="-4.191" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="-1.651" y1="-4.191" x2="-1.651" y2="-5.969" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="-4.064" y1="6.9312" x2="-2.5226" y2="8.172" width="0.4064" layer="94" curve="-102.324066" cap="flat"/>
+<wire x1="-2.5226" y1="8.1718" x2="0" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="0" y1="7.62" x2="3.0654" y2="6.9494" width="0.4064" layer="94"/>
+<wire x1="3.0654" y1="6.9495" x2="4.0642" y2="5.7088" width="0.4064" layer="94" curve="-77.655139" cap="flat"/>
+<wire x1="4.064" y1="-5.7088" x2="4.064" y2="5.7088" width="0.4064" layer="94"/>
+<wire x1="3.0654" y1="-6.9494" x2="4.064" y2="-5.7088" width="0.4064" layer="94" curve="77.657889"/>
+<wire x1="-4.064" y1="-6.9312" x2="-4.064" y2="6.9312" width="0.4064" layer="94"/>
+<wire x1="-2.5226" y1="-8.1718" x2="0" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="0" y1="-7.62" x2="3.0654" y2="-6.9494" width="0.4064" layer="94"/>
+<wire x1="-4.064" y1="-6.9312" x2="-2.5226" y2="-8.1719" width="0.4064" layer="94" curve="102.337599" cap="flat"/>
+<text x="-3.81" y="-8.89" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="-3.81" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<pin name="1" x="-7.62" y="5.08" visible="pad" length="middle" direction="pas"/>
+<pin name="6" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="7" x="7.62" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="3" x="-7.62" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="8" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="4" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="9" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="5" x="-7.62" y="-5.08" visible="pad" length="middle" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="CONNECTOR-DB9" prefix="J">
+<description>TE D-Sub standard connector 9 pin&lt;br&gt;
+Right angle&lt;br&gt;
+Male&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/6/ENG_CD_2301843_H-2045617.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="D-SUB_9" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D-SUB_9">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="A132510-ND"/>
+<attribute name="MANUFACTURER" value="TE Connectivity AMP Connectors"/>
+<attribute name="MOPN" value="571-2301843-1"/>
+<attribute name="MPN" value="2301843-1"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
