@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6155,6 +6155,33 @@ Pulse Transformers 1CT:1 200 UH
 <hole x="-2.89" y="-0.5" drill="0.65"/>
 <hole x="2.89" y="-0.5" drill="0.65"/>
 <rectangle x1="-6.5" y1="-6.78" x2="6.5" y2="1.5" layer="39"/>
+</package>
+<package name="78613/3C_AIRGAP">
+<pad name="1" x="-5.08" y="2.54" drill="0.9906" diameter="1.199996875"/>
+<pad name="2" x="-5.08" y="0" drill="0.9906" diameter="1.199996875"/>
+<pad name="3" x="-5.08" y="-2.54" drill="0.9906" diameter="1.199996875"/>
+<pad name="6" x="5.08" y="2.54" drill="0.9906" diameter="1.199996875"/>
+<pad name="5" x="5.08" y="0" drill="0.9906" diameter="1.199996875"/>
+<pad name="4" x="5.08" y="-2.54" drill="0.9906" diameter="1.199996875"/>
+<wire x1="-4.759959375" y1="4.580890625" x2="-4.759959375" y2="-4.580890625" width="0.254" layer="21"/>
+<wire x1="-4.759959375" y1="-4.580890625" x2="4.759959375" y2="-4.580890625" width="0.254" layer="21"/>
+<wire x1="4.759959375" y1="-4.580890625" x2="4.759959375" y2="4.580890625" width="0.254" layer="21"/>
+<wire x1="4.759959375" y1="4.580890625" x2="-4.759959375" y2="4.580890625" width="0.254" layer="21"/>
+<rectangle x1="3.81" y1="-3.81" x2="6.35" y2="3.81" layer="40"/>
+<rectangle x1="-6.35" y1="-3.81" x2="-3.81" y2="3.81" layer="40"/>
+<rectangle x1="-6.35" y1="-5.3848" x2="6.35" y2="5.3848" layer="39"/>
+<text x="-2.286" y="5.969" size="0.8128" layer="25" align="center">&gt;NAME</text>
+<circle x="-5.207" y="5.969" radius="0.254" width="0" layer="21"/>
+<wire x1="3.556" y1="-5.3848" x2="3.556" y2="5.3848" width="0" layer="46"/>
+<wire x1="3.556" y1="5.3848" x2="-3.556" y2="5.3848" width="0" layer="46"/>
+<wire x1="-3.556" y1="5.3848" x2="-3.556" y2="-5.3848" width="0" layer="46"/>
+<wire x1="-3.556" y1="-5.3848" x2="3.556" y2="-5.3848" width="0" layer="46"/>
+<polygon width="0" layer="20">
+<vertex x="-3.556" y="-5.3848"/>
+<vertex x="3.556" y="-5.3848"/>
+<vertex x="3.556" y="5.3848"/>
+<vertex x="-3.556" y="5.3848"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -18564,7 +18591,7 @@ Pulse Transformers 1CT:1 200 UH
 <gate name="G$1" symbol="78613/3C" x="-2.54" y="-25.4"/>
 </gates>
 <devices>
-<device name="" package="78613/3C">
+<device name="_78613/3C" package="78613/3C">
 <connects>
 <connect gate="G$1" pin="PRI_1" pad="1"/>
 <connect gate="G$1" pin="PRI_2" pad="3"/>
@@ -18577,6 +18604,23 @@ Pulse Transformers 1CT:1 200 UH
 <attribute name="DKPN" value="811-3726-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Murata Power Solutions" constant="no"/>
 <attribute name="MOPN" value="580-786133C" constant="no"/>
+<attribute name="MPN" value="78613/3C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_78613/3C_AIRGAP" package="78613/3C_AIRGAP">
+<connects>
+<connect gate="G$1" pin="PRI_1" pad="1"/>
+<connect gate="G$1" pin="PRI_2" pad="3"/>
+<connect gate="G$1" pin="PRI_CENTER_TAP" pad="2"/>
+<connect gate="G$1" pin="SEC_1" pad="4"/>
+<connect gate="G$1" pin="SEC_2" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="811-3726-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions" constant="no"/>
+<attribute name="MOPN" value="580-786133C"/>
 <attribute name="MPN" value="78613/3C" constant="no"/>
 </technology>
 </technologies>
