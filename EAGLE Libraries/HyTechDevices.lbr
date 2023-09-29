@@ -6208,6 +6208,35 @@ Pulse Transformers 1CT:1 200 UH
 <vertex x="-3.556" y="5.3848"/>
 </polygon>
 </package>
+<package name="BINDER-8-PIN-M12-A">
+<description>file:///Users/ashish/Downloads/86_0531_1120_00008.pdf</description>
+<pad name="3" x="-1.6581625" y="2.195565625" drill="1" rot="R135"/>
+<pad name="2" x="0.57275625" y="2.694075" drill="1" rot="R135"/>
+<pad name="1" x="2.694075" y="0.57275625" drill="1" rot="R135" first="yes"/>
+<pad name="7" x="2.195565625" y="-1.6581625" drill="1" rot="R135"/>
+<pad name="4" x="-2.747109375" y="0.18738125" drill="1" rot="R135"/>
+<pad name="6" x="0.18738125" y="-2.747109375" drill="1" rot="R135"/>
+<pad name="5" x="-1.944540625" y="-1.944540625" drill="1" rot="R135"/>
+<pad name="8" x="0" y="0" drill="1" rot="R135"/>
+<pad name="P$1" x="-6.250821875" y="0" drill="3" rot="R135"/>
+<pad name="P$2" x="6.250821875" y="0" drill="3" rot="R135"/>
+<circle x="0" y="0" radius="2.1" width="4.2" layer="40"/>
+<wire x1="5.08" y1="3.81" x2="3.81" y2="5.08" width="0.127" layer="21" curve="-343.739795"/>
+<wire x1="3.81" y1="5.08" x2="2.54" y2="3.81" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.81" x2="3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="2.54" y2="3.81" width="0.127" layer="21" curve="-180"/>
+<circle x="2.68990625" y="0.57175625" radius="1.27" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="7.184203125" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="9" width="0.127" layer="21"/>
+<wire x1="8.89" y1="5.15" x2="8.89" y2="-5.15" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="5.15" x2="-8.89" y2="-5.15" width="0.127" layer="21"/>
+<wire x1="0" y1="10.3" x2="8.89" y2="5.15" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-5.15" x2="0" y2="-10.3" width="0.127" layer="21"/>
+<wire x1="0" y1="10.3" x2="-8.89" y2="5.15" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-5.15" x2="0" y2="-10.3" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="5.25" width="10.5" layer="39"/>
+<text x="0" y="10.652" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -18877,6 +18906,31 @@ Isolated Flyback Converter with 630V/300mA Switch
 <technology name="">
 <attribute name="MANUFACTURER" value="Binder" constant="no"/>
 <attribute name="MPN" value="BN86-0531-1120-00004" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BINDER-M12-A-8-PIN" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONNECTOR_08" x="-5.08" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="BINDER-8-PIN-M12-A">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="BINDER" constant="no"/>
+<attribute name="MPN" value="M12-A- 763" constant="no"/>
 </technology>
 </technologies>
 </device>
