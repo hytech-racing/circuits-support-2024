@@ -191,10 +191,103 @@
 </layers>
 <library>
 <packages>
+<package name="SOIC-16">
+<description>SOIC-16
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/S16%2005-08-1610%20Rev%20G.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-4.445" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="16" x="-4.445" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="2" x="-3.175" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="3" x="-1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="15" x="-3.175" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="14" x="-1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="4" x="-0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="13" x="-0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="5" x="0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="12" x="0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="6" x="1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="7" x="3.175" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="11" x="1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="10" x="3.175" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="8" x="4.445" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="9" x="4.445" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<text x="-5.715" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<wire x1="-5.0038" y1="1.9939" x2="5.0038" y2="1.9939" width="0.127" layer="21"/>
+<wire x1="5.0038" y1="1.9939" x2="5.0038" y2="-1.9939" width="0.127" layer="21"/>
+<wire x1="5.0038" y1="-1.9939" x2="-5.0038" y2="-1.9939" width="0.127" layer="21"/>
+<wire x1="-5.0038" y1="-1.9939" x2="-5.0038" y2="1.9939" width="0.127" layer="21"/>
+<circle x="-5.715" y="-2.54" radius="0.254" width="0" layer="21"/>
+<rectangle x1="-5.334" y1="-3.556" x2="5.334" y2="3.556" layer="39"/>
+</package>
 </packages>
 <symbols>
+<symbol name="MCP3208">
+<description>MCP3208 8-Channel ADC
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/21298c-68472.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="CH0" x="22.86" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="CH1" x="22.86" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="CH2" x="22.86" y="-12.7" length="short" direction="in" rot="R180"/>
+<pin name="CH3" x="22.86" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="CH4" x="22.86" y="-17.78" length="short" direction="in" rot="R180"/>
+<pin name="CH5" x="22.86" y="-20.32" length="short" direction="in" rot="R180"/>
+<pin name="CH6" x="22.86" y="-22.86" length="short" direction="in" rot="R180"/>
+<pin name="CH7" x="22.86" y="-25.4" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="-2.54" y="-27.94" length="short" direction="pwr"/>
+<pin name="!CS!/SHDN" x="-2.54" y="-17.78" length="short" direction="in"/>
+<pin name="SDI" x="-2.54" y="-15.24" length="short" direction="in"/>
+<pin name="SDO" x="-2.54" y="-12.7" length="short" direction="out"/>
+<pin name="CLK" x="-2.54" y="-10.16" length="short" direction="in" function="clk"/>
+<pin name="AGND" x="22.86" y="-27.94" length="short" direction="pwr" rot="R180"/>
+<pin name="VREF" x="22.86" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="VDD" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-31.242" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-30.48" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="-30.48" x2="0" y2="0" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="MCP3208" prefix="U">
+<description>Microchip MCP3208 ADC&lt;br&gt;
+12-bit SPI&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/21298e-1101808.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP3208" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-16">
+<connects>
+<connect gate="G$1" pin="!CS!/SHDN" pad="10"/>
+<connect gate="G$1" pin="AGND" pad="14"/>
+<connect gate="G$1" pin="CH0" pad="1"/>
+<connect gate="G$1" pin="CH1" pad="2"/>
+<connect gate="G$1" pin="CH2" pad="3"/>
+<connect gate="G$1" pin="CH3" pad="4"/>
+<connect gate="G$1" pin="CH4" pad="5"/>
+<connect gate="G$1" pin="CH5" pad="6"/>
+<connect gate="G$1" pin="CH6" pad="7"/>
+<connect gate="G$1" pin="CH7" pad="8"/>
+<connect gate="G$1" pin="CLK" pad="13"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="SDI" pad="11"/>
+<connect gate="G$1" pin="SDO" pad="12"/>
+<connect gate="G$1" pin="VDD" pad="16"/>
+<connect gate="G$1" pin="VREF" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MCP3208T-BI/SLCT-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP3208T-BI/SL"/>
+<attribute name="MPN" value="MCP3208T-BI/SL"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
