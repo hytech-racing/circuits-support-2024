@@ -6976,33 +6976,6 @@ Pins tied to GND: SLOW
 <wire x1="0" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
 <wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-180"/>
 </symbol>
-<symbol name="MCP3208">
-<description>MCP3208 8-Channel ADC
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/268/21298c-68472.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="CH0" x="22.86" y="-7.62" length="short" direction="in" rot="R180"/>
-<pin name="CH1" x="22.86" y="-10.16" length="short" direction="in" rot="R180"/>
-<pin name="CH2" x="22.86" y="-12.7" length="short" direction="in" rot="R180"/>
-<pin name="CH3" x="22.86" y="-15.24" length="short" direction="in" rot="R180"/>
-<pin name="CH4" x="22.86" y="-17.78" length="short" direction="in" rot="R180"/>
-<pin name="CH5" x="22.86" y="-20.32" length="short" direction="in" rot="R180"/>
-<pin name="CH6" x="22.86" y="-22.86" length="short" direction="in" rot="R180"/>
-<pin name="CH7" x="22.86" y="-25.4" length="short" direction="in" rot="R180"/>
-<pin name="GND" x="-2.54" y="-27.94" length="short" direction="pwr"/>
-<pin name="!CS!/SHDN" x="-2.54" y="-17.78" length="short" direction="in"/>
-<pin name="SDI" x="-2.54" y="-15.24" length="short" direction="in"/>
-<pin name="SDO" x="-2.54" y="-12.7" length="short" direction="out"/>
-<pin name="CLK" x="-2.54" y="-10.16" length="short" direction="in" function="clk"/>
-<pin name="AGND" x="22.86" y="-27.94" length="short" direction="pwr" rot="R180"/>
-<pin name="VREF" x="22.86" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="VDD" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-31.242" size="1.27" layer="95" align="top-left">&gt;MPN</text>
-<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-30.48" x2="0" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="0" y1="-30.48" x2="0" y2="0" width="0.254" layer="94"/>
-</symbol>
 <symbol name="GATE_DRIVER_2CHANNEL">
 <description>MC34152 Gate Driver
 &lt;br&gt;
@@ -10984,6 +10957,33 @@ Isolated Flyback Converter with 630V/300mA Switch
 <wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-43.942" size="1.27" layer="96" rot="MR180">&gt;MPN</text>
+</symbol>
+<symbol name="MCP3208">
+<description>MCP3208 8-Channel ADC
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/21298c-68472.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="CH0" x="22.86" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="CH1" x="22.86" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="CH2" x="22.86" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="CH3" x="22.86" y="-12.7" length="short" direction="in" rot="R180"/>
+<pin name="CH4" x="22.86" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="CH5" x="22.86" y="-17.78" length="short" direction="in" rot="R180"/>
+<pin name="CH6" x="22.86" y="-20.32" length="short" direction="in" rot="R180"/>
+<pin name="CH7" x="22.86" y="-22.86" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="-2.54" y="-25.4" length="short" direction="pwr"/>
+<pin name="!CS!/SHDN" x="-2.54" y="-17.78" length="short" direction="in" function="dot"/>
+<pin name="SDI" x="-2.54" y="-15.24" length="short" direction="in"/>
+<pin name="SDO" x="-2.54" y="-12.7" length="short" direction="out"/>
+<pin name="CLK" x="-2.54" y="-10.16" length="short" direction="in" function="clk"/>
+<pin name="AGND" x="22.86" y="-25.4" length="short" direction="pwr" rot="R180"/>
+<pin name="VREF" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="VDD" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-28.702" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-27.94" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="-27.94" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -18931,6 +18931,44 @@ Isolated Flyback Converter with 630V/300mA Switch
 <technology name="">
 <attribute name="MANUFACTURER" value="BINDER" constant="no"/>
 <attribute name="MPN" value="M12-A- 763" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP3208" prefix="U">
+<description>Microchip MCP3208 ADC&lt;br&gt;
+8-channel 12-bit SPI&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/21298e-1101808.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP3208" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-16">
+<connects>
+<connect gate="G$1" pin="!CS!/SHDN" pad="10"/>
+<connect gate="G$1" pin="AGND" pad="14"/>
+<connect gate="G$1" pin="CH0" pad="1"/>
+<connect gate="G$1" pin="CH1" pad="2"/>
+<connect gate="G$1" pin="CH2" pad="3"/>
+<connect gate="G$1" pin="CH3" pad="4"/>
+<connect gate="G$1" pin="CH4" pad="5"/>
+<connect gate="G$1" pin="CH5" pad="6"/>
+<connect gate="G$1" pin="CH6" pad="7"/>
+<connect gate="G$1" pin="CH7" pad="8"/>
+<connect gate="G$1" pin="CLK" pad="13"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="SDI" pad="11"/>
+<connect gate="G$1" pin="SDO" pad="12"/>
+<connect gate="G$1" pin="VDD" pad="16"/>
+<connect gate="G$1" pin="VREF" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MCP3208T-BI/SLCT-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP3208T-BI/SL"/>
+<attribute name="MPN" value="MCP3208T-BI/SL"/>
 </technology>
 </technologies>
 </device>
