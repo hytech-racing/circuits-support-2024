@@ -19156,10 +19156,10 @@ Isolated Flyback Converter with 630V/300mA Switch
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="497-15376-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="STMicroelectronics" constant="no"/>
-<attribute name="MOPN" value="511-STM32F446RET6" constant="no"/>
-<attribute name="MPN" value="STM32F446RET6" constant="no"/>
+<attribute name="DKPN" value="497-15376-ND"/>
+<attribute name="MANUFACTURER" value="STMicroelectronics"/>
+<attribute name="MOPN" value="511-STM32F446RET6"/>
+<attribute name="MPN" value="STM32F446RET6"/>
 </technology>
 </technologies>
 </device>
