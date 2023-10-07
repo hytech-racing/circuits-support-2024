@@ -191,10 +191,96 @@
 </layers>
 <library>
 <packages>
+<package name="LTC1563*">
+<smd name="1" x="-2.159" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="2" x="-1.524" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="3" x="-0.889" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="4" x="-0.254" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="5" x="0.381" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="6" x="1.016" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="7" x="1.651" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="8" x="2.286" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="9" x="2.286" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="10" x="1.651" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="11" x="1.016" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="12" x="0.381" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="13" x="-0.254" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="14" x="-0.889" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="15" x="-1.524" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="16" x="-2.159" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<wire x1="-2.6035" y1="-1.9685" x2="2.7305" y2="-1.9685" width="0.127" layer="21"/>
+<wire x1="-2.6035" y1="2.0955" x2="2.7305" y2="2.0955" width="0.127" layer="21"/>
+<wire x1="2.7305" y1="-1.9685" x2="2.7305" y2="2.0955" width="0.127" layer="21"/>
+<wire x1="-2.6035" y1="-1.9685" x2="-2.6035" y2="2.0955" width="0.127" layer="21"/>
+<circle x="-2.667" y="-2.54" radius="0.127" width="0" layer="21"/>
+<text x="-3.048" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.048" y1="-3.81" x2="3.048" y2="3.81" layer="39"/>
+</package>
 </packages>
 <symbols>
+<symbol name="LTC1563*">
+<pin name="!LP" x="-2.54" y="-2.54" length="short"/>
+<pin name="SA" x="-2.54" y="-5.08" length="short"/>
+<pin name="NC1" x="-2.54" y="-7.62" length="short" direction="nc"/>
+<pin name="INVA" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="NC2" x="-2.54" y="-12.7" length="short" direction="nc"/>
+<pin name="LPA" x="-2.54" y="-15.24" length="short"/>
+<pin name="AGND" x="-2.54" y="-17.78" length="short" direction="pwr"/>
+<pin name="V-" x="-2.54" y="-20.32" length="short" direction="pwr"/>
+<pin name="V+" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="LPB" x="22.86" y="-5.08" length="short" rot="R180"/>
+<pin name="NC3" x="22.86" y="-7.62" length="short" direction="nc" rot="R180"/>
+<pin name="INVB" x="22.86" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="NC4" x="22.86" y="-12.7" length="short" rot="R180"/>
+<pin name="SB" x="22.86" y="-15.24" length="short" rot="R180"/>
+<pin name="NC5" x="22.86" y="-17.78" length="short" direction="nc" rot="R180"/>
+<pin name="!EN" x="22.86" y="-20.32" length="short" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-23.622" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="LTC1563*">
+<description>Analog Devices LTC1563 Lowpass Filter.
+&lt;a href = "https://www.analog.com/media/en/technical-documentation/data-sheets/156323fa.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC1563*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTC1563*">
+<connects>
+<connect gate="G$1" pin="!EN" pad="9"/>
+<connect gate="G$1" pin="!LP" pad="1"/>
+<connect gate="G$1" pin="AGND" pad="7"/>
+<connect gate="G$1" pin="INVA" pad="4"/>
+<connect gate="G$1" pin="INVB" pad="13"/>
+<connect gate="G$1" pin="LPA" pad="6"/>
+<connect gate="G$1" pin="LPB" pad="15"/>
+<connect gate="G$1" pin="NC1" pad="3"/>
+<connect gate="G$1" pin="NC2" pad="5"/>
+<connect gate="G$1" pin="NC3" pad="14"/>
+<connect gate="G$1" pin="NC4" pad="12"/>
+<connect gate="G$1" pin="NC5" pad="10"/>
+<connect gate="G$1" pin="SA" pad="2"/>
+<connect gate="G$1" pin="SB" pad="11"/>
+<connect gate="G$1" pin="V+" pad="16"/>
+<connect gate="G$1" pin="V-" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="LTC1563-2IGN-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices"/>
+<attribute name="MOPN" value="584-LTC1563-2IGN"/>
+<attribute name="MPN" value="LTC1563-2IGN"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
