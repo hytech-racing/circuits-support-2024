@@ -345,11 +345,11 @@
 <pin name="A16" x="-2.54" y="-43.18" visible="pin" length="short"/>
 <pin name="A17" x="-2.54" y="-45.72" visible="pin" length="short"/>
 <pin name="VBAT" x="22.86" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="LED" x="-2.54" y="-20.32" visible="pin" length="short" direction="out"/>
-<pin name="TX+" x="-2.54" y="-15.24" visible="pin" length="short" direction="out"/>
-<pin name="TX-" x="-2.54" y="-12.7" visible="pin" length="short" direction="out"/>
-<pin name="RX+" x="-2.54" y="-10.16" visible="pin" length="short" direction="in"/>
-<pin name="RX-" x="-2.54" y="-7.62" visible="pin" length="short" direction="in"/>
+<pin name="LED" x="-2.54" y="-20.32" visible="pin" length="short" direction="out" function="dot"/>
+<pin name="TX+" x="-2.54" y="-15.24" visible="pin" length="short" direction="out" function="dot"/>
+<pin name="TX-" x="-2.54" y="-12.7" visible="pin" length="short" direction="out" function="dot"/>
+<pin name="RX+" x="-2.54" y="-10.16" visible="pin" length="short" direction="in" function="dot"/>
+<pin name="RX-" x="-2.54" y="-7.62" visible="pin" length="short" direction="in" function="dot"/>
 <text x="10.16" y="-1.27" size="1.778" layer="95" rot="R180" align="bottom-center">Teensy 4.1</text>
 </symbol>
 </symbols>
