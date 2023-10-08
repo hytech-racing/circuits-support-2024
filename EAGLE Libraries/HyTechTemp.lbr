@@ -194,8 +194,8 @@
 <package name="RJ45_ETH">
 <hole x="-5.715" y="0" drill="3.2"/>
 <hole x="5.715" y="0" drill="3.2"/>
-<pad name="P$1" x="-7" y="4" drill="0.6"/>
-<pad name="P$2" x="7" y="4" drill="0.6"/>
+<pad name="P$1" x="-6.325" y="3.38" drill="1.02"/>
+<pad name="P$2" x="3.785" y="3.38" drill="1.02"/>
 </package>
 </packages>
 <symbols>
