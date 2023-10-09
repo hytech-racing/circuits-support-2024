@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6441,6 +6441,17 @@ Pulse Transformers 1CT:1 200 UH
 <rectangle x1="1.016" y1="11.43" x2="8.128" y2="16.51" layer="39"/>
 <wire x1="9" y1="47" x2="13.9" y2="47" width="0.1524" layer="21"/>
 </package>
+<package name="1206-DIODE">
+<description>1206 Diode Package</description>
+<smd name="1" x="-1.497" y="0.019" dx="1" dy="1.5" layer="1"/>
+<smd name="2" x="1.541" y="0.011" dx="1" dy="1.5" layer="1"/>
+<wire x1="-0.959" y1="0.811" x2="1.041" y2="0.811" width="0.127" layer="21"/>
+<wire x1="1.041" y1="0.811" x2="1.041" y2="-0.789" width="0.127" layer="21"/>
+<wire x1="1.041" y1="-0.789" x2="-0.959" y2="-0.789" width="0.127" layer="21"/>
+<wire x1="-0.959" y1="-0.789" x2="-0.959" y2="0.811" width="0.127" layer="21"/>
+<rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="39"/>
+<text x="0" y="1.27" size="0.8128" layer="21" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -11368,6 +11379,23 @@ Isolated Flyback Converter with 630V/300mA Switch
 <pin name="RX-" x="-2.54" y="-7.62" visible="pin" length="short" direction="in" function="dot"/>
 <text x="10.16" y="-1.27" size="1.778" layer="95" rot="R180" align="bottom-center">Teensy 4.1</text>
 </symbol>
+<symbol name="DIODE_SCHOTTKY-1">
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-1.27" y="1.905" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="1.27" layer="96" align="top-center">&gt;MPN</text>
+<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
+<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="-0.508" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="1.27" x2="-0.508" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0.508" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-1.27" x2="0.508" y2="-1.016" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -14510,65 +14538,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="652-1.5SMBJ30A"/>
 <attribute name="MPN" value=" 1.5SMBJ30A"/>
 <attribute name="VOLTAGE" value="30V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SCHOTTKY_?_*" prefix="D">
-<description>&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;CUS08F30 Shottky Diode Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/68/cmdsh2-3-39086.pdf"&gt;CMDSH2-3 Shottky Diode Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOD323" package="SOD-323">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="30V">
-<attribute name="CURRENT" value="0.8A"/>
-<attribute name="DKPN" value="CUS08F30H3FTR-ND"/>
-<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
-<attribute name="MOPN" value="757-CUS08F30H3F"/>
-<attribute name="MPN" value="CUS08F30"/>
-<attribute name="VOLTAGE" value="30V"/>
-</technology>
-<technology name="30VV">
-<attribute name="CURRENT" value="0.2A"/>
-<attribute name="DKPN" value="1514-CMDSH2-3TRPBFREECT-ND"/>
-<attribute name="MANUFACTURER" value="Central Semiconductor Corp"/>
-<attribute name="MOPN" value="610-CMDSH2-3"/>
-<attribute name="MPN" value="CMDSH2-3 TR PBFREE"/>
-<attribute name="VOLTAGE" value="30V"/>
-</technology>
-<technology name="60V">
-<attribute name="CURRENT" value="1A"/>
-<attribute name="DKPN" value="3757-MBR1060HEWS_R1_00001TR-ND"/>
-<attribute name="MANUFACTURER" value="Panjit International Inc."/>
-<attribute name="MOPN" value="241-MBR1060HEWSR1000"/>
-<attribute name="MPN" value="MBR1060HEWS_R1_00001"/>
-<attribute name="VOLTAGE" value="60V" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="DO-214AA" package="1.5SMBJ">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-</connects>
-<technologies>
-<technology name="150V">
-<attribute name="CURRENT" value="3A"/>
-<attribute name="DKPN" value="641-1720-1-ND"/>
-<attribute name="MANUFACTURER" value="Comchip Technology"/>
-<attribute name="MOPN" value="750-CDBB3150-HF"/>
-<attribute name="MPN" value="CDBB3150-HF"/>
-<attribute name="VOLTAGE" value="150V"/>
 </technology>
 </technologies>
 </device>
@@ -19559,6 +19528,82 @@ Requires ordering of:
 <technologies>
 <technology name="">
 <attribute name="TEENSY" value="4.1"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCHOTTKY_?_*" prefix="D">
+<description>&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;CUS08F30 Shottky Diode Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/68/cmdsh2-3-39086.pdf"&gt;CMDSH2-3 Shottky Diode Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href = "https://datasheets.kyocera-avx.com/schottky.pdf"&gt;SD1206S040S2R0 Schottky Diode Datasheet&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_SCHOTTKY-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOD323" package="SOD-323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="30V">
+<attribute name="CURRENT" value="0.8A"/>
+<attribute name="DKPN" value="CUS08F30H3FTR-ND"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
+<attribute name="MOPN" value="757-CUS08F30H3F"/>
+<attribute name="MPN" value="CUS08F30"/>
+<attribute name="VOLTAGE" value="30V"/>
+</technology>
+<technology name="30VV">
+<attribute name="CURRENT" value="0.2A"/>
+<attribute name="DKPN" value="1514-CMDSH2-3TRPBFREECT-ND"/>
+<attribute name="MANUFACTURER" value="Central Semiconductor Corp"/>
+<attribute name="MOPN" value="610-CMDSH2-3"/>
+<attribute name="MPN" value="CMDSH2-3 TR PBFREE"/>
+<attribute name="VOLTAGE" value="30V"/>
+</technology>
+<technology name="60V">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="3757-MBR1060HEWS_R1_00001TR-ND"/>
+<attribute name="MANUFACTURER" value="Panjit International Inc."/>
+<attribute name="MOPN" value="241-MBR1060HEWSR1000"/>
+<attribute name="MPN" value="MBR1060HEWS_R1_00001"/>
+<attribute name="VOLTAGE" value="60V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-214AA" package="1.5SMBJ">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="150V">
+<attribute name="CURRENT" value="3A"/>
+<attribute name="DKPN" value="641-1720-1-ND"/>
+<attribute name="MANUFACTURER" value="Comchip Technology"/>
+<attribute name="MOPN" value="750-CDBB3150-HF"/>
+<attribute name="MPN" value="CDBB3150-HF"/>
+<attribute name="VOLTAGE" value="150V"/>
+</technology>
+</technologies>
+</device>
+<device name="1206" package="1206-DIODE">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="40V">
+<attribute name="DKPN" value="478-7806-1-ND"/>
+<attribute name="MANUFACTURER" value="KYOCERA AVX"/>
+<attribute name="MOPN" value="581-SD1206S040S2R0" constant="no"/>
+<attribute name="MPN" value="SD1206S040S2R0" constant="no"/>
+<attribute name="VOLTAGE" value="40 V" constant="no"/>
 </technology>
 </technologies>
 </device>
