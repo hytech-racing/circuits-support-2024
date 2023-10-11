@@ -307,7 +307,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CONNECTOR-24_?_*">
+<deviceset name="CONNECTOR-24_?_*" prefix="J">
 <description>24 pin ribbon connector header (EHT-112-01)
 &lt;br&gt;
 &lt;a href="https://suddendocs.samtec.com/catalog_english/eht.pdf" &gt;Catalog&lt;/a&gt;
