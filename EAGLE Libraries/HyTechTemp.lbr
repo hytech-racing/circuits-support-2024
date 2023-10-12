@@ -234,7 +234,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP2551">
+<deviceset name="MCP2551" prefix="U">
 <description>MCP2551 Can Transciever
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/268/20001667G-1115479.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -255,7 +255,10 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DKPN" value="MCP2551-I/SN-ND"/>
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP2551-I/SN"/>
+<attribute name="MPN" value="MCP2551-I/SN"/>
 </technology>
 </technologies>
 </device>
