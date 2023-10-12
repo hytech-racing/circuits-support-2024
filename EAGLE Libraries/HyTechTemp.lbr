@@ -246,7 +246,7 @@
 <wire x1="0.999996875" y1="-3.048" x2="0.999996875" y2="-3.81" width="0.127" layer="21"/>
 <circle x="-10.994390625" y="-0.999490625" radius="1" width="0.127" layer="21"/>
 </package>
-<package name="EHT-117-01">
+<package name="EHT-115-01">
 <description>34 pin locking ribbon connector header (EHT-117-01)
 &lt;br&gt;
 &lt;a href="https://suddendocs.samtec.com/catalog_english/eht.pdf" &gt;Catalog&lt;/a&gt;
@@ -493,7 +493,7 @@
 <gate name="G$1" symbol="CONNECTOR_30" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="EHT-117-01">
+<device name="" package="EHT-115-01">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
