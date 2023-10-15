@@ -6062,10 +6062,11 @@ Pulse Transformers 1CT:1 200 UH
 <vertex x="-5.715" y="4"/>
 <vertex x="5.715" y="4"/>
 </polygon>
-<wire x1="-5.715" y1="4" x2="-5.715" y2="-4" width="0.127" layer="20"/>
-<wire x1="-5.715" y1="-4" x2="5.715" y2="-4" width="0.127" layer="20"/>
+<wire x1="-5.715" y1="4" x2="-5.715" y2="-4" width="0" layer="20"/>
+<wire x1="-5.715" y1="-4" x2="5.715" y2="-4" width="0" layer="20"/>
 <wire x1="5.715" y1="-4" x2="5.715" y2="4" width="0" layer="20"/>
-<wire x1="5.715" y1="4" x2="-5.715" y2="4" width="0.127" layer="20"/>
+<wire x1="5.715" y1="4" x2="-5.715" y2="4" width="0" layer="20"/>
+<wire x1="5.715" y1="-4" x2="5.715" y2="4" width="0" layer="20"/>
 </package>
 <package name="SRR0745A-102M">
 <description>SRR0745A-102M
