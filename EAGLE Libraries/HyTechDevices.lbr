@@ -20215,6 +20215,40 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
+<deviceset name="OPAMP_2_CHANNEL_*" prefix="U">
+<description>Op-Amp 2 Channel
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/opa2991.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1697521669896&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F"&gt;OPA2991 Datasheet&lt;/a&gt;
+&lt;br&gt;
+Note: OPA2991 is also a comparator</description>
+<gates>
+<gate name="G$1" symbol="OPAMP" x="22.86" y="0"/>
+<gate name="G$2" symbol="PWR_GND" x="0" y="0"/>
+<gate name="G$3" symbol="OPAMP" x="22.86" y="-12.7"/>
+</gates>
+<devices>
+<device name="OPA_2991" package="SOT-23-8">
+<connects>
+<connect gate="G$1" pin="VIN+" pad="3"/>
+<connect gate="G$1" pin="VIN-" pad="2"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+<connect gate="G$2" pin="GND" pad="4"/>
+<connect gate="G$2" pin="VDD" pad="8"/>
+<connect gate="G$3" pin="VIN+" pad="5"/>
+<connect gate="G$3" pin="VIN-" pad="6"/>
+<connect gate="G$3" pin="VOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="296-OPA2991IDDFRCT-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-OPA2991IDDFR" constant="no"/>
+<attribute name="MPN" value="OPA2991IDDFR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
