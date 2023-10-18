@@ -303,33 +303,30 @@
 <wire x1="24.35225" y1="-3.81" x2="21.88845" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
 <wire x1="-24.35225" y1="-3.81" x2="-21.88845" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
 </package>
-<package name="SOIC-16">
-<description>SOIC-16
-&lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/S16%2005-08-1610%20Rev%20G.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-4.445" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="16" x="-4.445" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="2" x="-3.175" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="3" x="-1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="15" x="-3.175" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="14" x="-1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="4" x="-0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="13" x="-0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="5" x="0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="12" x="0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="6" x="1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="7" x="3.175" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="11" x="1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="10" x="3.175" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="8" x="4.445" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="9" x="4.445" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<text x="-5.715" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<wire x1="-5.0038" y1="1.9939" x2="5.0038" y2="1.9939" width="0.127" layer="21"/>
-<wire x1="5.0038" y1="1.9939" x2="5.0038" y2="-1.9939" width="0.127" layer="21"/>
-<wire x1="5.0038" y1="-1.9939" x2="-5.0038" y2="-1.9939" width="0.127" layer="21"/>
-<wire x1="-5.0038" y1="-1.9939" x2="-5.0038" y2="1.9939" width="0.127" layer="21"/>
-<circle x="-5.715" y="-2.54" radius="0.254" width="0" layer="21"/>
-<rectangle x1="-5.334" y1="-3.556" x2="5.334" y2="3.556" layer="39"/>
+<package name="SSOP-16">
+<smd name="1" x="-2.159" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="2" x="-1.524" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="3" x="-0.889" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="4" x="-0.254" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="5" x="0.381" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="6" x="1.016" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="7" x="1.651" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="8" x="2.286" y="-2.54" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="9" x="2.286" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="10" x="1.651" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="11" x="1.016" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="12" x="0.381" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="13" x="-0.254" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="14" x="-0.889" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="15" x="-1.524" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<smd name="16" x="-2.159" y="2.667" dx="0.4191" dy="1.143" layer="1"/>
+<wire x1="-2.6035" y1="-1.9685" x2="2.7305" y2="-1.9685" width="0.127" layer="21"/>
+<wire x1="-2.6035" y1="2.0955" x2="2.7305" y2="2.0955" width="0.127" layer="21"/>
+<wire x1="2.7305" y1="-1.9685" x2="2.7305" y2="2.0955" width="0.127" layer="21"/>
+<wire x1="-2.6035" y1="-1.9685" x2="-2.6035" y2="2.0955" width="0.127" layer="21"/>
+<circle x="-2.667" y="-2.54" radius="0.127" width="0" layer="21"/>
+<text x="-3.048" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.048" y1="-3.81" x2="3.048" y2="3.81" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -586,6 +583,44 @@
 <attribute name="MANUFACTURER" value="Samtec" constant="no"/>
 <attribute name="MOPN" value="200-EHT11501FD" constant="no"/>
 <attribute name="MPN" value="EHT-115-01-F-D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX3227" prefix="U">
+<description>Analog Device MAX3227 &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/max3224e-max3245e.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+3-V to 5.5-V Single-Channel RS232 Driver/Receiver</description>
+<gates>
+<gate name="G$1" symbol="MAX3227" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP-16">
+<connects>
+<connect gate="G$1" pin="!FORCEOFF" pad="16"/>
+<connect gate="G$1" pin="!INVALID" pad="10"/>
+<connect gate="G$1" pin="C1+" pad="2"/>
+<connect gate="G$1" pin="C1-" pad="4"/>
+<connect gate="G$1" pin="C2+" pad="5"/>
+<connect gate="G$1" pin="C2-" pad="6"/>
+<connect gate="G$1" pin="FORCEON" pad="12"/>
+<connect gate="G$1" pin="GND" pad="14"/>
+<connect gate="G$1" pin="R1IN" pad="8"/>
+<connect gate="G$1" pin="R1OUT" pad="9"/>
+<connect gate="G$1" pin="READY" pad="1"/>
+<connect gate="G$1" pin="T1IN" pad="11"/>
+<connect gate="G$1" pin="T1OUT" pad="13"/>
+<connect gate="G$1" pin="V+" pad="3"/>
+<connect gate="G$1" pin="V-" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="175-MAX3227EEAE/V+TTR-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc./Maxim Integrated"/>
+<attribute name="MOPN" value="700-MAX3227EAE"/>
+<attribute name="MPN" value="MAX3227EEAE/V+T"/>
 </technology>
 </technologies>
 </device>
