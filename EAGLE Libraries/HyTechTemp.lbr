@@ -617,8 +617,8 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="175-MAX3227EEAE/V+TTR-ND"/>
-<attribute name="MANUFACTURER" value="Analog Devices Inc./Maxim Integrated"/>
+<attribute name="DKPN" value="175-MAX3227EEAE/V+TCT-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="700-MAX3227EAE"/>
 <attribute name="MPN" value="MAX3227EEAE/V+T"/>
 </technology>
