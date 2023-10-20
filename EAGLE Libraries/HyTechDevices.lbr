@@ -11853,6 +11853,22 @@ Isolated Flyback Converter with 630V/300mA Switch
 <text x="0" y="22.86" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="0" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
+<symbol name="MAX3075">
+<pin name="RO" x="-2.54" y="-2.54" length="short" direction="out"/>
+<pin name="!RE" x="-2.54" y="-5.08" length="short" direction="in" function="dot"/>
+<pin name="DE" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="DI" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="GND" x="17.78" y="-10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="A" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="B" x="17.78" y="-5.08" length="short" function="dot" rot="R180"/>
+<pin name="VCC" x="17.78" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -20332,6 +20348,35 @@ Note: OPA2991 is also a comparator</description>
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
 <attribute name="MOPN" value="595-OPA2991IDDFR" constant="no"/>
 <attribute name="MPN" value="OPA2991IDDFR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX3075" prefix="U">
+<description>3.3 V RS-485/RS-422 Transceivers &lt;br&gt;
+&lt;a href = "https://www.analog.com/media/en/technical-documentation/data-sheets/max3070e-max3079e.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX3075" x="-7.62" y="17.78"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
+<connects>
+<connect gate="G$1" pin="!RE" pad="2"/>
+<connect gate="G$1" pin="A" pad="6"/>
+<connect gate="G$1" pin="B" pad="7"/>
+<connect gate="G$1" pin="DE" pad="3"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="RO" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MAX3075EESA+-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="700-MAX3075EESA"/>
+<attribute name="MPN" value="MAX3075EESA+"/>
 </technology>
 </technologies>
 </device>
