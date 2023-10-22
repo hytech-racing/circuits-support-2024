@@ -13614,15 +13614,15 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="4.22M">
-<attribute name="DKPN" value="2019-RK73H1JTTD4224FCT-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="KOA Speer Electronics, Inc." constant="no"/>
-<attribute name="MOPN" value="660-RK73H1JTTD4224F" constant="no"/>
-<attribute name="MPN" value="RK73H1JTTD4224F" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="4.22M" constant="no"/>
-<attribute name="TOLERANCE" value="1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="100V" constant="no"/>
+<attribute name="DKPN" value="2019-RK73H1JTTD4224FCT-ND"/>
+<attribute name="MANUFACTURER" value="KOA Speer Electronics, Inc."/>
+<attribute name="MOPN" value="660-RK73H1JTTD4224F"/>
+<attribute name="MPN" value="RK73H1JTTD4224F"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="4.22M"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="100V"/>
 </technology>
 <technology name="4.64K">
 <attribute name="DKPN" value="311-4.64KHRCT-ND"/>
@@ -13779,15 +13779,15 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
 <technology name="5M">
-<attribute name="DKPN" value="HVC0603T5004FETCT-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Ohmite" constant="no"/>
-<attribute name="MOPN" value="588-HVC0603T5004FET" constant="no"/>
-<attribute name="MPN" value="HVC0603T5004FET" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="5M" constant="no"/>
-<attribute name="TOLERANCE" value="1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150" constant="no"/>
+<attribute name="DKPN" value="HVC0603T5004FETCT-ND"/>
+<attribute name="MANUFACTURER" value="Ohmite"/>
+<attribute name="MOPN" value="588-HVC0603T5004FET"/>
+<attribute name="MPN" value="HVC0603T5004FET"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="5M"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="60.4">
 <attribute name="DKPN" value="311-60.4HRCT-ND"/>
