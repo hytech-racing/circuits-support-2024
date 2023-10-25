@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -191,7 +191,7 @@
 </layers>
 <library>
 <packages>
-<package name="SMF(DO-219AB)">
+<package name="SMF">
 <description>SMF(DO-219AB)&lt;br&gt;
 &lt;a href="https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/SMF14A-E3-08/1679795"&gt;DataSheet&lt;/a&gt;</description>
 <smd name="P$1" x="-1.45" y="0" dx="1.4" dy="1.3" layer="1" rot="R90"/>
@@ -201,7 +201,37 @@
 <wire x1="-1.45" y1="-0.95" x2="-1.45" y2="0.95" width="0.127" layer="21"/>
 <wire x1="-1.45" y1="0.95" x2="1.45" y2="0.95" width="0.127" layer="21"/>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&lt;NAME</text>
-<rectangle x1="-2.286" y1="-1.27" x2="2.286" y2="1.27" layer="39"/>
+<rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="39"/>
+<wire x1="2.35" y1="0.9" x2="2.35" y2="-0.9" width="0.127" layer="21"/>
+</package>
+<package name="SOT-23">
+<description>SOT-23
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/85807/gsot03.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="1.5494" y1="0.7112" x2="1.5494" y2="-0.7112" width="0.127" layer="21"/>
+<wire x1="1.5494" y1="0.7112" x2="-1.5494" y2="0.7112" width="0.127" layer="21"/>
+<wire x1="-1.5494" y1="0.7112" x2="-1.5494" y2="-0.7112" width="0.127" layer="21"/>
+<wire x1="-1.5494" y1="-0.7112" x2="1.5494" y2="-0.7112" width="0.127" layer="21"/>
+<smd name="2" x="0.9398" y="-1.0033" dx="0.7112" dy="0.889" layer="1"/>
+<smd name="1" x="-0.9398" y="-1.0033" dx="0.7112" dy="0.889" layer="1"/>
+<smd name="3" x="0" y="1.0033" dx="0.7112" dy="0.889" layer="1"/>
+<text x="0" y="1.778" size="0.635" layer="25" font="vector" rot="R180" align="top-center">&gt;NAME</text>
+<rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+<circle x="-1.778" y="-1.0033" radius="0.15875" width="0" layer="21"/>
+</package>
+<package name="1.5SMBJ">
+<description>DO-214AA Doide Footprint
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/54/BOURNS_1_5SMBJ_datasheet-2530221.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.98" y="0" dx="2.1" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="1.98" y="0" dx="2.1" dy="1.27" layer="1" rot="R90"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.285" y1="1.97" x2="2.285" y2="1.97" width="0.127" layer="21"/>
+<wire x1="2.285" y1="1.97" x2="2.285" y2="-1.97" width="0.127" layer="21"/>
+<wire x1="2.285" y1="-1.97" x2="-2.285" y2="-1.97" width="0.127" layer="21"/>
+<wire x1="-2.285" y1="-1.97" x2="-2.285" y2="1.97" width="0.127" layer="21"/>
+<rectangle x1="-3.302" y1="-2.286" x2="3.302" y2="2.286" layer="39"/>
+<wire x1="3.302" y1="1.524" x2="3.302" y2="-1.524" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -226,25 +256,86 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TVS_?_*">
-<description>TVS DIODE 14VWM 23.2VC SMF&lt;br&gt;
+<deviceset name="TVS_?_*" prefix="D">
+<description>TVS Diode
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/427/gsot03-1767593.pdf"&gt;GSOT Datasheet&lt;/a&gt;&lt;br&gt;
 
-&lt;a href="https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/SMF14A-E3-08/1679795"&gt;DataSheet&lt;/a&gt;</description>
+&lt;a href="https://www.vishay.com/docs/85881/smf5v0atosmf58a.pdf"&gt;SMF14A Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="DIODE_TVS_UNIDIRECTIONAL" x="-10.16" y="2.54"/>
+<gate name="G$1" symbol="DIODE_TVS_UNIDIRECTIONAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SMF(DO-219AB)">
+<device name="" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name="15V">
+<attribute name="DKPN" value="GSOT15-E3-08CT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
+<attribute name="MOPN" value="78-GSOT15-E3-08"/>
+<attribute name="MPN" value="GSOT15-E3-08"/>
+<attribute name="VOLTAGE" value="15V"/>
+</technology>
+<technology name="4V">
+<attribute name="DKPN" value="GSOT04-E3-08CT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
+<attribute name="MOPN" value="78-GSOT04-E3-08"/>
+<attribute name="MPN" value="GSOT04-E3-08"/>
+<attribute name="VOLTAGE" value="4V"/>
+</technology>
+<technology name="5V">
+<attribute name="DKPN" value="GSOT05-E3-08TR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
+<attribute name="MOPN" value="78-GSOT05-E3-08"/>
+<attribute name="MPN" value="GSOT05-E3-08"/>
+<attribute name="VOLTAGE" value="5V"/>
+</technology>
+<technology name="8V">
+<attribute name="DKPN" value="GSOT08-E3-08TR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
+<attribute name="MOPN" value="78-GSOT08-E3-08"/>
+<attribute name="MPN" value="GSOT08-E3-08"/>
+<attribute name="VOLTAGE" value="8V"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-214AA" package="1.5SMBJ">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="28V">
+<attribute name="DKPN" value="118-1.5SMBJ28ATR-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-1.5SMBJ28A"/>
+<attribute name="MPN" value="1.5SMBJ28A"/>
+<attribute name="VOLTAGE" value="28V"/>
+</technology>
+<technology name="30V">
+<attribute name="DKPN" value="118-1.5SMBJ30ATR-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-1.5SMBJ30A"/>
+<attribute name="MPN" value=" 1.5SMBJ30A"/>
+<attribute name="VOLTAGE" value="30V"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-219AB" package="SMF">
 <connects>
 <connect gate="G$1" pin="A" pad="P$1"/>
 <connect gate="G$1" pin="C" pad="P$2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DKPN" value="SMF14A-E3-08GITR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division" constant="no"/>
-<attribute name="MPN" value="1.5SMBJ30A" constant="no"/>
-<attribute name="VOLTAGE" value="14" constant="no"/>
+<technology name="14V">
+<attribute name="DKPN" value="SMF14A-E3-08GITR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor"/>
+<attribute name="MOPN" value="78-SMF14A-E3-08"/>
+<attribute name="MPN" value="SMF14A-E3-08"/>
+<attribute name="VOLTAGE" value="14V"/>
 </technology>
 </technologies>
 </device>
