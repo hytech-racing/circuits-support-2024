@@ -191,72 +191,10 @@
 </layers>
 <library>
 <packages>
-<package name="8-VSSOP">
-<smd name="4" x="-1.55" y="-0.75" dx="0.85" dy="0.3" layer="1"/>
-<smd name="3" x="-1.55" y="-0.25" dx="0.85" dy="0.3" layer="1"/>
-<smd name="2" x="-1.55" y="0.25" dx="0.85" dy="0.3" layer="1"/>
-<smd name="1" x="-1.55" y="0.75" dx="0.85" dy="0.3" layer="1"/>
-<smd name="5" x="1.55" y="-0.75" dx="0.85" dy="0.3" layer="1"/>
-<smd name="7" x="1.55" y="0.25" dx="0.85" dy="0.3" layer="1"/>
-<smd name="6" x="1.55" y="-0.25" dx="0.85" dy="0.3" layer="1"/>
-<smd name="8" x="1.55" y="0.75" dx="0.85" dy="0.3" layer="1"/>
-<wire x1="-1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.016" y1="-1.016" x2="1.016" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.127" layer="21"/>
-<wire x1="1.016" y1="1.016" x2="-1.016" y2="1.016" width="0.127" layer="21"/>
-<text x="0" y="1.1" size="0.254" layer="25" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-2.286" y1="-1.27" x2="2.286" y2="1.27" layer="39"/>
-</package>
 </packages>
 <symbols>
-<symbol name="SN74LXC2T45DCU*">
-<pin name="VCCA" x="-2.54" y="-2.54" length="short" direction="pwr"/>
-<pin name="A1" x="-2.54" y="-5.08" length="short"/>
-<pin name="A2" x="-2.54" y="-7.62" length="short"/>
-<pin name="GND" x="-2.54" y="-10.16" length="short"/>
-<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-12.7" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="VCCB" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="B1" x="20.32" y="-5.08" length="short" rot="R180"/>
-<pin name="B2" x="20.32" y="-7.62" length="short" rot="R180"/>
-<pin name="DIR" x="20.32" y="-10.16" length="short" direction="in" rot="R180"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="SN74LXC2T45DCUR">
-<description>SN74LXC2T45DCUR Level Shifter
-
-&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lxc2t45.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SN74LXC2T45DCU*" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="8-VSSOP">
-<connects>
-<connect gate="G$1" pin="A1" pad="2"/>
-<connect gate="G$1" pin="A2" pad="3"/>
-<connect gate="G$1" pin="B1" pad="7"/>
-<connect gate="G$1" pin="B2" pad="6"/>
-<connect gate="G$1" pin="DIR" pad="5"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="VCCA" pad="1"/>
-<connect gate="G$1" pin="VCCB" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="296-SN74LXC2T45DCUR*"/>
-<attribute name="MANUFACTURER" value="Texas Instruments"/>
-<attribute name="MOPN" value="595-SN74LXC2T45DCUR"/>
-<attribute name="MPN" value="SN74LXC2T45DCUR"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
