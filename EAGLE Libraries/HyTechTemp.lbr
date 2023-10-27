@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -191,10 +191,58 @@
 </layers>
 <library>
 <packages>
+<package name="24_MHZ_XTAL_OSCILLATOR">
+<smd name="1" x="-1.05" y="0.8" dx="1.5" dy="1.2" layer="1"/>
+<smd name="2" x="1.05" y="0.8" dx="1.5" dy="1.2" layer="1"/>
+<smd name="4" x="-1.05" y="-0.8" dx="1.5" dy="1.2" layer="1"/>
+<smd name="3" x="1.05" y="-0.8" dx="1.5" dy="1.2" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
+<text x="-1.8" y="1.7" size="0.8128" layer="25">24_MHz_Cxtl_Oscil</text>
+<rectangle x1="-2.032" y1="-1.778" x2="2.032" y2="1.778" layer="39"/>
+</package>
 </packages>
 <symbols>
+<symbol name="24_MHZ_XTAL_OSCILLATOR">
+<pin name="1-XTAL" x="-2.54" y="-2.54" length="short"/>
+<pin name="2-CASE" x="22.86" y="-2.54" length="short" rot="R180"/>
+<pin name="3-XTAL" x="22.86" y="-12.7" length="short" rot="R180"/>
+<pin name="4-CASE" x="-2.54" y="-12.7" length="short"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="20.32" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-15.24" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.778" layer="95">24_MHz_Xtal_Oscil</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="24_MHZ_XTAL_OSCILLATOR" prefix="X">
+<description>24 MHz Crystal Oscillator
+
+&lt;a href= "https://www.diodes.com/assets/Datasheets/FL.pdf"&gt; Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="24_MHZ_XTAL_OSCILLATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="24_MHZ_XTAL_OSCILLATOR">
+<connects>
+<connect gate="G$1" pin="1-XTAL" pad="1"/>
+<connect gate="G$1" pin="2-CASE" pad="2"/>
+<connect gate="G$1" pin="3-XTAL" pad="3"/>
+<connect gate="G$1" pin="4-CASE" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="FL2400022CT-ND" constant="no"/>
+<attribute name="MOPN" value="729-FL2400022" constant="no"/>
+<attribute name="MPN" value="FL2400022" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
