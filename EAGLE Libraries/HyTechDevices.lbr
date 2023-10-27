@@ -11928,7 +11928,7 @@ Isolated Flyback Converter with 630V/300mA Switch
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="JUMPER-3PIN">
+<symbol name="JUMPER_3PIN">
 <pin name="1" x="0" y="0" length="middle" direction="pas" rot="R90"/>
 <pin name="2" x="5.08" y="0" length="middle" direction="pas" rot="R90"/>
 <pin name="3" x="10.16" y="0" length="middle" direction="pas" rot="R90"/>
@@ -20538,9 +20538,9 @@ Note: OPA2991 is also a comparator</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JUMPER-3PIN">
+<deviceset name="JUMPER_3PIN">
 <gates>
-<gate name="G$1" symbol="JUMPER-3PIN" x="0" y="0"/>
+<gate name="G$1" symbol="JUMPER_3PIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="1X03">
