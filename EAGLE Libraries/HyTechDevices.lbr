@@ -19538,10 +19538,10 @@ RS422 Transreceiver
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="296-AMC3330QDWERQ1TR-ND"/>
+<attribute name="DKPN" value="296-AMC3330DWERCT-ND"/>
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
-<attribute name="MOPN" value="595-AMC3330QDWERQ1"/>
-<attribute name="MPN" value="AMC3330QDWERQ1"/>
+<attribute name="MOPN" value="595-AMC3330DWER"/>
+<attribute name="MPN" value="AMC3330DWER"/>
 </technology>
 </technologies>
 </device>
@@ -19566,10 +19566,10 @@ RS422 Transreceiver
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="296-AMC3330QDWERQ1TR-ND"/>
+<attribute name="DKPN" value="296-AMC3330DWERCT-ND"/>
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
-<attribute name="MOPN" value="595-AMC3330QDWERQ1"/>
-<attribute name="MPN" value="AMC3330QDWERQ1"/>
+<attribute name="MOPN" value="595-AMC3330DWER"/>
+<attribute name="MPN" value="AMC3330DWER"/>
 </technology>
 </technologies>
 </device>
