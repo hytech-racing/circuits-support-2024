@@ -18247,7 +18247,7 @@ CPC1020NTR
 <attribute name="MPN" value="LTC6994CS6-1#TRMPBF"/>
 </technology>
 <technology name="2">
-<attribute name="DKPN" value="505-LTC6994HS6-2#TRMPBFTR-ND"/>
+<attribute name="DKPN" value="505-LTC6994CS6-2#TRMPBFCT-ND"/>
 <attribute name="MANUFACTURER" value="Analog Devices Inc"/>
 <attribute name="MOPN" value="584-C6994HS6-2TRMPBF"/>
 <attribute name="MPN" value="LTC6994HS6-2#TRMPBF"/>
