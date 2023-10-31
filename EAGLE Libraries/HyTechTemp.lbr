@@ -327,7 +327,7 @@ Size</description>
 </technology>
 <technology name="1KV_56PF">
 <attribute name="CAPACITANCE" value="56pF" constant="no"/>
-<attribute name="DKPN" value="" constant="no"/>
+<attribute name="DKPN" value="399-16719-1-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Murata Electronics" constant="no"/>
 <attribute name="MOPN" value="81-GRM31A5C2J560JW1D" constant="no"/>
 <attribute name="MPN" value="GRM31A7U2J560JW31D" constant="no"/>
