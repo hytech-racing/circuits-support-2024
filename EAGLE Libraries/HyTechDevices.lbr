@@ -12364,7 +12364,7 @@ Isolated Flyback Converter with 630V/300mA Switch
 </technology>
 <technology name="50V_1UF">
 <attribute name="CAPACITANCE" value="1uF"/>
-<attribute name="DKPN" value="587-2400-2-ND"/>
+<attribute name="DKPN" value="587-2400-1-ND"/>
 <attribute name="MANUFACTURER" value="Taiyo Yuden"/>
 <attribute name="MOPN" value="963-UMK107BJ105KA-T"/>
 <attribute name="MPN" value="UMK107BJ105KA-T"/>
