@@ -237,7 +237,7 @@ Adapted from &lt;a href="https://www.analog.com/media/en/technical-documentation
 <wire x1="0" y1="0" x2="0" y2="-38.1" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-38.1" x2="12.7" y2="0" width="0.254" layer="94"/>
 <wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="VDD" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="DA" x="-2.54" y="-2.54" length="short" direction="out"/>
 <pin name="DB" x="-2.54" y="-5.08" length="short" direction="out"/>
 <pin name="NC1" x="-2.54" y="-7.62" length="short" direction="nc"/>
 <pin name="S8B" x="-2.54" y="-10.16" length="short" direction="in"/>
@@ -248,11 +248,11 @@ Adapted from &lt;a href="https://www.analog.com/media/en/technical-documentation
 <pin name="S3B" x="-2.54" y="-22.86" length="short" direction="in"/>
 <pin name="S2B" x="-2.54" y="-25.4" length="short" direction="in"/>
 <pin name="S1B" x="-2.54" y="-27.94" length="short" direction="in"/>
-<pin name="GND" x="-2.54" y="-30.48" length="short" direction="pwr"/>
-<pin name="NC2" x="-2.54" y="-33.02" length="short" direction="nc"/>
-<pin name="NC3" x="-2.54" y="-35.56" length="short" direction="nc"/>
+<pin name="NC2" x="-2.54" y="-30.48" length="short" direction="nc"/>
+<pin name="NC3" x="-2.54" y="-33.02" length="short" direction="nc"/>
+<pin name="GND" x="-2.54" y="-35.56" length="short" direction="pwr"/>
 <wire x1="0" y1="-38.1" x2="12.7" y2="-38.1" width="0.254" layer="94"/>
-<pin name="DA" x="15.24" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="VDD" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="VSS" x="15.24" y="-5.08" length="short" direction="pwr" rot="R180"/>
 <pin name="S8A" x="15.24" y="-7.62" length="short" direction="in" rot="R180"/>
 <pin name="S7A" x="15.24" y="-10.16" length="short" direction="in" rot="R180"/>
@@ -288,8 +288,8 @@ Adapted from &lt;a href="https://www.analog.com/media/en/technical-documentation
 <connect gate="G$1" pin="EN" pad="18"/>
 <connect gate="G$1" pin="GND" pad="12"/>
 <connect gate="G$1" pin="NC1" pad="3"/>
-<connect gate="G$1" pin="NC2" pad="13"/>
-<connect gate="G$1" pin="NC3" pad="14"/>
+<connect gate="G$1" pin="NC2" pad="14"/>
+<connect gate="G$1" pin="NC3" pad="13"/>
 <connect gate="G$1" pin="S1A" pad="19"/>
 <connect gate="G$1" pin="S1B" pad="11"/>
 <connect gate="G$1" pin="S2A" pad="20"/>
