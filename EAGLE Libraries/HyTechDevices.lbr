@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6707,6 +6707,46 @@ Mouser number 538-505110-0492&lt;br&gt;
 <text x="0" y="1.1" size="0.254" layer="25" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.286" y1="-1.27" x2="2.286" y2="1.27" layer="39"/>
 </package>
+<package name="TSSOP-28">
+<description>TSSOP-28
+&lt;br&gt;
+Adapted from &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADG706_707.pdf"&gt;ADG707 Datasheet&lt;/a&gt; (found at bottom)</description>
+<smd name="2" x="-3.575" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="3" x="-2.925" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="4" x="-2.275" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="5" x="-1.625" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="6" x="-0.975" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="7" x="-0.325" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="8" x="0.325" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="9" x="0.975" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="10" x="1.625" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="11" x="2.275" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="13" x="3.575" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="12" x="2.925" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="27" x="-3.575" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="26" x="-2.925" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="25" x="-2.275" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="24" x="-1.625" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="23" x="-0.975" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="22" x="-0.325" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="21" x="0.325" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="20" x="0.975" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="19" x="1.625" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="18" x="2.275" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="17" x="2.925" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="16" x="3.575" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<wire x1="-4.9" y1="2.25" x2="4.9" y2="2.25" width="0.127" layer="21"/>
+<wire x1="4.9" y1="2.25" x2="4.9" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-2.25" x2="-4.9" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-2.25" x2="-4.9" y2="2.25" width="0.127" layer="21"/>
+<text x="-5.118" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-4.918" y="-2.794" radius="0.254" width="0" layer="21"/>
+<smd name="28" x="-4.225" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="15" x="4.225" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="1" x="-4.225" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="14" x="4.225" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<rectangle x1="-5" y1="-4" x2="5" y2="4" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -12000,6 +12040,42 @@ Isolated Flyback Converter with 630V/300mA Switch
 <pin name="S2" x="20.32" y="-27.94" length="short" direction="in" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-33.782" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="ADG707">
+<wire x1="0" y1="0" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-38.1" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="DA" x="-2.54" y="-2.54" length="short" direction="out"/>
+<pin name="DB" x="-2.54" y="-5.08" length="short" direction="out"/>
+<pin name="NC1" x="-2.54" y="-7.62" length="short" direction="nc"/>
+<pin name="S8B" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="S7B" x="-2.54" y="-12.7" length="short" direction="in"/>
+<pin name="S6B" x="-2.54" y="-15.24" length="short" direction="in"/>
+<pin name="S5B" x="-2.54" y="-17.78" length="short" direction="in"/>
+<pin name="S4B" x="-2.54" y="-20.32" length="short" direction="in"/>
+<pin name="S3B" x="-2.54" y="-22.86" length="short" direction="in"/>
+<pin name="S2B" x="-2.54" y="-25.4" length="short" direction="in"/>
+<pin name="S1B" x="-2.54" y="-27.94" length="short" direction="in"/>
+<pin name="NC2" x="-2.54" y="-30.48" length="short" direction="nc"/>
+<pin name="NC3" x="-2.54" y="-33.02" length="short" direction="nc"/>
+<pin name="GND" x="-2.54" y="-35.56" length="short" direction="pwr"/>
+<wire x1="0" y1="-38.1" x2="12.7" y2="-38.1" width="0.254" layer="94"/>
+<pin name="VDD" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VSS" x="15.24" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="S8A" x="15.24" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="S7A" x="15.24" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="S6A" x="15.24" y="-12.7" length="short" direction="in" rot="R180"/>
+<pin name="S5A" x="15.24" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="S4A" x="15.24" y="-17.78" length="short" direction="in" rot="R180"/>
+<pin name="S3A" x="15.24" y="-20.32" length="short" direction="in" rot="R180"/>
+<pin name="S2A" x="15.24" y="-22.86" length="short" direction="in" rot="R180"/>
+<pin name="S1A" x="15.24" y="-25.4" length="short" direction="in" rot="R180"/>
+<pin name="EN" x="15.24" y="-27.94" length="short" direction="in" rot="R180"/>
+<pin name="A0" x="15.24" y="-30.48" length="short" direction="in" rot="R180"/>
+<pin name="A1" x="15.24" y="-33.02" length="short" direction="in" rot="R180"/>
+<pin name="A2" x="15.24" y="-35.56" length="short" direction="in" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-38.862" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -20711,6 +20787,55 @@ Note: OPA2991 is also a comparator</description>
 <attribute name="MANUFACTURER" value="Nexperia USA Inc."/>
 <attribute name="MOPN" value="771-74HC4067PW-T"/>
 <attribute name="MPN" value="74HC4067PW,118"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADG707">
+<description>ADG707 2 Analog 8:1 Multiplexer &lt;br&gt;
+&lt;a href = "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG706_707.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ADG707" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-28">
+<connects>
+<connect gate="G$1" pin="A0" pad="17"/>
+<connect gate="G$1" pin="A1" pad="16"/>
+<connect gate="G$1" pin="A2" pad="15"/>
+<connect gate="G$1" pin="DA" pad="28"/>
+<connect gate="G$1" pin="DB" pad="2"/>
+<connect gate="G$1" pin="EN" pad="18"/>
+<connect gate="G$1" pin="GND" pad="12"/>
+<connect gate="G$1" pin="NC1" pad="3"/>
+<connect gate="G$1" pin="NC2" pad="14"/>
+<connect gate="G$1" pin="NC3" pad="13"/>
+<connect gate="G$1" pin="S1A" pad="19"/>
+<connect gate="G$1" pin="S1B" pad="11"/>
+<connect gate="G$1" pin="S2A" pad="20"/>
+<connect gate="G$1" pin="S2B" pad="10"/>
+<connect gate="G$1" pin="S3A" pad="21"/>
+<connect gate="G$1" pin="S3B" pad="9"/>
+<connect gate="G$1" pin="S4A" pad="22"/>
+<connect gate="G$1" pin="S4B" pad="8"/>
+<connect gate="G$1" pin="S5A" pad="23"/>
+<connect gate="G$1" pin="S5B" pad="7"/>
+<connect gate="G$1" pin="S6A" pad="24"/>
+<connect gate="G$1" pin="S6B" pad="6"/>
+<connect gate="G$1" pin="S7A" pad="25"/>
+<connect gate="G$1" pin="S7B" pad="5"/>
+<connect gate="G$1" pin="S8A" pad="26"/>
+<connect gate="G$1" pin="S8B" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="27"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="ADG707BRUZ-REEL7CT-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-ADG707BRUZ-R7"/>
+<attribute name="MPN" value="ADG707BRUZ-REEL7"/>
 </technology>
 </technologies>
 </device>
