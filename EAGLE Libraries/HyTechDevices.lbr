@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4220,9 +4220,9 @@ Header: 0.1" Pitch Pin Header
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE">
 <description>7 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500717"&gt;Part&lt;/a&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500716"&gt;Part&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;a href="https://tools.molex.com/pdm_docs/sd/436500716_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
 <hole x="11.9888" y="0.9398" drill="1.0668"/>
@@ -4284,9 +4284,9 @@ Header: 0.1" Pitch Pin Header
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED">
 <description>7 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500717"&gt;Part&lt;/a&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500716"&gt;Part&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;a href="https://tools.molex.com/pdm_docs/sd/436500716_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
 <hole x="12.0015" y="-1.9558" drill="1.27"/>
