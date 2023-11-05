@@ -20472,7 +20472,10 @@ Requires ordering of:
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="505110-0492" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
