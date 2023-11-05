@@ -13634,6 +13634,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="47.01V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="225K">
+<attribute name="DKPN" value="764-M55342E12B225BRWS-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="M55342E12B225BRWS"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="225K"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="240">
 <attribute name="DKPN" value="311-240HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
