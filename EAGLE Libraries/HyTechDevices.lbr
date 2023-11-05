@@ -12380,6 +12380,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
+<technology name="25V_10PF">
+<attribute name="CAPACITANCE" value="10PF"/>
+<attribute name="DKPN" value="490-8607-1-ND"/>
+<attribute name="MANUFACTURER" value="Murata Electronics"/>
+<attribute name="MOPN" value="81-GRM0335C1E100JA1D"/>
+<attribute name="MPN" value="GRM0335C1E100JA01D"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
 <technology name="25V_10UF">
 <attribute name="CAPACITANCE" value="10µF"/>
 <attribute name="DKPN" value="490-7202-1-ND"/>
