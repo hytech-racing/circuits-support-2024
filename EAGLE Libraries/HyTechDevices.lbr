@@ -1180,7 +1180,7 @@ visible on the PCB.</text>
 <text x="0" y="3.556" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;Name</text>
 <rectangle x1="-5.08" y1="-3.556" x2="5.08" y2="3.556" layer="39"/>
 </package>
-<package name="OKI-78SR">
+<package name="OKI-78SR(VERTICAL)">
 <description>OKI-78SR Regulator
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/281/oki-78sr-56393.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -6746,6 +6746,22 @@ Adapted from &lt;a href="https://www.analog.com/media/en/technical-documentation
 <smd name="1" x="-4.225" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
 <smd name="14" x="4.225" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
 <rectangle x1="-5" y1="-4" x2="5" y2="4" layer="39"/>
+</package>
+<package name="OKI-78SR(HORIZONTAL)">
+<description>OKI-78SR Horizontal
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/281/oki-78sr-56393.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="2.54" y="-7.3985" drill="1" first="yes"/>
+<pad name="2" x="0" y="-7.3985" drill="1"/>
+<pad name="3" x="-2.54" y="-7.3985" drill="1"/>
+<wire x1="-5.461" y1="8.8985" x2="5.461" y2="8.8985" width="0.127" layer="21" style="shortdash"/>
+<wire x1="5.461" y1="8.8985" x2="5.461" y2="-8.8985" width="0.127" layer="21" style="shortdash"/>
+<wire x1="5.461" y1="-8.8985" x2="-5.461" y2="-8.8985" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-5.461" y1="-8.8985" x2="-5.461" y2="8.8985" width="0.127" layer="21" style="shortdash"/>
+<text x="0" y="9.652" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.75" y1="-9" x2="5.75" y2="9" layer="39"/>
+<rectangle x1="-3.81" y1="-8.8985" x2="3.81" y2="-5.8985" layer="40"/>
+<circle x="0" y="0" radius="4.99030625" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -13643,6 +13659,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="47.01V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="225K">
+<attribute name="DKPN" value="764-M55342E12B225BRWS-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="M55342E12B225BRWS"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="225K"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="240">
 <attribute name="DKPN" value="311-240HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -17159,7 +17186,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="OKI-78SR" package="OKI-78SR">
+<device name="OKI-78SR" package="OKI-78SR(VERTICAL)">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -17177,6 +17204,28 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
 <attribute name="MOPN" value="580-OKI78SR5/1.5W36C"/>
 <attribute name="MPN" value="OKI-78SR-5/1.5-W36-C"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="OKI-78SR(HORIZONTAL)">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="12V">
+<attribute name="DKPN" value="811-3294-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKI78SR12/1W36HC"/>
+<attribute name="MPN" value="OKI-78SR-12/1.0-W36H-C"/>
+</technology>
+<technology name="5V">
+<attribute name="DKPN" value="811-2692-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKI78SR51.5W36HC"/>
+<attribute name="MPN" value="OKI-78SR-5/1.5-W36H-C
+"/>
 </technology>
 </technologies>
 </device>
