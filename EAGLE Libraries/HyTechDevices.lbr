@@ -1180,7 +1180,7 @@ visible on the PCB.</text>
 <text x="0" y="3.556" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;Name</text>
 <rectangle x1="-5.08" y1="-3.556" x2="5.08" y2="3.556" layer="39"/>
 </package>
-<package name="OKI-78SR(VERTICAL)">
+<package name="OKI-78SR">
 <description>OKI-78SR Regulator
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/281/oki-78sr-56393.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -6661,18 +6661,6 @@ Mouser number 538-505110-0492&lt;br&gt;
 <rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="39"/>
 <wire x1="2.35" y1="0.9" x2="2.35" y2="-0.9" width="0.127" layer="21"/>
 </package>
-<package name="NKS3">
-<smd name="1" x="-1.05" y="0.8" dx="1.5" dy="1.2" layer="1"/>
-<smd name="2" x="1.05" y="0.8" dx="1.5" dy="1.2" layer="1"/>
-<smd name="4" x="-1.05" y="-0.8" dx="1.5" dy="1.2" layer="1"/>
-<smd name="3" x="1.05" y="-0.8" dx="1.5" dy="1.2" layer="1"/>
-<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
-<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
-<text x="-2.054" y="1.827" size="0.8128" layer="25">&gt;NAME</text>
-<rectangle x1="-2.032" y1="-1.778" x2="2.032" y2="1.778" layer="39"/>
-</package>
 <package name="1X03">
 <wire x1="0.635" y1="0" x2="1.905" y2="0" width="0.127" layer="21"/>
 <wire x1="1.905" y1="0" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
@@ -6758,22 +6746,6 @@ Adapted from &lt;a href="https://www.analog.com/media/en/technical-documentation
 <smd name="1" x="-4.225" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
 <smd name="14" x="4.225" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
 <rectangle x1="-5" y1="-4" x2="5" y2="4" layer="39"/>
-</package>
-<package name="OKI-78SR(HORIZONTAL)">
-<description>OKI-78SR Horizontal
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/281/oki-78sr-56393.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="1" x="2.54" y="-7.3985" drill="1" first="yes"/>
-<pad name="2" x="0" y="-7.3985" drill="1"/>
-<pad name="3" x="-2.54" y="-7.3985" drill="1"/>
-<wire x1="-5.461" y1="8.8985" x2="5.461" y2="8.8985" width="0.127" layer="21" style="shortdash"/>
-<wire x1="5.461" y1="8.8985" x2="5.461" y2="-8.8985" width="0.127" layer="21" style="shortdash"/>
-<wire x1="5.461" y1="-8.8985" x2="-5.461" y2="-8.8985" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-5.461" y1="-8.8985" x2="-5.461" y2="8.8985" width="0.127" layer="21" style="shortdash"/>
-<text x="0" y="9.652" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-5.75" y1="-9" x2="5.75" y2="9" layer="39"/>
-<rectangle x1="-3.81" y1="-8.8985" x2="3.81" y2="-5.8985" layer="40"/>
-<circle x="0" y="0" radius="4.99030625" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -12408,15 +12380,6 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
-<technology name="25V_10PF">
-<attribute name="CAPACITANCE" value="10PF"/>
-<attribute name="DKPN" value="490-8607-1-ND"/>
-<attribute name="MANUFACTURER" value="Murata Electronics"/>
-<attribute name="MOPN" value="81-GRM0335C1E100JA1D"/>
-<attribute name="MPN" value="GRM0335C1E100JA01D"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
 <technology name="25V_10UF">
 <attribute name="CAPACITANCE" value="10µF"/>
 <attribute name="DKPN" value="490-7202-1-ND"/>
@@ -13670,17 +13633,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="47.01V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
-<technology name="225K">
-<attribute name="DKPN" value="764-M55342E12B225BRWS-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="M55342E12B225BRWS"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="225K"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
-<attribute name="VOLTAGE_MAX" value="200V"/>
 </technology>
 <technology name="240">
 <attribute name="DKPN" value="311-240HRCT-ND"/>
@@ -16909,9 +16861,7 @@ SHT31: High Grade
 <deviceset name="CRYSTAL_*" prefix="X">
 <description>Crystal
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/122/ECX_42-12562.pdf"&gt;Datasheet1&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/115/DIOD_S_A0003395120_1-2512671.pdf"&gt;Datasheet2&lt;/a&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/122/ECX_42-12562.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 &lt;br&gt;
@@ -16935,24 +16885,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <attribute name="MOPN" value="520-160-10-42-CKMT"/>
 <attribute name="MPN" value="ECS-160-10-42-CKM-TR"/>
 <attribute name="SHUNT_CAPACITANCE" value="2 - 5 pF"/>
-</technology>
-</technologies>
-</device>
-<device name="&quot;" package="NKS3">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-</connects>
-<technologies>
-<technology name="24MHZ">
-<attribute name="DKPN" value="FL2400022CT-ND"/>
-<attribute name="FREQUENCY" value="24MHz"/>
-<attribute name="LOAD_CAPACITANCE" value="10pF"/>
-<attribute name="MANUFACTURER" value="Diodes Incorporated"/>
-<attribute name="MOPN" value="729-FL2400022"/>
-<attribute name="MPN" value="FL2400022"/>
-<attribute name="SHUNT_CAPACITANCE" value="5pF"/>
 </technology>
 </technologies>
 </device>
@@ -17218,7 +17150,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="OKI-78SR" package="OKI-78SR(VERTICAL)">
+<device name="OKI-78SR" package="OKI-78SR">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -17236,28 +17168,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
 <attribute name="MOPN" value="580-OKI78SR5/1.5W36C"/>
 <attribute name="MPN" value="OKI-78SR-5/1.5-W36-C"/>
-</technology>
-</technologies>
-</device>
-<device name="" package="OKI-78SR(HORIZONTAL)">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name="12V">
-<attribute name="DKPN" value="811-3294-ND"/>
-<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
-<attribute name="MOPN" value="580-OKI78SR12/1W36HC"/>
-<attribute name="MPN" value="OKI-78SR-12/1.0-W36H-C"/>
-</technology>
-<technology name="5V">
-<attribute name="DKPN" value="811-2692-ND"/>
-<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
-<attribute name="MOPN" value="580-OKI78SR51.5W36HC"/>
-<attribute name="MPN" value="OKI-78SR-5/1.5-W36H-C
-"/>
 </technology>
 </technologies>
 </device>
@@ -20562,10 +20472,7 @@ Requires ordering of:
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="505110-0492" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
