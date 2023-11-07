@@ -6341,12 +6341,12 @@ Pulse Transformers 1CT:1 200 UH
 <smd name="P$62" x="-5.75" y="-2.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
 <smd name="P$63" x="-5.75" y="-3.25" dx="1.2" dy="0.3" layer="1" rot="R180"/>
 <smd name="P$64" x="-5.75" y="-3.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<wire x1="-5" y1="5" x2="-5" y2="-5" width="0.254" layer="21"/>
-<wire x1="-5" y1="-5" x2="5" y2="-5" width="0.254" layer="21"/>
-<wire x1="5" y1="-5" x2="5" y2="5" width="0.254" layer="21"/>
-<wire x1="5" y1="5" x2="-5" y2="5" width="0.254" layer="21"/>
+<wire x1="-5" y1="5" x2="-5" y2="-5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-5" x2="5" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="-5" x2="5" y2="5" width="0.127" layer="21"/>
+<wire x1="5" y1="5" x2="-5" y2="5" width="0.127" layer="21"/>
 <text x="0" y="6.873" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
-<circle x="-5.08" y="-6.35" radius="0.127" width="0" layer="21"/>
+<circle x="-4.318" y="-5.461" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-5.207" y1="-6.858" x2="5.207" y2="-5.08" layer="39"/>
 <rectangle x1="-5.207" y1="5.08" x2="5.207" y2="6.858" layer="39"/>
 <rectangle x1="-6.858" y1="-5.08" x2="6.858" y2="5.08" layer="39"/>
