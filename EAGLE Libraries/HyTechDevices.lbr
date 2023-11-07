@@ -6347,9 +6347,11 @@ Pulse Transformers 1CT:1 200 UH
 <wire x1="5" y1="5" x2="-5" y2="5" width="0.127" layer="21"/>
 <text x="0" y="6.873" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
 <circle x="-4.318" y="-5.461" radius="0.127" width="0" layer="21"/>
-<rectangle x1="-5.207" y1="-6.858" x2="5.207" y2="-5.08" layer="39"/>
-<rectangle x1="-5.207" y1="5.08" x2="5.207" y2="6.858" layer="39"/>
-<rectangle x1="-6.858" y1="-5.08" x2="6.858" y2="5.08" layer="39"/>
+<rectangle x1="-4.445" y1="-6.858" x2="4.445" y2="-5.08" layer="39"/>
+<rectangle x1="-4.445" y1="5.08" x2="4.445" y2="6.858" layer="39"/>
+<rectangle x1="-5.08" y1="-5.08" x2="5.08" y2="5.08" layer="39"/>
+<rectangle x1="-6.858" y1="-4.445" x2="-5.08" y2="4.445" layer="39"/>
+<rectangle x1="5.08" y1="-4.445" x2="6.858" y2="4.445" layer="39"/>
 </package>
 <package name="RJ45_ETH">
 <description>Footprint for RJ45 Ethernet Connector&lt;br&gt;
