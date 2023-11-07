@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6274,8 +6274,9 @@ Pulse Transformers 1CT:1 200 UH
 <circle x="0" y="0" radius="5.25" width="10.5" layer="39"/>
 <text x="0" y="10.652" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="STM32-FOOTPRINT">
-<description>https://www.st.com/content/ccc/resource/technical/document/datasheet/65/cb/75/50/53/d6/48/24/DM00141306.pdf/files/DM00141306.pdf/jcr:content/translations/en.DM00141306.pdf</description>
+<package name="LQFP-64-NO-THERMAL">
+<description>&lt;br&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/65/cb/75/50/53/d6/48/24/DM00141306.pdf/files/DM00141306.pdf/jcr:content/translations/en.DM00141306.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="P$15" x="3.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$16" x="3.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$9" x="0.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
@@ -6344,9 +6345,11 @@ Pulse Transformers 1CT:1 200 UH
 <wire x1="-5" y1="-5" x2="5" y2="-5" width="0.254" layer="21"/>
 <wire x1="5" y1="-5" x2="5" y2="5" width="0.254" layer="21"/>
 <wire x1="5" y1="5" x2="-5" y2="5" width="0.254" layer="21"/>
-<rectangle x1="-7" y1="-7" x2="7" y2="7" layer="39"/>
-<text x="0" y="7" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
-<circle x="-3.81" y="-7.62" radius="0.127" width="0.254" layer="21"/>
+<text x="0" y="6.873" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
+<circle x="-5.08" y="-6.35" radius="0.127" width="0" layer="21"/>
+<rectangle x1="-5.207" y1="-6.858" x2="5.207" y2="-5.08" layer="39"/>
+<rectangle x1="-5.207" y1="5.08" x2="5.207" y2="6.858" layer="39"/>
+<rectangle x1="-6.858" y1="-5.08" x2="6.858" y2="5.08" layer="39"/>
 </package>
 <package name="RJ45_ETH">
 <description>Footprint for RJ45 Ethernet Connector&lt;br&gt;
@@ -17256,8 +17259,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <attribute name="DKPN" value="811-2692-ND"/>
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
 <attribute name="MOPN" value="580-OKI78SR51.5W36HC"/>
-<attribute name="MPN" value="OKI-78SR-5/1.5-W36H-C
-"/>
+<attribute name="MPN" value="OKI-78SR-5/1.5-W36H-C "/>
 </technology>
 </technologies>
 </device>
@@ -20035,11 +20037,13 @@ Male&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="STM32-LQFP64" prefix="U">
+<description>&lt;br&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/65/cb/75/50/53/d6/48/24/DM00141306.pdf/files/DM00141306.pdf/jcr:content/translations/en.DM00141306.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="STM32-SYMBOL" x="27.94" y="-27.94"/>
 </gates>
 <devices>
-<device name="" package="STM32-FOOTPRINT">
+<device name="" package="LQFP-64-NO-THERMAL">
 <connects>
 <connect gate="G$1" pin="BOOT0" pad="P$60"/>
 <connect gate="G$1" pin="NRST" pad="P$7"/>
