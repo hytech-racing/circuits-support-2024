@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -534,7 +534,7 @@
 <smd name="1" x="-2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
 <smd name="2" x="0" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
 <smd name="3" x="2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<smd name="4" x="0" y="3.2" dx="3.3" dy="1.6" layer="1" thermals="no"/>
+<smd name="4" x="0" y="3.2" dx="3.3" dy="1.6" layer="1"/>
 <text x="0" y="4.445" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <wire x1="-3.275" y1="1.775" x2="3.275" y2="1.775" width="0.127" layer="21"/>
 <wire x1="3.275" y1="1.775" x2="3.275" y2="-1.775" width="0.127" layer="21"/>
@@ -6275,73 +6275,72 @@ Pulse Transformers 1CT:1 200 UH
 <text x="0" y="10.652" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="LQFP-64-NO-THERMAL">
-<description>LQFP-64 footprint without thermal enhancement&lt;br&gt;
-&lt;a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/65/cb/75/50/53/d6/48/24/DM00141306.pdf/files/DM00141306.pdf/jcr:content/translations/en.DM00141306.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
-Based off orientation demo on page 173 for better STM32 compliance</description>
-<smd name="15" x="3.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="16" x="3.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="9" x="0.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="10" x="0.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="11" x="1.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="12" x="1.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="14" x="2.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="13" x="2.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="8" x="-0.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="7" x="-0.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="6" x="-1.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="5" x="-1.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="4" x="-2.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="3" x="-2.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="2" x="-3.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="1" x="-3.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="17" x="5.75" y="-3.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="18" x="5.75" y="-3.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="19" x="5.75" y="-2.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="20" x="5.75" y="-2.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="21" x="5.75" y="-1.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="22" x="5.75" y="-1.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="23" x="5.75" y="-0.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="24" x="5.75" y="-0.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="25" x="5.75" y="0.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="26" x="5.75" y="0.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="27" x="5.75" y="1.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="28" x="5.75" y="1.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="29" x="5.75" y="2.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="30" x="5.75" y="2.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="31" x="5.75" y="3.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="32" x="5.75" y="3.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="33" x="3.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="34" x="3.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="35" x="2.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="36" x="2.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="37" x="1.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="38" x="1.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="39" x="0.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="40" x="0.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="41" x="-0.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="42" x="-0.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="43" x="-1.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="44" x="-1.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="45" x="-2.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="46" x="-2.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="47" x="-3.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="48" x="-3.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="49" x="-5.75" y="3.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="50" x="-5.75" y="3.25" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="51" x="-5.75" y="2.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="52" x="-5.75" y="2.25" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="53" x="-5.75" y="1.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="54" x="-5.75" y="1.25" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="55" x="-5.75" y="0.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="56" x="-5.75" y="0.25" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="57" x="-5.75" y="-0.25" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="58" x="-5.75" y="-0.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="59" x="-5.75" y="-1.25" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="60" x="-5.75" y="-1.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="61" x="-5.75" y="-2.25" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="62" x="-5.75" y="-2.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="63" x="-5.75" y="-3.25" dx="1.2" dy="0.3" layer="1" rot="R180"/>
-<smd name="64" x="-5.75" y="-3.75" dx="1.2" dy="0.3" layer="1" rot="R180"/>
+<description>&lt;br&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/65/cb/75/50/53/d6/48/24/DM00141306.pdf/files/DM00141306.pdf/jcr:content/translations/en.DM00141306.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="15" x="3.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="16" x="3.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="9" x="0.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="10" x="0.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="11" x="1.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="12" x="1.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="14" x="2.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="13" x="2.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="8" x="-0.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="7" x="-0.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="6" x="-1.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="5" x="-1.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="4" x="-2.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="3" x="-2.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="2" x="-3.25" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="1" x="-3.75" y="-5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="17" x="5.75" y="-3.75" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="18" x="5.75" y="-3.25" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="19" x="5.75" y="-2.75" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="20" x="5.75" y="-2.25" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="21" x="5.75" y="-1.75" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="22" x="5.75" y="-1.25" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="23" x="5.75" y="-0.75" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="24" x="5.75" y="-0.25" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="25" x="5.75" y="0.25" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="26" x="5.75" y="0.75" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="27" x="5.75" y="1.25" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="28" x="5.75" y="1.75" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="29" x="5.75" y="2.25" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="30" x="5.75" y="2.75" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="31" x="5.75" y="3.25" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="32" x="5.75" y="3.75" dx="1.2" dy="0.3" layer="1" thermals="no"/>
+<smd name="33" x="3.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="34" x="3.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="35" x="2.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="36" x="2.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="37" x="1.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="38" x="1.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="39" x="0.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="40" x="0.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="41" x="-0.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="42" x="-0.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="43" x="-1.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="44" x="-1.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="45" x="-2.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="46" x="-2.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="47" x="-3.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="48" x="-3.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="49" x="-5.75" y="3.75" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="50" x="-5.75" y="3.25" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="51" x="-5.75" y="2.75" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="52" x="-5.75" y="2.25" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="53" x="-5.75" y="1.75" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="54" x="-5.75" y="1.25" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="55" x="-5.75" y="0.75" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="56" x="-5.75" y="0.25" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="57" x="-5.75" y="-0.25" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="58" x="-5.75" y="-0.75" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="59" x="-5.75" y="-1.25" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="60" x="-5.75" y="-1.75" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="61" x="-5.75" y="-2.25" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="62" x="-5.75" y="-2.75" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="63" x="-5.75" y="-3.25" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
+<smd name="64" x="-5.75" y="-3.75" dx="1.2" dy="0.3" layer="1" rot="R180" thermals="no"/>
 <wire x1="-5" y1="5" x2="-5" y2="-5" width="0.127" layer="21"/>
 <wire x1="-5" y1="-5" x2="5" y2="-5" width="0.127" layer="21"/>
 <wire x1="5" y1="-5" x2="5" y2="5" width="0.127" layer="21"/>
@@ -11574,7 +11573,7 @@ Isolated Flyback Converter with 630V/300mA Switch
 <pin name="PC1" x="-30.48" y="-2.54" length="short"/>
 <pin name="PC2" x="-30.48" y="-5.08" length="short"/>
 <pin name="PC3" x="-30.48" y="-7.62" length="short"/>
-<pin name="VSSA/VREF-" x="-30.48" y="-10.16" length="short" direction="sup"/>
+<pin name="VSSA/VREF-" x="-30.48" y="-10.16" length="short" direction="sup" function="dot"/>
 <pin name="VDDA/VREF+" x="-30.48" y="-12.7" length="short" direction="sup"/>
 <pin name="PA0" x="-30.48" y="-15.24" length="short"/>
 <pin name="PA1" x="-30.48" y="-17.78" length="short"/>
@@ -11632,7 +11631,7 @@ Isolated Flyback Converter with 630V/300mA Switch
 <wire x1="30.48" y1="-30.48" x2="30.48" y2="27.94" width="0.254" layer="94"/>
 <wire x1="30.48" y1="27.94" x2="-27.94" y2="27.94" width="0.254" layer="94"/>
 <text x="-27.94" y="28.702" size="1.27" layer="95">&gt;NAME</text>
-<text x="-27.94" y="-31.242" size="1.27" layer="96" align="top-left">&gt;LABEL</text>
+<text x="-27.94" y="-31.242" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="ADM4850">
 <pin name="RO" x="-2.54" y="-2.54" length="short"/>
@@ -20040,7 +20039,7 @@ Male&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="STM32F446" prefix="U">
-<description>STM32F446&lt;br&gt;
+<description>&lt;br&gt;
 &lt;a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/65/cb/75/50/53/d6/48/24/DM00141306.pdf/files/DM00141306.pdf/jcr:content/translations/en.DM00141306.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="STM32F446" x="27.94" y="-27.94"/>
@@ -20116,7 +20115,6 @@ Male&lt;br&gt;
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="497-15376-ND"/>
-<attribute name="LABEL" value="STM32F446"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
 <attribute name="MOPN" value="511-STM32F446RET6"/>
 <attribute name="MPN" value="STM32F446RET6"/>
