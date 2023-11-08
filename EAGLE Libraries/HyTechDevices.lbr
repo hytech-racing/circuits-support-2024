@@ -12231,6 +12231,7 @@ Isolated Flyback Converter with 630V/300mA Switch
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM21BR61H106KE43_01A-1986884.pdf"&gt;GRM21BR61H&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1034_X7R_HV_ARC_SMD-1101730.pdf"&gt;C1812W104KDRACTU&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"&gt;CGA series - MLCC Automotive grade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C220K3RACAUTO"&gt;Kemet Datasheet&lt;/a&gt;&lt;li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
@@ -12438,6 +12439,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="MOPN" value="187-CL10B105KA8NNNC"/>
 <attribute name="MPN" value="CL10B105KA8NNNC"/>
 <attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_22PF">
+<attribute name="CAPACITANCE" value="22 pF"/>
+<attribute name="DKPN" value="399-C0603C220K3RACAUTOTR-ND"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="MOPN" value="80-C0603C220K3RAUTO"/>
+<attribute name="MPN" value="C0603C220K3RACAUTO"/>
+<attribute name="TOLERANCE" value="10%" constant="no"/>
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
 <technology name="25V_4.7UF">
@@ -20935,6 +20945,33 @@ Note: OPA2991 is also a comparator</description>
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-ADG707BRUZ-R7"/>
 <attribute name="MPN" value="ADG707BRUZ-REEL7"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C0603C220K3RACAUTO">
+<description>0603 22 pF Capacitor
+&lt;br&gt;
+&lt;a href="https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C220K3RACAUTO"&gt;Datasheet&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CAPACITANCE" value="22 pF"/>
+<attribute name="DKPN" value="399-C0603C220K3RACAUTOTR-ND"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="MOPN" value="80-C0603C220K3RAUTO"/>
+<attribute name="MPN" value="C0603C220K3RACAUTO"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25 V"/>
 </technology>
 </technologies>
 </device>
