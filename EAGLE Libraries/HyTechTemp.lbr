@@ -204,20 +204,20 @@
 <smd name="10" x="1.25" y="2.05" dx="0.3" dy="1" layer="1"/>
 <smd name="11" x="1.75" y="2.05" dx="0.3" dy="1" layer="1"/>
 <smd name="12" x="2.25" y="2.05" dx="0.3" dy="1" layer="1"/>
-<rectangle x1="-6.096" y1="-3.048" x2="6.096" y2="3.048" layer="39"/>
-<wire x1="-4.5" y1="1.85" x2="4.5" y2="1.85" width="0.127" layer="21"/>
-<wire x1="-4.85" y1="2.1" x2="-4.85" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-4.05" y1="-2.8" x2="4.05" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="1.85" x2="-4.5" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="2.1" x2="-4.85" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-4.85" y1="-1.7" x2="-4.05" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-4.05" y1="-1.7" x2="-4.05" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="4.5" y1="1.85" x2="4.5" y2="2.1" width="0.127" layer="21"/>
-<wire x1="4.5" y1="2.1" x2="4.85" y2="2.1" width="0.127" layer="21"/>
-<wire x1="4.85" y1="2.1" x2="4.85" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="4.85" y1="-1.7" x2="4.05" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="4.05" y1="-1.7" x2="4.05" y2="-2.8" width="0.127" layer="21"/>
-<text x="-2.54" y="2.54" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-6" y1="-3.4" x2="6" y2="3.048" layer="39"/>
+<wire x1="-4.4" y1="1.85" x2="4.4" y2="1.85" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="2.25" x2="-4.85" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-4.05" y1="-3.2" x2="4.05" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="1.85" x2="-4.4" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="2.25" x2="-4.85" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="-1.9" x2="-4.05" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-4.05" y1="-1.9" x2="-4.05" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="4.4" y1="1.85" x2="4.4" y2="2.25" width="0.127" layer="21"/>
+<wire x1="4.4" y1="2.25" x2="4.85" y2="2.25" width="0.127" layer="21"/>
+<wire x1="4.85" y1="2.25" x2="4.85" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="4.85" y1="-1.9" x2="4.05" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="4.05" y1="-1.9" x2="4.05" y2="-3.2" width="0.127" layer="21"/>
+<text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_10_DUAL">
 <description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
@@ -292,6 +292,10 @@
 <description>10 pin connector
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/276/0430451014_PCB_HEADERS-143158.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+FFC/FPC Connector 5051101092
+&lt;br&gt;
+&lt;a href= "https://www.molex.com/en-us/products/part-detail/5051101092?display=pdf" &gt;Datasheet&lt;/a&gt;
 &lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_10" x="0" y="0"/>
@@ -333,7 +337,14 @@
 <connect gate="G$1" pin="9" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="	
+WM12366TR-ND"/>
+<attribute name="MANUFACTURER" value="MOLEX"/>
+<attribute name="MOPN" value="538-505110-1092"/>
+<attribute name="MPN" value="	
+5051101092"/>
+</technology>
 </technologies>
 </device>
 </devices>
