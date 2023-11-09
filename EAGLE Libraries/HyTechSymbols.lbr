@@ -1805,11 +1805,6 @@ Source: Schukat</description>
 <attribute name="MPN" value="9360 Series"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
-<technology name="EURO-XPD-2838-806-214-911-00">
-<attribute name="MANUFACTURER" value="Variohm" constant="no"/>
-<attribute name="MPN" value="Euro-XPD-2838-806-214-911-00" constant="no"/>
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
 <technology name="M3031-000005-2K5PG">
 <attribute name="MANUFACTURER" value="TE Connectivity"/>
 <attribute name="MPN" value="M3031-000005-2K5PG"/>
@@ -2745,12 +2740,6 @@ Source: Schukat</description>
 <attribute name="FREQ" value="1kHz"/>
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MPN" value="MAX7400"/>
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-<technology name="606.3HZ">
-<attribute name="FREQ" value="606.3 Hz" constant="no"/>
-<attribute name="MANUFACTURER" value="Linear Technology" constant="no"/>
-<attribute name="MPN" value="LTC 1563-2" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
