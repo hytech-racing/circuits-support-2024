@@ -1470,6 +1470,18 @@ KW26-S5-FSE-4Q </text>
 <wire x1="10.16" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94" style="shortdash"/>
 <pin name="TS+12V" x="30.48" y="-2.54" length="short" direction="pwr" rot="R180"/>
 </symbol>
+<symbol name="BUCK">
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="27.94" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-15.24" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="TS+" x="-2.54" y="-2.54" length="short" direction="in"/>
+<pin name="TS-" x="-2.54" y="-12.7" length="short" direction="in"/>
+<text x="4.572" y="-8.89" size="2.032" layer="95" rot="R180" align="top-right">Buck Converter</text>
+<wire x1="10.16" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94" style="shortdash"/>
+<pin name="TS+12V" x="30.48" y="-2.54" length="short" direction="pwr" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MOTOR_AC_*">
@@ -2787,6 +2799,18 @@ Source: Schukat</description>
 <technology name="">
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUCK_CONVERTER">
+<gates>
+<gate name="G$1" symbol="BUCK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
