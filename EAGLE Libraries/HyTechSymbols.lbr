@@ -2817,6 +2817,30 @@ Source: Schukat</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="AMC333" prefix="U">
+<description>ISO224*: Isolated precision amplifier
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ISO224" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="BDWVR">
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MPN" value="AMC3330DWER"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
