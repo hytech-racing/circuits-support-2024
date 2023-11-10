@@ -414,6 +414,8 @@ Based off orientation demo on page 218 for better STM32 compliance</description>
 <text x="0" y="-82.042" size="1.27" layer="96" align="top-left">&gt;LABEL</text>
 </symbol>
 </symbols>
+<symbols>
+</symbols>
 <devicesets>
 <deviceset name="STM32H723" prefix="U">
 <description>STM32H723
