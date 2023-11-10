@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -46,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
@@ -192,18 +192,18 @@
 <library>
 <packages>
 <package name="5051101092">
-<smd name="1" x="-4.55" y="-0.65" dx="2" dy="1.3" layer="1"/>
-<smd name="2" x="4.55" y="-0.65" dx="2" dy="1.3" layer="1"/>
-<smd name="3" x="-2.25" y="2.05" dx="0.3" dy="1" layer="1"/>
-<smd name="4" x="-1.75" y="2.05" dx="0.3" dy="1" layer="1"/>
-<smd name="5" x="-1.25" y="2.05" dx="0.3" dy="1" layer="1"/>
-<smd name="6" x="-0.75" y="2.05" dx="0.3" dy="1" layer="1"/>
-<smd name="7" x="-0.25" y="2.05" dx="0.3" dy="1" layer="1"/>
-<smd name="8" x="0.25" y="2.05" dx="0.3" dy="1" layer="1"/>
-<smd name="9" x="0.75" y="2.05" dx="0.3" dy="1" layer="1"/>
-<smd name="10" x="1.25" y="2.05" dx="0.3" dy="1" layer="1"/>
-<smd name="11" x="1.75" y="2.05" dx="0.3" dy="1" layer="1"/>
-<smd name="12" x="2.25" y="2.05" dx="0.3" dy="1" layer="1"/>
+<smd name="1" x="-4.55" y="-0.65" dx="2" dy="1.3" layer="1" thermals="no"/>
+<smd name="2" x="4.55" y="-0.65" dx="2" dy="1.3" layer="1" thermals="no"/>
+<smd name="3" x="-2.25" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
+<smd name="4" x="-1.75" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
+<smd name="5" x="-1.25" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
+<smd name="6" x="-0.75" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
+<smd name="7" x="-0.25" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
+<smd name="8" x="0.25" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
+<smd name="9" x="0.75" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
+<smd name="10" x="1.25" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
+<smd name="11" x="1.75" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
+<smd name="12" x="2.25" y="2.05" dx="0.3" dy="1" layer="1" thermals="no"/>
 <rectangle x1="-6" y1="-3.4" x2="6" y2="3.048" layer="39"/>
 <wire x1="-4.4" y1="1.85" x2="4.4" y2="1.85" width="0.127" layer="21"/>
 <wire x1="-4.85" y1="2.25" x2="-4.85" y2="-1.9" width="0.127" layer="21"/>
