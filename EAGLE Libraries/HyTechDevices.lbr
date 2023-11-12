@@ -12146,6 +12146,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
+<technology name="10V_0.47UF">
+<attribute name="CAPACITANCE" value="0.47µF"/>
+<attribute name="DKPN" value="445-13666-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C0603X5R1A474MBC"/>
+<attribute name="MPN" value="C0603X5R1A474M030BC"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
 <technology name="10V_10NF">
 <attribute name="CAPACITANCE" value="10nF"/>
 <attribute name="DKPN" value="311-4054-1-ND"/>
@@ -13932,6 +13941,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="7.87V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="7.5K">
+<attribute name="DKPN" value="P20072CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B7501V"/>
+<attribute name="MPN" value="ERJ-PB3B7501V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="7.5k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="38.73V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="73.2K">
 <attribute name="DKPN" value="P73.2KDBCT-ND"/>
