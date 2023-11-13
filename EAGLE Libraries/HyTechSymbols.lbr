@@ -1482,6 +1482,22 @@ KW26-S5-FSE-4Q </text>
 <wire x1="10.16" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94" style="shortdash"/>
 <pin name="TS+12V" x="30.48" y="-2.54" length="short" direction="pwr" rot="R180"/>
 </symbol>
+<symbol name="CURRENT_SHUNT">
+<description>Block representation of the current Shunt
+.</description>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="0" y1="-12.7" x2="20.32" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-12.7" x2="20.32" y2="0" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="CUR_IN" x="22.86" y="-10.16" length="short" direction="out" rot="R180"/>
+<text x="6.096" y="-4.064" size="1.778" layer="95" align="top-left">Current
+Shunt</text>
+<pin name="VDD" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="-2.54" y="-10.16" length="short" direction="pwr"/>
+<text x="0" y="0.762" size="1.27" layer="96">&gt;MANUFACTURER</text>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="CUR_OUT" x="-2.54" y="-2.54" length="short" direction="out"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MOTOR_AC_*">
@@ -2351,6 +2367,7 @@ Source: Schukat</description>
 <device name="">
 <technologies>
 <technology name="">
+<attribute name="VALUE" value="15" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -2840,6 +2857,27 @@ Source: Schukat</description>
 <technology name="BDWVR">
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
 <attribute name="MPN" value="AMC3330DWER"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CURRENT_SHUNT">
+<gates>
+<gate name="G$1" symbol="CURRENT_SHUNT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="SSA-250">
+<attribute name="MANUFACTURER" value="Riedon" constant="no"/>
+<attribute name="MPN" value="SSA-250" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
