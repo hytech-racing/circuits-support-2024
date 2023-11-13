@@ -2367,7 +2367,7 @@ Source: Schukat</description>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="15" constant="no"/>
+<attribute name="VALUE" value="15A" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
