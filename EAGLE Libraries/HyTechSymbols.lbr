@@ -2210,6 +2210,11 @@ Source: Schukat</description>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="1-2393947-1">
+<attribute name="MANUFACTURER" value="TE" constant="no"/>
+<attribute name="MPN" value="1-2393947-1" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="436500513">
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MPN" value="436500513"/>
