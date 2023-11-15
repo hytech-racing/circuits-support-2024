@@ -20996,12 +20996,12 @@ FFC/FPC Connector 5051101092
 </technology>
 <technology name="16V_0.47UF">
 <attribute name="CAPACITANCE" value="0.47µF"/>
-<attribute name="DKPN" value="445-5192-1-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="  TDK Corporation" constant="no"/>
-<attribute name="MOPN" value="810-C1608X7R1C474K" constant="no"/>
-<attribute name="MPN" value="  C1608X7R1C474K080AC" constant="no"/>
-<attribute name="TOLERANCE" value="10%" constant="no"/>
-<attribute name="VOLTAGE" value="16V" constant="no"/>
+<attribute name="DKPN" value="445-5192-1-ND"/>
+<attribute name="MANUFACTURER" value="  TDK Corporation"/>
+<attribute name="MOPN" value="810-C1608X7R1C474K"/>
+<attribute name="MPN" value="  C1608X7R1C474K080AC"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="16V"/>
 </technology>
 <technology name="25V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1µF"/>
