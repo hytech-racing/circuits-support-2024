@@ -12462,532 +12462,6 @@ Isolated Flyback Converter with 630V/300mA Switch
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAPACITOR_?_*" prefix="C">
-<description>Capacitor, Non-Polarized
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/vjw1bcbascomseries-1762447.pdf"&gt;VJ...1BC Series Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf"&gt;Samsung Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/585/MLCC_Automotive-1837966.pdf"&gt;Samsung Automotive MLCC Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf"&gt;Walsin Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM188R61A226ME15_02A-1985787.pdf"&gt;GRM188R61A226ME15D&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM188R61E106MA73_01A-1985806.pdf"&gt;GRM188R61E106MA73D&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/445/885012006013-1726946.pdf"&gt;885012006013&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/218/SMD_High_and_Std_StackiCap_P62-1825512.pdf"&gt;2220Y6300105KXTWS2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/UPY_GPHC_X5R_4V_to_50V_26-1827097.pdf"&gt;Yageo Class 2, X5R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/ProductDetail/TDK/C3216X5R1V226M160AC?qs=%2Fha2pyFadujbcx9jh7lYl%2F4NeMoXFhdc8AqVWNq4wW6M2y7zl6GzBuhgtI0ngznN"&gt;TDK C Series&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/AutoMLCC-777028.pdf"&gt;AVX Automotive MLCC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"&gt; KEMET X7R Series&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf"&gt;Kyocera AVX&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM21BR61H106KE43_01A-1986884.pdf"&gt;GRM21BR61H&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1034_X7R_HV_ARC_SMD-1101730.pdf"&gt;C1812W104KDRACTU&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"&gt;CGA series - MLCC Automotive grade&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0603" package="0603-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="100V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1µF"/>
-<attribute name="DKPN" value="311-1523-1-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-CC603KRX7R0BB104"/>
-<attribute name="MPN" value="CC0603KRX7R0BB104"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="100V"/>
-</technology>
-<technology name="100V_10NF">
-<attribute name="CAPACITANCE" value="10nF"/>
-<attribute name="DKPN" value="311-1788-1-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-CC603KRX7R0BB103"/>
-<attribute name="MPN" value="CC0603KRX7R0BB103"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="100V"/>
-</technology>
-<technology name="10V_0.082UF">
-<attribute name="CAPACITANCE" value="0.082µF"/>
-<attribute name="DKPN" value="399-17417-2-ND"/>
-<attribute name="MANUFACTURER" value="KEMET"/>
-<attribute name="MOPN" value="80-C0603C823K8R"/>
-<attribute name="MPN" value="C0603C823K8RACTU"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1µF"/>
-<attribute name="DKPN" value="720-1688-1-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Vitramon"/>
-<attribute name="MOPN" value="77-VJ0603Y104JXQPBC"/>
-<attribute name="MPN" value="VJ0603Y104JXQPW1BC"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_0.22UF">
-<attribute name="CAPACITANCE" value="0.22µF"/>
-<attribute name="DKPN" value="720-VJ0603Y224JXQCW1BCTR-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Vitramon"/>
-<attribute name="MOPN" value="77-VJ0603Y224JXQCBC"/>
-<attribute name="MPN" value="VJ0603Y224JXQCW1BC"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_10NF">
-<attribute name="CAPACITANCE" value="10nF"/>
-<attribute name="DKPN" value="311-4054-1-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-CC603KRX7R6BB103"/>
-<attribute name="MPN" value="CC0603KRX7R6BB103"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_15PF">
-<attribute name="CAPACITANCE" value="15pF"/>
-<attribute name="DKPN" value="720-VJ0603A150FXQPW1BCCT-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Vitramon"/>
-<attribute name="MOPN" value="77-VJ0603A150FXQPBC"/>
-<attribute name="MPN" value="VJ0603A150FXQPW1BC"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_1UF">
-<attribute name="CAPACITANCE" value="1µF"/>
-<attribute name="DKPN" value="311-1796-1-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-CC603KRX7R6BB105"/>
-<attribute name="MPN" value="CC0603KRX7R6BB105"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_22UF">
-<attribute name="CAPACITANCE" value="22µF"/>
-<attribute name="DKPN" value="490-10476-1-ND"/>
-<attribute name="MANUFACTURER" value="Murata Electronics"/>
-<attribute name="MOPN" value="81-GRM188R61A226ME5D"/>
-<attribute name="MPN" value="GRM188R61A226ME15D"/>
-<attribute name="TOLERANCE" value="20%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_3.3NF">
-<attribute name="CAPACITANCE" value="3.3nF"/>
-<attribute name="DKPN" value="732-7759-1-ND"/>
-<attribute name="MANUFACTURER" value="Würth Elektronik"/>
-<attribute name="MOPN" value="710-885012006016"/>
-<attribute name="MPN" value="885012006016"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_4.7NF">
-<attribute name="CAPACITANCE" value="4.7nF"/>
-<attribute name="DKPN" value="732-7931-1-ND"/>
-<attribute name="MANUFACTURER" value="Würth Elektronik"/>
-<attribute name="MOPN" value="710-885012206012"/>
-<attribute name="MPN" value="885012206012"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_4.7UF">
-<attribute name="CAPACITANCE" value="4.7µF"/>
-<attribute name="DKPN" value="1276-1044-1-ND"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
-<attribute name="MOPN" value="187-CL10A475KP8NNNC"/>
-<attribute name="MPN" value="CL10A475KP8NNNC"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_680PF">
-<attribute name="CAPACITANCE" value="680pF"/>
-<attribute name="DKPN" value="732-7757-1-ND"/>
-<attribute name="MANUFACTURER" value="Würth Elektronik"/>
-<attribute name="MOPN" value="710-885012006013"/>
-<attribute name="MPN" value="885012006013"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_68NF">
-<attribute name="CAPACITANCE" value="68nF"/>
-<attribute name="DKPN" value="399-C0603C683K8RAC7867CT-ND"/>
-<attribute name="MANUFACTURER" value="KEMET"/>
-<attribute name="MOPN" value="80-C0603C683K8R"/>
-<attribute name="MPN" value="C0603C683K8RACTU"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="10V_82PF">
-<attribute name="CAPACITANCE" value="82pF"/>
-<attribute name="DKPN" value="478-1025-1-ND"/>
-<attribute name="MANUFACTURER" value="Kyocera AVX"/>
-<attribute name="MOPN" value="581-0201ZA820JAT2A"/>
-<attribute name="MPN" value="0201ZA820JAT2A"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</technology>
-<technology name="25V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1µF"/>
-<attribute name="DKPN" value="1276-1006-1-ND"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
-<attribute name="MOPN" value="187-CL10B104KA8NNNC"/>
-<attribute name="MPN" value="CL10B104KA8NNNC"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="25V_0.22UF">
-<attribute name="CAPACITANCE" value="0.22µF"/>
-<attribute name="DKPN" value="1292-1420-1-ND"/>
-<attribute name="MANUFACTURER" value="Walsin Technology Corporation"/>
-<attribute name="MOPN" value="791-0603B224K250CT"/>
-<attribute name="MPN" value="0603B224K250CT"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="25V_1.2NF">
-<attribute name="CAPACITANCE" value="1.2nF"/>
-<attribute name="DKPN" value="311-4079-2-ND"/>
-<attribute name="MANUFACTURER" value="YAGEO"/>
-<attribute name="MOPN" value="603-CC603KRX7R8BB122 "/>
-<attribute name="MPN" value="CC0603KRX7R8BB122"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="25V_10NF">
-<attribute name="CAPACITANCE" value="10nF"/>
-<attribute name="DKPN" value="1276-6531-1-ND"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
-<attribute name="MOPN" value="187-CL10B103KA8WPNC"/>
-<attribute name="MPN" value="CL10B103KA8WPNC"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="25V_10PF">
-<attribute name="CAPACITANCE" value="10PF"/>
-<attribute name="DKPN" value="490-8607-1-ND"/>
-<attribute name="MANUFACTURER" value="Murata Electronics"/>
-<attribute name="MOPN" value="81-GRM0335C1E100JA1D"/>
-<attribute name="MPN" value="GRM0335C1E100JA01D"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="25V_10UF">
-<attribute name="CAPACITANCE" value="10µF"/>
-<attribute name="DKPN" value="490-7202-1-ND"/>
-<attribute name="MANUFACTURER" value="Murata Electronics"/>
-<attribute name="MOPN" value="81-GRM188R61E106MA3D"/>
-<attribute name="MPN" value="GRM188R61E106MA73D"/>
-<attribute name="TOLERANCE" value="20%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="25V_1UF">
-<attribute name="CAPACITANCE" value="1µF"/>
-<attribute name="DKPN" value="1276-1184-1-ND"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
-<attribute name="MOPN" value="187-CL10B105KA8NNNC"/>
-<attribute name="MPN" value="CL10B105KA8NNNC"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="25V_4.7UF">
-<attribute name="CAPACITANCE" value="4.7uF"/>
-<attribute name="DKPN" value="445-9050-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-C1608X5R1E475K"/>
-<attribute name="MPN" value=" C1608X5R1E475K080AC"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="25V_47NF">
-<attribute name="CAPACITANCE" value="47nF"/>
-<attribute name="DKPN" value="478-6340-1-ND"/>
-<attribute name="MANUFACTURER" value="Kyocera AVX"/>
-<attribute name="MOPN" value="581-06033C473K42ZA"/>
-<attribute name="MPN" value="06033C473K4Z2A"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="35V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1µF"/>
-<attribute name="DKPN" value="587-3354-1-ND"/>
-<attribute name="MANUFACTURER" value="Taiyo Yuden"/>
-<attribute name="MOPN" value="963-GMK107B7104KAHT"/>
-<attribute name="MPN" value="GMK107B7104KAHT"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="35V"/>
-</technology>
-<technology name="35V_0.22UF">
-<attribute name="CAPACITANCE" value="0.22µF"/>
-<attribute name="DKPN" value="445-14239-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-C1608X7R1V224K0B"/>
-<attribute name="MPN" value="C1608X7R1V224K080AB"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="35V"/>
-</technology>
-<technology name="35V_1UF">
-<attribute name="CAPACITANCE" value="1µF"/>
-<attribute name="DKPN" value="445-173625-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-C1608X7R1V105KAE"/>
-<attribute name="MPN" value="C1608X7R1V105K080AE"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="35V"/>
-</technology>
-<technology name="50V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1µF"/>
-<attribute name="DKPN" value="311-1344-1-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-CC603KRX7R9BB104"/>
-<attribute name="MPN" value="CC0603KRX7R9BB104"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="50V_10NF">
-<attribute name="CAPACITANCE" value="10nF"/>
-<attribute name="DKPN" value="445-7404-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-C1608C0G1H103J"/>
-<attribute name="MPN" value="C1608C0G1H103J080AA"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="50V_1NF">
-<attribute name="CAPACITANCE" value="1nF"/>
-<attribute name="DKPN" value="399-C0603C102K5RAC7867CT-ND"/>
-<attribute name="MANUFACTURER" value="KEMET"/>
-<attribute name="MOPN" value="80-C0603C102K5R"/>
-<attribute name="MPN" value="C0603C102K5RACTU"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="50V_1UF">
-<attribute name="CAPACITANCE" value="1uF"/>
-<attribute name="DKPN" value="587-2400-1-ND"/>
-<attribute name="MANUFACTURER" value="Taiyo Yuden"/>
-<attribute name="MOPN" value="963-UMK107BJ105KA-T"/>
-<attribute name="MPN" value="UMK107BJ105KA-T"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="50V_470PF">
-<attribute name="CAPACITANCE" value="470pF"/>
-<attribute name="DKPN" value="1276-2058-1-ND"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
-<attribute name="MOPN" value="187-CL10B471JB8NNNC"/>
-<attribute name="MPN" value="CL10B471JB8NNNC"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="50V_47PF">
-<attribute name="CAPACITANCE" value="47pF"/>
-<attribute name="DKPN" value="445-12417-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="CGA3E2NP01H470J080AA"/>
-<attribute name="MPN" value="CGA3E2NP01H470J080AA"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-</technologies>
-</device>
-<device name="2220" package="2220-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="250V_1UF">
-<attribute name="CAPACITANCE" value="1µF"/>
-<attribute name="DKPN" value="445-2304-2-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-C5750X7R2E105K"/>
-<attribute name="MPN" value="C5750X7R2E105K230KA"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="250V"/>
-</technology>
-<technology name="25V_47UF">
-<attribute name="CAPACITANCE" value="47µF"/>
-<attribute name="DKPN" value="445-174773-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-A9N3X7476M23KB"/>
-<attribute name="MPN" value="CGA9N3X7R1E476M230KB"/>
-<attribute name="TOLERANCE" value="20%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="35V_47UF">
-<attribute name="CAPACITANCE" value="47µF"/>
-<attribute name="DKPN" value="445-CGA9N1X7R1V476M230KCCT-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-CGA9N1X7R1V476M2"/>
-<attribute name="MPN" value="CGA9N1X7R1V476M230KC"/>
-<attribute name="TOLERANCE" value="20%"/>
-<attribute name="VOLTAGE" value="35V"/>
-</technology>
-<technology name="630V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1μF"/>
-<attribute name="DKPN" value="445-11980-2-ND"/>
-<attribute name="MANUFACTURER" value="TDK Coporation"/>
-<attribute name="MOPN" value="810-C5750CH2J104K2KC"/>
-<attribute name="MPN" value="C5750CH2J104K280KC"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="630V"/>
-</technology>
-<technology name="630V_1UF">
-<attribute name="CAPACITANCE" value="1µF"/>
-<attribute name="DKPN" value="1608-2220Y6300105KXTWS2CT-ND"/>
-<attribute name="MANUFACTURER" value="Knowles Syfer"/>
-<attribute name="MOPN" value="843-2220Y63105KXTWS2"/>
-<attribute name="MPN" value="2220Y6300105KXTWS2"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="630V"/>
-</technology>
-</technologies>
-</device>
-<device name="0805" package="0805-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="100V_0.22UF">
-<attribute name="CAPACITANCE" value="0.22µF"/>
-<attribute name="DKPN" value="399-8049-1-ND"/>
-<attribute name="MANUFACTURER" value="KEMET"/>
-<attribute name="MOPN" value="80-C0805C224K1R"/>
-<attribute name="MPN" value="C0805C224K1RACTU"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="100V"/>
-</technology>
-<technology name="25V_22UF">
-<attribute name="CAPACITANCE" value="22µF"/>
-<attribute name="DKPN" value="311-1903-1-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-CC805MKX5R8BB226"/>
-<attribute name="MPN" value="CC0805MKX5R8BB226"/>
-<attribute name="TOLERANCE" value="20%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="50V_10UF">
-<attribute name="CAPACITANCE" value="10uF"/>
-<attribute name="DKPN" value="490-18663-2-ND"/>
-<attribute name="MANUFACTURER" value="Murata"/>
-<attribute name="MOPN" value="81-GRM21BR61H106KE3L"/>
-<attribute name="MPN" value=" GRM21BR61H106KE43L"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-</technologies>
-</device>
-<device name="1206" package="1206-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="100V_2.2UF">
-<attribute name="CAPACITANCE" value="2.2µF"/>
-<attribute name="DKPN" value="478-12144-1-ND"/>
-<attribute name="MANUFACTURER" value="AVX Corporation"/>
-<attribute name="MOPN" value="581-12061C225K4T2A"/>
-<attribute name="MPN" value="12061C225K4T2A"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="100V"/>
-</technology>
-<technology name="250V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1μF"/>
-<attribute name="DKPN" value="445-6079-2-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-C3216X7R2E104KT5"/>
-<attribute name="MPN" value="C3216X7R2E104K160AM"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="250V"/>
-</technology>
-<technology name="25V_1UF">
-<attribute name="CAPACITANCE" value="1µF"/>
-<attribute name="DKPN" value="478-KGM31HR71E105KUCT-ND"/>
-<attribute name="MANUFACTURER" value="KYOCERA AVX"/>
-<attribute name="MOPN" value="581-12063C105K"/>
-<attribute name="MPN" value="KGM31HR71E105KU"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="25V_33UF">
-<attribute name="CAPACITANCE" value="33µF"/>
-<attribute name="DKPN" value="445-8046-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-C3216X5R1E336M"/>
-<attribute name="MPN" value="C3216X5R1E336M160AC"/>
-<attribute name="TOLERANCE" value="20%"/>
-<attribute name="VOLTAGE" value="25V"/>
-</technology>
-<technology name="35V_22UF">
-<attribute name="CAPACITANCE" value="22µF"/>
-<attribute name="DKPN" value="445-8045-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-C3216X5R1V226M"/>
-<attribute name="MPN" value="C3216X5R1V226M160AC"/>
-<attribute name="TOLERANCE" value="20%"/>
-<attribute name="VOLTAGE" value="35V"/>
-</technology>
-<technology name="50V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1µF"/>
-<attribute name="DKPN" value="445-14655-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-C3216NP01H104J1A"/>
-<attribute name="MPN" value="C3216NP01H104J160AA"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="50V_1NF">
-<attribute name="CAPACITANCE" value="1nF"/>
-<attribute name="DKPN" value="478-KGM31BR71H102KTCT-ND"/>
-<attribute name="MANUFACTURER" value="KYOCERA AVX"/>
-<attribute name="MOPN" value="581-12065C102K"/>
-<attribute name="MPN" value="KGM31BR71H102KT"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="630V_10NF">
-<attribute name="CAPACITANCE" value="10nF"/>
-<attribute name="DKPN" value="445-9083-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-CGA5L4C0G2J103J"/>
-<attribute name="MPN" value="CGA5L4C0G2J103J160AA"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="630V"/>
-</technology>
-<technology name="630V_47PF">
-<attribute name="CAPACITANCE" value="47pF"/>
-<attribute name="DKPN" value="490-5041-1-ND"/>
-<attribute name="MANUFACTURER" value="Murata Electronics"/>
-<attribute name="MOPN" value="81-GCM31A7U2J470JX1D"/>
-<attribute name="MPN" value="GCM31A7U2J470JX01D"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="630V"/>
-</technology>
-</technologies>
-</device>
-<device name="1812" package="1812-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="1000V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1uF"/>
-<attribute name="DKPN" value="399-C1812W104KDRAC7800CT-ND"/>
-<attribute name="MANUFACTURER" value="KEMET"/>
-<attribute name="MOPN" value="80-C1812W104KDR"/>
-<attribute name="MPN" value="C1812W104KDRAC7800"/>
-<attribute name="TOLERANCE" value="10%"/>
-<attribute name="VOLTAGE" value="1000V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED_?_*" prefix="D">
 <description>LED
 &lt;ul&gt;0603
@@ -21347,6 +20821,349 @@ FFC/FPC Connector 5051101092
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
 <attribute name="MOPN" value="511-STM32H723VGT6"/>
 <attribute name="MPN" value="STM32H723VGT6"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAPACITOR_?_*" prefix="C">
+<description>Capacitor, Non-Polarized
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/vjw1bcbascomseries-1762447.pdf"&gt;VJ...1BC Series Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf"&gt;Samsung Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/585/MLCC_Automotive-1837966.pdf"&gt;Samsung Automotive MLCC Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf"&gt;Walsin Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM188R61A226ME15_02A-1985787.pdf"&gt;GRM188R61A226ME15D&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM188R61E106MA73_01A-1985806.pdf"&gt;GRM188R61E106MA73D&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/445/885012006013-1726946.pdf"&gt;885012006013&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/218/SMD_High_and_Std_StackiCap_P62-1825512.pdf"&gt;2220Y6300105KXTWS2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/UPY_GPHC_X5R_4V_to_50V_26-1827097.pdf"&gt;Yageo Class 2, X5R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/AutoMLCC-777028.pdf"&gt;AVX Automotive MLCC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"&gt; KEMET X7R Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf"&gt;Kyocera AVX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM21BR61H106KE43_01A-1986884.pdf"&gt;GRM21BR61H&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1034_X7R_HV_ARC_SMD-1101730.pdf"&gt;C1812W104KDRACTU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"&gt;CGA series - MLCC Automotive grade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf"&gt;TDK C Series Datasheet
+&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="0603-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="100V_0.1UF">
+<attribute name="CAPACITANCE" value="0.1µF"/>
+<attribute name="DKPN" value="311-1523-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC603KRX7R0BB104"/>
+<attribute name="MPN" value="CC0603KRX7R0BB104"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="100V_10NF">
+<attribute name="CAPACITANCE" value="10nF"/>
+<attribute name="DKPN" value="311-1788-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC603KRX7R0BB103"/>
+<attribute name="MPN" value="CC0603KRX7R0BB103"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="10V_0.082UF">
+<attribute name="CAPACITANCE" value="0.082µF"/>
+<attribute name="DKPN" value="399-17417-2-ND"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="MOPN" value="80-C0603C823K8R"/>
+<attribute name="MPN" value="C0603C823K8RACTU"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_0.1UF">
+<attribute name="CAPACITANCE" value="0.1µF"/>
+<attribute name="DKPN" value="720-1688-1-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Vitramon"/>
+<attribute name="MOPN" value="77-VJ0603Y104JXQPBC"/>
+<attribute name="MPN" value="VJ0603Y104JXQPW1BC"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_0.22UF">
+<attribute name="CAPACITANCE" value="0.22µF"/>
+<attribute name="DKPN" value="720-VJ0603Y224JXQCW1BCTR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Vitramon"/>
+<attribute name="MOPN" value="77-VJ0603Y224JXQCBC"/>
+<attribute name="MPN" value="VJ0603Y224JXQCW1BC"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_10NF">
+<attribute name="CAPACITANCE" value="10nF"/>
+<attribute name="DKPN" value="311-4054-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC603KRX7R6BB103"/>
+<attribute name="MPN" value="CC0603KRX7R6BB103"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_15PF">
+<attribute name="CAPACITANCE" value="15pF"/>
+<attribute name="DKPN" value="720-VJ0603A150FXQPW1BCCT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Vitramon"/>
+<attribute name="MOPN" value="77-VJ0603A150FXQPBC"/>
+<attribute name="MPN" value="VJ0603A150FXQPW1BC"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_1UF">
+<attribute name="CAPACITANCE" value="1µF"/>
+<attribute name="DKPN" value="311-1796-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC603KRX7R6BB105"/>
+<attribute name="MPN" value="CC0603KRX7R6BB105"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_22UF">
+<attribute name="CAPACITANCE" value="22µF"/>
+<attribute name="DKPN" value="490-10476-1-ND"/>
+<attribute name="MANUFACTURER" value="Murata Electronics"/>
+<attribute name="MOPN" value="81-GRM188R61A226ME5D"/>
+<attribute name="MPN" value="GRM188R61A226ME15D"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_3.3NF">
+<attribute name="CAPACITANCE" value="3.3nF"/>
+<attribute name="DKPN" value="732-7759-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MOPN" value="710-885012006016"/>
+<attribute name="MPN" value="885012006016"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_4.7NF">
+<attribute name="CAPACITANCE" value="4.7nF"/>
+<attribute name="DKPN" value="732-7931-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MOPN" value="710-885012206012"/>
+<attribute name="MPN" value="885012206012"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_4.7UF">
+<attribute name="CAPACITANCE" value="4.7µF"/>
+<attribute name="DKPN" value="1276-1044-1-ND"/>
+<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
+<attribute name="MOPN" value="187-CL10A475KP8NNNC"/>
+<attribute name="MPN" value="CL10A475KP8NNNC"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_680PF">
+<attribute name="CAPACITANCE" value="680pF"/>
+<attribute name="DKPN" value="732-7757-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MOPN" value="710-885012006013"/>
+<attribute name="MPN" value="885012006013"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_68NF">
+<attribute name="CAPACITANCE" value="68nF"/>
+<attribute name="DKPN" value="399-C0603C683K8RAC7867CT-ND"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="MOPN" value="80-C0603C683K8R"/>
+<attribute name="MPN" value="C0603C683K8RACTU"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_82PF">
+<attribute name="CAPACITANCE" value="82pF"/>
+<attribute name="DKPN" value="478-1025-1-ND"/>
+<attribute name="MANUFACTURER" value="Kyocera AVX"/>
+<attribute name="MOPN" value="581-0201ZA820JAT2A"/>
+<attribute name="MPN" value="0201ZA820JAT2A"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="16V_0.47UF">
+<attribute name="CAPACITANCE" value="0.47µF"/>
+<attribute name="DKPN" value="445-5192-1-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="  TDK Corporation" constant="no"/>
+<attribute name="MOPN" value="810-C1608X7R1C474K" constant="no"/>
+<attribute name="MPN" value="  C1608X7R1C474K080AC" constant="no"/>
+<attribute name="TOLERANCE" value="10%" constant="no"/>
+<attribute name="VOLTAGE" value="16V" constant="no"/>
+</technology>
+<technology name="25V_0.1UF">
+<attribute name="CAPACITANCE" value="0.1µF"/>
+<attribute name="DKPN" value="1276-1006-1-ND"/>
+<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
+<attribute name="MOPN" value="187-CL10B104KA8NNNC"/>
+<attribute name="MPN" value="CL10B104KA8NNNC"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_0.22UF">
+<attribute name="CAPACITANCE" value="0.22µF"/>
+<attribute name="DKPN" value="1292-1420-1-ND"/>
+<attribute name="MANUFACTURER" value="Walsin Technology Corporation"/>
+<attribute name="MOPN" value="791-0603B224K250CT"/>
+<attribute name="MPN" value="0603B224K250CT"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_1.2NF">
+<attribute name="CAPACITANCE" value="1.2nF"/>
+<attribute name="DKPN" value="311-4079-2-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-CC603KRX7R8BB122 "/>
+<attribute name="MPN" value="CC0603KRX7R8BB122"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_10NF">
+<attribute name="CAPACITANCE" value="10nF"/>
+<attribute name="DKPN" value="1276-6531-1-ND"/>
+<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
+<attribute name="MOPN" value="187-CL10B103KA8WPNC"/>
+<attribute name="MPN" value="CL10B103KA8WPNC"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_10PF">
+<attribute name="CAPACITANCE" value="10PF"/>
+<attribute name="DKPN" value="490-8607-1-ND"/>
+<attribute name="MANUFACTURER" value="Murata Electronics"/>
+<attribute name="MOPN" value="81-GRM0335C1E100JA1D"/>
+<attribute name="MPN" value="GRM0335C1E100JA01D"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_10UF">
+<attribute name="CAPACITANCE" value="10µF"/>
+<attribute name="DKPN" value="490-7202-1-ND"/>
+<attribute name="MANUFACTURER" value="Murata Electronics"/>
+<attribute name="MOPN" value="81-GRM188R61E106MA3D"/>
+<attribute name="MPN" value="GRM188R61E106MA73D"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_1UF">
+<attribute name="CAPACITANCE" value="1µF"/>
+<attribute name="DKPN" value="1276-1184-1-ND"/>
+<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
+<attribute name="MOPN" value="187-CL10B105KA8NNNC"/>
+<attribute name="MPN" value="CL10B105KA8NNNC"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_4.7UF">
+<attribute name="CAPACITANCE" value="4.7uF"/>
+<attribute name="DKPN" value="445-9050-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C1608X5R1E475K"/>
+<attribute name="MPN" value=" C1608X5R1E475K080AC"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_47NF">
+<attribute name="CAPACITANCE" value="47nF"/>
+<attribute name="DKPN" value="478-6340-1-ND"/>
+<attribute name="MANUFACTURER" value="Kyocera AVX"/>
+<attribute name="MOPN" value="581-06033C473K42ZA"/>
+<attribute name="MPN" value="06033C473K4Z2A"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="35V_0.1UF">
+<attribute name="CAPACITANCE" value="0.1µF"/>
+<attribute name="DKPN" value="587-3354-1-ND"/>
+<attribute name="MANUFACTURER" value="Taiyo Yuden"/>
+<attribute name="MOPN" value="963-GMK107B7104KAHT"/>
+<attribute name="MPN" value="GMK107B7104KAHT"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="35V"/>
+</technology>
+<technology name="35V_0.22UF">
+<attribute name="CAPACITANCE" value="0.22µF"/>
+<attribute name="DKPN" value="445-14239-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C1608X7R1V224K0B"/>
+<attribute name="MPN" value="C1608X7R1V224K080AB"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="35V"/>
+</technology>
+<technology name="35V_1UF">
+<attribute name="CAPACITANCE" value="1µF"/>
+<attribute name="DKPN" value="445-173625-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C1608X7R1V105KAE"/>
+<attribute name="MPN" value="C1608X7R1V105K080AE"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="35V"/>
+</technology>
+<technology name="50V_0.1UF">
+<attribute name="CAPACITANCE" value="0.1µF"/>
+<attribute name="DKPN" value="311-1344-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC603KRX7R9BB104"/>
+<attribute name="MPN" value="CC0603KRX7R9BB104"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="50V_10NF">
+<attribute name="CAPACITANCE" value="10nF"/>
+<attribute name="DKPN" value="445-7404-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C1608C0G1H103J"/>
+<attribute name="MPN" value="C1608C0G1H103J080AA"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="50V_1NF">
+<attribute name="CAPACITANCE" value="1nF"/>
+<attribute name="DKPN" value="399-C0603C102K5RAC7867CT-ND"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="MOPN" value="80-C0603C102K5R"/>
+<attribute name="MPN" value="C0603C102K5RACTU"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="50V_1UF">
+<attribute name="CAPACITANCE" value="1uF"/>
+<attribute name="DKPN" value="587-2400-1-ND"/>
+<attribute name="MANUFACTURER" value="Taiyo Yuden"/>
+<attribute name="MOPN" value="963-UMK107BJ105KA-T"/>
+<attribute name="MPN" value="UMK107BJ105KA-T"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="50V_470PF">
+<attribute name="CAPACITANCE" value="470pF"/>
+<attribute name="DKPN" value="1276-2058-1-ND"/>
+<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics"/>
+<attribute name="MOPN" value="187-CL10B471JB8NNNC"/>
+<attribute name="MPN" value="CL10B471JB8NNNC"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="50V_47PF">
+<attribute name="CAPACITANCE" value="47pF"/>
+<attribute name="DKPN" value="445-12417-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="CGA3E2NP01H470J080AA"/>
+<attribute name="MPN" value="CGA3E2NP01H470J080AA"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="50V"/>
 </technology>
 </technologies>
 </device>
