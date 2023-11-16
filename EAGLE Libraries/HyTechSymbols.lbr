@@ -2496,6 +2496,11 @@ Source: Schukat</description>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="3-1462039-7">
+<attribute name="MANUFACTURER" value="TE Connectivity" constant="no"/>
+<attribute name="MPN" value="3-1462039-7" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="RT424009">
 <attribute name="MANUFACTURER" value="TE Connectivity Potter &amp; Brumfield Relays"/>
 <attribute name="MPN" value="RT424009"/>
@@ -2753,9 +2758,9 @@ Source: Schukat</description>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="FREQ" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="FREQ" value="50Hz" constant="no"/>
+<attribute name="MANUFACTURER" value="HyTech" constant="no"/>
+<attribute name="MPN" value="4th Order Butterworth" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="1KHZ">
