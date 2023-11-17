@@ -6923,6 +6923,31 @@ Based off orientation demo on page 218 for better STM32 compliance</description>
 <circle x="-6.5" y="-7.75" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-9.144" y1="-9.144" x2="9.144" y2="9.144" layer="39"/>
 </package>
+<package name="SSSS916400">
+<description>&lt;p&gt; Alps Alpine SPDT &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;a href="https://www.mouser.com/datasheet/2/15/SSSS9-1370708.pdf"&gt; Datasheet&lt;/a href&gt;</description>
+<pad name="COM" x="0" y="0" drill="0.7"/>
+<pad name="2" x="2" y="0" drill="0.7"/>
+<pad name="1" x="-2" y="0" drill="0.7"/>
+<wire x1="-4.5" y1="1.85" x2="4.5" y2="1.85" width="0.127" layer="21"/>
+<wire x1="4.5" y1="1.85" x2="4.5" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.85" x2="-4.5" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.85" x2="-4.5" y2="1.85" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="2.35" x2="5.75" y2="2.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="5.75" y1="2.35" x2="5.75" y2="-2.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-5.75" y1="-2.35" x2="-5.75" y2="2.35" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-6.096" y1="-2.54" x2="6.096" y2="2.54" layer="39"/>
+<rectangle x1="-3.048" y1="-1.016" x2="3.048" y2="1.016" layer="40"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="5.75" y1="-2.35" x2="2" y2="-2.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="2" y1="-2.35" x2="2" y2="-5.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="2" y1="-5.35" x2="-2" y2="-5.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-2" y1="-5.35" x2="-2" y2="-2.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-2" y1="-2.35" x2="-5.75" y2="-2.35" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-2.286" y1="-5.588" x2="2.286" y2="-2.54" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -18727,31 +18752,6 @@ Neopixel RGBW LED
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWITCH_SPDT_*" prefix="S">
-<description>Single pole, double throw switch
-&lt;br&gt;
-&lt;a href="https://www.nkkswitches.com/pdf/cs.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SWITCH_SPDT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CS12ANW03">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="COM" pad="2"/>
-</connects>
-<technologies>
-<technology name="CS12ANW03">
-<attribute name="DKPN" value="360-2131-ND"/>
-<attribute name="MANUFACTURER" value="NKK Switches"/>
-<attribute name="MOPN" value="633-CS12ANW03"/>
-<attribute name="MPN" value="CS12ANW03"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ADIS16460*" prefix="J">
 <description>14 pin connector specifically for ADIS16460 IMU
 &lt;br&gt;
@@ -21164,6 +21164,51 @@ FFC/FPC Connector 5051101092
 <attribute name="MPN" value="CGA3E2NP01H470J080AA"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_SPDT_*" prefix="S">
+<description>Single pole, double throw switch
+&lt;br&gt;
+&lt;a href="https://www.nkkswitches.com/pdf/cs.pdf"&gt;Datasheet&lt;/a&gt;
+
+&lt;p&gt;&lt;/p&gt;
+Alps Alpine SPDT
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/15/SSSS9-1370708.pdf"&gt; Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SWITCH_SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CS12ANW03">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="COM" pad="2"/>
+</connects>
+<technologies>
+<technology name="CS12ANW03">
+<attribute name="DKPN" value="360-2131-ND"/>
+<attribute name="MANUFACTURER" value="NKK Switches"/>
+<attribute name="MOPN" value="633-CS12ANW03"/>
+<attribute name="MPN" value="CS12ANW03"/>
+</technology>
+</technologies>
+</device>
+<device name="SSSS916400" package="SSSS916400">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="COM" pad="COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="4809-SSSS916400-ND"/>
+<attribute name="MANUFACTURER" value="Alps Alpine"/>
+<attribute name="MOPN" value="688-SSSS916400"/>
+<attribute name="MPN" value="SSSS916400"/>
 </technology>
 </technologies>
 </device>
