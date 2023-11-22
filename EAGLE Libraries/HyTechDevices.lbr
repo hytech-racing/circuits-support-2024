@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12759,6 +12759,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="MPN" value="C1608X7R1V224K080AB"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="35V"/>
+</technology>
+<technology name="35V_0.47UF">
+<attribute name="CAPACITANCE" value="0.47µF" constant="no"/>
+<attribute name="DKPN" value="445-6928-6-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="TDK Corporation" constant="no"/>
+<attribute name="MOPN" value="810-CGA3E1X7R1V474K" constant="no"/>
+<attribute name="MPN" value="CGA3E1X7R1V474K080AC" constant="no"/>
+<attribute name="TOLERANCE" value="10%" constant="no"/>
+<attribute name="VOLTAGE" value="35V" constant="no"/>
 </technology>
 <technology name="35V_1UF">
 <attribute name="CAPACITANCE" value="1µF"/>
