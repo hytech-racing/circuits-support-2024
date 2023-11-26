@@ -13035,6 +13035,7 @@ Isolated Flyback Converter with 630V/300mA Switch
 &lt;ul&gt;0603
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608VBC_D-246010.pdf"&gt;Blue&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608ZGCK-1173388.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SGC.pdf"&gt;Green_2V2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-6197.pdf"&gt;Orange&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-J3-PRV-1173336.pdf"&gt;Red&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/SM0603UWC-880813.pdf"&gt;White&lt;/a&gt;&lt;/li&gt;
@@ -13066,6 +13067,13 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608ZGCK"/>
 <attribute name="MPN" value="APT1608ZGCK"/>
+</technology>
+<technology name="GREEN_2V2">
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value="754-1121-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SGC"/>
+<attribute name="MPN" value="APT1608SGC"/>
 </technology>
 <technology name="ORANGE">
 <attribute name="COLOR" value="Orange"/>
