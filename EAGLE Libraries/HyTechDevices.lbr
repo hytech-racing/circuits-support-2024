@@ -6947,6 +6947,20 @@ Based off orientation demo on page 218 for better STM32 compliance</description>
 <wire x1="-2" y1="-2.35" x2="-5.75" y2="-2.35" width="0.127" layer="21" style="shortdash"/>
 <rectangle x1="-2.286" y1="-5.588" x2="2.286" y2="-2.54" layer="39"/>
 </package>
+<package name="DO-214BA">
+<description>DO-214BA Footprint
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/88617/gf1x.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="2" x="1.7" y="0" dx="1.68" dy="1.52" layer="1" rot="R90"/>
+<smd name="1" x="-1.7" y="0" dx="1.68" dy="1.52" layer="1" rot="R90"/>
+<wire x1="-2.375" y1="1.97" x2="2.375" y2="1.97" width="0.127" layer="21"/>
+<wire x1="-2.375" y1="-1.97" x2="2.375" y2="-1.97" width="0.127" layer="21"/>
+<wire x1="2.375" y1="-1.97" x2="2.375" y2="1.97" width="0.127" layer="21"/>
+<wire x1="-2.375" y1="-1.97" x2="-2.375" y2="1.97" width="0.127" layer="21"/>
+<rectangle x1="-3.175" y1="-2.54" x2="3.175" y2="2.54" layer="39"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="3.175" y1="1.27" x2="3.175" y2="-1.27" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -18985,7 +18999,9 @@ Requires ordering of:
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/68/cmdsh2-3-39086.pdf"&gt;CMDSH2-3 Shottky Diode Datasheet&lt;/a&gt;
 &lt;br&gt;
-&lt;a href = "https://datasheets.kyocera-avx.com/schottky.pdf"&gt;SD1206S040S2R0 Schottky Diode Datasheet&lt;\a&gt;</description>
+&lt;a href = "https://datasheets.kyocera-avx.com/schottky.pdf"&gt;SD1206S040S2R0 Schottky Diode Datasheet&lt;\a&gt;
+&lt;br&gt;
+&lt;a href = "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/794/LSM115J.pdf"&gt;LSM115JE3/TR13 Schottky Diode Datasheet&lt;\a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_SCHOTTKY-1" x="0" y="0"/>
 </gates>
@@ -19050,6 +19066,22 @@ Requires ordering of:
 <attribute name="MOPN" value="581-SD1206S040S2R0" constant="no"/>
 <attribute name="MPN" value="SD1206S040S2R0" constant="no"/>
 <attribute name="VOLTAGE" value="40 V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="DO-214BA">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="15V">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="150-LSM115JE3/TR13CT-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="494-LSM115JE3/TR13"/>
+<attribute name="MPN" value="LSM115JE3/TR13"/>
+<attribute name="VOLTAGE" value="15V"/>
 </technology>
 </technologies>
 </device>
