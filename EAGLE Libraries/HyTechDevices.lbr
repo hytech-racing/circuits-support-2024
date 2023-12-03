@@ -3035,9 +3035,9 @@ Note: Based on page 14 and 15.</description>
 <smd name="1" x="-0.95" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
 <smd name="2" x="0" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
 <smd name="3" x="0.95" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
-<smd name="4" x="-0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="6" x="-0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
 <smd name="5" x="0" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
-<smd name="6" x="0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="4" x="0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
 <circle x="-1.8" y="-1.31" radius="0.15875" width="0" layer="21"/>
 <text x="-2" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
@@ -17231,10 +17231,10 @@ CPC1020NTR
 <devices>
 <device name="" package="SOT-23-6">
 <connects>
-<connect gate="G$1" pin="DIV" pad="6"/>
+<connect gate="G$1" pin="DIV" pad="4"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
 <connect gate="G$1" pin="SET" pad="3"/>
 <connect gate="G$1" pin="V+" pad="5"/>
 </connects>
@@ -21494,7 +21494,8 @@ Alps Alpine SPDT
 </devices>
 </deviceset>
 <deviceset name="USBLC6-2SC6" prefix="D">
-<description>&lt;br&gt;
+<description>Double data line ESD detection
+&lt;br&gt;
 &lt;a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/06/1d/48/9c/6c/20/4a/b2/CD00050750.pdf/files/CD00050750.pdf/jcr:content/translations/en.CD00050750.pdf"&gt;USBLC6-2SC6 Datasheet&lt;/a&gt;&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="USBLC6-2" x="0" y="0"/>
