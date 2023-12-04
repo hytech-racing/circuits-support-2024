@@ -12764,7 +12764,7 @@ Isolated Flyback Converter with 630V/300mA Switch
 </technology>
 <technology name="25V_22PF">
 <attribute name="CAPACITANCE" value="22pF"/>
-<attribute name="DKPN" value="399-C0603C220K3RACAUTOTR-ND"/>
+<attribute name="DKPN" value="399-C0603C220K3RACAUTOCT-ND"/>
 <attribute name="MANUFACTURER" value="KEMET"/>
 <attribute name="MOPN" value="80-C0603C220K3RAUTO"/>
 <attribute name="MPN" value="C0603C220K3RACAUTO"/>
