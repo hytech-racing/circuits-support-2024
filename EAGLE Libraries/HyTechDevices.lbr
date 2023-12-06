@@ -17956,6 +17956,14 @@ Neopixel RGBW LED
 <attribute name="MPN" value="1SMB5949B-13"/>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
+<technology name="12V">
+<attribute name="CURRENT" value="0.031A"/>
+<attribute name="DKPN" value="1SMB5927B-13DICT-ND"/>
+<attribute name="MANUFACTURER" value="Diodes Incorporated"/>
+<attribute name="MOPN" value="621-1SMB5927B-13"/>
+<attribute name="MPN" value="1SMB5927B-13"/>
+<attribute name="VOLTAGE" value="12V"/>
+</technology>
 </technologies>
 </device>
 <device name="SMB(DO-214AA)" package="SMB(DO-214AA)">
@@ -17964,6 +17972,15 @@ Neopixel RGBW LED
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
+<technology name="12V">
+<attribute name="CURRENT" value="0.395A"/>
+<attribute name="DKPN" value="SMBJ5349B-TPMSCT-ND"/>
+<attribute name="MANUFACTURER" value="Micro Commercial Co"/>
+<attribute name="MOPN" value="833-SMBJ5349B-TP"/>
+<attribute name="MPN" value="SMBJ5349B-TP
+"/>
+<attribute name="VOLTAGE" value="12V"/>
+</technology>
 <technology name="13V">
 <attribute name="CURRENT" value="0.385A"/>
 <attribute name="DKPN" value="SMBJ5350B-TPMSCT-ND"/>
