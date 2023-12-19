@@ -1612,6 +1612,11 @@ Shunt</text>
 <attribute name="MPN" value="35-210-100-R-900"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="3PHASE_CONNECTOR">
+<attribute name="MANUFACTURER" value="TE CONNECTIVITY" constant="no"/>
+<attribute name="MPN" value="1-2371113-2" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="40MM_STOP">
 <attribute name="MANUFACTURER" value="EAO"/>
 <attribute name="MPN" value="Series 45 E-Stop"/>
