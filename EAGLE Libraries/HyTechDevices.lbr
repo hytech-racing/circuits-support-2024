@@ -21676,10 +21676,10 @@ Alps Alpine SPDT
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="WM10754-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Molex" constant="no"/>
-<attribute name="MOPN" value="538-43045-2029" constant="no"/>
-<attribute name="MPN" value="0430452029" constant="no"/>
+<attribute name="DKPN" value="WM10754-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43045-2029"/>
+<attribute name="MPN" value="0430452029"/>
 </technology>
 </technologies>
 </device>
