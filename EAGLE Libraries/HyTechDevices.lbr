@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6971,6 +6971,53 @@ Based off orientation demo on page 218 for better STM32 compliance</description>
 <text x="0" y="2.54" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <wire x1="3.175" y1="1.27" x2="3.175" y2="-1.27" width="0.254" layer="21"/>
 </package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_20_DUAL">
+<description>20 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/en-us/products/part-detail/430452029"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/430/43045/430452029_sd.pdf?inline"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://tools.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<pad name="3" x="7.5" y="-3" drill="1.0668"/>
+<pad name="2" x="10.5" y="-3" drill="1.0668" first="yes"/>
+<hole x="16.5" y="0.94" drill="1.0668"/>
+<hole x="-16.5" y="0.94" drill="1.0668"/>
+<wire x1="-16.8275" y1="-5.461" x2="16.8275" y2="-5.461" width="0.127" layer="21"/>
+<wire x1="16.8275" y1="-5.461" x2="16.8275" y2="1.905" width="0.127" layer="21"/>
+<wire x1="16.8275" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-16.8275" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-16.8275" y1="1.905" x2="-16.8275" y2="-5.461" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<text x="0" y="-6.477" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
+<pad name="4" x="4.5" y="-3" drill="1.0668"/>
+<pad name="5" x="1.5" y="-3" drill="1.0668"/>
+<pad name="6" x="-1.5" y="-3" drill="1.0668"/>
+<pad name="7" x="-4.5" y="-3" drill="1.0668"/>
+<pad name="8" x="-7.5" y="-3" drill="1.0668"/>
+<pad name="9" x="-10.5" y="-3" drill="1.0668"/>
+<pad name="12" x="10.5" y="0" drill="1.0668"/>
+<pad name="13" x="7.5" y="0" drill="1.0668"/>
+<pad name="14" x="4.5" y="0" drill="1.0668"/>
+<pad name="15" x="1.5" y="0" drill="1.0668"/>
+<pad name="16" x="-1.5" y="0" drill="1.0668"/>
+<pad name="17" x="-4.5" y="0" drill="1.0668"/>
+<pad name="18" x="-7.5" y="0" drill="1.0668"/>
+<pad name="19" x="-10.5" y="0" drill="1.0668"/>
+<pad name="1" x="13.5" y="-3" drill="1.0668" first="yes"/>
+<pad name="11" x="13.5" y="0" drill="1.0668"/>
+<pad name="10" x="-13.5" y="-3" drill="1.0668" first="yes"/>
+<pad name="20" x="-13.5" y="0" drill="1.0668"/>
+<rectangle x1="-17.526" y1="-5.842" x2="17.526" y2="2.286" layer="40"/>
+<rectangle x1="-17.526" y1="-5.842" x2="17.526" y2="2.286" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -12422,6 +12469,54 @@ Isolated Flyback Converter with 630V/300mA Switch
 <wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-16.002" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="CONNECTOR_20">
+<wire x1="0" y1="0" x2="0" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="0" y1="-53.34" x2="7.62" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-53.34" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="1" x="10.16" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="10.16" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="3" x="10.16" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="4" x="10.16" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="5" x="10.16" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="6" x="10.16" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="7" x="10.16" y="-17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="8" x="10.16" y="-20.32" length="middle" direction="pas" rot="R180"/>
+<pin name="9" x="10.16" y="-22.86" length="middle" direction="pas" rot="R180"/>
+<pin name="10" x="10.16" y="-25.4" length="middle" direction="pas" rot="R180"/>
+<pin name="11" x="10.16" y="-27.94" length="middle" direction="pas" rot="R180"/>
+<pin name="12" x="10.16" y="-30.48" length="middle" direction="pas" rot="R180"/>
+<pin name="13" x="10.16" y="-33.02" length="middle" direction="pas" rot="R180"/>
+<pin name="14" x="10.16" y="-35.56" length="middle" direction="pas" rot="R180"/>
+<pin name="15" x="10.16" y="-38.1" length="middle" direction="pas" rot="R180"/>
+<pin name="16" x="10.16" y="-40.64" length="middle" direction="pas" rot="R180"/>
+<pin name="17" x="10.16" y="-43.18" length="middle" direction="pas" rot="R180"/>
+<pin name="18" x="10.16" y="-45.72" length="middle" direction="pas" rot="R180"/>
+<pin name="19" x="10.16" y="-48.26" length="middle" direction="pas" rot="R180"/>
+<pin name="20" x="10.16" y="-50.8" length="middle" direction="pas" rot="R180"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-15.24" x2="5.08" y2="-15.24" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-17.78" x2="5.08" y2="-17.78" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-20.32" x2="5.08" y2="-20.32" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-22.86" x2="5.08" y2="-22.86" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-25.4" x2="5.08" y2="-25.4" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-27.94" x2="5.08" y2="-27.94" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-30.48" x2="5.08" y2="-30.48" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-33.02" x2="5.08" y2="-33.02" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-35.56" x2="5.08" y2="-35.56" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-38.1" x2="5.08" y2="-38.1" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-40.64" x2="5.08" y2="-40.64" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-43.18" x2="5.08" y2="-43.18" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-45.72" x2="5.08" y2="-45.72" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-48.26" x2="5.08" y2="-48.26" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-50.8" x2="5.08" y2="-50.8" width="0.6096" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-54.102" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -21543,6 +21638,48 @@ Alps Alpine SPDT
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
 <attribute name="MOPN" value="511-USBLC6-2SC6"/>
 <attribute name="MPN" value="USBLC6-2SC6"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-20_?_*" prefix="J">
+<description>20-pin connector
+&lt;br&gt;
+&lt;a href="https://www.molex.com/en-us/products/part-detail/430452029"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_20" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MF_T_V" package="MOLEX_MICROFIT_PTH_VERTICAL_20_DUAL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="WM10754-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex" constant="no"/>
+<attribute name="MOPN" value="538-43045-2029" constant="no"/>
+<attribute name="MPN" value="0430452029" constant="no"/>
 </technology>
 </technologies>
 </device>
