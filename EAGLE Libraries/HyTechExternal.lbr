@@ -753,6 +753,28 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="RECEPTACLE-20_*" prefix="O">
+<description>Receptacle, 20 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.molex.com/en-us/products/part-detail/430252000?display=pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM2492-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-2000"/>
+<attribute name="MPN" value="0430252000"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
