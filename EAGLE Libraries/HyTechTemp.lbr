@@ -191,71 +191,10 @@
 </layers>
 <library>
 <packages>
-<package name="1206-DIODE">
-<description>1206 Diode Package</description>
-<smd name="1" x="-1.497" y="0.019" dx="1" dy="1.5" layer="1"/>
-<smd name="2" x="1.541" y="0.011" dx="1" dy="1.5" layer="1"/>
-<wire x1="-0.959" y1="0.811" x2="1.041" y2="0.811" width="0.127" layer="21"/>
-<wire x1="1.041" y1="0.811" x2="1.041" y2="-0.789" width="0.127" layer="21"/>
-<wire x1="1.041" y1="-0.789" x2="-0.959" y2="-0.789" width="0.127" layer="21"/>
-<wire x1="-0.959" y1="-0.789" x2="-0.959" y2="0.811" width="0.127" layer="21"/>
-<rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="39"/>
-<text x="0" y="1.27" size="0.8128" layer="21" align="bottom-center">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
-<symbol name="DIODE_TVS_BIDIRECTIONAL">
-<wire x1="-1.397" y1="1.016" x2="-1.397" y2="-0.762" width="0.1524" layer="94"/>
-<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-1.27" y="1.905" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-1.397" y="-1.905" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
-<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
-<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.937" y="1.27"/>
-<vertex x="-3.937" y="-1.27"/>
-<vertex x="-1.397" y="0"/>
-</polygon>
-<wire x1="-1.143" y1="0.762" x2="-1.143" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-1.651" y1="1.27" x2="-1.397" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="-1.397" y1="1.016" x2="-1.143" y2="0.762" width="0.1524" layer="94"/>
-<wire x1="-1.397" y1="-0.762" x2="-1.143" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-1.143" y1="-1.016" x2="-0.889" y2="-1.27" width="0.1524" layer="94"/>
-<polygon width="0.1524" layer="94">
-<vertex x="1.397" y="-1.27"/>
-<vertex x="1.397" y="1.27"/>
-<vertex x="-1.143" y="0"/>
-</polygon>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMAJ16CA">
-<description>TVS Diode
- &lt;br&gt;
-&lt;a href="https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smaj_datasheet.pdf.pdf"&gt;SMAJ16CA&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_TVS_BIDIRECTIONAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1206-DIODE">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CURRENT" value="15.4 A"/>
-<attribute name="DKPN" value="SMAJ16CALFCT-ND"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
-<attribute name="MOPN" value="576-SMAJ16CA"/>
-<attribute name="MPN" value="SMAJ16CA"/>
-<attribute name="VOLTAGE" value="26V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
