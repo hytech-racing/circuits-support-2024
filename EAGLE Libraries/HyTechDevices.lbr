@@ -7018,6 +7018,20 @@ Based off orientation demo on page 218 for better STM32 compliance</description>
 <rectangle x1="-17.526" y1="-5.842" x2="17.526" y2="2.286" layer="40"/>
 <rectangle x1="-17.526" y1="-5.842" x2="17.526" y2="2.286" layer="39"/>
 </package>
+<package name="FILM_CAP">
+<description>B32921C/D Series Film Capacitor &lt;br&gt;
+&lt;a href="https://product.tdk.com/en/system/files?file=dam/doc/product/capacitor/film/emi/data_sheet/20/20/db/fc_2009/x2_b32921_928.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="1" x="-13.75" y="0" drill="0.85" first="yes"/>
+<pad name="2" x="13.75" y="0" drill="0.85"/>
+<wire x1="15.75" y1="10.5" x2="-15.75" y2="10.5" width="0.1524" layer="21"/>
+<wire x1="-15.75" y1="10.5" x2="-15.75" y2="-10.5" width="0.1524" layer="21"/>
+<wire x1="-15.75" y1="-10.5" x2="15.75" y2="-10.5" width="0.1524" layer="21"/>
+<wire x1="15.75" y1="10.5" x2="15.75" y2="-10.5" width="0.1524" layer="21"/>
+<circle x="-13.75" y="0" radius="1" width="0" layer="40"/>
+<circle x="13.75" y="0" radius="1" width="0" layer="40"/>
+<rectangle x1="-16.256" y1="-11.43" x2="16.256" y2="11.43" layer="39"/>
+<text x="0" y="11.43" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -21686,6 +21700,32 @@ Alps Alpine SPDT
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43045-2029"/>
 <attribute name="MPN" value="0430452029"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAPACITOR_FILM">
+<description>B32921C/D Series Film Capacitor &lt;br&gt;
+&lt;a href="https://product.tdk.com/en/system/files?file=dam/doc/product/capacitor/film/emi/data_sheet/20/20/db/fc_2009/x2_b32921_928.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR" x="7.62" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="FILM_CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="CAPACITOR_FILM_B32924C/D_4.7UF">
+<attribute name="CAPACITANCE" value="4.7µF"/>
+<attribute name="DKPN" value="495-7397-ND"/>
+<attribute name="MANUFACTURER" value="EPCOS - TDK Electronics"/>
+<attribute name="MOPN" value="871-B32924D3475K"/>
+<attribute name="MPN" value="B32924D3475K000"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="630V"/>
 </technology>
 </technologies>
 </device>
