@@ -21714,7 +21714,7 @@ Alps Alpine SPDT
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAPACITOR_FILM">
+<deviceset name="CAPACITOR_FILM" prefix="C">
 <description>B32921C/D Series Film Capacitor &lt;br&gt;
 &lt;a href="https://product.tdk.com/en/system/files?file=dam/doc/product/capacitor/film/emi/data_sheet/20/20/db/fc_2009/x2_b32921_928.pdf"&gt;Datasheet&lt;a/&gt;</description>
 <gates>
