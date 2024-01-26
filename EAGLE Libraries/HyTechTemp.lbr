@@ -234,6 +234,7 @@
 </symbols>
 <devicesets>
 <deviceset name="B20J3K0E">
+<description>&lt;a href = "https://www.ohmite.com/assets/docs/res_200.pdf?r=false"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
@@ -250,7 +251,10 @@
 <attribute name="MOPN" value="588-B20J3K0E"/>
 <attribute name="MPN" value="B20J3K0E"/>
 <attribute name="POWER" value="20W"/>
-<attribute name="RESISTANCE" value="3kOhm"/>
+<attribute name="RESISTANCE" value="3k"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="77.4"/>
+<attribute name="VOLTAGE_MAX" value="750"/>
 </technology>
 </technologies>
 </device>
