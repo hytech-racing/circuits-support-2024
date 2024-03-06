@@ -20280,6 +20280,17 @@ Alps Alpine SPDT
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="100K_0.1%">
+<attribute name="DKPN" value="P100KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB104V"/>
+<attribute name="MPN" value="ERA-3AEB104V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="10K">
 <attribute name="DKPN" value="P10KBDCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
