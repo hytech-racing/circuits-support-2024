@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="39.3700787" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -192,6 +192,9 @@
 <library>
 <packages>
 <package name="CDEEH13D90">
+<description>CDEEH13D90T150NP-102LC
+&lt;br&gt;
+&lt;a href = "https://products.sumida.com/products/pdf/CDEEH13D90T150%20(en).pdf"&gt;Datasheet&lt;/a&gt;</description>
 <wire x1="-6.95" y1="6.95" x2="6.95" y2="6.95" width="0.127" layer="21"/>
 <wire x1="6.95" y1="6.95" x2="6.95" y2="-6.95" width="0.127" layer="21"/>
 <wire x1="-6.95" y1="-6.95" x2="6.95" y2="-6.95" width="0.127" layer="21"/>
