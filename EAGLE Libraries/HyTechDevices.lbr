@@ -7049,20 +7049,6 @@ Based off orientation demo on page 218 for better STM32 compliance</description>
 <rectangle x1="-8" y1="-8" x2="8" y2="8" layer="39"/>
 <text x="0" y="8" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="TPSMB">
-<description>DO-214AA Diode Footprint
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/240/media-3323583.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="-2.285" y1="1.97" x2="2.285" y2="1.97" width="0.127" layer="21"/>
-<wire x1="-2.285" y1="-1.97" x2="2.285" y2="-1.97" width="0.127" layer="21"/>
-<wire x1="-2.285" y1="1.97" x2="-2.285" y2="-1.97" width="0.127" layer="21"/>
-<wire x1="2.285" y1="1.97" x2="2.285" y2="-1.97" width="0.127" layer="21"/>
-<smd name="1" x="-2.45" y="0" dx="2.26" dy="2.16" layer="1" rot="R90" thermals="no"/>
-<smd name="2" x="2.45" y="0" dx="2.26" dy="2.16" layer="1" rot="R90" thermals="no"/>
-<rectangle x1="-4.064" y1="-2.286" x2="4.064" y2="2.286" layer="39"/>
-<wire x1="4.064" y1="1.524" x2="4.064" y2="-1.524" width="0.254" layer="21"/>
-<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
