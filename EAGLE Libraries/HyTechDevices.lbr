@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19645,7 +19645,9 @@ Note: OPA2991 is also a comparator</description>
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/427/gsot03-1767593.pdf"&gt;GSOT Datasheet&lt;/a&gt;&lt;br&gt;
 
-&lt;a href="https://www.vishay.com/docs/85881/smf5v0atosmf58a.pdf"&gt;SMF14A Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.vishay.com/docs/85881/smf5v0atosmf58a.pdf"&gt;SMF14A Datasheet&lt;/a&gt;&lt;br&gt;
+
+&lt;a href="https://www.mouser.com/datasheet/2/240/media-3323583.pdf"&gt;TPSMB Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_TVS_UNIDIRECTIONAL" x="0" y="0"/>
 </gates>
@@ -19720,6 +19722,21 @@ Note: OPA2991 is also a comparator</description>
 <attribute name="MOPN" value="78-SMF14A-E3-08"/>
 <attribute name="MPN" value="SMF14A-E3-08"/>
 <attribute name="VOLTAGE" value="14V"/>
+</technology>
+</technologies>
+</device>
+<device name="TPSMB" package="SMB(DO-214AA)">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="522.5">
+<attribute name="DKPN" value="F10341CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-TPSMB550CA-A"/>
+<attribute name="MPN" value="TPSMB550CA-A"/>
+<attribute name="VOLTAGE" value="522.5V"/>
 </technology>
 </technologies>
 </device>
