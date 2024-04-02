@@ -6094,10 +6094,14 @@ Pulse Transformers 1CT:1 200 UH
 <wire x1="-3.65" y1="-1" x2="-3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
 <wire x1="3.65" y1="-1" x2="3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
 </package>
-<package name="SOD-123FA">
+<package name="SOD-123W">
 <description>SOD123FA Footprint (From US1KFA Datasheet)
 &lt;br&gt;
-&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Footprint Dimentions&lt;/a&gt;</description>
+&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Footprint Dimentions&lt;/a&gt;
+&lt;br&gt;
+SOD123W Footprint (From HS1KLW Datasheet)
+&lt;br&gt;
+&lt;a href="https://services.taiwansemi.com/storage/resources/datasheet/HS1DLW%20SERIES_C2103.pdf"&gt;Footprint Dimentions&lt;/a&gt;</description>
 <smd name="A" x="-1.55" y="0" dx="1.2" dy="1.4" layer="1"/>
 <smd name="C" x="1.55" y="0" dx="1.2" dy="1.4" layer="1"/>
 <wire x1="-1.4" y1="0.9" x2="-1.4" y2="-0.9" width="0.1524" layer="21"/>
@@ -17482,7 +17486,11 @@ Diodes Incorporated US1M
 &lt;br&gt;
 onsemi US1KFA
 &lt;br&gt;
-&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Taiwan Semiconductor Corporation HS1KLW
+&lt;br&gt;
+&lt;a href="https://services.taiwansemi.com/storage/resources/datasheet/HS1DLW%20SERIES_C2103.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE-1" x="0" y="0"/>
 </gates>
@@ -17519,7 +17527,7 @@ onsemi US1KFA
 </technology>
 </technologies>
 </device>
-<device name="SOD-123FA" package="SOD-123FA">
+<device name="SOD-123FA" package="SOD-123W">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -17531,6 +17539,22 @@ onsemi US1KFA
 <attribute name="MANUFACTURER" value="onsemi"/>
 <attribute name="MOPN" value="512-US1KFA"/>
 <attribute name="MPN" value="US1KFA"/>
+<attribute name="VOLTAGE" value="800V"/>
+</technology>
+</technologies>
+</device>
+<device name="SOD-123W" package="SOD-123W">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="800V_ACTIVE">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="1801-HS1KLWCT-ND"/>
+<attribute name="MANUFACTURER" value="Taiwan Semiconductor Corporation"/>
+<attribute name="MOPN" value="821-HS1KLW"/>
+<attribute name="MPN" value="HS1KLW"/>
 <attribute name="VOLTAGE" value="800V"/>
 </technology>
 </technologies>
