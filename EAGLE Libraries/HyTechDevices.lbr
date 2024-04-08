@@ -14017,7 +14017,8 @@ Leakage Inductance: 0.50 uH max
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.diodes.com/assets/Datasheets/DMG3406L.pdf"&gt;DMG3406L Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/389/dm00092662-1798082.pdf"&gt; STL2N80K5&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/389/dm00092662-1798082.pdf"&gt; STL2N80K5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://toshiba.semicon-storage.com/info/TK3P80E_datasheet_en_20140917.pdf?did=14695&amp;prodName=TK3P80E"&gt;TK3P80E Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
@@ -14055,6 +14056,12 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
 <attribute name="MOPN" value="757-TK100S04N1LLQ"/>
 <attribute name="MPN" value="TK100S04N1L,LQ"/>
+</technology>
+<technology name="TK3P80E">
+<attribute name="DKPN" value="264-TK3P80E,RQDKR-ND"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
+<attribute name="MOPN" value="757-TK3P80ERQ"/>
+<attribute name="MPN" value="TK3P80E,RQ"/>
 </technology>
 <technology name="TK6P65W">
 <attribute name="DKPN" value="TK6P65WRQCT-ND"/>
