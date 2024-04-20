@@ -20209,6 +20209,8 @@ Alps Alpine SPDT
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.ohmite.com/assets/docs/res_200.pdf?r=false"&gt;Ohmite B20&lt;a/&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"&gt;RMCF/RCMP Series&lt;a/&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -21564,6 +21566,18 @@ Alps Alpine SPDT
 <attribute name="VOLTAGE_CONTINUOUS" value="203.1V"/>
 <attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
+<technology name="HV330K_ACTIVE">
+<attribute name="DKPN" value="RMCF0805FT330KCT-ND"/>
+<attribute name="MANUFACTURER" value="Stackpole Electronics Inc"/>
+<attribute name="MOPN" value="708-RMCF0805FT330K
+"/>
+<attribute name="MPN" value="RMCF0805FT330K"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="330k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="203.1V"/>
+<attribute name="VOLTAGE_MAX" value="300V"/>
+</technology>
 <technology name="HV365K">
 <attribute name="DKPN" value="RHM365KAHTR-ND "/>
 <attribute name="MANUFACTURER" value="Rohm"/>
@@ -21574,6 +21588,17 @@ Alps Alpine SPDT
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="213V"/>
 <attribute name="VOLTAGE_MAX" value="350V"/>
+</technology>
+<technology name="HV365K_ACTIVE">
+<attribute name="DKPN" value="RMCF0805FT365KCT-ND"/>
+<attribute name="MANUFACTURER" value="Stackpole Electronics Inc"/>
+<attribute name="MOPN" value="708-RMCF0805FT365K"/>
+<attribute name="MPN" value="RMCF0805FT365K"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="365k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="213V"/>
+<attribute name="VOLTAGE_MAX" value="300V"/>
 </technology>
 <technology name="HV75K">
 <attribute name="DKPN" value="RHM75KAHTR-ND"/>
