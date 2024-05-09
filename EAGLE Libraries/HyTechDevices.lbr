@@ -12659,6 +12659,8 @@ Isolated Flyback Converter with 630V/300mA Switch
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf"&gt;Walsin Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM188R61A226ME15_02A-1985787.pdf"&gt;GRM188R61A226ME15D&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM188R61E106MA73_01A-1985806.pdf"&gt;GRM188R61E106MA73D&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C476ME44-01A.pdf"&gt;GRM31CR61C476ME44K&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=https://www.digikey.com/en/products/detail/murata-electronics/GRM31A5C2J100JW01D/4358998?s=N4IgTCBcDaIOICUCyBmAjAQQKwGEwCk0AGI-AdSLQBEQBdAXyA"&gt;GRM31A5C2J100JW01D&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/445/885012006013-1726946.pdf"&gt;885012006013&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/218/SMD_High_and_Std_StackiCap_P62-1825512.pdf"&gt;2220Y6300105KXTWS2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/UPY_GPHC_X5R_4V_to_50V_26-1827097.pdf"&gt;Yageo Class 2, X5R&lt;/a&gt;&lt;/li&gt;
@@ -13120,6 +13122,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
+<technology name="16V_47UF">
+<attribute name="CAPACITANCE" value="47µF" constant="no"/>
+<attribute name="DKPN" value="490-GRM31CR61C476ME44KTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Murata Electronics" constant="no"/>
+<attribute name="MOPN" value="81-GRM31CR61C476ME4K" constant="no"/>
+<attribute name="MPN" value="GRM31CR61C476ME44K" constant="no"/>
+<attribute name="TOLERANCE" value="20%" constant="no"/>
+<attribute name="VOLTAGE" value="16V" constant="no"/>
+</technology>
 <technology name="250V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1μF"/>
 <attribute name="DKPN" value="445-6079-2-ND"/>
@@ -13182,6 +13193,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="MPN" value="CGA5L4C0G2J103J160AA"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="630V"/>
+</technology>
+<technology name="630V_10PF">
+<attribute name="CAPACITANCE" value="10pF" constant="no"/>
+<attribute name="DKPN" value="490-11620-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Murata Electronics" constant="no"/>
+<attribute name="MOPN" value="81-GRM31A5C2J100JW1D" constant="no"/>
+<attribute name="MPN" value="GRM31A5C2J100JW01D" constant="no"/>
+<attribute name="TOLERANCE" value="5%" constant="no"/>
+<attribute name="VOLTAGE" value="630V" constant="no"/>
 </technology>
 <technology name="630V_47PF">
 <attribute name="CAPACITANCE" value="47pF"/>
@@ -20560,6 +20580,17 @@ Alps Alpine SPDT
 <attribute name="VOLTAGE_CONTINUOUS" value="16.51V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="2.49K">
+<attribute name="DKPN" value="541-2.49KHTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Vishay Dale" constant="no"/>
+<attribute name="MOPN" value="71-CRCW0603-2.49K-E3" constant="no"/>
+<attribute name="MPN" value="CRCW06032K49FKEA" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="2.49K" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="100V" constant="no"/>
+</technology>
 <technology name="2.55K">
 <attribute name="DKPN" value="311-2.55KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -20592,6 +20623,17 @@ Alps Alpine SPDT
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="44.72V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="21.5K">
+<attribute name="DKPN" value="P21.5KHTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MOPN" value="667-ERJ-3EKF2152V" constant="no"/>
+<attribute name="MPN" value=" ERJ-3EKF2152V" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="21.5K" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
 </technology>
 <technology name="210">
 <attribute name="DKPN" value="P19892CT-ND"/>
