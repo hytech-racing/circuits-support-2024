@@ -6094,10 +6094,14 @@ Pulse Transformers 1CT:1 200 UH
 <wire x1="-3.65" y1="-1" x2="-3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
 <wire x1="3.65" y1="-1" x2="3.65" y2="-3.65" width="0.127" layer="21" style="shortdash"/>
 </package>
-<package name="SOD-123FA">
+<package name="SOD-123W">
 <description>SOD123FA Footprint (From US1KFA Datasheet)
 &lt;br&gt;
-&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Footprint Dimentions&lt;/a&gt;</description>
+&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Footprint Dimentions&lt;/a&gt;
+&lt;br&gt;
+SOD123W Footprint (From HS1KLW Datasheet)
+&lt;br&gt;
+&lt;a href="https://services.taiwansemi.com/storage/resources/datasheet/HS1DLW%20SERIES_C2103.pdf"&gt;Footprint Dimentions&lt;/a&gt;</description>
 <smd name="A" x="-1.55" y="0" dx="1.2" dy="1.4" layer="1"/>
 <smd name="C" x="1.55" y="0" dx="1.2" dy="1.4" layer="1"/>
 <wire x1="-1.4" y1="0.9" x2="-1.4" y2="-0.9" width="0.1524" layer="21"/>
@@ -7031,6 +7035,56 @@ Based off orientation demo on page 218 for better STM32 compliance</description>
 <circle x="13.75" y="0" radius="1" width="0" layer="40"/>
 <rectangle x1="-16.256" y1="-11.43" x2="16.256" y2="11.43" layer="39"/>
 <text x="0" y="11.43" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="CDEEH13D90">
+<description>CDEEH13D90T150NP-102LC
+&lt;br&gt;
+&lt;a href = "https://products.sumida.com/products/pdf/CDEEH13D90T150%20(en).pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-6.95" y1="6.95" x2="6.95" y2="6.95" width="0.127" layer="21"/>
+<wire x1="6.95" y1="6.95" x2="6.95" y2="-6.95" width="0.127" layer="21"/>
+<wire x1="-6.95" y1="-6.95" x2="6.95" y2="-6.95" width="0.127" layer="21"/>
+<wire x1="-6.95" y1="6.95" x2="-6.95" y2="-6.95" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="4.4" x2="4.4" y2="4.4" width="0.127" layer="21" style="shortdash"/>
+<wire x1="4.4" y1="4.4" x2="4.4" y2="-4.4" width="0.127" layer="21" style="shortdash"/>
+<wire x1="4.4" y1="-4.4" x2="-4.4" y2="-4.4" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-4.4" y1="-4.4" x2="-4.4" y2="4.4" width="0.127" layer="21" style="shortdash"/>
+<smd name="1" x="-5.325" y="0" dx="3.35" dy="5.3" layer="1" thermals="no"/>
+<smd name="2" x="5.325" y="0" dx="3.35" dy="5.3" layer="1" thermals="no"/>
+<rectangle x1="-8" y1="-8" x2="8" y2="8" layer="39"/>
+<text x="0" y="8" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_08_SINGLE_SPACED_MODIFIED">
+<description>8 Pin Micro-Fit Vertical Header, Through-Hole, Single Row for TSB pins removed
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500716"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://tools.molex.com/pdm_docs/sd/436500716_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<hole x="13.5" y="-1.96" drill="1.27"/>
+<hole x="-13.5" y="-1.96" drill="1.27"/>
+<wire x1="-13.589" y1="-1.905" x2="13.589" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="13.589" y1="-1.905" x2="13.589" y2="1.905" width="0.127" layer="21"/>
+<wire x1="13.589" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-13.589" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-13.589" y1="1.905" x2="-13.589" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-15.0556" y1="-2.286" x2="15.0556" y2="2.286" layer="39"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<rectangle x1="-15.0556" y1="-2.286" x2="15.0556" y2="2.286" layer="40"/>
+<text x="0" y="-2.54" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<pad name="5" x="4.5" y="0" drill="1.0668"/>
+<pad name="4" x="1.5" y="0" drill="1.0668"/>
+<pad name="3" x="-4.5" y="0" drill="1.0668"/>
+<pad name="1" x="-10.5" y="0" drill="1.0668"/>
+<pad name="2" x="-7.5" y="0" drill="1.0668"/>
+<pad name="6" x="10.5" y="0" drill="1.0668"/>
 </package>
 </packages>
 <symbols>
@@ -12631,6 +12685,20 @@ Isolated Flyback Converter with 630V/300mA Switch
 </technology>
 </technologies>
 </device>
+<device name="MICROFIT_PTH_VERTICAL_02_SINGLE" package="MOLEX_MICROFIT_PTH_VERTICAL_02_SINGLE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="WM12762-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43650-0217"/>
+<attribute name="MPN" value="0436500217"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CAPACITOR_?_*" prefix="C">
@@ -12642,6 +12710,8 @@ Isolated Flyback Converter with 630V/300mA Switch
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf"&gt;Walsin Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM188R61A226ME15_02A-1985787.pdf"&gt;GRM188R61A226ME15D&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM188R61E106MA73_01A-1985806.pdf"&gt;GRM188R61E106MA73D&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C476ME44-01A.pdf"&gt;GRM31CR61C476ME44K&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=https://www.digikey.com/en/products/detail/murata-electronics/GRM31A5C2J100JW01D/4358998?s=N4IgTCBcDaIOICUCyBmAjAQQKwGEwCk0AGI-AdSLQBEQBdAXyA"&gt;GRM31A5C2J100JW01D&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/445/885012006013-1726946.pdf"&gt;885012006013&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/218/SMD_High_and_Std_StackiCap_P62-1825512.pdf"&gt;2220Y6300105KXTWS2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/UPY_GPHC_X5R_4V_to_50V_26-1827097.pdf"&gt;Yageo Class 2, X5R&lt;/a&gt;&lt;/li&gt;
@@ -13103,6 +13173,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
+<technology name="16V_47UF">
+<attribute name="CAPACITANCE" value="47µF" constant="no"/>
+<attribute name="DKPN" value="490-GRM31CR61C476ME44KTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Murata Electronics" constant="no"/>
+<attribute name="MOPN" value="81-GRM31CR61C476ME4K" constant="no"/>
+<attribute name="MPN" value="GRM31CR61C476ME44K" constant="no"/>
+<attribute name="TOLERANCE" value="20%" constant="no"/>
+<attribute name="VOLTAGE" value="16V" constant="no"/>
+</technology>
 <technology name="250V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1μF"/>
 <attribute name="DKPN" value="445-6079-2-ND"/>
@@ -13165,6 +13244,15 @@ Isolated Flyback Converter with 630V/300mA Switch
 <attribute name="MPN" value="CGA5L4C0G2J103J160AA"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="630V"/>
+</technology>
+<technology name="630V_10PF">
+<attribute name="CAPACITANCE" value="10pF" constant="no"/>
+<attribute name="DKPN" value="490-11620-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Murata Electronics" constant="no"/>
+<attribute name="MOPN" value="81-GRM31A5C2J100JW1D" constant="no"/>
+<attribute name="MPN" value="GRM31A5C2J100JW01D" constant="no"/>
+<attribute name="TOLERANCE" value="5%" constant="no"/>
+<attribute name="VOLTAGE" value="630V" constant="no"/>
 </technology>
 <technology name="630V_47PF">
 <attribute name="CAPACITANCE" value="47pF"/>
@@ -13982,7 +14070,8 @@ Leakage Inductance: 0.50 uH max
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.diodes.com/assets/Datasheets/DMG3406L.pdf"&gt;DMG3406L Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/389/dm00092662-1798082.pdf"&gt; STL2N80K5&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/389/dm00092662-1798082.pdf"&gt; STL2N80K5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://toshiba.semicon-storage.com/info/TK3P80E_datasheet_en_20140917.pdf?did=14695&amp;prodName=TK3P80E"&gt;TK3P80E Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
@@ -14020,6 +14109,12 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
 <attribute name="MOPN" value="757-TK100S04N1LLQ"/>
 <attribute name="MPN" value="TK100S04N1L,LQ"/>
+</technology>
+<technology name="TK3P80E">
+<attribute name="DKPN" value="264-TK3P80E,RQDKR-ND"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
+<attribute name="MOPN" value="757-TK3P80ERQ"/>
+<attribute name="MPN" value="TK3P80E,RQ"/>
 </technology>
 <technology name="TK6P65W">
 <attribute name="DKPN" value="TK6P65WRQCT-ND"/>
@@ -14468,6 +14563,19 @@ Used for RS485 transreceiver chips
 <attribute name="MOPN" value="649-8STA20835PN"/>
 <attribute name="MPN" value="8STA20835PN"/>
 </technology>
+</technologies>
+</device>
+<device name="μF_S_V_TSB" package="MOLEX_MICROFIT_PTH_VERTICAL_08_SINGLE_SPACED_MODIFIED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -16024,6 +16132,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/336/plei_s_a0002827602_1-2281222.pdf"&gt;PA4334 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/445/74437349560-1721693.pdf"&gt;WE-LMHI Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.bourns.com/docs/Product-Datasheets/SRR0745A.pdf"&gt;SRR0745A Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://products.sumida.com/products/pdf/CDEEH13D90T150%20(en).pdf"&gt;CDEEH13D90 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -16153,6 +16262,26 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <attribute name="MOPN" value="652-SRR0745A-102M"/>
 <attribute name="MPN" value="SRR0745A-102M"/>
 <attribute name="TOLERANCE" value="20%"/>
+</technology>
+</technologies>
+</device>
+<device name="CDEEH13D90-102LC" package="CDEEH13D90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="1MH">
+<attribute name="CURRENT_RATED" value="N/A"/>
+<attribute name="CURRENT_SATURATION" value="340mA"/>
+<attribute name="DCR" value="1.53Ω"/>
+<attribute name="DKPN" value="N/A"/>
+<attribute name="INDUCTANCE" value="1mH"/>
+<attribute name="MANUFACTURER" value="Sumida"/>
+<attribute name="MAX_VOLTAGE" value="840V"/>
+<attribute name="MOPN" value="N/A"/>
+<attribute name="MPN" value="CDEEH13D90T150NP-102LC "/>
+<attribute name="TOLERANCE" value="15%"/>
 </technology>
 </technologies>
 </device>
@@ -17430,7 +17559,11 @@ Diodes Incorporated US1M
 &lt;br&gt;
 onsemi US1KFA
 &lt;br&gt;
-&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.onsemi.com/pdf/datasheet/us1mfa-d.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Taiwan Semiconductor Corporation HS1KLW
+&lt;br&gt;
+&lt;a href="https://services.taiwansemi.com/storage/resources/datasheet/HS1DLW%20SERIES_C2103.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE-1" x="0" y="0"/>
 </gates>
@@ -17467,7 +17600,7 @@ onsemi US1KFA
 </technology>
 </technologies>
 </device>
-<device name="SOD-123FA" package="SOD-123FA">
+<device name="SOD-123FA" package="SOD-123W">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -17479,6 +17612,22 @@ onsemi US1KFA
 <attribute name="MANUFACTURER" value="onsemi"/>
 <attribute name="MOPN" value="512-US1KFA"/>
 <attribute name="MPN" value="US1KFA"/>
+<attribute name="VOLTAGE" value="800V"/>
+</technology>
+</technologies>
+</device>
+<device name="SOD-123W" package="SOD-123W">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="800V_ACTIVE">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="1801-HS1KLWCT-ND"/>
+<attribute name="MANUFACTURER" value="Taiwan Semiconductor Corporation"/>
+<attribute name="MOPN" value="821-HS1KLW"/>
+<attribute name="MPN" value="HS1KLW"/>
 <attribute name="VOLTAGE" value="800V"/>
 </technology>
 </technologies>
@@ -19593,7 +19742,9 @@ Note: OPA2991 is also a comparator</description>
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/427/gsot03-1767593.pdf"&gt;GSOT Datasheet&lt;/a&gt;&lt;br&gt;
 
-&lt;a href="https://www.vishay.com/docs/85881/smf5v0atosmf58a.pdf"&gt;SMF14A Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.vishay.com/docs/85881/smf5v0atosmf58a.pdf"&gt;SMF14A Datasheet&lt;/a&gt;&lt;br&gt;
+
+&lt;a href="https://www.mouser.com/datasheet/2/240/media-3323583.pdf"&gt;TPSMB Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_TVS_UNIDIRECTIONAL" x="0" y="0"/>
 </gates>
@@ -19668,6 +19819,21 @@ Note: OPA2991 is also a comparator</description>
 <attribute name="MOPN" value="78-SMF14A-E3-08"/>
 <attribute name="MPN" value="SMF14A-E3-08"/>
 <attribute name="VOLTAGE" value="14V"/>
+</technology>
+</technologies>
+</device>
+<device name="TPSMB" package="SMB(DO-214AA)">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="522.5">
+<attribute name="DKPN" value="F10341CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-TPSMB550CA-A"/>
+<attribute name="MPN" value="TPSMB550CA-A"/>
+<attribute name="VOLTAGE" value="522.5V"/>
 </technology>
 </technologies>
 </device>
@@ -20280,6 +20446,17 @@ Alps Alpine SPDT
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="100K_0.1%">
+<attribute name="DKPN" value="P100KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB104V"/>
+<attribute name="MPN" value="ERA-3AEB104V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="10K">
 <attribute name="DKPN" value="P10KBDCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -20511,6 +20688,17 @@ Alps Alpine SPDT
 <attribute name="VOLTAGE_CONTINUOUS" value="16.51V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="2.49K">
+<attribute name="DKPN" value="541-2.49KHTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Vishay Dale" constant="no"/>
+<attribute name="MOPN" value="71-CRCW0603-2.49K-E3" constant="no"/>
+<attribute name="MPN" value="CRCW06032K49FKEA" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="2.49K" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="100V" constant="no"/>
+</technology>
 <technology name="2.55K">
 <attribute name="DKPN" value="311-2.55KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -20543,6 +20731,17 @@ Alps Alpine SPDT
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="44.72V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="21.5K">
+<attribute name="DKPN" value="P21.5KHTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MOPN" value="667-ERJ-3EKF2152V" constant="no"/>
+<attribute name="MPN" value=" ERJ-3EKF2152V" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="21.5K" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
 </technology>
 <technology name="210">
 <attribute name="DKPN" value="P19892CT-ND"/>
