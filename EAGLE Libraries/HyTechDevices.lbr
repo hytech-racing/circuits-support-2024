@@ -21106,6 +21106,18 @@ Alps Alpine SPDT
 <attribute name="VOLTAGE_CONTINUOUS" value="68.56V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="49.9">
+<attribute name="DKPN" value="311-49.9HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0749R9L"/>
+<attribute name="MPN" value="RC0603FR-0749R9L
+"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="49.9"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="2.23V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="5.1">
 <attribute name="DKPN" value="P16039TR-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
