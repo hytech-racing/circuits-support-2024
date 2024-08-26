@@ -12586,6 +12586,66 @@ Isolated Flyback Converter with 630V/300mA Switch
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-54.102" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="LTC6811-1">
+<description>LTC 6811-1 12 Cell Battery Monitor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/LTC6811_1_6811_2-1271909.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;p&gt;
+Pins tied to VREG: ISOMD, DTEN
+&lt;/p&gt;</description>
+<wire x1="17.78" y1="0" x2="17.78" y2="-88.9" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-88.9" x2="0" y2="-88.9" width="0.254" layer="94"/>
+<wire x1="0" y1="-88.9" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<pin name="IPB" x="20.32" y="-2.54" length="short" rot="R180"/>
+<pin name="IMB" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="ICMP" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="IBIAS" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="IPA" x="20.32" y="-81.28" length="short" rot="R180"/>
+<pin name="IMA" x="20.32" y="-83.82" length="short" rot="R180"/>
+<pin name="SDO" x="20.32" y="-71.12" length="short" direction="nc" rot="R180"/>
+<pin name="SDI" x="20.32" y="-73.66" length="short" direction="nc" rot="R180"/>
+<pin name="WDT" x="20.32" y="-27.94" length="short" direction="out" rot="R180"/>
+<pin name="DRIVE" x="20.32" y="-45.72" length="short" direction="out" rot="R180"/>
+<pin name="VREG" x="20.32" y="-50.8" length="short" direction="pwr" rot="R180"/>
+<pin name="VREF1" x="20.32" y="-53.34" length="short" direction="pwr" rot="R180"/>
+<pin name="VREF2" x="20.32" y="-58.42" length="short" direction="pwr" rot="R180"/>
+<pin name="GPI05" x="20.32" y="-25.4" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPI04" x="20.32" y="-22.86" length="short" swaplevel="1" rot="R180"/>
+<pin name="V-" x="-2.54" y="-86.36" length="short" direction="pwr"/>
+<pin name="GPI03" x="20.32" y="-20.32" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPI02" x="20.32" y="-17.78" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPI01" x="20.32" y="-15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="C0" x="-2.54" y="-78.74" length="short" direction="in"/>
+<pin name="S1" x="-2.54" y="-76.2" length="short"/>
+<pin name="C1" x="-2.54" y="-73.66" length="short" direction="in"/>
+<pin name="S2" x="-2.54" y="-71.12" length="short"/>
+<pin name="C2" x="-2.54" y="-68.58" length="short" direction="in"/>
+<pin name="S3" x="-2.54" y="-66.04" length="short"/>
+<pin name="C3" x="-2.54" y="-63.5" length="short" direction="in"/>
+<pin name="S4" x="-2.54" y="-60.96" length="short"/>
+<pin name="C4" x="-2.54" y="-58.42" length="short" direction="in"/>
+<pin name="S5" x="-2.54" y="-55.88" length="short"/>
+<pin name="C5" x="-2.54" y="-53.34" length="short" direction="in"/>
+<pin name="S6" x="-2.54" y="-50.8" length="short"/>
+<pin name="C6" x="-2.54" y="-48.26" length="short" direction="in"/>
+<pin name="S7" x="-2.54" y="-45.72" length="short"/>
+<pin name="C7" x="-2.54" y="-43.18" length="short" direction="in"/>
+<pin name="S8" x="-2.54" y="-40.64" length="short"/>
+<pin name="C8" x="-2.54" y="-38.1" length="short" direction="in"/>
+<pin name="S9" x="-2.54" y="-35.56" length="short"/>
+<pin name="C9" x="-2.54" y="-33.02" length="short" direction="in"/>
+<pin name="S10" x="-2.54" y="-30.48" length="short"/>
+<pin name="C10" x="-2.54" y="-27.94" length="short" direction="in"/>
+<pin name="S11" x="-2.54" y="-25.4" length="short"/>
+<pin name="C11" x="-2.54" y="-22.86" length="short" direction="in"/>
+<pin name="S12" x="-2.54" y="-20.32" length="short"/>
+<pin name="C12" x="-2.54" y="-17.78" length="short" direction="in"/>
+<pin name="V+" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-89.662" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -21110,8 +21170,7 @@ Alps Alpine SPDT
 <attribute name="DKPN" value="311-49.9HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="MOPN" value="603-RC0603FR-0749R9L"/>
-<attribute name="MPN" value="RC0603FR-0749R9L
-"/>
+<attribute name="MPN" value="RC0603FR-0749R9L "/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="49.9"/>
 <attribute name="TOLERANCE" value="1%"/>
@@ -21946,6 +22005,73 @@ Alps Alpine SPDT
 <attribute name="MPN" value="B32924D3475K000"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="630V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC6811-1" prefix="U">
+<description>LTC6811-1 12 Cell Stackable Battery Monitor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/LTC6811_1_6811_2-1271909.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC6811-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP-48">
+<connects>
+<connect gate="G$1" pin="C0" pad="26"/>
+<connect gate="G$1" pin="C1" pad="24"/>
+<connect gate="G$1" pin="C10" pad="6"/>
+<connect gate="G$1" pin="C11" pad="4"/>
+<connect gate="G$1" pin="C12" pad="2"/>
+<connect gate="G$1" pin="C2" pad="22"/>
+<connect gate="G$1" pin="C3" pad="20"/>
+<connect gate="G$1" pin="C4" pad="18"/>
+<connect gate="G$1" pin="C5" pad="16"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="12"/>
+<connect gate="G$1" pin="C8" pad="10"/>
+<connect gate="G$1" pin="C9" pad="8"/>
+<connect gate="G$1" pin="DRIVE" pad="38"/>
+<connect gate="G$1" pin="GPI01" pad="27"/>
+<connect gate="G$1" pin="GPI02" pad="28"/>
+<connect gate="G$1" pin="GPI03" pad="29"/>
+<connect gate="G$1" pin="GPI04" pad="32"/>
+<connect gate="G$1" pin="GPI05" pad="33"/>
+<connect gate="G$1" pin="IBIAS" pad="45"/>
+<connect gate="G$1" pin="ICMP" pad="46"/>
+<connect gate="G$1" pin="IMA" pad="41"/>
+<connect gate="G$1" pin="IMB" pad="47"/>
+<connect gate="G$1" pin="IPA" pad="42"/>
+<connect gate="G$1" pin="IPB" pad="48"/>
+<connect gate="G$1" pin="S1" pad="25"/>
+<connect gate="G$1" pin="S10" pad="7"/>
+<connect gate="G$1" pin="S11" pad="5"/>
+<connect gate="G$1" pin="S12" pad="3"/>
+<connect gate="G$1" pin="S2" pad="23"/>
+<connect gate="G$1" pin="S3" pad="21"/>
+<connect gate="G$1" pin="S4" pad="19"/>
+<connect gate="G$1" pin="S5" pad="17"/>
+<connect gate="G$1" pin="S6" pad="15"/>
+<connect gate="G$1" pin="S7" pad="13"/>
+<connect gate="G$1" pin="S8" pad="11"/>
+<connect gate="G$1" pin="S9" pad="9"/>
+<connect gate="G$1" pin="SDI" pad="43"/>
+<connect gate="G$1" pin="SDO" pad="44"/>
+<connect gate="G$1" pin="V+" pad="1"/>
+<connect gate="G$1" pin="V-" pad="30 31"/>
+<connect gate="G$1" pin="VREF1" pad="35"/>
+<connect gate="G$1" pin="VREF2" pad="34"/>
+<connect gate="G$1" pin="VREG" pad="36 37 40"/>
+<connect gate="G$1" pin="WDT" pad="39"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="505-LTC6811IG-1#PBF-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-LTC6811IG-1#PBF"/>
+<attribute name="MPN" value="LTC6811IG-1#PBF"/>
 </technology>
 </technologies>
 </device>
