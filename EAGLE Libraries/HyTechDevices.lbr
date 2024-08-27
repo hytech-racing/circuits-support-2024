@@ -7086,6 +7086,18 @@ Based off orientation demo on page 218 for better STM32 compliance</description>
 <pad name="2" x="-7.5" y="0" drill="1.0668"/>
 <pad name="6" x="10.5" y="0" drill="1.0668"/>
 </package>
+<package name="ACM2012">
+<smd name="P$3" x="0.925" y="-0.4" dx="0.75" dy="0.4" layer="1"/>
+<smd name="P$1" x="-0.925" y="0.4" dx="0.75" dy="0.4" layer="1"/>
+<smd name="P$4" x="0.925" y="0.4" dx="0.75" dy="0.4" layer="1"/>
+<smd name="P$2" x="-0.925" y="-0.4" dx="0.75" dy="0.4" layer="1"/>
+<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.127" layer="21"/>
+<rectangle x1="-1.6" y1="-1.05" x2="1.6" y2="1.05" layer="39"/>
+<text x="0" y="1.104" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -12645,6 +12657,42 @@ Pins tied to VREG: ISOMD, DTEN
 <pin name="V+" x="-2.54" y="-2.54" length="short" direction="pwr"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-89.662" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="COMMON_MODE_CHOKE">
+<text x="0" y="8.382" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-8.89" size="1.27" layer="96" align="top-center">&gt;MPN</text>
+<pin name="3" x="15.24" y="-7.62" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="4" x="15.24" y="7.62" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="2" x="-15.24" y="-7.62" visible="off" length="point" direction="pas"/>
+<pin name="1" x="-15.24" y="7.62" visible="off" length="point" direction="pas"/>
+<wire x1="-5.08" y1="0.508" x2="5.08" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.5146" x2="-3.81" y2="1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5403" y1="2.5146" x2="-3.81" y2="1.27" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="-2.54" y1="2.5146" x2="-1.27" y2="1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-0.0003" y1="2.5146" x2="-1.27" y2="1.27" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="0" y1="2.5146" x2="1.27" y2="1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="2.5397" y1="2.5146" x2="1.27" y2="1.2697" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
+<wire x1="2.54" y1="2.5146" x2="3.81" y2="1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="5.0797" y1="2.5146" x2="3.81" y2="1.2697" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
+<wire x1="-3.7841" y1="-1.2446" x2="-5.0798" y2="-2.54" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
+<wire x1="-3.7846" y1="-1.27" x2="-2.5146" y2="-2.54" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-1.2441" y1="-1.2446" x2="-2.5398" y2="-2.54" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
+<wire x1="-1.2446" y1="-1.27" x2="0.0254" y2="-2.54" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="1.27" y1="-1.2443" x2="0.0004" y2="-2.54" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
+<wire x1="1.27" y1="-1.27" x2="2.5146" y2="-2.54" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
+<wire x1="3.81" y1="-1.2443" x2="2.5404" y2="-2.54" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
+<wire x1="3.81" y1="-1.27" x2="5.0546" y2="-2.54" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-7.62" width="0.1524" layer="94"/>
+<circle x="3.81" y="-2.54" radius="0.381" width="0" layer="94"/>
+<circle x="3.81" y="2.54" radius="0.381" width="0" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="15.24" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="15.24" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-15.24" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-15.24" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -22072,6 +22120,32 @@ Alps Alpine SPDT
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-LTC6811IG-1#PBF"/>
 <attribute name="MPN" value="LTC6811IG-1#PBF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ACM2012-361-2P-T002">
+<description>Common Mode Choke Part. &lt;a href="https://product.tdk.com/en/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_acm2012_en.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="COMMON_MODE_CHOKE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ACM2012">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DCR" value="0.5Ohm"/>
+<attribute name="DKPN" value="445-2210-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-ACM20123612PT002
+"/>
+<attribute name="MPN" value="ACM2012-361-2P-T002"/>
 </technology>
 </technologies>
 </device>
