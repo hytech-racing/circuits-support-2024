@@ -7098,6 +7098,16 @@ Based off orientation demo on page 218 for better STM32 compliance</description>
 <rectangle x1="-1.6" y1="-1.05" x2="1.6" y2="1.05" layer="39"/>
 <text x="0" y="1.104" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="2-SMD">
+<smd name="1" x="-2.455" y="0" dx="3.15" dy="1.96" layer="1" rot="R90"/>
+<smd name="2" x="2.455" y="0" dx="3.15" dy="1.96" layer="1" rot="R90"/>
+<wire x1="-3.05" y1="1.27" x2="3.05" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.05" y1="1.27" x2="3.05" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.05" y1="-1.27" x2="-3.05" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-3.05" y1="-1.27" x2="-3.05" y2="1.27" width="0.127" layer="21"/>
+<rectangle x1="-4" y1="-2" x2="4" y2="2" layer="39"/>
+<text x="0" y="2" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -13632,6 +13642,7 @@ Leakage Inductance: 0.50 uH max
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/358/typ_MST_250-1772502.pdf"&gt;MST 250 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/358/typ_OMF_125-1275954.pdf"&gt;OMF 125 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/643/ds-CP-c2f-series-1291054.pdf"&gt;0686F0750-01&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.belfuse.com/resources/datasheets/circuitprotection/ds-cp-0679l -series.pdf"&gt;2-SMD&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
@@ -13742,6 +13753,23 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="576-0485001.DR"/>
 <attribute name="MPN" value="0485001.DR"/>
 <attribute name="VOLTAGE" value="600VDC"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="2-SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="2-SMD_3A">
+<attribute name="CURRENT" value="3A"/>
+<attribute name="DKPN" value="507-1991-1-ND"/>
+<attribute name="I2T" value="1.8"/>
+<attribute name="MANUFACTURER" value="Bel Fuse Inc."/>
+<attribute name="MOPN" value="530-0679L3000-05"/>
+<attribute name="MPN" value="0679L3000-05"/>
+<attribute name="VOLTAGE" value="125V"/>
 </technology>
 </technologies>
 </device>
@@ -22143,8 +22171,7 @@ Alps Alpine SPDT
 <attribute name="DCR" value="0.5Ohm"/>
 <attribute name="DKPN" value="445-2210-1-ND"/>
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="MOPN" value="810-ACM20123612PT002
-"/>
+<attribute name="MOPN" value="810-ACM20123612PT002 "/>
 <attribute name="MPN" value="ACM2012-361-2P-T002"/>
 </technology>
 </technologies>
