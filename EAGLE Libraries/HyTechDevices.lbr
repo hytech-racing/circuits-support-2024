@@ -22242,7 +22242,12 @@ Alps Alpine SPDT
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="MCP9701T-E/TTCT-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP9701T-E/TT"/>
+<attribute name="MPN" value="MCP9701T-E/TT"/>
+</technology>
 </technologies>
 </device>
 </devices>
